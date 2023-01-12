@@ -1,0 +1,92 @@
+site_name: 图灵班学习指南
+site_url: https://ZJU-Turing.github.io/TuringCourses/
+site_description: 图灵班学习指南
+repo_name: ZJU-Turing/TuringCourses
+repo_url: https://github.com/ZJU-Turing/TuringCourses/
+edit_uri: tree/master/docs
+copyright: Copyright &copy; 2023 浙江大学图灵班
+
+nav:
+  - 主页: 
+    - index.md
+    - 贡献指南: contributing.md
+  - 思政军体课:
+    - political/index.md
+  - 通识选修课:
+    - general/index.md
+  - 数理基础课:
+    - math_phys/index.md
+  - 专业基础课:
+    - major_basic/index.md
+  - 专业必修课:
+    - major_mandatory/index.md
+  - 专业选修课:
+    - major_elective/index.md
+  - 其他课程:
+    - others/index.md
+  - 书评专区:
+    - readings/index.md
+
+theme:
+  name: 'material'
+  language: 'zh'
+  # logo: images/icon.png
+  icon:
+    logo: material/notebook-outline
+    repo: fontawesome/brands/github
+  custom_dir: overrides
+  favicon: images/icon.png
+  features:
+    - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+  font:
+    # text: Noto Serif SC
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+
+plugins:
+  - search
+
+extra_css:
+  - https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback
+  - css/tasklist.css
+  - css/card.css
+  - css/custom.css
+
+extra_javascript:
+  - js/katex.js
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true

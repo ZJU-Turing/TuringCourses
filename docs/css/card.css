@@ -1,0 +1,99 @@
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FEFEFE;
+    background-clip: border-box;
+    border: 0.5px solid #606060;
+    border-radius: .25rem;
+    margin-bottom: 1em;
+}
+
+[data-md-color-scheme="slate"] .card {
+    background-color: #181818;
+    border: 0.5px solid #606060;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.card-header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.card-body ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.md-typeset :is(.card-body details) {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+.file-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2em 1em;
+    transition: background-color .3s cubic-bezier(.4,0,.2,1);
+}
+
+.file-block:hover {
+    background-color: #eeeeee;
+}
+[data-md-color-scheme="slate"] .file-block:hover {
+    background-color: #606060;
+}
+
+.file-title {
+    padding-left: 0rem;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.file-meta {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+
+.file-body {
+    padding-left: 1em;
+    margin-right: auto;
+}
+
+.down-button {
+    border: 0.05rem solid;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.25em 0.5em;
+    transition: color .3s,background-color .3s,border-color .3s !important;
+}
+
+.down-button:is(:focus,:hover) {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color) !important;
+}

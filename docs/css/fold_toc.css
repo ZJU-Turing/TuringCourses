@@ -1,0 +1,10 @@
+.md-nav__list a.is-active {
+  color: rgb(0, 63, 136);
+}
+
+.md-sidebar--secondary .md-nav > .md-nav__list > li > a + .md-nav {
+  display: none;
+}
+.md-sidebar--secondary .md-nav > .md-nav__list > li > a.is-active + .md-nav {
+  display: block;
+}
