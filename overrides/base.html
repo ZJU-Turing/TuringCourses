@@ -67,7 +67,7 @@
       {% endfor %}
       {% if page and page.meta and page.meta.nocounter %}
       {% else %}
-        <link rel="stylesheet" href="/css/counter.css">
+        <link rel="stylesheet" href="{{ 'css/counter.css' | url }}">
       {% endif %}
       {% include "partials/javascripts/base.html" %}
       {% block analytics %}
@@ -93,7 +93,7 @@
     {% else %}
       <body dir="{{ direction }}">
     {% endif %}
-      <script src="/js/scheme.js" type="text/javascript"></script>
+      <script src="{{ 'js/scheme.js' | url }}" type="text/javascript"></script>
       {% set features = config.theme.features or [] %}
       {% if not config.theme.palette is mapping %}
         {% include "partials/javascripts/palette.html" %}
@@ -177,8 +177,8 @@
                   </div>
                 </div>
                 {% if page and page.meta and page.meta.fold_toc %}
-                  <script src="/js/toc.js" defer></script>
-                  <link rel="stylesheet" href="/css/fold_toc.css">
+                  <script src="{{ 'js/toc.js' | url }}" defer></script>
+                  <link rel="stylesheet" href="{{ 'css/fold_toc.css' | url }}">
                 {% endif %}
               {% endif %}
             {% endblock %}
