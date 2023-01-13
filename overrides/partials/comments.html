@@ -1,0 +1,25 @@
+
+{% if page and page.meta and page.meta.nocomment %}
+{% else %}
+  <script src="https://giscus.app/client.js"
+          data-repo="ZJU-Turing/TuringCourses"
+          data-repo-id="R_kgDOIw_0vg"
+          data-category="General"
+          data-category-id="DIC_kwDOIw_0vs4CTjmC"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="light"
+          data-lang="zh-CN"
+          crossorigin="anonymous"
+          async>
+  </script>
+  <script>
+    if (document.querySelector("body").getAttribute("data-md-color-scheme") === "slate") {
+      var giscus = document.querySelector("script[src*=giscus]")
+      giscus.setAttribute("data-theme", "https://gcore.jsdelivr.net/gh/TonyCrane/note/docs/css/giscus.css") 
+    }
+  </script>
+{% endif %}

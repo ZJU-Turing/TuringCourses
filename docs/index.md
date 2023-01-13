@@ -1,5 +1,6 @@
 ---
 home: True
+nocomment: True
 ---
 
 # 图灵班学习指南
