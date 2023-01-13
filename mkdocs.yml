@@ -22,6 +22,9 @@ nav:
     - 军事理论: political/military_theory/index.md
   - 通识选修课:
     - general/index.md
+    - 通识核心课: general/core.md
+    - 通识选修课: general/elective.md
+    - 其他选修课: general/others.md
   - 数理基础课:
     - math_phys/index.md
     - 线性代数 Ⅰ（H）: math_phys/linear_algebra1/index.md
