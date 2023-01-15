@@ -90,10 +90,12 @@ theme:
   icon:
     logo: material/notebook-outline
     repo: fontawesome/brands/github
+    edit: material/pencil
   custom_dir: overrides
   favicon: images/icon.png
   features:
     - content.code.annotate
+    - content.action.edit
     - navigation.tracking
     - navigation.tabs
     - navigation.indexes
