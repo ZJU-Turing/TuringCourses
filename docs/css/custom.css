@@ -181,3 +181,36 @@ body[data-md-prefers-color-scheme=true] .md-icon .unknown-mode {
   margin: 0;
   display: block;
 }
+
+.badges {
+  margin-top: -2em;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+.is-badge {
+  background-color: #FF862F;
+  color: #161616;
+}
+.cs-badge {
+  background-color: #29ABCA;
+  color: #161616;
+}
+.ai-badge {
+  background-color: #FC6255;
+  color: #161616;
+}
+[data-md-color-scheme="default"] .is-badge,
+[data-md-color-scheme="default"] .cs-badge,
+[data-md-color-scheme="default"] .ai-badge {
+  color: #FFFFFF;
+}
