@@ -201,11 +201,11 @@ body[data-md-prefers-color-scheme=true] .md-icon .unknown-mode {
   background-color: #FF862F;
   color: #161616;
 }
-.cs-badge {
+.cs-badge, .general-badge {
   background-color: #29ABCA;
   color: #161616;
 }
-.ai-badge {
+.ai-badge, .cross-badge {
   background-color: #FC6255;
   color: #161616;
 }
