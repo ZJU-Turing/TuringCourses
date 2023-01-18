@@ -64,6 +64,9 @@
 - 尽量规范编写 markdown，避免出现格式错误
     - 如果你实在搞不定，不要担心，尽管上传，我们发现后会及时进行修改
 
+!!! note
+    针对还完全没有内容的空页面，我们提供了一个[模板](../template/)，可以在模板的[源码](https://github.com/ZJU-Turing/TuringCourses/blob/master/docs/template.md?plain=1)基础上修改使用。
+
 ### 贡献方式
 #### Pull Request（推荐）
 推荐通过 PR（即 Pull Request）的形式来进行贡献，具体流程：
