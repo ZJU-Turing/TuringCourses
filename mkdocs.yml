@@ -80,6 +80,7 @@ nav:
     - major_elective/index.md
   - 其他课程:
     - others/index.md
+    - 常微分方程: others/ode/index.md
   - 书评专区:
     - readings/index.md
 
