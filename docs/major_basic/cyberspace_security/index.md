@@ -31,50 +31,43 @@
 
     张秉晟老师研究方向包括密码学、区块链技术、移动安全等。在课程中授课部分为 **密码与数据安全** 。
 
-## 课程教材
-
-本课程暂无选用教材。
-
 ## 分数构成
 
-这门课的考核方式经过修改之后，现在的考核方式为：
+这门课的考核方式经过修改之后，现在的考核方式为：平时成绩（20%）+ 课程实践与报告（80%）
 
-=== "平时成绩(20%)"
-    平时成绩包括课堂到课率和作业情况，虽然 ~~21 级好像这两部分都没有了~~ 。
-=== "课程实践与报告(80%)"
-    这部分是类似课程大作业的方式，我们可以选择某一方向进行调研分析或者实践（如功能实现或者漏洞复现），然后形成一篇报告。选题的方向包括但不限于：
+平时成绩包括课堂到课率和作业情况，虽然 ~~21 级好像这两部分都没有了~~ 。课程报告是类似大作业的方式，我们可以选择某一方向进行调研分析或者实践（如功能实现或者漏洞复现），然后形成一篇报告。选题的方向包括但不限于：
 
-    === "Network Security"
+=== "Network Security"
 
-        - Eavesdropping
-        - Intrusion Detection
-        - Honeypot or Sendbox
+    - Eavesdropping
+    - Intrusion Detection
+    - Honeypot or Sendbox
 
-    === "loT Security"
+=== "loT Security"
 
-        - Side Channel attack
-        - Sensor Security
-        - Deepfake via signals
+    - Side Channel attack
+    - Sensor Security
+    - Deepfake via signals
 
-    === "System Security"
+=== "System Security"
 
-        - Operating system security
-        - Software attack & defense
-        - Firmware security
+    - Operating system security
+    - Software attack & defense
+    - Firmware security
 
-    === "Cryptography & Data Security"
+=== "Cryptography & Data Security"
 
-        - Historical cipher
-        - Introduction to modern cryptography
-        - Secure multi-party computation
-        - Privacy preserving machine learning
-        - Quantum cryptography
+    - Historical cipher
+    - Introduction to modern cryptography
+    - Secure multi-party computation
+    - Privacy preserving machine learning
+    - Quantum cryptography
 
-    不同的选题方向对应不同的老师，提交的方式、要求与时间也有可能不同，具体的内容请听新学期老师的讲解，或直接对老师进行询问。按部分同学的课程经验，张秉晟老师的课程实践与报告相对而言比较求是，常瑞老师的相对比较宽松，但是总体而言差距不算特别大，可以根据个人的兴趣以及个人对于课程内容的理解程度来选择。
+不同的选题方向对应不同的老师，提交的方式、要求与时间也有可能不同，具体的内容请听新学期老师的讲解，或直接对老师进行询问。按部分同学的课程经验，张秉晟老师的课题应该是确定的，目标很清晰，其他老师的则需要自行选题自行研究。常瑞老师给分相对比较宽松，而且范围相对较大，但是总体而言差距不算特别大，可以根据个人的兴趣以及个人对于课程内容的理解程度来选择。
 
 ## 参考内容
 
-- 鹤翔万里 的 [课程报告](https://note.tonycrane.cc/sec/vulns/log4j/) ( https://note.tonycrane.cc/sec/vulns/log4j/ )
+- xg 的课程报告（仅供参考）：https://note.tonycrane.cc/sec/vulns/log4j/
 
 ## 课程学习建议
 
@@ -86,8 +79,8 @@
 
 ### 实践部分
 
-这部分在 [分数构成](#_6) 中已经提到了，是相当重要的一部分考核内容。如果有可能的话还是尽量选择自己感兴趣的方向进行实践，这样会更有动力去完成这部分的内容，完成度也会更高。但是再次提醒一下，要注意老师的要求和时间安排，不要因为自己的兴趣而忽略了这些内容。
+这部分在分数构成中已经提到了，是相当重要的一部分考核内容。如果有可能的话还是尽量选择自己感兴趣的方向进行实践，这样会更有动力去完成这部分的内容，完成度也会更高。但是再次提醒一下，要注意老师的要求和时间安排，不要因为自己的兴趣而忽略了这些内容。
 
 ### 总结
 
-总的来说，这算是一门比较轻松的课程，如果你确实对课程内容不感兴趣且愿意的话，完全是可以在合理的尺度内将这门课程的部分时间分配到大一春夏学期的其他课程上的，例如数学分析（甲）Ⅱ（H）、线性代数Ⅱ（H）、普通物理学Ⅰ（H）等数理课程上。
+总的来说，这算是一门比较轻松的课程，如果你确实对课程内容不感兴趣且愿意的话，完全是可以在合理的尺度内将这门课程的部分时间分配到大一春夏学期的其他课程上的，例如数学分析（甲）Ⅱ（H）、线性代数 Ⅱ（H）、普通物理学 Ⅰ（H）等数理课程上。
