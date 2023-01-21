@@ -23,15 +23,14 @@
 - *《计算机组成与设计：硬件/软件接口》Computer Organization and Design: The Hardware/Software Interface, RISC-V Edition*  
     主要是 cache 部分的基础按照此教材讲解。这本书较为啰嗦，但是如果一些问题希望了解细节还是需要参考。
     
-- *《计算机体系结构：量化研究方法》Computer Architecture A Quantitative Approach (6th Edition)*
-
+- *《计算机体系结构：量化研究方法》Computer Architecture A Quantitative Approach (6th Edition)*  
     体系结构的经典之作，作者与计组一致，是两位图灵奖得主 John L. Hennessy 与 David A. Patterson，作品风格仍然有些啰嗦且部分内容逻辑不清晰，但部分内容仍然值得参考，特别是动态调度部分，基本的思路等教材有完整的阐述。当然对体系结构有兴趣也可以看后面的 DLP、TLP、GPU 等内容。
 
 * *Operating System Concepts, 10th Edition*  
-  软件部分的教材，浙大 OS 都基于本教材（译者郑扣根老师是浙江大学教授，现在主要讲授计算机网络与研究生计算理论课程），20 级作业来源于此。
+    软件部分的教材，浙大 OS 都基于本教材（译者郑扣根老师是浙江大学教授，现在主要讲授计算机网络与研究生计算理论课程），20 级作业来源于此。
 
 * *Operating Systems: Three Easy Pieces*  
-  即 OSTEP，老师和各学长都强烈推荐的一本操作系统书，是完全免费的，网站是 https://pages.cs.wisc.edu/~remzi/OSTEP/。
+    即 OSTEP，老师和各学长都强烈推荐的一本操作系统书，是完全免费的，网站是 https://pages.cs.wisc.edu/~remzi/OSTEP/。
 
 * *《深入理解计算机系统》Computer System: A Programmer’s Perspective*  
-  这本书的介绍链接的部分较为细致，可以参考了解，甚至可以对软件安全有一定理解上的帮助。
+    这本书的介绍链接的部分较为细致，可以参考了解，甚至可以对软件安全有一定理解上的帮助。
