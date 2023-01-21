@@ -84,6 +84,7 @@ nav:
     - 常微分方程: others/ode/index.md
   - 书评专区:
     - readings/index.md
+    - 《当我谈跑步时，我在想什么》: readings/runandthink/index.md
 
 theme:
   name: 'material'
