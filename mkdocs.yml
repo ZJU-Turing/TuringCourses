@@ -77,6 +77,9 @@ nav:
     - 人工智能安全: major_mandatory/ai_security/index.md
     - 无线与物理网安全基础: major_mandatory/wireless_iot_security/index.md
     - 系统安全原理和实践: major_mandatory/system_security/index.md
+  - 专业模块课:
+    - major_module/index.md
+    - 数值分析: major_module/numerical_analysis/index.md
   - 专业选修课:
     - major_elective/index.md
   - 其他课程:
