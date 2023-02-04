@@ -81,13 +81,13 @@ nav:
     - major_module/index.md
     - 数值分析: major_module/numerical_analysis/index.md
     - 应用运筹学基础: major_module/operations_research/index.md
-    - 程序设计方法学: major_module/programming_methodology/index.md
-    - 计算机科学思想史: major_module/intellectual_history/index.md
+    - 程序设计方法学: major_module/programming_principle/index.md
+    - 计算机科学思想史: major_module/history_of_cs_ideas/index.md
     - 数据挖掘导论: major_module/data_mining/index.md
     - 汇编与接口: major_module/assembly_interface/index.md
     - 嵌入式系统: major_module/embedded_system/index.md
     - 并行计算与多核编程: major_module/parallel_computing/index.md
-    - 计算机系统综合实现: major_module/realization_of_system/index.md
+    - 计算机系统综合实现: major_module/system_comprehensive_practice/index.md
     - 分布式计算: major_module/distributed_computing/index.md
     - 大数据存储技术: major_module/big_data_storage/index.md
   - 专业选修课:
