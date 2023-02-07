@@ -26,6 +26,7 @@
 
 这门课的大作业是三维重建 + 位姿估计。一般使用 [Hierachical Localization](https://github.com/cvg/Hierarchical-Localization) 就可以得到一个比较好的结果，稍微微调一下参数做一下预处理也是可以的。虽然是打榜的形式，但是事实上按照笔者的体验分差并不明显，最后会有一个课堂展示 + 验收。
 
+<<<<<<< HEAD
 课程有实验课，实验普遍比较简单，可以不去上课。当然，有一次课会讲怎么使用 COLMAP ，那一次课前周老师也会提醒，也建议稍微去听一下，虽然只看文档也能折腾明白。6 次实验的内容分别是：
 
 1. matplotlib, OpenCV 和 Open3d 的基本使用方式；
@@ -34,6 +35,9 @@
 4. 图片匹配和图片拼接：Harris 角点检测、SIFT 和 RANSAC 来计算单映变换；
 5. 使用 COLMAP 完成 SfM 和（可选的）MVS；
 6. 使用 mmdetection 完成目标检测。
+=======
+课程有实验课，实验普遍比较简单，可以不去上课。当然，有一次课会讲怎么使用 COLMAP ，那一次课前周老师也会提醒，也建议稍微去听一下，虽然只看文档也能折腾明白。
+>>>>>>> 88aae9e (add computer vision)
 
 期末考试不考后面 7 8 9 10 节的内容，当然，周老师会在复习课上讲明考试范围，这个范围仅供参考，复习课讲的更加细致。20 级的考试大题印象中有一道图像拼接和一道三维重建，考的都比较基础，给分普遍似乎也不错，不用过于担心。
 
@@ -63,4 +67,8 @@
 
 ## 参考笔记
 
+<<<<<<< HEAD
 - [lhj 的笔记](https://frightenedfoxcn.github.io/notes/qnotes/computer_vision/)
+=======
+[笔者个人的笔记](https://frightenedfoxcn.github.io/notes/qnotes/computer_vision/)
+>>>>>>> 88aae9e (add computer vision)
