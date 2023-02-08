@@ -92,6 +92,7 @@ nav:
     - 大数据存储技术: major_module/big_data_storage/index.md
   - 专业选修课:
     - major_elective/index.md
+    - 图像信息处理: major_elective/digital_image_processing/index.md
   - 其他课程:
     - others/index.md
     - 常微分方程: others/ode/index.md
