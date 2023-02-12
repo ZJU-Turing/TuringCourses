@@ -43,7 +43,7 @@
 
 ## 推荐资料
 
-- [Coursera 有一份关于计算神经科学的课程](https://www.coursera.org/learn/computational-neuroscience)，这份课程笔者看过，是比较推荐的；
+- Coursera 有一份[关于计算神经科学的课程](https://www.coursera.org/learn/computational-neuroscience)，这份课程笔者看过，是比较推荐的；
 - Thomas J. Anastasio *Tutorial on Neural Systems Modelling*，经典教材，主要讲的是怎么写代码，或许看着会更加亲切一点；
 - Eliasmith, Chris; Anderson, Charles H. *Neural engineering: Representation, computation, and dynamics in neurobiological systems*，比较经典的课本；
 - Michael A. Arbib; Shun-ichi Amari; Prudence H. Arbib *The Handbook of Brain Theory and Neural Networks*，手册，也是主要是计算神经科学有关的；
@@ -60,4 +60,4 @@
 
 ## 后续课程
 
-[唐老师的《脑启发人工智能导论课程》](../major_elective/brain_inspired_ai)，内容和这门课差不多，合作的祁玉老师讲课水平不错，需要完成几个很简单的作业，作业的代码在 PPT 中几乎都已经给出。这门课是 AI 的选修课，事少给分好，建议选修。
+唐老师的[《脑启发人工智能导论》](../major_elective/brain_inspired_ai)，内容和这门课差不多，合作的祁玉老师讲课水平不错，需要完成几个很简单的作业，作业的代码在 PPT 中几乎都已经给出。这门课是 AI 的选修课，事少给分好，建议选修。
