@@ -44,6 +44,7 @@
 ## 推荐资料
 
 - [Coursera 有一份关于计算神经科学的课程](https://www.coursera.org/learn/computational-neuroscience)，这份课程笔者看过，是比较推荐的；
+- Thomas J. Anastasio *Tutorial on Neural Systems Modelling*，经典教材，主要讲的是怎么写代码，或许看着会更加亲切一点；
 - Eliasmith, Chris; Anderson, Charles H. *Neural engineering: Representation, computation, and dynamics in neurobiological systems*，比较经典的课本；
 - Michael A. Arbib; Shun-ichi Amari; Prudence H. Arbib *The Handbook of Brain Theory and Neural Networks*，手册，也是主要是计算神经科学有关的；
 - Gerstner, W.; Kistler, W.; Naud, R.; Paninski, L. *Neuronal Dynamics*，神经动力学，需要一些数学基础；
