@@ -50,3 +50,13 @@ Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 
 如果对编译优化感兴趣，可以看“鲸书”，或者其他涉及程序分析、静态分析的书籍和论文。
 
 这门课的 Project 设计非常不合理，小 lab 用的是很老的 flex 和 bison，虽然很简单，但是很多人写了之后形成了惯性，也用在大作业里面（然后就会发现面对复杂一点的语法就非常不好用，不灵活，很难调试）。大作业没有任何指导文档，但是要求能“跑起来”，大家要么使用类似 LLVM 的框架帮你生成汇编，要么直接使用 interpreter 解释执行 AST。前者对于不熟悉 LLVM、Linker、Loader 的人来说会相对困难，后者相对比较简单一点，建议大家提早开工，不要拖太久。
+
+## 相关课程与书籍推荐
+
+该部分仅面向认为课程内容过少，对编译领域感兴趣，想要深入学习相关技术的同学，只建议有余力的情况下学习:
+
+- [CMU 15-745](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s19/www/)，研究生课程，主要内容是使用 LLVM 编写优化 Pass，能够熟悉 LLVM 的架构，主要问题是近几年的 slides 和 materials 需要 CMU 教职工身份认证，可以看 19 年的。如果你有兴趣，可以提前在假期的时候先写一写，这样对付我们学校的大作业相对能比较从容。
+- [Static Program Analysis - DC888](https://homepages.dcc.ufmg.br/~fernando/classes/dcc888/)，经典的面向编译器分析和编译优化的课程
+- 中科大的编译原理课程，大作业似乎是自选中端和后端，设计 SSA, Phi, RA, Optimize, Lowering 等话题，内容丰富，可参考他们的 [大作业展示](https://space.bilibili.com/273391839)。
+- 北京大学熊老师的 [程序分析课程](https://xiongyingfei.github.io/SA/2022/main.htm)
+- 相关延伸的和 AI 相关的如 tvm，需要有一定 HPC 经验。
