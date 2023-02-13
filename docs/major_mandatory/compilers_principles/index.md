@@ -55,8 +55,10 @@ Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 
 
 该部分仅面向认为课程内容过少，对编译领域感兴趣，想要深入学习相关技术的同学，只建议有余力的情况下学习:
 
-- [CMU 15-745](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s19/www/)，研究生课程，主要内容是使用 LLVM 编写优化 Pass，能够熟悉 LLVM 的架构，主要问题是近几年的 slides 和 materials 需要 CMU 教职工身份认证，可以看 19 年的。如果你有兴趣，可以提前在假期的时候先写一写，这样对付我们学校的大作业相对能比较从容。
+- [THU Rust](https://lab.cs.tsinghua.edu.cn/rust/)，清华大学 Rust 程序设计课程。
+- [CMU 15-745](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s19/www/)，研究生课程，主要内容是使用 LLVM 编写优化 Pass，能够熟悉 LLVM 的架构，主要问题是近几年的 slides 和 materials 需要 CMU 教职工身份认证，没有资源的话可以看 19 年的。如果你有兴趣，可以提前在假期的时候先写一写，这样对付我们学校的大作业相对能比较从容。
+- [LLVM 笔记](https://www.cnblogs.com/Five100Miles/)，LLVM 一些核心概念和重要源码的解读，熟悉 C++ 的同学初学 LLVM 可以先看这个。
 - [Static Program Analysis - DC888](https://homepages.dcc.ufmg.br/~fernando/classes/dcc888/)，经典的面向编译器分析和编译优化的课程
-- 中科大的编译原理课程，大作业似乎是自选中端和后端，设计 SSA, Phi, RA, Optimize, Lowering 等话题，内容丰富，可参考他们的 [大作业展示](https://space.bilibili.com/273391839)。
+- 中科大的编译原理课程，大作业是从中端和后端的几个 topic 中选一查阅资料加代码实现，似乎有给框架，涉及 SSA, Phi, RA, Optimize, Lowering 等话题，内容丰富，可参考他们的 [大作业展示](https://space.bilibili.com/273391839)。
 - 北京大学熊老师的 [程序分析课程](https://xiongyingfei.github.io/SA/2022/main.htm)
-- 相关延伸的和 AI 相关的如 tvm，需要有一定 HPC 经验。
+- 相关延伸的和 AI 相关的如 [tvm](https://tvm.apache.org/)，需要有一定 HPC 经验。
