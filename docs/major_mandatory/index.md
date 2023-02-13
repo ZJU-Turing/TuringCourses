@@ -17,7 +17,7 @@
 |[计算机体系结构](computer_architecture/)|3.5|三（秋冬）|✓|×|×||
 |[软件工程](software_engineering/)|2.5|三（春夏）|✓|×|×||
 |[编译原理](compilers_principles/)|4.0|三（春夏）|✓|?|✓|较完善✅|
-|[认知神经科学](cognitive_neuroscience/)|3.0|二（春夏）|×|✓|×||
+|[认知神经科学导论](cognitive_neuroscience/)|3.0|二（春夏）|×|✓|×|较完善✅|
 |[机器学习](machine_learning/)|4.0|三（秋冬）|×|✓|×|较完善✅|
 |[人工智能伦理与安全](ai_ethics_security/)|2.0|三（春夏）|×|✓|×||
 |[人工智能实践](ai_practice/)|3.0|四（秋冬）|×|✓|×||
