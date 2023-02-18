@@ -64,6 +64,9 @@
 - 修佬的数逻笔记：https://note.isshikih.top/cour_note/D2QD_DigitalDesign/  
     非图灵的数逻课程，内容差不多，可以参考一下
 
+## 历年回忆卷
+- [（21 级）2022 秋冬期末回忆卷](%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%802022%E7%A7%8B%E5%86%AC%E6%9C%9F%E6%9C%AB%E5%9B%9E%E5%BF%86%E5%8D%B7.pdf)
+
 ## 课程学习建议
 
 ### 理论部分
