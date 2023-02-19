@@ -1,0 +1,48 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\linespread{1.5}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.66,top=0.2in,bottom=1.5in,left=1in,right=1in}
+
+\title{\bf 数学分析（甲）I（H）2022秋冬期末}
+\author{图灵回忆卷}
+\date{2023年2月18日}
+
+\begin{document}
+    \maketitle 
+    
+    \noindent{\heiti\textbf{一、(30分)}}计算：\vspace{1em}
+
+    \textbf{1.}$\displaystyle\lim_{x \to 1}(\dfrac{1}{x -1 } - \dfrac{1}{\ln x})$.\vspace{1em}
+
+    \textbf{2.}$\displaystyle\lim_{n \to +\infty}\dfrac{1}{n}\sum_{k=1}^n \dfrac{\cos(\dfrac kn)}{1 + \sin(\dfrac kn)}$.\vspace{1em}
+
+    % \textbf{3.}$f(x)=\begin{cases}\dfrac{\sin x}{x}, &x\neq 0\\1, &x=0\\\end{cases}$，求$f'(0)$和$f''(0)$.\vspace{1em}
+    \textbf{3.}不定积分 $\displaystyle\int \dfrac{\ln(x + 1)}{(x + 2) ^ 2}\ \mathrm dx$.\vspace{1em}
+
+    \textbf{4.}$y=\displaystyle\int_{-\sqrt3}^x\sqrt{3 - t^2}\ \mathrm dt$在$x \in [-\sqrt3,\ \sqrt3]$上的弧长.\vspace{1em}
+
+    \textbf{5.}反常积分$\displaystyle\int_{0}^{+\infty}e^{-x}\cos x\ \mathrm dx$.\vspace{1em}
+
+    \noindent{\heiti\textbf{二、(10分)}}叙述确界原理，并使用确界原理证明：有界函数$f(x)$在$(0,\ 1)$上单调递增，则极限$\displaystyle\lim_{x \to 1-} f(x)$存在.\vspace{0.5em}
+
+    \noindent{\heiti\textbf{三、(12分)}}已知 $g(x)$ 有二阶连续导数，$g(0) = 1$，$g'(0)=0$，且 $f(x) = \begin{cases}\dfrac{g(x) - \cos x}{x}&x \neq 0\\a&x=0\\\end{cases}$
+    
+    \textbf{1.}若$f(x)$在$x=0$处连续，求$a$;
+
+    \textbf{2.}已知$f(x)$在$x=0$处连续，讨论$f'(x)$在$x=0$处的连续性.\vspace{0.5em}
+
+    \noindent{\heiti\textbf{四、(10分)}}叙述函数$f(x)$在区间$I$上一致连续的定义，并证明$f(x)=x^{\frac{1}{2023}}$在$[0,\ +\infty)$上一致连续.\vspace{0.5em}
+    
+    \noindent{\heiti\textbf{五、(10分)}}已知连续的非常值函数$f(x)$满足$\displaystyle\lim_{x\to+\infty}f(x)=f(0)$，证明$f(x)$在$[0,\ +\infty)$上有最大值或最小值.\vspace{0.5em}
+    
+    \noindent{\heiti\textbf{六、(10分)}}叙述闭区间套定理，并使用闭区间套定理证明闭区间上连续函数的零点存在性定理：$f(x)$在$[a,\ b]$连续，$f(a)f(b)<0$，则$\exists c \in (a,\ b)$使得$f(c)=0$.\vspace{0.5em}
+    
+    \noindent{\heiti\textbf{七、(10分)}}已知$f(x)$在$(-1,\ 2)$上有二阶导数，且$f'(\frac12)=0$.证明：
+    $$\exists \xi \in (0,\ 1)\text{ 使得}\ |f''(\xi)| \ge 4|f(1) - f(0)|\text{.}$$
+    
+    \noindent{\heiti\textbf{八、(8分)}}已知$f(x)$在$[0,\ 1]$上有二阶连续导数，证明：
+    $$ \displaystyle\int_0^1 x^nf(x)\ \mathrm dx = \dfrac{f(1)}n-\dfrac{f(1) + f'(1)}{n^2}+o(\dfrac1{n^2})\quad(n\to+\infty)$$
+
+    
+\end{document}
