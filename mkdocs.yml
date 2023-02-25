@@ -94,6 +94,17 @@ nav:
     - major_elective/index.md
     - 图像信息处理: major_elective/digital_image_processing/index.md
     - 脑启发人工智能导论: major_elective/brain_inspired_ai/index.md
+  - 短学期课程:
+    - short_term/index.md
+    - 固定课程:
+      - short_term/index.md
+      - 计算机系统概论: short_term/ics/index.md
+      - 工程实践: short_term/engineering_practice/index.md
+    - 课程综合实践 Ⅰ:
+      - short_term/index.md
+      - 超算实训: short_term/hpc/index.md
+      - 算法竞赛集训: short_term/acm/index.md
+      - 安全攻防实践: short_term/ctf/index.md
   - 其他课程:
     - others/index.md
     - 常微分方程: others/ode/index.md
@@ -118,6 +129,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.top
+    - navigation.sections
   font:
     # text: Noto Serif SC
     code: JetBrains Mono
