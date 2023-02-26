@@ -47,15 +47,15 @@
 
 还有一些可以看的网课：
 
-+ 华中科技大学 汇编语言程序设计 https://www.bilibili.com/video/BV1Nt411V7fa
-+ 西安交通大学 微机原理与接口技术 https://www.icourse163.org/course/xjtu-1001647001 （不全讲汇编，侧重硬件）
-+ 清华大学 汇编语言程序设计 https://www.xuetangx.com/course/THU08091000320/14767518（推荐）
++ 华中科技大学：[汇编语言程序设计](https://www.bilibili.com/video/BV1Nt411V7fa)
++ 西安交通大学：[微机原理与接口技术](https://www.icourse163.org/course/xjtu-1001647001)（不全讲汇编，侧重硬件）
++ 清华大学：[汇编语言程序设计](https://www.xuetangx.com/course/THU08091000320/14767518)（推荐）
 
 一些工具：
 
-- EMU8086-Microprocessor Emulator: https://emu8086-microprocessor-emulator.softonic.com/
-- Godbolt compiler explorer: https://www.godbolt.org
-- x86 Processor information: www.sandpile.org
+- [EMU8086-Microprocessor Emulator](https://emu8086-microprocessor-emulator.softonic.com/)
+- [Godbolt Compiler Explorer](https://www.godbolt.org)
+- [x86 Processor Information](https://www.sandpile.org)
 
 ## 参考笔记
 - xg 的汇编笔记：https://note.tonycrane.cc/cs/pl/asm/
