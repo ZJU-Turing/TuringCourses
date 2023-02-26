@@ -29,15 +29,37 @@
 期末考试是纯笔试，有判断、填空、阅读程序、补全程序等类型的题目。考试偏理论，需要好好复习一下，特别是 21 年保护模式考了很多，不复习的话根本不知道怎么答。以及课上讲的指令一定都要清楚作用是什么，否则可能所有程序都读不懂（因为每个程序都比较综合）。
 
 ## 推荐书单
-- *《汇编语言》*王爽，清华大学出版社
-- *《软件调试》*张银奎
+- *《汇编语言》* 王爽，清华大学出版社（经典汇编课本，第一推荐）
+- *《x86汇编语言-从实模式到保护模式》* 李忠，电子工业出版社（经典汇编课本，并列第一推荐）
+- *《软件调试》* 张银奎（各类底层硬件机制和调试方法）
+- *《汇编语言程序设计》* 白洪欢，科学出版社（已绝版，就是老师自己印的那本）
+- *《IBM-PC汇编语言程序设计》* 沈美明，清华大学出版社（比较老的中文教材）
+- *《Windows汇编语言程序设计教程》* 谭毓安 ，电子工业出版社（比较老的中文教材）
 - *Professional Assembly Language*, Richard Blum
 - *The Art of Assembly Language*, Randall Hyde
 - *The Art of 64-bit Assembly*, Randall Hyde
-- *Intel 80386 Programmer’s Manual*, Intel
+- *Assembly Language for x86 processors*, Kip R. Irvine（一本优秀、内容丰富的汇编书籍，电子工业出版社的黑皮系列里有。目前最新版是第 8 版）
+- *Modern x86 Assembly Language Programming*, Daniel Kusswurm（少数能称得上 Modern 的汇编书）
+- *Intel Microprocessors*, Barry B. Brey（汇编语言、处理器架构、接口通信等都有涉及，最新为第 8 版）
+- *Practical Malware Analysis*, Michael Sikorski,  Andrew Honig（二进制分析，病毒分析，逆向工程，侧重实战）
+- [*Intel 80386 Programmer’s Manual*](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm), *[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)* 
+- *[Microsoft Macro Assembler reference](https://learn.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference?view=msvc-170)*
+
+还有一些可以看的网课：
+
++ 华中科技大学：[汇编语言程序设计](https://www.bilibili.com/video/BV1Nt411V7fa)
++ 西安交通大学：[微机原理与接口技术](https://www.icourse163.org/course/xjtu-1001647001)（不全讲汇编，侧重硬件）
++ 清华大学：[汇编语言程序设计](https://www.xuetangx.com/course/THU08091000320/14767518)（推荐）
+
+一些工具：
+
+- [EMU8086-Microprocessor Emulator](https://emu8086-microprocessor-emulator.softonic.com/)
+- [Godbolt Compiler Explorer](https://www.godbolt.org)
+- [x86 Processor Information](https://www.sandpile.org)
 
 ## 参考笔记
 - xg 的汇编笔记：https://note.tonycrane.cc/cs/pl/asm/
+- https://www.cc98.org/topic/5239637
 
 ## 学长组课程学习建议
 
