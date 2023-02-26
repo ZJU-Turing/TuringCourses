@@ -24,7 +24,7 @@
 |[计算机组成与设计](computer_organization/)|4.5|二（春夏）|✓|||
 |[面向对象程序设计](object_oriented_programming/)|2.5|二（春夏）|✓|✓|较完善✅|
 |[计算机系统 Ⅲ](computer_system3/)|5.5|二（春夏）||✓|较完善✅|
-|[理论计算机科学导引](theoretical_computer/)|2.0|三（秋冬）|✓|✓||
+|[理论计算机科学导引](theory_of_computation/)|2.0|三（秋冬）|✓|✓|较完善✅|
 |[优化基本理论与方法](optimization_theory/)|2.0|三（秋冬）|✓|✓||
 |[操作系统原理与实践](operating_system/)|5.0|三（秋冬）|✓|||
 
