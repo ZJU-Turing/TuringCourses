@@ -18,7 +18,7 @@
 |课程名称|学分|建议学年学期|模块|资料情况|
 |:--|:--|:--|:--|:--|
 |[数值分析](numerical_analysis/)|2.5|二（秋冬）|计算机科学|较完善✅|
-|[应用运筹学基础](applied_operations_research/)|3.5|三（秋冬）|计算机科学||
+|[应用运筹学基础](applied_operations_research/)|3.5|三（秋冬）|计算机科学|较完善✅|
 |[程序设计方法学](programming_principle/)|2.0|三（秋冬）|计算机科学||
 |[计算机科学思想史](history_of_cs_ideas/)|2.0|三（春夏）|计算机科学||
 |[数据挖掘导论](data_mining/)|2.0|三（夏）|计算机科学||
