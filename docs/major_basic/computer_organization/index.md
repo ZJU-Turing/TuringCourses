@@ -1,6 +1,7 @@
 # 计算机组成与设计
 <div class="badges">
 <span class="badge cs-badge">CS 专业基础</span>
+<span class="badge ai-badge">AI 专业基础</span>
 </div>
 
 ## 课程学习内容
