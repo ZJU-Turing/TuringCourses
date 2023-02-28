@@ -1,9 +1,9 @@
 # 编译原理
 
 <div class="badges">
-<span class="badge is-badge">IS 专业必修</span>
 <span class="badge cs-badge">CS 专业必修</span>
-<span class="badge ai-badge">AI 专业选修</span>
+<span class="badge ai-badge">AI 专业三选一必修</span>
+<span class="badge is-badge">IS 专业必修</span>
 </div>
 
 ## 课程学习内容

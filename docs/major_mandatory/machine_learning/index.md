@@ -1,7 +1,7 @@
 # 机器学习
 
 <div class="badges">
-<span class="badge ai-badge">AI <专业必修></span>
+<span class="badge ai-badge">AI 专业必修</span>
 </div>
 
 ## 课程学习内容

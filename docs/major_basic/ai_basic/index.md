@@ -1,4 +1,10 @@
 # 人工智能基础/引论
+ 
+<div class="badges">
+<span class="badge cs-badge">CS 专业基础</span>
+<span class="badge ai-badge">AI 专业基础</span>
+<span class="badge is-badge">IS 专业基础</span>
+</div>
 
 !!! note
     22 级培养方案中改名为了人工智能引论，还没上课，不清楚会进行什么具体修改。
