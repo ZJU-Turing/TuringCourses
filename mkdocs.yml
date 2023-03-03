@@ -49,7 +49,7 @@ nav:
     - 计算机组成与设计: major_basic/computer_organization/index.md
     - 面向对象程序设计: major_basic/object_oriented_programming/index.md
     - 理论计算机科学导引: major_basic/theory_of_computation/index.md
-    - 优化基本理论与方法: major_basic/optimization_theory/index.md
+    - 优化基本理论与方法: major_basic/convex_optimization/index.md
     - 操作系统原理与实践: major_basic/operating_system/index.md
     - 计算机系统 Ⅰ: major_basic/computer_system1/index.md
     - 计算机系统 Ⅱ: major_basic/computer_system2/index.md
