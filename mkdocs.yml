@@ -112,6 +112,7 @@ nav:
   - 书评专区:
     - readings/index.md
     - 《当我谈跑步时，我在想什么》: readings/runandthink/index.md
+    - 《霍乱时期的爱情》的美感溯源 : readings/cholera/index.md
 
 theme:
   name: 'material'
