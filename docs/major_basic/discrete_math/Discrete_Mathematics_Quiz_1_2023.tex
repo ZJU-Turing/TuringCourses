@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{amsfonts,amssymb}
+\geometry{a4paper,left=2cm,right=2cm,top=4cm}
+\title{Discrete Mathematics Quiz 1\\\small{2022 - 2023 春夏学期}}
+\author{Shd0wash}
+\date{\today}
+\setlength{\parskip}{1em}
+\setlength{\baselineskip}{20pt}
+\setlength{\parindent}{0em}
+\begin{document}
+
+\maketitle
+
+1. Determine whether the following statements are true or false. (30\%)\\
+(\textbf{5 points} for a correct answer, \textbf{0 points} for a blank answer, \textbf{-2 points for an incorrect answer})  
+
+(a) The following two  propositions are logicially equivalent:  
+\[\forall x P(x) \vee \exists x Q(x), \forall x \exists y (P(x) \vee Q(y))\]
+where all quantifiers have the same nonempty domain.\\
+(b) If $\mathit{A}, \mathit{B}\enspace and \enspace \mathit{C}$ are sets, then $(A - C) - (B - C) = A - B$.\\
+(c) The set of real numbers that are solutions of cubic equations $ax^{3} + bx^{2} + cx + d = 0$, where \textit{a, b, c, d} are integers, is uncountable.\\
+(d) If $P(A)\in P(B)$, then $A\in B$.\\
+(e) The formula $\neg (p\rightarrow q) \wedge q$ is a tautology.\\
+(f) There exists a one-to-one function from $\mathbb{R}$ to $\mathbb{Z} \times  \mathbb{Z}$ , where $\mathbb{R}$ is the set of real numbers and $\mathbb{Z}$ is the set of integers.
+
+2. Single choice questions. (5\%)
+
+Which of the following statements is true?\\
+A. $\forall x(P(x) \wedge Q(x)) \equiv \forall x P(x) \wedge \forall x Q(x)$\\
+B. $\exists x(P(x) \wedge Q(x)) \equiv \exists x P(x) \wedge \exists x Q(x)$\\
+C. $\forall x(P(x) \rightarrow Q(x)) \equiv \forall x P(x) \rightarrow \forall x Q(x)$\\
+D. $\exists x(P(x) \rightarrow Q(x)) \equiv \exists x P(x) \rightarrow \exists x Q(x)$
+
+3. Write a proposition equivalent to $(p \wedge q)$,\\
+(a) using only $p, q, \neg $, and the connective $\vee$. (5\%)\\
+(b) using only $p, q$, and the connective $\downarrow$. (5\%)\\
+($``\downarrow"$ represents NOR. The proposition \textit{p} NOR \textit{q} is true when both \textit{p} and \textit{q} are false, and it is false otherwise)  
+
+4. Put the functions below in order so that each function is big-$\mathit{O}$ of the next function on the list. (8\%)\\
+\begin{align*}
+    f_{1}(n) &= (1.2)^{n}  &f_{2}(n) &= 7n^{6} + n + 323 & f_{3}(n) &= (\log n)^{3} & f_{4}(n) &= 3^{n} & f_{5}(n) &= \log(\log n) \\
+    f_{6}(n) &= n^{2}(\log n)^{3} & f_{7}(n) &= 3^{n}(n^{3} + 1) & f_{8}(n) &= n^{3} + n(\log n)^{2} & f_{9}(n) &= 1000000 & f_{10}(n) &= 10n! &
+\end{align*}  
+
+5.\\ 
+(a) Show the full conjunctive normal form of $(p\leftrightarrow \neg r) \rightarrow (q\leftrightarrow r)$. (6\%)\\
+(b) Show the full disjunctive normal form of $(p\leftrightarrow \neg r) \rightarrow (q\leftrightarrow r)$. (6\%)  
+
+6. Let $\mathit{S}$ be a subset of rational numbers, satisfying the following conditions:\\
+(1) If $a\in S, b\in S, then \enspace a + b\in S, ab\in S$;\\
+(2) For any rational number \textit{r}, there is one and only one of the three relationship holds:  
+\[r\in S, \enspace -r\in S, \enspace r = 0.\]
+Prove that $S = \mathbb{Q}^{+}$ ($\mathbb{Q}^{+}$ is the set of positive rational numbers).  
+
+7. Use induction to prove that for all nonnegative integer \textit{n},\\
+(a) $f_{5n}\equiv 0 \pmod 5$, (6\%)\\
+(b) $f^{2}_{n} + f^{2}_{n+1} = f_{2n+1}$, (9\%)\\
+where $f_{i}$ denotes the \textit{i}th Fibonacci number.
+
+8. There are 2 piles of stones that begins with 115 stones and 125 stones respectively. 
+Suppose that two people play a game taking turns removing one, two, or three stones at a time from one of the piles. 
+The person who removes the last stone wins the game. 
+Show that the first player can win the game no matter what the second player does. (8\%) 
+\end{document}  

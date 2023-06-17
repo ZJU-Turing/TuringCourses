@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,top=2cm}
+\title{Discrete Mathematics Quiz 1\\\small{2021 - 2022 \enspace 春夏学期 \enspace 郑文庭班}}
+\author{Shd0wash}
+\date{\today}
+\setlength{\parskip}{1em}
+\setlength{\baselineskip}{20pt}
+\setlength{\parindent}{0em}
+\begin{document}
+
+\maketitle
+
+1. Determine whether the following statements are true of false. (12\%)\\
+(a) The following two propositions are logically equivalent: $p \rightarrow (\neg q \wedge r), \enspace \neg p \vee \neg(r \rightarrow q)$.\\
+(b) If $A$, $B$ and $C$ are sets, then $A - (B \cap C) = (A - B) \cup (A - C)$.\\
+(c) This proposition is a tautology: $((p \rightarrow q) \wedge \neg p) \rightarrow \neg q$.\\
+(d) $\mathrm{P}(A) = \mathrm{P}(B)$, if and only if $A = B$, where $\mathrm{P}(X)$ is the power set of $X$.
+
+2. Suppose the varible $x$ represents students, $y$ represents courses, and $\mathrm{T}(x,y)$ means ``$x$ is taking $y$.'' 
+Translate the statements into symbols. (16\%)\\
+(a) No course is being taken by all students.\\
+(b) Every student is taking at least one course.\\
+(c) Some courses are being taken by no students.\\
+(d) No student is taking all courses.\\
+
+3.\\
+(a) Write a proposition equivalent to $p \vee \neg q$ that uses only $p, \enspace q, \enspace \neg$, and the connective $\wedge$. (4\%)\\
+(b) Write a proposition equivalent to $p \wedge q$ using only $p, \enspace q$, and the connective $|$. (8\%)\\
+(``|'' represents NAND. The proposition $p \enspace | \enspace q$ is true when either $p$ or $q$, or both, are false; and it is false when both $p$ and $q$ are true)
+
+4. There is a proposition formula with three varibles $p, \enspace q, \enspace and \enspace r$ that is true when atmost one of the three varibles is true, 
+and false otherwise.\\
+(a) Express the proposition formula in full disjunctive normal form. (8\%)\\
+(b) Express the proposition formula in full conjunctive normal form. (8\%)
+
+5. Prove that the distribute law $A_{1} \cap (A_{2} \cup \ldots \cup A_{n}) = (A_{1} \cap A_{2}) \cup \ldots \cup (A_{1} \cap A_{n})$ is true for all $n>2$. 
+(12\%)
+
+6. Adapt the Cantor diagonalization argument to show that the set of positive real numbers less than 1 with decimal representations consisting only of 0$s$ 
+and 1$s$ is uncountable. (12\%)
+
+\clearpage
+
+7. Find the ``best'' big-$\mathit{O}$ notation to describe the complexity of the algorithm.\\
+(a) An algorithm that prints all subsets of size three of the set $\{1, \enspace 2, \enspace 3, \enspace \ldots \enspace , \enspace n\}$. (4\%)\\
+(b) The best-case analysis of a linear search of a list of size $n$ (counting the number of comparisons). (4\%)
+
+8. Use mathematical induction to prove that $n^{n+1}>(n + 1)^{n}$ for all positive integer $n \leq 3$. (12\%)
+\end{document}
