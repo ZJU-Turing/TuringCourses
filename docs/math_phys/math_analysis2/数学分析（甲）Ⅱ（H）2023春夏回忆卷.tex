@@ -1,0 +1,48 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.66,top=0.2in,bottom=1.5in,left=1in,right=1in}
+
+\title{\textbf{数学分析（甲）II（H）2022-2023 春夏期末}}
+\author{图灵回忆卷}
+\date{2023 年 6 月 23 日}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、(10 分)}} 叙述函数列 $\{f_n(x)\}$ 在 $ D $ 上一致收敛的定义，并据定义证明函数列 $ \left\{f_n(x) = \sqrt{x^2 + \dfrac{1}{n^4}}\right\} $ 在 $ \mathbb{R} $ 上一致收敛.
+
+\noindent{\heiti\textbf{二、(40 分)}} 计算：
+
+\textbf{1.} 设 $ z = f(x^2e^{-y}, xy) $，函数 $ f $ 在 $ \mathbb{R}^2 $ 有二阶连续偏导数，请计算 $ \dfrac{\partial^2z}{\partial x\partial y} $;
+
+\textbf{2.} 空间曲线 $ \begin{cases} x^2 + y^2 + z^2 = 3 \\ x + 2y + 3z = 0 \end{cases} $ 在点 $ (1, 1, -1) $ 处的切线与法平面; \vspace{-1em}
+
+\textbf{3.} 第一类曲线积分 $ I = \displaystyle\int_\gamma\sqrt{x^2 + y^2 + z^2}\ \mathrm ds $，其中 $ \gamma $ 的参数方程为 $ \begin{cases} x = \cos t \\ y = \sin t \\ z = e^t \end{cases} $，$ t \in [0, \pi] $;
+
+\textbf{4.} 第二类曲线积分 $ I = \displaystyle\int_C (e^x - y^3)\ \mathrm dx + \left(\cos(y^2) + x^3\right)\ \mathrm dy $，其中 $ C = \left\{ (x, y) \mid x^2 + y^2 = 1, y \ge 0 \right\} $ 为单位圆的上半圆，方向为逆时针从 $ (1, 0) $ 到 $ (-1, 0) $;
+
+\textbf{5.} 三重积分 $ I = \displaystyle\iiint_\Omega \sqrt[4]{x^2 + y^2 + z^2}\ \mathrm dx \mathrm dy \mathrm dz $，其中 $ \Omega = \left\{ (x, y, z) \mid x^2 + y^2 + z^2 \le 1 \right\} $ 为单位球.
+
+\noindent{\heiti\textbf{三、(10 分)}} 请证明函数 $ f(x, y) = \sqrt[3]{x^3 + y^3} $ 在 $ (0, 0) $ 处沿任意方向的方向导数都存在，但在 $ (0, 0) $ 处不可微.
+
+\noindent{\heiti\textbf{四、(10 分)}} 请计算幂级数 $ \displaystyle\sum_{n=1}^\infty \left(n + \dfrac{1}{n}\right) x^n $ 的收敛域与和函数.
+
+\noindent{\heiti\textbf{五、(10 分)}} 请证明在 $ (0, 0) $ 的某邻域内存在唯一的可导函数 $ y = \varphi(x) $ 满足 $ \sin y + \dfrac{e^y - e^{-y}}{2} = x $，并求其导函数 $ \varphi'(x) $.
+
+\noindent{\heiti\textbf{六、(10 分)}} 证明：$ \forall x \in (0, \pi) $，$ \displaystyle\sum_{n=1}^\infty \dfrac{\sin nx}{n} = \dfrac{\pi - x}{2} $.
+
+\noindent{\heiti\textbf{七、(10 分)}} 已知 $ f(x) = \displaystyle\sum_{n=2}^\infty \dfrac{\sin nx}{n^2 \ln n} $. 证明：
+
+\textbf{1.} $ f(x) $ 在 $ [0, \pi] $ 上连续;
+
+\textbf{2.} $ \displaystyle\sum_{n=2}^\infty \dfrac{\cos nx}{n \ln n} $ 在 $ (0, \pi) $ 上非一致收敛;
+
+\textbf{3.} $ f(x) $ 在 $ (0, \pi) $ 上可导，且 $ f'(x) = \displaystyle\sum_{n=2}^\infty \dfrac{\cos nx}{n \ln n} $.
+
+\end{document}
