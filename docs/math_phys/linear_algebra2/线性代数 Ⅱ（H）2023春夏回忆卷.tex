@@ -1,0 +1,64 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.66,top=0.8in,bottom=1.5in,left=1in,right=1in}
+
+\title{\textbf{线性代数 II（H）2022-2023 春夏期末}}
+\author{图灵回忆卷}
+\date{2023 年 6 月 28 日}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、(15 分)}} 已知 $ T \in \mathcal{L}(\mathbb{C}^3) $，其对应矩阵为
+\[ \mathbf{A} = \begin{pmatrix} 0 & 0 & 0 \\ 2023 & 0 & 0 \\ 6 & 28 & 0 \end{pmatrix} \]
+
+\textbf{1.} 求 $ \mathbf{A} $ 的 Jordan 标准形（不必求 Jordan 基）;
+
+\textbf{2.} 证明不存在复矩阵 $ \mathbf{B} $ 使得 $ \mathbf{B}^2 = \mathbf{A} $.
+
+\noindent{\heiti\textbf{二、(17 分)}} 已知直线 $ L_1 = \begin{cases} x + y + z - 1 = 0 \\ x - 2y + 2 = 0 \end{cases} $，$ L_2 = \begin{cases} x = 2t \\ y = t + a \\ z = bt + 1 \end{cases} $，试确定 $ a $，$ b $ 满足的条件使得 $ L_1 $，$ L_2 $ 是：
+
+\textbf{1.} 平行直线; \qquad \textbf{2.} 异面直线.
+
+\noindent{\heiti\textbf{三、(18 分)}} 定义在 $ V = \mathbb{R}^3 $ 上的运算
+\[ \langle \boldsymbol{x}, \boldsymbol{y} \rangle_V = x_1 y_1 + x_2 y_2 + (x_2 + x_3)(y_2 + y_3) \]
+其中 $ \boldsymbol{x} = (x_1, x_2, x_3) $，$ \boldsymbol{y} = (y_1, y_2, y_3) $.
+
+\textbf{1.} 验证 $ \langle \cdot, \cdot \rangle_V $ 是 $ \mathbb{R}^3 $ 上的一个内积;
+
+\textbf{2.} 求 $ \mathbb{R}^3 $ 在 $ \langle \cdot, \cdot \rangle_V $ 下的一组标准正交基;
+
+\textbf{3.} 求 $ \boldsymbol{\beta} \in V $ 使得 $ \forall \boldsymbol{x} \in V: x_1 + 2x_2 = \langle \boldsymbol{x}, \boldsymbol{\beta} \rangle_V $.
+
+\noindent{\heiti\textbf{四、(15 分)}} $ T \in \mathcal{L}(V) $ 在一组基 $ \boldsymbol{\varepsilon} = (\varepsilon_1, \varepsilon_2, \varepsilon_3) $ 下的矩阵为
+\[ T(\boldsymbol{\varepsilon}) = (\boldsymbol{\varepsilon}) \begin{pmatrix} 1 & 0 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 2 \end{pmatrix} \]
+求 $ V $ 所有的 $ T $-不变子空间.
+
+\noindent{\heiti\textbf{五、(20 分)}} 试给出下列命题的真伪. 若命题为真，请给出简要证明；若命题为假，请举出反例.
+
+\textbf{1.} $ T \in \mathcal{L}(V) $. 若子空间 $ W \in V $ 在 $ T $ 下不变，则其补空间 $ W' $ 在 $ T $ 下也不变;
+
+\textbf{2.} 定义 $ T \in \mathcal{L}(V, W) : Tv = \langle v, \alpha \rangle \beta,\ \beta \in W $ 对 $ \forall v \in V $ 成立，则 $ T^* w = \langle w, \beta \rangle \alpha,\ \alpha \in V $ 对 $ \forall w \in W $ 成立;
+
+\textbf{3.} $ T \in \mathcal{L}(V) $ 是非幂零算子，满足 $ \operatorname{null} T^{n - 1} \neq \operatorname{null} T^{n - 2} $. 则其极小多项式为
+\[ m(\lambda) = \lambda^{n-1}(\lambda - a) \qquad 0 \neq a \in \mathbb{R} \]
+
+\textbf{4.} $ \mathbf{A} \in \mathbb{R}^{n \times n} $. $ \mathbf{S}_1 = \mathbf{A}^{\mathrm{T}} + \mathbf{A} $，$ \mathbf{S}_2 = \mathbf{A}^{\mathrm{T}} - \mathbf{A} $. 则 $ \mathbf{A} $ 是正规矩阵当且仅当 $ \mathbf{S}_1 \mathbf{S}_2 = \mathbf{S}_2 \mathbf{S}_1 $.
+
+\textbf{5.} $ \mathbf{A} \in \mathbb{C}^{n \times n} $ 是正规矩阵，则 $ \mathbf{A} $ 的实部矩阵和虚部矩阵是对称矩阵.
+
+\noindent{\heiti\textbf{六、(15 分)}} $ T \in \mathcal{L}(V) $. 有极分解 $ T = S \sqrt{G} $，其中 $ S $ 是等距同构，$ G = T^* T $. 证明以下条件等价：
+
+\textbf{1.} $ T $ 是正规算子;
+
+\textbf{2.} $ GS = SG $;
+
+\textbf{3.} $ G $ 的所有特征空间 $ E(\lambda, G) $ 都是 $ S $-不变的.
+
+\end{document}
