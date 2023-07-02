@@ -45,9 +45,9 @@
 - [（21 级）2022 春夏第一次小测（郑文庭班）](Discrete_Mathematics_Quiz_1_2022.pdf)
 - [（21 级）2022 春夏第二次小测（郑文庭班）](Discrete_Mathematics_Quiz_2_2022.pdf)
 - [（21 级）2022 春夏第三次小测（郑文庭班）](Discrete_Mathematics_Quiz_3_2022.pdf)
-- [（21 级）2022 春夏第三次小测参考答案（郑文庭班）](21-22 春夏离散郑文庭班第四次小测参考答案.pdf)
+- [（21 级）2022 春夏第三次小测参考答案（郑文庭班）](https://github.com/Fairicle/TuringCourses/blob/2571ecb6203af702a5f7c1782d2f2aace16b8b27/docs/major_basic/discrete_math/21-22%20%E6%98%A5%E5%A4%8F%E7%A6%BB%E6%95%A3%E9%83%91%E6%96%87%E5%BA%AD%E7%8F%AD%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%B0%8F%E6%B5%8B%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88.pdf)
 - [（21 级）2022 春夏第四次小测（郑文庭班）](Discrete_Mathematics_Quiz_4_2022.pdf)
-- [（21 级）2022 春夏第四次小测参考答案（郑文庭班）](21-22 春夏离散郑文庭班第四次小测参考答案.pdf)
+- [（21 级）2022 春夏第四次小测参考答案（郑文庭班）](https://github.com/Fairicle/TuringCourses/blob/2571ecb6203af702a5f7c1782d2f2aace16b8b27/docs/major_basic/discrete_math/21-22%20%E6%98%A5%E5%A4%8F%E7%A6%BB%E6%95%A3%E9%83%91%E6%96%87%E5%BA%AD%E7%8F%AD%E7%AC%AC%E5%9B%9B%E6%AC%A1%E5%B0%8F%E6%B5%8B%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88.pdf)
 - [（22 级）2023 春夏第一次小测](Discrete_Mathematics_Quiz_1_2023.pdf)
 - [（22 级）2023 春夏第二次小测](Discrete_Mathematics_Quiz_2_2023.pdf)
 
