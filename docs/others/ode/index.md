@@ -14,6 +14,7 @@
 
 ## 参考笔记
 - [cxc 的笔记](https://github.com/Intelligent-BOT/hello-world/tree/main/ZJU%E8%B5%84%E6%96%99/%E5%B8%B8%E5%BE%AE%E5%88%86)（[备用链接](https://zhuanlan.zhihu.com/p/496233645)）。
+- [jhc 的笔记](https://github.com/16-39/Mathematics/blob/main/ODE%20review.pdf)
 
 ## 课程学习建议
 自己把智云看一遍，知识点学完记得做做书上的课后习题。
