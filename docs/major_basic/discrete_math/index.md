@@ -44,8 +44,8 @@
 - [（21 级）2022 春夏期末回忆卷（部分）](%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%802022%E6%98%A5%E5%A4%8F%E6%9C%9F%E6%9C%AB%E9%83%A8%E5%88%86%E5%9B%9E%E5%BF%86.pdf)
 - [（21 级）2022 春夏第一次小测（郑文庭班）](Discrete_Mathematics_Quiz_1_2022.pdf)
 - [（21 级）2022 春夏第二次小测（郑文庭班）](Discrete_Mathematics_Quiz_2_2022.pdf)
-- [（21 级）2022 春夏第三次小测（郑文庭班）](Discrete_Mathematics_Quiz_3_2022.pdf)
-- [（21 级）2022 春夏第四次小测（郑文庭班）](Discrete_Mathematics_Quiz_4_2022.pdf)
+- [（21 级）2022 春夏第三次小测（郑文庭班）](Discrete_Mathematics_Quiz_3_2022.pdf) | [参考解答](21-22 春夏离散郑文庭班第三次小测参考答案.pdf)
+- [（21 级）2022 春夏第四次小测（郑文庭班）](Discrete_Mathematics_Quiz_4_2022.pdf) | [参考解答](21-22 春夏离散郑文庭班第四次小测参考答案.pdf)
 - [（22 级）2023 春夏第一次小测](Discrete_Mathematics_Quiz_1_2023.pdf)
 - [（22 级）2023 春夏第二次小测](Discrete_Mathematics_Quiz_2_2023.pdf)
 
