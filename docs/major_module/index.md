@@ -23,7 +23,7 @@
 |[计算机科学思想史](history_of_cs_ideas/)|2.0|三（春夏）|计算机科学||
 |[数据挖掘导论](data_mining/)|2.0|三（夏）|计算机科学||
 |[汇编与接口](assembly_interface/)|4.5|三（秋冬）|计算机系统||
-|[嵌入式系统](embedded_system/)|3.0|三（春夏）|计算机系统||
+|[嵌入式系统](embedded_system/)|3.0|三（春夏）|计算机系统|较完善✅|
 |[并行计算与多核编程](parallel_computing/)|2.5|三（春夏）|计算机系统||
 |[计算机系统综合实现](system_comprehensive_practice/)|5.0|三（春夏）|计算机系统||
 |[分布式计算](distributed_computing/)|2.5|三（春夏）|计算机系统||
