@@ -110,6 +110,7 @@ nav:
     - others/index.md
     - 常微分方程: others/ode/index.md
     - 数值代数: others/numerical_linear_algebra/index.md
+    - 数据建模与分析: others/data_modeling_and_analysis/index.md
   - 书评专区:
     - readings/index.md
     - 《当我谈跑步时，我在想什么》: readings/runandthink/index.md
