@@ -33,6 +33,12 @@
 
 === "陈翔"
 
+=== "许威威"
+
+    许老师比较佛系，**没有小作业，只有7个 project **，其中6个小的 project ，1个大作业，所有 project 都是个人完成。许老师上课从不点名，所以到课人数呈递减趋势。许老师的上课水平说得过去，基本中规中矩，比较平淡和冷静，该讲的知识点也都会讲到，只不过不会特意强调。如果真正想提升效率，学到东西，还是建议听翁老师的智云。考试之前老师会开几个练习题目集，一定要做，和考试的相似度还是有的。
+
+    总之，如果想应付考试，建议多看看其他老师班的作业、小测等等，并刷一刷历年卷，只靠许老师是不够的。
+
 ## 课程教材
 
 * *《C++ 程序设计》Intruduction to Programming with C++ (Third Edition)* [美] Y. Daniel Liang（梁勇）
@@ -109,6 +115,7 @@
 - Isshiki 的课堂笔记：[📔 \[大一寒假\] ZJU Object-Oriented Programing Using C++ (yuque.com)](https://www.yuque.com/isshikixiu/codes/wk_oop)
 - 咸鱼暄学长的 [C++ Weekly Tips](https://www.yuque.com/xianyuxuan/saltfish_shop/weekly017) 和[快速入门 C++ 写题](https://xuan-insr.github.io/cpp/cpp_for_contests/)
 - zjj 提供的作业题整理：[oop-mid-review](https://zhoutimemachine.github.io/2022/07/07/2022/oop-mid-review/)、[oop-final-review](https://zhoutimemachine.github.io/2022/07/07/2022/oop-final-review/)（如果链接失效可以在 [blog 主页](https://zhoutimemachine.github.io/)看看）
+- Q 的课堂笔记[ “面向对象程序设计” 课程及相关知识笔记](https://note.hobbitqia.cc/OOP/)
 
 ## 分数构成
 
@@ -136,6 +143,18 @@
     除此之外还会有补分集（20级3分，21级由于期中考过难有5分），很多同学的平时分都是满分。
 
 === "陈翔"
+
+=== "许威威"
+
+    - 平时分 50% （以下的分数最后折合成 50 分）
+        - Project 1-6 （每个占比在 10分 - 20 分不等）
+        - Project 7（也就是大作业，21级是 Memory Pool）60分 
+        - 无点名、小测和其他作业
+        - 无补分集（所以平时分不好拿满，大作业可能会在意想不到的地方扣分）
+    
+    - 期末 50%
+
+## 关于期末考
 
 期末复习可以参考这个[课程资料仓库](https://github.com/RyanFcr/ZJU_Course/tree/main/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%A4%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1OOP)。这门课期末考试不是很友好，除了之前说的大纲不确定外，部分老师命题水平实在有限，也有部分老师出题审核不严格出现漏洞。另外，C++ 语言本身就很复杂，而且考试可能会考到一些很细的语言特性，可能需要平时多注意。
 
