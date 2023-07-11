@@ -14,7 +14,7 @@
 |:--|:--|:--|:--:|:--:|:--:|:--|
 |[数据库系统](database/)|4.0|二（春夏）|✓|?||较完善✅|
 |[计算机网络](computer_networks/)|4.5|三（秋冬）|✓|?|✓||
-|[计算机体系结构](computer_architecture/)|3.5|三（秋冬）|✓|×|×||
+|[计算机体系结构](computer_architecture/)|3.5|三（秋冬）|✓|×|×|较完善✅|
 |[软件工程](software_engineering/)|2.5|三（春夏）|✓|×|×|较完善✅|
 |[编译原理](compilers_principles/)|4.0|三（春夏）|✓|?|✓|较完善✅|
 |[认知神经科学导论](cognitive_neuroscience/)|3.0|二（春夏）|×|✓|×|较完善✅|

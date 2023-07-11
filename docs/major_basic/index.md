@@ -26,6 +26,6 @@
 |[计算机系统 Ⅲ](computer_system3/)|5.5|二（春夏）||✓|较完善✅|
 |[理论计算机科学导引](theory_of_computation/)|2.0|三（秋冬）|✓|✓|较完善✅|
 |[优化基本理论与方法](convex_optimization/)|2.0|三（秋冬）|✓|✓|较完善✅|
-|[操作系统原理与实践](operating_system/)|5.0|三（秋冬）|✓|||
+|[操作系统原理与实践](operating_system/)|5.0|三（秋冬）|✓||较完善✅|
 
 </div>
