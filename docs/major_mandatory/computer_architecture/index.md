@@ -24,12 +24,12 @@
 
 === "姜晓红"
 
-lab1(6%)：forwarding+predict not token的流水线
-lab2(4%)：带异常处理的流水线
-lab3(3%)：二路组关联+alloc+write back策略的cache
-lab4(4%)：cache加入流水线
-lab5(7%+2人组队)：简单乱序流水线
-lab6(8%+2人组队)：scoreboard乱序流水线/register remaining乱序流水线(bonus)/tomasulo乱序流水线(bonus)/有兴趣可以做分支预测和reorder buffer，没有bonus
+* lab1(6%)：forwarding+predict not token的流水线
+* lab2(4%)：带异常处理的流水线
+* lab3(3%)：二路组关联+alloc+write back策略的cache
+* lab4(4%)：cache加入流水线
+* lab5(7%+2人组队)：简单乱序流水线
+* lab6(8%+2人组队)：scoreboard乱序流水线/register remaining乱序流水线(bonus)/tomasulo乱序流水线(bonus)/有兴趣可以做分支预测和reorder buffer，没有bonus
 bonus给的好像挺多
 
 ## 任课教师
