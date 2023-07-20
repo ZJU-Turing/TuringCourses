@@ -15,7 +15,14 @@
     ```shell
     $ pip install -r requirements.txt
     ```
-3. 启动 mkdocs 本地服务
+3. 安装本文档专用插件
+    ```shell
+    $ git clone https://github.com/ZJU-Turing/TuringPlugins.git
+    $ cd TuringPlugins
+    $ pip install -e .
+    $ cd ..
+    ```
+4. 启动 mkdocs 本地服务
     ```shell
     $ mkdocs serve
     ```

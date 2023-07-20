@@ -11,6 +11,7 @@ nav:
     - index.md
     - 贡献指南: contributing.md
     - 课程页面模板: template.md
+    - 更新历史: changelog.md
   - 思政军体课:
     - political/index.md
     - 形势与政策 Ⅰ: political/situation_policy1/index.md
@@ -145,6 +146,7 @@ plugins:
   - heti:
       extra_skipped_class:
         - arithmatex
+  - turing_changelog
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback
