@@ -131,9 +131,10 @@ theme:
     - content.code.annotate
     - content.action.edit
     - navigation.tracking
-    - navigation.tabs
-    - navigation.indexes
     - navigation.top
+    - navigation.tabs
+    - navigation.footer
+    - navigation.indexes
     - navigation.sections
   font:
     # text: Noto Serif SC
@@ -147,6 +148,7 @@ plugins:
       extra_skipped_class:
         - arithmatex
   - turing_changelog
+  - turing_contributors
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback
