@@ -131,9 +131,10 @@ theme:
     - content.code.annotate
     - content.action.edit
     - navigation.tracking
-    - navigation.tabs
-    - navigation.indexes
     - navigation.top
+    - navigation.tabs
+    - navigation.footer
+    - navigation.indexes
     - navigation.sections
   font:
     # text: Noto Serif SC
