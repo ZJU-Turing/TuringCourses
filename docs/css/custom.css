@@ -153,6 +153,7 @@ body[data-md-prefers-color-scheme=true] .md-icon .unknown-mode {
 .md-typeset .admonition.general,
 .md-typeset details.general {
   border-color: rgb(0, 63, 136, 0);
+  background-color: hsla(var(--md-hue),0%,100%,0.025);
 }
 .md-typeset .general > .admonition-title,
 .md-typeset .general > summary {
