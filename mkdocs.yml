@@ -115,7 +115,6 @@ nav:
     - 数据建模与分析: others/data_modeling_and_analysis/index.md
   - 书评专区:
     - readings/index.md
-    - 《当我谈跑步时，我在想什么》: readings/runandthink/index.md
 
 theme:
   name: 'material'
