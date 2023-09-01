@@ -7,6 +7,9 @@
     - 专业模块课部分，总共不少于 11 学分
     - 专业模块课超过 11 学分的部分可以计入专业选修课的学分
 
+!!! Warning 
+    需要注意的是，计算机系统模块的课程中，并行计算与多核编程、计算机系统综合实现、分布式计算自 19 级起均未开过课。
+
 <style>
 .md-typeset table:not([class]) th {
     min-width: 1em;
@@ -27,6 +30,6 @@
 |[并行计算与多核编程](parallel_computing/)|2.5|三（春夏）|计算机系统||
 |[计算机系统综合实现](system_comprehensive_practice/)|5.0|三（春夏）|计算机系统||
 |[分布式计算](distributed_computing/)|2.5|三（春夏）|计算机系统||
-|[大数据存储技术](big_data_storage/)|1.5|三（春夏）|计算机系统||
+|[大数据存储与计算技术](big_data_storage/)|1.5|三（春夏）|计算机系统||
 
 </div>
