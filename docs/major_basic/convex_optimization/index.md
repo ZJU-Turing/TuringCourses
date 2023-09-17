@@ -8,7 +8,7 @@
 
 ## 课程学习内容
 
-课程大部分内容可以概括为凸优化，但并不完全是凸优化，因此称为 “优化基本理论与方法” 也算是合理的。课本内容大概可以分为**黑箱优化**和**结构优化**，但是课程所讲的绝大部分内容都属于黑箱优化。简单概括课程大纲如下：
+课程大部分内容可以概括为凸优化，但并不完全是凸优化，因此称为 “优化基本理论与方法” 也是合理的。课本内容大概可以分为**黑箱优化**和**结构优化**，但是课程所讲的绝大部分内容都属于黑箱优化。简单概括课程大纲如下：
 
 * Introduction
     - 优化问题的范式，基本概念和与机器学习的联系
@@ -33,27 +33,27 @@
     - 随机取样，随机梯度下降 (Stochastic Gradient Descent)
     - 改进随机梯度下降，随机镜像下降，SVRG / SARAH
 
-尽管看起来内容很多，但是你完全不需要学会，写作业只需要抄书，做 mid-term 和 final report 的时候再精准查查相关资料就行了 () 笔者表示根本没学会
+~~尽管看起来内容很多，但是你完全不需要学会，写作业只需要抄书，做 mid-term 和 final report 的时候再精准查查相关资料就行了 () 笔者表示根本没学会~~
 
 ### 先修要求
 
-- 数学分析
+- 数学分析+线性代数
 
-应用了大量数学分析方法，对数学分析基础有较高的要求。
+应用了大量分析方法，对分析学基础有一些要求；此外这门课研究的都是向量值函数，因此经常涉及向量和矩阵运算，需要具备基础线性代数知识。
+
+这门课也涉及少量概率统计（主要是最后两节课）和机器学习等内容，不过不了解也没啥问题。
 
 ## 课程教材
 
-* *Introductory Lectures on Convex Optimization A Basic Course*
+* Yurii Nesterov. (2014). *Introductory Lectures on Convex Optimization: A Basic Course.* Springer.
 
-作者 Yurii Nesterov，是凸优化领域的大佬。 PPT 大部分都抄自这里。
+作者是凸优化领域的大佬。前半学期的内容大部分都来自这里。（不要相信书名中的 “basic” :-）
 
-* *Lectures on Convex Optimization*
+* Yurii Nesterov. (2018). *Lectures on Convex Optimization.* Springer.
 
-中文版书名《凸优化教程》，作者依然是 Yurii Nesterov，内容和上一本差不多，但是许多地方有改动。（记得似乎改正了旧版的一些错误，笔者学习时主要参考的书）
+中文版书名《凸优化教程》，机械工业出版社；前面的内容和上一本差不多，但是许多地方有改动（改正了旧版的一些错误，笔者学习时主要参考的书）。
 
-* *Convex Optimization*
-
-作者 Boyd ，诸多大佬认为比 Yurii Nesterov 写得好的教材。由于不是教材，笔者没有看过，但是既然诸多大佬推荐，笔者也就在此放上。
+（PS：虽然这本书是课程的主要教材，但是其内容有些晦涩抽象，越到后面越如此，任何对优化感兴趣的初学者都不应该使用这本书自学。）
 
 ## 分数构成
 
@@ -65,7 +65,7 @@
 
 * 报告 (50%)
 
-    同样会给一个 LaTeX 报告模板，按照模板要求写就行了。会给几个研究方向，每个方向给一篇参考论文，选择一个研究方向写一篇报告即可。 20 级所给的三个方向是从 ODE / Geometry / Game Theory 的角度研究加速梯度下降。或许写成论文翻译，或许写成文献综述，也有真正的大佬疯狂推公式真的在做研究，看你想要做到什么程度。
+    同样会给一个 LaTeX 报告模板，按照模板要求写就行了。会给几个研究方向，每个方向给一篇参考论文，选择一个研究方向写一篇报告即可。 20 级所给的三个方向是从 ODE / Geometry / Game Theory 的角度研究 Nesterov 加速梯度下降。或许写成论文翻译，或许写成文献综述，也有真正的大佬疯狂推公式真的在做研究，看你想要做到什么程度。
 
 ## 任课教师
 
@@ -79,8 +79,46 @@
 
 ## 参考资料
 
-暂无
+* Boyd, S.P., & Vandenberghe, L. (2005). *Convex Optimization*. Journal of the American Statistical Association, 100, 1097 - 1097. 
+
+作者是优化领域另一著名大佬 Stephen Boyd，这本书是极其经典的凸优化教材，侧重凸分析的基础，一本相当厚的大部头。花了非常长的篇幅介绍函数的凸性、对偶等，不过有人认为介绍的算法非常有限。作者在自己主页挂了这本书的电子版：[https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)。清华大学出版社翻译了本书，名字就叫《凸优化》。
+
+这本书也是斯坦福大学 [EE364a](https://web.stanford.edu/class/ee364a/)、 [EE364b](https://web.stanford.edu/class/ee364b/) 课程教材。
+
++ Dimitri P. Bertsekas. (2009). *Convex Optimization Theory*. Athena Scientific.
+
+中文名《凸优化理论》，清华大学出版社；个人觉得比较基础和细节，相之于前面的好读很多。
+
++ Bubeck. (2015). *Convex Optimization: Algorithms and Complexity*. In Foundations and Trends in Machine Learning. [https://arxiv.org/abs/1405.4980](https://arxiv.org/abs/1405.4980)。
+
++ Sra, Nowozin, Wright. (2011). *Optimization for Machine Learning*. MIT Press.
+
++ R. T. Rockafellar. (1970). *Convex Analysis*. Princeton.
+
+  Rockafellar 是优化领域绕不开的祖师级人物，不过他的文章有些太老了。他的《凸分析》还有《变分分析（Variational Analysis）》等书感觉更适合数学专业的看……
+
++ 一些课程
+
+  +  ELE522: Large-Scale Optimization for Data Science. 钱老师的授课内容有所参考，[https://yuxinchen2020.github.io/ele522_optimization/](https://yuxinchen2020.github.io/ele522_optimization/)。
+  + IE 598: Big Data Optimization. 钱老师的授课内容有所参考，[https://github.com/niaohe/Big-Data-Optimization-Course](https://github.com/niaohe/Big-Data-Optimization-Course)。
+  + CMU 课程 Convex Optimization. 深入浅出的优秀课程。链接：[https://www.stat.cmu.edu/~ryantibs/convexopt/](https://www.stat.cmu.edu/~ryantibs/convexopt/)。
+  + CSE 535, Theory of Optimization and Continuous Algorithms.  [https://yintat.com/teaching/cse535-spring21/](https://yintat.com/teaching/cse535-spring21/)。
+  + 中科大凌青老师的最优化理论课程：https://www.bilibili.com/video/BV19M411T7S7。
+
+------
+
+20 级的金鱼马同学为这门课总结了详细的笔记：[https://www.zhihu.com/column/c_1676006565717573634](https://www.zhihu.com/column/c_1676006565717573634)。如果你发现笔记有错误，请联系他指出问题，他会十分感谢。
+
+在写笔记的过程中，金鱼马同学也发现知乎上也有不少关于优化的文章，例如 
+
++ [https://www.zhihu.com/column/convex](https://www.zhihu.com/column/convex) ；
++ https://www.zhihu.com/column/c_119426147；
++ https://www.zhihu.com/column/c_1263999612412952576。
 
 ## 学习建议
 
-可以迷迷糊糊地水过这门课，作业抄抄，代码糊糊，论文水水，也会得到钱徽的宽宥，得到还行的成绩。然而尽管神经网络是非凸的，这门课讲的很多方法也能应用于非凸问题（优化 “基本” 理论），比如梯度下降、Nesterov 加速梯度下降、镜像下降等。这门课给出的许多分析结论也很有意义，比如一阶局部黑箱优化理论最优的下降速率，还有光滑化的处理， “次梯度” 的引入也让人耳目一新。不过，志不在此的同学建议也就可以随便水水，毕竟要真的学会这门课要花的精力还是不少的，可能以后也用不到。但是想要踏踏实实做研究，想要明白其所以然的同学还是可以认真学一学（比如像大佬们一样放弃钱徽找别的资料大不自多也是一种思路）。
+可以迷迷糊糊地水过这门课，作业抄抄，代码糊糊，论文水水，也会得到钱徽的宽宥，得到还行的成绩。
+
+这门课的知识和机器学习、数据分析和建模等很多学科领域紧密相关，比如梯度下降、随机方法等都可以用于机器学习模型的训练。许多分析结论也很有意义，比如一阶局部黑箱优化理论最优的下降速率，还有光滑化的处理， “次梯度” 的引入也让人耳目一新。
+
+不过，志不在此的同学建议也可以水一些，毕竟要真的学会这门课要花的精力还是不少的，可能以后也用不到。但是想要踏踏实实做研究，想要明白其所以然的同学还是可以认真学一学。
