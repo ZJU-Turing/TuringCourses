@@ -62,7 +62,7 @@ Homework(20%) + Lab(40%) + Final(40%)
 
 这里给出一些学长的笔记：
 
-* [QJJ 的计概笔记](https://notebook.hobbitqia.cc/ICS/)
+* [QJJ 的计概笔记](https://note.hobbitqia.cc/ICS/)
 * [修佬的计概笔记](https://www.yuque.com/isshikixiu/codes/ics)
 
 ## 相关课程
