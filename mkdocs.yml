@@ -111,6 +111,7 @@ nav:
     - 课程综合实践 Ⅱ:
       - short_term/index.md
       - C++ 项目管理及工程实践: short_term/cpp_project/index.md
+      - Rust 开发实训: short_term/rust/index.md
   - 其他课程:
     - others/index.md
     - 常微分方程: others/ode/index.md
