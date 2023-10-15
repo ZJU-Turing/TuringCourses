@@ -1,9 +1,9 @@
 ---
 abbrs: 
-    - Rust 开发实训
+    - Rust 短学期
 ---
 
-# <课程名称> 
+# Rust 开发实训
 <div class="badges">
 <span class="badge is-badge">大二短学期</span>
 <span class="badge is-badge">课程综合实践 Ⅱ</span>
