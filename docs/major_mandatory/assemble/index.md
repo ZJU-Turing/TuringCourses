@@ -9,7 +9,7 @@
 汇编语言这门课的主要内容就是学习较为古老的 8086 汇编、80386 的一小部分 32 位指令以及一小部分的 80386 保护模式基础知识。
 
 !!! note "注意"
-    除此之外还有一门课程叫 “汇编语言程序设计基础“（俗称长名汇编），是一门通识课，内容差不太多，但是作业和考试都要简单一些，只有短名的 ”汇编语言“ 是培养方案中写的 IS 专业必修、CS/AI 专业选修，选课时要注意一下。
+    除此之外还有一门课程叫 “汇编语言程序设计基础”（俗称长名汇编），是一门通识课，内容差不太多，但是作业和考试都要简单一些，只有短名的“汇编语言”是培养方案中写的 IS 专业必修、CS/AI 专业选修，选课时要注意一下。
 
 ## 任课教师
 浙江大学《汇编语言》课程数十年来只有一位老师：**白洪欢**。
@@ -30,19 +30,19 @@
 
 ## 推荐书单
 - *《汇编语言》* 王爽，清华大学出版社（经典汇编课本，第一推荐）
-- *《x86汇编语言-从实模式到保护模式》* 李忠，电子工业出版社（经典汇编课本，并列第一推荐）
+- *《x86汇编语言-从实模式到保护模式》* 李忠，电子工业出版社（经典汇编课本）
+- *《琢石成器》*罗云斌，32 位汇编
 - *《软件调试》* 张银奎（各类底层硬件机制和调试方法）
 - *《汇编语言程序设计》* 白洪欢，科学出版社（已绝版，就是老师自己印的那本）
-- *《IBM-PC汇编语言程序设计》* 沈美明，清华大学出版社（比较老的中文教材）
-- *《Windows汇编语言程序设计教程》* 谭毓安 ，电子工业出版社（比较老的中文教材）
 - *Professional Assembly Language*, Richard Blum
-- *The Art of Assembly Language*, Randall Hyde
+- *The Art of Assembly Language*, Randall Hyde （不过这个系列使用的主要工具是 HLA，而且读者对其内容褒贬不一）
 - *The Art of 64-bit Assembly*, Randall Hyde
-- *Assembly Language for x86 processors*, Kip R. Irvine（一本优秀、内容丰富的汇编书籍，电子工业出版社的黑皮系列里有。目前最新版是第 8 版）
+- *Assembly Language for x86 processors*, Kip R. Irvine（一本内容丰富的汇编书籍，电子工业出版社的黑皮系列里有。目前最新版是第 8 版）
 - *Modern x86 Assembly Language Programming*, Daniel Kusswurm（少数能称得上 Modern 的汇编书）
-- *Intel Microprocessors*, Barry B. Brey（汇编语言、处理器架构、接口通信等都有涉及，最新为第 8 版）
+- *Beginning X64 Assembly Programming*, Jo Van Hoey（不错的入门书, 64 位）
+- *Assembly Language for Intel-Based Computers*, Kip Irvine（ 32 位）
 - *Practical Malware Analysis*, Michael Sikorski,  Andrew Honig（二进制分析，病毒分析，逆向工程，侧重实战）
-- [*Intel 80386 Programmer’s Manual*](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm), *[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)* 
+- [*Intel 80386 Programmer’s Manual*](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm), 以及 *[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)* 
 - *[Microsoft Macro Assembler reference](https://learn.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference?view=msvc-170)*
 
 还有一些可以看的网课：
