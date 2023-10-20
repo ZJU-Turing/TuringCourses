@@ -85,25 +85,32 @@
 
     这本书也是斯坦福大学 [EE364a](https://web.stanford.edu/class/ee364a/)、 [EE364b](https://web.stanford.edu/class/ee364b/) 课程教材。
 
-* Dimitri P. Bertsekas. (2009). *Convex Optimization Theory*. Athena Scientific.
++ Dimitri P. Bertsekas. (2009). *Convex Optimization Theory*. Athena Scientific.
 
-    中文名《凸优化理论》，清华大学出版社；个人觉得比较基础和细节，相之于前面的好读很多。
+    中文名《凸优化理论》，清华大学出版社；个人觉得比较细节，相之于前面的好读很多。
 
-* Bubeck. (2015). *Convex Optimization: Algorithms and Complexity*. In Foundations and Trends in Machine Learning. [https://arxiv.org/abs/1405.4980](https://arxiv.org/abs/1405.4980)。
++ Sra, Nowozin, Wright. (2011). *Optimization for Machine Learning*. MIT Press.
 
-* Sra, Nowozin, Wright. (2011). *Optimization for Machine Learning*. MIT Press.
++ R. T. Rockafellar. (1970). *Convex Analysis*. Princeton.
 
-* R. T. Rockafellar. (1970). *Convex Analysis*. Princeton.
+  Rockafellar 是优化领域绕不开的祖师级人物，不过他的文章有些太难了。他的《凸分析》还有《变分分析（Variational Analysis）》等书感觉更适合数学专业的看……
 
-    Rockafellar 是优化领域绕不开的祖师级人物，不过他的文章有些太老了。他的《凸分析》还有《变分分析（Variational Analysis）》等书感觉更适合数学专业的看……
++ Giuseppe C. Calafiore, \& Laurent El Ghaoui (2014), *Optimization Models*, Cambridge University Press. 据说难度适中。[https://people.eecs.berkeley.edu/~elghaoui/optmodbook.html](https://people.eecs.berkeley.edu/~elghaoui/optmodbook.html)
++ 这个领域有很多人喜欢直接把自己写的书挂在 arxiv 上，下面几个都是不错的资料：
+  + Sébastien Bubeck, *Convex Optimization: Algorithms and Complexity*, [https://arxiv.org/abs/1405.4980](https://arxiv.org/abs/1405.4980)；
+  + Léon Bottou et al., *Optimization Methods for Large-Scale Machine Learning*,  [https://arxiv.org/abs/1606.04838](https://arxiv.org/abs/1606.04838)；
+  + Francesco Orabona, *A Modern Introduction to Online Learning*, [https://arxiv.org/abs/1912.13213](https://arxiv.org/abs/1912.13213).
 
-* 一些课程
++ 一些课程
 
-    * ELE522: Large-Scale Optimization for Data Science. 钱老师的授课内容有所参考，[https://yuxinchen2020.github.io/ele522_optimization/](https://yuxinchen2020.github.io/ele522_optimization/)。
-    * IE 598: Big Data Optimization. 钱老师的授课内容有所参考，[https://github.com/niaohe/Big-Data-Optimization-Course](https://github.com/niaohe/Big-Data-Optimization-Course)。
-    * CMU 课程 Convex Optimization. 深入浅出的优秀课程。链接：[https://www.stat.cmu.edu/~ryantibs/convexopt/](https://www.stat.cmu.edu/~ryantibs/convexopt/)。
-    * CSE 535, Theory of Optimization and Continuous Algorithms.  [https://yintat.com/teaching/cse535-spring21/](https://yintat.com/teaching/cse535-spring21/)。
-    * 中科大凌青老师的最优化理论课程：https://www.bilibili.com/video/BV19M411T7S7。
+  + CMU 课程 Convex Optimization. 深入浅出的优秀课程。链接：[https://www.stat.cmu.edu/~ryantibs/convexopt/](https://www.stat.cmu.edu/~ryantibs/convexopt/)。
+  + EPFL Course - Optimization for Machine Learning - CS-439，[https://github.com/epfml/OptML_course](https://github.com/epfml/OptML_course)
+  + 中科大凌青老师的最优化理论课程：https://www.bilibili.com/video/BV19M411T7S7。
+  + CSE 535, Theory of Optimization and Continuous Algorithms.  [https://yintat.com/teaching/cse535-spring21/](https://yintat.com/teaching/cse535-spring21/)。
+  + ELE522: Large-Scale Optimization for Data Science. 钱老师的授课内容有所参考，[https://yuxinchen2020.github.io/ele522_optimization/](https://yuxinchen2020.github.io/ele522_optimization/)。
+  +  IE 598: Big Data Optimization. 钱老师的授课内容有所参考，[https://github.com/niaohe/Big-Data-Optimization-Course](https://github.com/niaohe/Big-Data-Optimization-Course)。
+
+------
 
 * 20 级的金鱼马同学为这门课总结了详细的笔记：[https://www.zhihu.com/column/c_1676006565717573634](https://www.zhihu.com/column/c_1676006565717573634)。如果你发现笔记有错误，请联系他指出问题，他会十分感谢。
 
