@@ -153,6 +153,13 @@ plugins:
   - turing_changelog
   - turing_contributors
   - turing_evaluations
+  - turing_outdate_warning:
+      enabled: true          # 是否启用
+      month: 20              # 多少个月前的文章为过期，默认为 15
+      exclude_todo: true     # 是否忽略带有 #TODO 的文章
+      exclude:               # 要忽略的文章，目录页和主页已被自动忽略
+        # - political/situation_policy1/index.md
+
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback
