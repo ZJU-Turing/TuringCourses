@@ -1,0 +1,72 @@
+\documentclass{ctexart}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{margin=1in}
+
+\title{\vspace{-4em}\textbf{概率论（H）2023-2024 秋冬期末试卷}}
+\author{图灵回忆卷}
+\date{\zhtoday}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、（10分）}}
+\begin{enumerate}
+    \item $E,F$ 是任意的非空事件. 证明：$ P(E | E \cup F) \geqslant P(E | F) $.
+
+    \item 已知事件 $A, B, C$，且 $A, C$ 不相容. $P(AB) = 0.5, P(C) = 0.3$，求 $P(AB|\overline{C})$.
+\end{enumerate}
+
+\noindent{\heiti\textbf{二、（10分）}}
+某彩票店每天卖出的彩票数量服从参数为 $\lambda$ 的 Poisson 分布. 对于每张彩票，中奖的概率为 $p$，且各张彩票中奖与否相互独立.
+\begin{enumerate}
+    \item 求卖出 $k$ 张中奖彩票的概率.
+
+    \item 已知卖出了 $k$ 张中奖彩票，求当天卖出 $m$ 张彩票的概率.
+\end{enumerate}
+
+\noindent{\heiti\textbf{三、（15分）}}
+已知
+\[ f(x,y) = c(1+xy) \quad -1 < x, y < 1 \]
+
+\begin{enumerate}
+    \item 求常数 $c$ 使得 $f(x,y)$ 是联合密度函数.
+
+    \item 求 $Y = \dfrac{1}{2}$ 条件下 $X$ 的条件密度函数.
+
+    \item 求 $P\{X > Y\}$.
+
+    \item $X^2, Y^2$ 是否相互独立？
+\end{enumerate}
+
+\noindent{\heiti\textbf{四、（20分）}}
+已知 $X \sim N(0, 1)$. 对于任意给定的 $x$，当 $X = x$ 时，$Y \sim N(x, 1)$.
+\begin{enumerate}
+    \item 求 $Y$ 的密度函数.
+
+    \item 求条件期望 $E(XY|X = x)$.
+
+    \item 求 $X, Y$ 的相关系数.
+
+    \item 求常数 $a$ 使得 $aX+Y$ 与 $aX-Y$ 相互独立.
+\end{enumerate}
+
+\noindent{\heiti\textbf{五、（15分）}}
+记 $\{X_1, X_2, \ldots, X_n\}$ 是一列独立且均服从 $[0,1]$ 上的均匀分布的随机变量. 记 $Y = \min\{X_1, X_2, \ldots, X_n\}$，$Z = \max\{X_1, X_2, \ldots, X_n\}$. 求 $\operatorname{Cov}(Y, Z)$.
+
+Hint：对任意正整数 $p, q$，有
+\[ \int_0^1 x^{p-1}(1-x)^{q-1}\,\mathrm{d}x = \frac{(p-1)!(q-1)!}{(p+q-1)!} \]
+
+\noindent{\heiti\textbf{六、（15分）}}
+掷 180 次均质骰子，记事件 $A$：“掷到 6 的次数不超过 25”. 用正态分布近似计算 $P(A)$. 已知 $\Phi(1) = 0.8413, \Phi(2) = 0.9772, \Phi(3) = 0.9987$.
+
+\noindent{\heiti\textbf{七、（15分）}}
+已知 $\{X_1, X_2, \ldots, X_n\} $ 是一列独立同分布的非负随机变量，期望为 1，方差为 1. 记 $S_n = \displaystyle\sum_{i=1}^n X_i$，证明
+
+\[ 2\left(\sqrt{S_n} - \sqrt{n}\right) \xrightarrow{d} N(0, 1) \]
+
+\end{document}
