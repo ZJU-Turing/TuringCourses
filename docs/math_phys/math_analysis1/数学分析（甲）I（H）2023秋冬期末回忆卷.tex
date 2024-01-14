@@ -1,0 +1,64 @@
+\documentclass{exam}
+
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{zhnumber}
+\usepackage{ctex}
+
+\pointname{ 分}
+\pointformat{（\thepoints）}
+
+\title{数学分析（甲）I（H）2023秋冬期末}
+\author{图灵回忆卷}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+    \question[10]叙述数列收敛的柯西收敛准则；并用该准则证明：
+
+    \begin{center}
+        数列 \(\left\{\displaystyle\sum\limits_{k=1}^n(-1)^{k+1}\dfrac{1}{k^{2024}}\right\}\) 收敛.
+    \end{center}
+
+    \question[35]计算题
+
+    \begin{parts}
+        \part 求极限 \(\lim\limits_{n\to+\infty}n\displaystyle\sum\limits_{k=1}^n\dfrac{1}{n^2+k^2}\).
+
+        \part 求极限 \(\lim\limits_{x\to1}\dfrac{x^x-x}{1-x+\ln x}\).
+
+        \part 求极限 \(\lim\limits_{x\to0}\dfrac{\displaystyle\int_0^{x^2}t^2e^{\sin t}\mathrm{d}t}{\ln(1+x^6)}\).
+        
+        \part 求 \(\displaystyle\int_{1}^{+\infty}\dfrac{\arctan x}{x^2}\mathrm{d}x\).
+        
+        \part 求双纽线 \(r=\sqrt{\cos(2\theta)}\) 所围平面图形的面积.
+    \end{parts}
+
+    \question[10]证明 Cantor 定理：若 \(f(x)\) 在 \([0,1]\) 上连续，则 \(f(x)\) 在 \([0,1]\) 上一致连续.
+
+    \question[10]求函数 \(f(x)=\displaystyle\int_{-1}^{1}|x-t|e^{t^2}\mathrm{d}t\) 在 \(\mathbb{R}\) 上的最小值.
+
+    \question[10]证明导函数介值定理：若函数 \(f(x)\) 在 \(\mathbb{R}\) 上可导，且 \(f'(0)<a<f'(1)\)，则存在 \(\xi\in(0,1)\)，使得 \(f'(\xi)=a\).
+
+    \question[10]设函数 \(f(x)\) 在 \([0,1]\) 上黎曼可积，且 \(f\) 在 \(x=0\) 处右连续. 证明：函数 \(\varphi(x)=\displaystyle\int_{0}^{x}f(t)\mathrm{d}t\) \((0\leq x\leq1)\) 在 \(x=0\) 处的右导数等于 \(f(0)\).
+
+    \question[10]设 \(f(x)\) 在 \([0,1]\) 上有连续的导函数，证明：
+
+    \begin{center}
+        \(\lim\limits_{n\to+\infty}\displaystyle\sum\limits_{k=1}^n\left(f(\dfrac{k}{n})-f(\dfrac{2k-1}{2n})\right)=\dfrac{f(1)-f(0)}{2}\).
+    \end{center}
+
+    \question[5]设函数 \(f(x)\) 在 \(\mathbb{R}\) 上有二阶连续的导函数，且存在常数 \(C>0\)，使得
+
+    \begin{center}
+        \(\sup\limits_{x\in\mathbb{R}}\Big(|x|^2|f(x)|+|f''(x)|\Big)\leq C\).
+    \end{center}
+    
+    证明：存在常数 \(M>0\)，使得 \(\sup\limits_{x\in\mathbb{R}}(|xf'(x)|)\leq M\).
+
+\end{questions}
+
+\end{document}
