@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 操作系统
+---
+
 # 操作系统原理与实践
 <div class="badges">
 <span class="badge cs-badge">CS 专业基础</span>
