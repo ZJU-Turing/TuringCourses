@@ -1,3 +1,8 @@
+---
+abbrs: 
+    - 程算
+---
+
 # 程序设计与算法基础
 <div class="badges">
 <span class="badge cs-badge">CS 专业基础</span>
@@ -48,7 +53,7 @@
 
 ## 参考笔记
 - zjj 整理的程算易错题：https://zhoutimemachine.github.io/2022/07/07/2021/C-review/
-- xg 整理的 50 道程设常问、易错题：https://note.tonycrane.cc/cs/pl/c_cpp/#_6
+- xg 整理的 50 道程设常问、易错题：https://note.tonycrane.cc/cs/pl/c_cpp/#_6  
     虽然是非图灵的 C 小程，理论题目比程算要刁钻，这些问题仍然可以参考一下
 
 ## 学长组课程学习建议
