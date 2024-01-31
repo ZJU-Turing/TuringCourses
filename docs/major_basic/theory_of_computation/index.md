@@ -111,7 +111,7 @@
 4. 由于这门课是众所周知的图灵专属、计算理论换皮课，大家在选课上并没有选择。但是可以选择听 myc 老师的计算理论课，如果免听的话可以直接过去听，不免听的话要注意突击小测，或者听智云。
 
 ## 参考资料
-- zjj 提供的笔记：[toc-note](https://zhoutimemachine.github.io/2023/02/23/2023/toc-note/)（如果链接失效可以在 [blog 主页](https://zhoutimemachine.github.io/)看看）
+- [ZhouTimeMachine 的笔记](https://zhoutimemachine.github.io/note/courses/toc/)
     
 ## 学习建议
 笔者个人认为 jxg 的前 4 章加上 myc 的第 5 章授课可能是不错的选择，部分 dl 认为看教材也很不错，这本教材的中文版虽然有一些错误也还算不错，如果已经掌握了看英文教材的能力那么看英文教材再好不过了，也有部分 dl 认为教材太老太绕，那么可以看一些别的参考书。

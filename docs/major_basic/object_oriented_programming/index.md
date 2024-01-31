@@ -122,7 +122,7 @@
 - 贺老师的专栏：https://www.zhihu.com/column/c_1561843704159232000
 - Isshiki 的课堂笔记：[📔 \[大一寒假\] ZJU Object-Oriented Programing Using C++ (yuque.com)](https://www.yuque.com/isshikixiu/codes/wk_oop)
 - 咸鱼暄学长的 [C++ Weekly Tips](https://www.yuque.com/xianyuxuan/saltfish_shop/weekly017) 和[快速入门 C++ 写题](https://xuan-insr.github.io/cpp/cpp_for_contests/)
-- zjj 提供的作业题整理：[oop-mid-review](https://zhoutimemachine.github.io/2022/07/07/2022/oop-mid-review/)、[oop-final-review](https://zhoutimemachine.github.io/2022/07/07/2022/oop-final-review/)（如果链接失效可以在 [blog 主页](https://zhoutimemachine.github.io/)看看）
+- ZhouTimeMachine 提供的作业题整理：[oop-mid-review](https://zhoutimemachine.github.io/note/courses/oop-mid-review/)、[oop-final-review](https://zhoutimemachine.github.io/note/courses/oop-final-review/)
 
 ## 分数构成
 
