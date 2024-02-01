@@ -139,7 +139,7 @@
 
 ## 参考资料
 - RyanFcr 整理的历年卷、错题集以及笔记：[:material-github: RyanFcr/ZJU_Course:大二春夏/高级数据结构与算法分析ADS](https://github.com/RyanFcr/ZJU_Course/tree/main/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%A4%8F/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90ADS)
-- zjj 提供的作业题整理和个人认为的简略重点：[ads-hw-review](https://zhoutimemachine.github.io/2023/01/18/2023/ads-hw-review/)、[ads-final-review](https://zhoutimemachine.github.io/2022/07/08/2022/ads-final-review/)（如果链接失效可以在 [blog 主页](https://zhoutimemachine.github.io/)看看）
+- ZhouTimeMachine 提供的作业题整理和个人认为的简略重点：[ads-hw-review](https://zhoutimemachine.github.io/note/courses/ads-hw-review/)、[ads-final-review](https://zhoutimemachine.github.io/note/courses/ads-final-review/)
     
 ## 学习建议
 这门课可能有一些温水煮青蛙的感觉，平常作业不多，并且大都是判断、选择，因此给了很多摸鱼划水的机会。经常是似乎上课听懂了，但是面对考试题又是经常无从下手的状态。建议平常上课如果老师讲课一般可以看其他优秀老师的录播，课后作业不能摸鱼划水，有问题要查阅资料或者问同学老师尽力解决，也可以在最难的 NP、近似、随机等章节看算法导论等了解更多的例子。
