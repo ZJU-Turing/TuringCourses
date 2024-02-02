@@ -7,7 +7,7 @@ edit_uri: tree/master/docs
 copyright: Copyright &copy; 2023 浙江大学图灵班
 
 nav:
-  - 主页: 
+  - 主页:
     - index.md
     - 贡献指南: contributing.md
     - 课程页面模板: template.md
@@ -93,6 +93,7 @@ nav:
     - 大数据存储技术: major_module/big_data_storage/index.md
   - 专业选修课:
     - major_elective/index.md
+    - 技术沟通: major_elective/technology_communication/index.md
     - 图像信息处理: major_elective/digital_image_processing/index.md
     - 脑启发人工智能导论: major_elective/brain_inspired_ai/index.md
     - 人工智能逻辑: major_elective/ai_logic/index.md
@@ -187,7 +188,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:

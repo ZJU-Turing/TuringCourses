@@ -19,7 +19,7 @@
 |[图像信息处理](digital_image_processing/)|2.5|二（秋冬）|✓|×|×|较完善✅|
 |[数据库系统](../major_mandatory/database/)|4.0|二（春夏）|-|?|✓|较完善✅|
 |[人工智能逻辑](ai_logic/)|3.0|二（春夏）|×|✓|×|较完善✅|
-|技术沟通|2.0|二（夏）|✓|✓|✓||
+|[技术沟通](technology_communication/)|2.0|二（夏）|✓|✓|✓|较完善✅|
 |面向信息安全的信号处理|2.0|三（秋冬）|×|×|✓||
 |[编程语言原理](../major_module/programming_principle/)|2.0|三（秋冬）||×|✓||
 |[脑启发人工智能导论](brain_inspired_ai/)|3.0|三（冬）|×|✓|×||
