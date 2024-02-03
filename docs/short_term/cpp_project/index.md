@@ -1,5 +1,5 @@
 ---
-abbrs: 
+abbrs:
     - C++ 短学期
 ---
 
@@ -19,7 +19,7 @@ abbrs:
 
 ### 先修要求
 
-需要掌握 C++ 语言的基本语法以及面向对象等知识，所以最好先修[面向对象程序设计](../../major_basic/object_oriented_programming/)。
+需要掌握 C++ 语言的基本语法以及面向对象等知识，所以最好先修[面向对象程序设计](../../major_basic/object_oriented_programming/index.md)。
 
 ## 任课教师
 
