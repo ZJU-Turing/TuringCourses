@@ -82,7 +82,7 @@ nav:
     - major_module/index.md
     - 数值分析: major_module/numerical_analysis/index.md
     - 应用运筹学基础: major_module/applied_operations_research/index.md
-    - 程序设计方法学: major_module/programming_principle/index.md
+    - 编程语言原理: major_module/principle_of_programming_languages/index.md
     - 计算机科学思想史: major_module/history_of_cs_ideas/index.md
     - 数据挖掘导论: major_module/data_mining/index.md
     - 汇编与接口: major_module/assembly_interface/index.md
