@@ -28,8 +28,8 @@
     |[微观经济学](economics/#course_1)|3.0|一（春夏）|较完善✅|
     |[宏观经济学](economics/#course_2)|3.0|二（秋冬）|较完善✅|
     |[中级微观经济学](economics/#course_5)|3.0|二（秋冬）|较完善✅|
-    |[中级宏观经济学](economics/#course_7)|3.0|二（春夏）|较完善✅|
-    |[经济思想史](economics/#course_8)|3.0|二（春夏）|较完善✅|
+    |[中级宏观经济学](economics/#course_7)|3.0|二（春夏）|仅介绍|
+    |[经济思想史](economics/#course_8)|3.0|二（春夏）|仅介绍|
     |[博弈论](economics/#course_6)|3.0|三（秋冬）|较完善✅|
     |[计量经济学 / 中级计量经济学](economics/#course_3)|3.0|二（春夏）/ 三（秋冬）|较完善✅|
     |[政治经济学](economics/#course_4)|3.0|三（春夏）|较完善✅|
