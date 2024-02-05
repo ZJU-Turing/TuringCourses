@@ -121,6 +121,7 @@ nav:
     - 抽象代数: others/abstract_algebra/index.md
     - 经济学类课程集: others/economics/index.md
     - 金融学类课程集: others/finance/index.md
+    - B/S 体系软件设计: others/browser_server_software/index.md
   - 书评专区:
     - readings/index.md
 
