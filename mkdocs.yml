@@ -109,6 +109,7 @@ nav:
       - 超算实训: short_term/hpc/index.md
       - 算法竞赛集训: short_term/acm/index.md
       - 安全攻防实践: short_term/ctf/index.md
+      - 大数据可视化: short_term/visualization/index.md
     - 课程综合实践 Ⅱ:
       - short_term/index.md
       - C++ 项目管理及工程实践: short_term/cpp_project/index.md
