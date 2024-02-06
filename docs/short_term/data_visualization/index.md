@@ -14,18 +14,15 @@
 
 该课程的同时是国际暑期学校，授课对象除了线下上课的浙大学生，还包括数百位线上上课的外校学生。
 
-
 ### 先修要求
 
 没有先修要求，但是对于想要追求高绩点的人来说，最好有网页前端开发基础，也推荐前端大佬选这门课。
 
 如果没有前端基础的话，推荐在期末结束之后、短学期开始之前进行自学，简单了解一些 HTML、CSS、JavaScript 的基本知识。
 
-
 ## 任课教师
 
 虽然课程挂名的是巫英才和陈为老师，但实际上是由十几位老师轮流上课，其中包括浙大的教授和国内外其他大学的教授。
-
 
 ## 分数构成
 
@@ -40,8 +37,7 @@
     - 有 3 分钟的展示时间，展示内容至少需要包括分工、数据背景、可视系统设计+分析，重点是**基于数据和可视化，描述数据故事**
     - 助教和老师会坐在前排，在展示完毕后进行提问，问的问题基本不难，只要对自己的项目了如指掌就不会有问题
 - 出勤 (10%)
-- Bonus (5 points) 设计并开发一个可视分析系统
-
+- Bonus (+5%) 设计并开发一个可视分析系统
 
 ## 课程学习建议
 
@@ -63,24 +59,10 @@
 
 如果有余力的话，还可以学习 [Vue](https://cn.vuejs.org/guide/introduction.html)、[React](https://react.docschina.org/learn) 等前端框架，其中 Vue 对于小白来说更容易上手，官方中文文档更加友好，不过老师应该会更青睐于 React，实践课程教授的也是 React。如果想要做出更加好看的前端页面的话，还可以考虑使用 [Element UI](https://element-plus.org/zh-CN/#/zh-CN)、[Tailwind CSS](https://www.tailwindcss.cn/)、[Daisy UI](https://daisyui.com/) 等组件库，这些组件库都有着丰富的组件和模板，可以帮助你快速搭建一个漂亮的前端页面。
 
-
-
 ## 参考资料
-- 前端开源可视化项目：
-    - [VisChart](https://github.com/Zhroyn/VisChart)
-- 前端开发框架：
-    - [Vue](https://cn.vuejs.org/guide/introduction.html)
-    - [React](https://react.docschina.org/learn)
-- 前端数据可视化工具库：
-    - [Echarts](https://echarts.apache.org/handbook/zh/get-started/)
-    - [D3.js](https://d3js.org/getting-started)
-    - [Chart.js](https://www.chartjs.org/docs/latest/getting-started/)
-    - [AntV](https://antv.antgroup.com/zh)
-    - [Highcharts](https://www.highcharts.com.cn)
-- 前端组件库：
-    - [Element UI](https://element-plus.org/zh-CN/#/zh-CN)
-    - [Material UI](https://mui.com/material-ui)
-    - [Ant Design](https://ant.design/docs/react/introduce-cn)
-    - [Tailwind CSS](https://www.tailwindcss.cn)
-    - [Daisy UI](https://daisyui.com/)
+
+- Zhroyn 的前端开源可视化项目实现参考：[:material-github: Zhroyn/VisChart](https://github.com/Zhroyn/VisChart)
+- 前端开发框架：[Vue](https://cn.vuejs.org/guide/introduction.html)、[React](https://react.docschina.org/learn) 等
+- 前端数据可视化工具库：[Echarts](https://echarts.apache.org/handbook/zh/get-started/)、[D3.js](https://d3js.org/getting-started)、[Chart.js](https://www.chartjs.org/docs/latest/getting-started/)、[AntV](https://antv.antgroup.com/zh)、[Highcharts](https://www.highcharts.com.cn) 等
+- 前端组件库：[Element UI](https://element-plus.org/zh-CN/#/zh-CN)、[Material UI](https://mui.com/material-ui)、[Ant Design](https://ant.design/docs/react/introduce-cn)、[Tailwind CSS](https://www.tailwindcss.cn)、[Daisy UI](https://daisyui.com/) 等
 
