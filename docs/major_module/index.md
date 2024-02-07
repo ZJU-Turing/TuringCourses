@@ -30,6 +30,6 @@
 |[~~并行计算与多核编程~~](parallel_computing/)|2.5|三（春夏）|计算机系统|未开课🚫|
 |[~~计算机系统综合实现~~](system_comprehensive_practice/)|5.0|三（春夏）|计算机系统|未开课🚫|
 |[~~分布式计算~~](distributed_computing/)|2.5|三（春夏）|计算机系统|未开课🚫|
-|[大数据存储与计算技术](big_data_storage/)|1.5|三（春夏）|计算机系统||
+|[大数据存储与计算技术](big_data_storage/)|1.5|三（春夏）|计算机系统|较完善✅|
 
 </div>

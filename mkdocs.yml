@@ -90,7 +90,7 @@ nav:
     - 并行计算与多核编程: major_module/parallel_computing/index.md
     - 计算机系统综合实现: major_module/system_comprehensive_practice/index.md
     - 分布式计算: major_module/distributed_computing/index.md
-    - 大数据存储技术: major_module/big_data_storage/index.md
+    - 大数据存储与计算技术: major_module/big_data_storage/index.md
   - 专业选修课:
     - major_elective/index.md
     - 技术沟通: major_elective/technology_communication/index.md
