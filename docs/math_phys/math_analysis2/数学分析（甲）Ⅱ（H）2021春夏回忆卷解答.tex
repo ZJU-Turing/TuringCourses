@@ -1,0 +1,222 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{mismath} % \ds
+\usepackage{amsfonts,amssymb}
+\usepackage{geometry}
+
+\geometry{a4paper,scale=0.66,top=0.8in,bottom=1.2in,left=1in,right=1in}
+\title{数学分析（甲）II（H）2020 - 2021 春夏期末试答}
+\author{Shad0wash}
+\date{\today}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、}}多元函数可微性
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.} \(z = f(x, y)\) 在 \((x_0, y_0)\) 的某邻域内有定义，若存在常数 \(A, B\) 对充分小的 \(\Delta x, \Delta y\) 均有
+    \[
+        \Delta z = f(x_0 + \Delta x, y_0 + \Delta y) - f(x_0, y_0) = A \Delta x + B \Delta y + o(\rho), \quad \rho \rightarrow 0.
+    \]
+    其中 \(\rho = \sqrt{(\Delta x)^2 + (\Delta y)^2}\)，则称函数 \(z = f(x, y)\) 在点 \((x_0, y_0)\) 处可微.
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.} \(f(x, y) = (xy)^{\frac{5}{7}}, \quad f_x'(0, 0) = 0, \quad f_y'(0, 0) = 0.\) 并且有
+    \begin{align*}
+        & \dfrac{\lvert f(x, y) - f(0, 0) - f_x'(0, 0)x - f_y'(0, 0)y \rvert}{\sqrt{x^2 + y^2}} \\
+        & = \dfrac{\lvert (xy)^{\frac{5}{7}} \rvert}{\sqrt{x^2 + y^2}} \leqslant \dfrac{\lvert (xy)^{\frac{5}{7}} \rvert}{\sqrt{2} \lvert xy \rvert^{\frac{1}{2}}} = \dfrac{1}{\sqrt{2}} \lvert xy \rvert^{\frac{3}{14}} \rightarrow 0, \quad (x, y) \rightarrow (0, 0).
+    \end{align*}
+    故 \(f(x, y)\) 在 \((0, 0)\) 处可微.
+
+\noindent{\heiti\textbf{二、}}反常积分与级数的敛散性
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.} \(\dfrac{1}{x}\) 在 \([1, +\infty)\) 上单调递减，且 \(\ds \lim_{x \to \infty} \frac{1}{x} = 0\). 而 \(\ds \left\lvert \int_1^u \sin x \dd{x} \right\rvert = \lvert \cos u - \cos 1 \rvert \leqslant 2\), 由 Dirichlet 判别法知，积分 \(\ds \int_1^{+\infty} \frac{\sin x}{x} \dd{x}\) 收敛.
+    而
+    \[
+        \dfrac{\lvert \sin x \rvert}{x} \geqslant \dfrac{\sin^2 x}{x} = \dfrac{1 - \cos 2x}{2x}
+    \]
+    且 \(\ds \int_1^{+\infty} \frac{\dd{x}}{2x}\) 发散，\(\ds \int_1^{+\infty} \frac{\cos 2x}{2x} \dd{x}\) 收敛，由比较判别法知 \(\ds \int_1^{+\infty} \frac{\lvert \sin x \rvert}{x} \dd{x}\) 发散.
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.} 否. 比如 \(u_n = \dfrac{(-1)^n}{\sqrt{n}}, v_n = \dfrac{(-1)^n}{\sqrt{n} + (-1)^n}\), 有 \(\ds \lim_{n \to \infty} \frac{u_n}{v_n} = \lim_{n \to \infty} \frac{\sqrt{n} + (-1)^n}{\sqrt{n}} = 1\). \\
+    但是 \(\sum_{n = 1}^{+\infty} u_n\) 收敛（Leibniz 判别法），而 \(\ds \sum_{n = 1}^{+\infty} v_n\) 中，
+    \[
+        v_n = \dfrac{(-1)^n}{\sqrt{n} + (-1)^n} = \dfrac{(-1)^n(\sqrt{n} - (-1)^n)}{n - 1} = \dfrac{(-1)^n\sqrt{n}}{n - 1} - \dfrac{1}{n - 1},
+    \]
+    其中 \(\ds \sum_{n = 1}^{+\infty} \dfrac{(-1)^n\sqrt{n}}{n - 1}\) 收敛，\(\ds \sum_{n = 1}^{+\infty} \dfrac{1}{n - 1}\) 发散，故 \(\ds \sum_{n = 1}^{+\infty} v_n\) 发散.
+
+\clearpage
+
+\noindent{\heiti\textbf{三、}} 多元函数积分计算
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    \begin{align*}
+        I & = \int_0^1 e^{2x} \ln (1 + e^{2x}) \dd{x} = \dfrac{1}{2} \int_2^{1+e^2} \ln t \dd{t} \\
+        & = \dfrac{1}{2} \eval{t(\ln t - 1)}_2^{1+e^2} = \dfrac{1}{2} \left((1+e^2)\left(\ln(1+e^2) - 1\right) - 2(\ln 2 - 1)\right).
+    \end{align*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    \begin{align*}
+        I & = \int_{-c}^0 z \dd{z} \iint\limits_{\frac{x^2}{a^2} + \frac{y^2}{b^2} \leqslant 1 - \frac{z^2}{c^2}} \dd{x} \dd{y} = \int_{-c}^0 \pi ab \left(1 - \dfrac{z^2}{c^2}\right)z \dd{z} = \pi ab \int_{-c}^0 \left(z - \dfrac{z^3}{c^2}\right) \dd{z} \\
+        & = \pi ab \eval{\left(\dfrac{z^2}{2} - \dfrac{z^4}{4c^2}\right)}_{-c}^0 = -\dfrac{\pi}{4} ab c^2.
+    \end{align*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{3.} \(C \colon x^2 + 4y^2 = \delta^2\), 顺时针. \(\ds I = \int\limits_{L + C} + \int\limits_{C-} \). 设 \(C\) 所围区域为 \(D\).
+    \begin{gather*}
+        \pdv{Q}{x} = \dfrac{x^2 + 4y^2 -2x(x + 4y)}{(x + 4y^2)^2} = \dfrac{-x^2 - 8xy + 4y^2}{(x + 4y^2)^2}, \\
+        \pdv{P}{y} = \dfrac{-(x^2 + 4y^2) - 8y(x - y)}{(x + 4y^2)^2} = \dfrac{-x^2 - 8xy + 4y^2}{(x + 4y^2)^2}.
+    \end{gather*}
+    故 \(\ds \int\limits_{L + C} = 0\), 而 \[
+        \int\limits_{C-} = \frac{1}{\delta^2} \oint (x - y)\dd{x} + (x + 4y)\dd{y} = \frac{2}{\delta^2} \iint\limits_D \dd{x} \dd{y} = \frac{2}{\delta^2} \times \frac{\pi \delta^2}{2} = \pi.
+        \]
+    所以 \(I = \pi\).
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{4.} \(\ds I = \iint\limits_S (x \cos \alpha + y \cos \beta + z \cos \gamma) \dd{S}\), 法向量为 \(\vec{n} = (x, y, z)\), 则
+    \begin{gather*}
+        \cos \alpha = \dfrac{x}{\sqrt{x^2 + y^2 + z^2}} = x, \\ \cos \beta = \dfrac{y}{\sqrt{x^2 + y^2 + z^2}} = y, \\ \cos \gamma = \dfrac{z}{\sqrt{x^2 + y^2 + z^2}} = z.
+    \end{gather*}
+    故
+    \[
+        I = \iint\limits_S (x^2 + y^2 + z^2) \dd{S} = \iint\limits_S \dd{S} = \dfrac{1}{8} \times 4\pi \times 1^2 = \dfrac{\pi}{2}.
+    \]
+
+\noindent{\heiti\textbf{四、}} 条件极值计算
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    目标函数为 \(f(x, y, z) = (x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2\), 约束条件为 \((x, y, z) \in Ax + By + Cz + D = 0\). 由拉格朗日乘数法，设拉格朗日函数为
+    \[
+        L(x, y, z, \lambda) = (x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2 - \lambda(Ax + By + Cz + D).
+    \]
+    则有
+    \[
+        \begin{cases}
+            L_x' = 2(x - x_0) - A \lambda = 0 \implies x = x_0 + \dfrac{A}{2} \lambda, \\[2ex]
+            L_y' = 2(y - y_0) - B \lambda = 0 \implies y = y_0 + \dfrac{B}{2} \lambda, \\[2ex]
+            L_z' = 2(z - z_0) - C \lambda = 0 \implies z = z_0 + \dfrac{C}{2} \lambda, \\[2ex]
+            L_{\lambda}' = Ax + By + Cz + D = 0.
+        \end{cases}
+    \]
+    代入得
+    \begin{gather*}
+        \dfrac{1}{2} (A^2 + B^2 + C^2) \lambda = -(Ax_0 + By_0 + Cz_0 + D), \\
+        \lambda = -\dfrac{2(Ax_0 + By_0 + Cz_0 + D)}{A^2 + B^2 + C^2}.
+    \end{gather*}
+    故
+    \begin{gather*}
+        f_\mathrm{min} = (Ax_0 + By_0 + Cz_0 + D)^2 \cdot \dfrac{A^2 + B^2 + C^2}{(A^2 + B^2 + C^2)^2} = \dfrac{(Ax_0 + By_0 + Cz_0 + D)^2}{A^2 + B^2 + C^2}. \\
+        d_\mathrm{min} = \dfrac{\lvert Ax_0 + By_0 + Cz_0 + D \rvert}{\sqrt{A^2 + B^2 + C^2}}.
+    \end{gather*}
+
+\noindent{\heiti\textbf{五、}} 一致收敛
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.} \(\forall \varepsilon > 0, \exists N \in \mathbb{N^*}\), 当 \(n > N\) 时，\(\forall x \in I\), \(\left\lvert f_n(x) - f(x) \right\rvert < \varepsilon\), 则称函数列 \(\{f_n(x)\}\) 在区间 \(I\) 上一致收敛于 \(f(x)\).
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.} \(\forall [\alpha, \beta] \subset (a, b)\), \(f(x)\) 有一阶连续导函数，故 \(f'(x)\) 在 \([\alpha, \beta]\) 上一致连续. \\[1.2ex]
+    \(\forall x \in (a, b), f_n(x) = n(f(x + \dfrac{1}{n}) - f(x))\), 由拉格朗日中值定理，存在 \(\theta_n \in (0, 1)\), 使得
+    \[
+        f_n(x) = n \cdot \frac{1}{n} \cdot f'(x + \frac{\theta_n}{n}) = f'(x + \frac{\theta_n}{n}).
+    \]
+    因为 \(f'(x)\) 在 \([\alpha, \beta]\) 上一致连续，故 \(\forall \varepsilon > 0, \exists \delta > 0\), \(\forall x', x'' \in [\alpha, \beta]\), 当 \(\lvert x' - x'' \rvert < \delta\) 时，\(\lvert f'(x') - f'(x'') \rvert < \varepsilon\). 而 \(\forall \varepsilon > 0, \exists N \in \mathbb{N^*}\), 当 \(n > N\) 时，\(\dfrac{\theta_n}{n} < \dfrac{1}{n} < \dfrac{1}{N}\). \\
+    故取 \(\delta = \dfrac{1}{N}\), \(x' = x + \dfrac{\theta_n}{n}\), \(x'' = x\), 有 \(\lvert x' - x'' \rvert < \delta\), 所以 \(\left\lvert f'(x + \dfrac{\theta_n}{n}) - f'(x) \right\rvert < \varepsilon\).
+
+    所以 \(\{f_n(x)\}\) 在 \((a, b)\) 上内闭一致收敛于 \(f'\).
+
+\noindent{\heiti\textbf{六、}} Fourier 级数
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.} 奇延拓后，\(a_n = 0, n = 0, 1, 2, \ldots\),
+    \begin{align*}
+        b_n & = \dfrac{1}{\pi} \int_{- \pi}^{\pi} f(x) \sin nx \dd{x} = \dfrac{2}{\pi} \int_0^{\pi} (\pi - x) \sin nx \dd{x} \\
+        & = 2 \int_0^{\pi} \sin nx \dd{x} - \dfrac{2}{\pi} \int_0^{\pi} x \sin nx \dd{x} \\
+        & = -\dfrac{2}{n} \cos nx \bigg|_0^{\pi} + \dfrac{2}{n\pi} x\cos nx \bigg|_0^{\pi} - \dfrac{2}{n^2\pi} \int_0^{\pi} \cos nx \dd{x} = \dfrac{2}{n}
+    \end{align*}
+    故 \(f(x)\) 的 Fourier 级数为 \(\ds \sum_{n = 1}^{+\infty} \dfrac{2}{n} \sin nx\). 其在 \([- \pi, \pi]\) 上的取值为
+    \[
+        \begin{cases}
+            \pi - x, & 0 < x \leqslant \pi, \\
+            0, & x = 0, \\
+            - \pi - x, & - \pi \leqslant x < 0.
+        \end{cases}
+    \]
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.} 利用 Cauchy 收敛准则. \(\lvert b_n + \cdots + b_{n + p} \rvert = 2 \left\lvert \dfrac{\sin nx}{n} + \cdots + \dfrac{\sin (n + p)x}{n + p} \right\rvert \). \\
+    取 \(x = x_0 = \dfrac{\pi}{4n}\), \(p = n\), \(\varepsilon_0 = \dfrac{1}{\sqrt{2}}\), 有
+    \[
+        \lvert b_n + \cdots + b_{n + p} \rvert > 2 \cdot \dfrac{1}{\sqrt{2}} \cdot \dfrac{n}{2n} = \varepsilon_0.
+    \]
+    所以 \(f\) 的 Fourier 级数在 \((0, \pi)\) 上不一致收敛.
+
+\noindent{\heiti\textbf{七、}} 多元函数 Taylor 定理
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.} \(\ds f(x, y) = f(x_0, y_0) + \left(\Delta x \pdv{x} + \Delta y \pdv{y}\right) f(x_0, y_0) + \dfrac{1}{2!} \left(\Delta x \pdv{x} + \Delta y \pdv{y}\right)^2 f(x_0, y_0) + o(\rho^2)\), 其中 \(\rho = \sqrt{(\Delta x)^2 + (\Delta y)^2}\).
+
+    因为 \(P_0 (x_0, y_0)\) 是稳定点，所以 \(\ds \left(\Delta x \pdv{x} + \Delta y \pdv{y}\right) f(x_0, y_0) = 0\). 又因为 Hasse 矩阵正定，即有 \(Q(\Delta x, \Delta y) = (\Delta x, \Delta y)H(P_0)(\Delta x, \Delta y)^\mathrm{T} > 0\), 其中
+    \[
+        H(P_0) = \begin{pmatrix}
+            \ds\pdv[2]{f}{x} & \ds\pdv{f}{x}{y} \\[2ex]
+            \ds\pdv{f}{y}{x} & \ds\pdv[2]{f}{y}
+        \end{pmatrix}_{P_0}
+    \]
+    进而存在一不依赖于 \(\Delta x, \Delta y\) 的常数 \(q > 0\), 使得 \(Q(\Delta x, \Delta y) \geqslant q ((\Delta x)^2 + (\Delta y)^2)\).
+
+    所以 \(\exists \delta > 0\), 当 \((x, y) \in U(P_0, \delta)\) 时，有
+    \[
+        f(x, y) - f(x_0, y_0) \geqslant ((\Delta x)^2 + (\Delta y)^2) (q + o(1)) > 0.
+    \]
+    故 \(f(x, y)\) 在 \(P_0\) 处取极小值.
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.} 若 \(f\) 存在两个或以上的稳定点，不妨取其中两个 \(P_1(x_1, y_1), P_2(x_2, y_2)\), 由多元函数 Taylor 定理的 Lagrange 余项形式，有
+    \begin{gather*}
+        f(x, y) - f(x_1, y_1) = \dfrac{1}{2} \left(\Delta x \pdv{x} + \Delta y \pdv{y}\right)^2 f(x_1 + \theta_1 \Delta x, y_1 + \theta_1 \Delta y), \\
+        f(x, y) - f(x_2, y_2) = \dfrac{1}{2} \left(\Delta x \pdv{x} + \Delta y \pdv{y}\right)^2 f(x_2 + \theta_2 \Delta x, y_2 + \theta_2 \Delta y).
+    \end{gather*}
+    而因为 \(f\) 在每个点的 Hasse 矩阵都是正定的，故 \(\ds \dfrac{1}{2} \left(\Delta x \pdv{x} + \Delta y \pdv{y}\right)^2 f(x_1 + \theta_1 \Delta x, y_1 + \theta_1 \Delta y) > 0\), \(\ds \dfrac{1}{2} \left(\Delta x \pdv{x} + \Delta y \pdv{y}\right)^2 f(x_2 + \theta_2 \Delta x, y_2 + \theta_2 \Delta y) > 0\).
+
+    所以就会得出 \(f(x_2, y_2) > f(x_1, y_1)\) 且 \(f(x_1, y_1) > f(x_2, y_2)\) 的矛盾. 所以 \(f\) 至多有一个稳定点.
+\end{document}
