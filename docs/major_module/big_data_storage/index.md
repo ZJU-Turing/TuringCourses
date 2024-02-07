@@ -1,4 +1,4 @@
-# 大数据存储技术
+# 大数据存储与计算技术
 <div class="badges">
 <span class="badge cs-badge">CS 专业模块-计算机系统</span>
 </div>
