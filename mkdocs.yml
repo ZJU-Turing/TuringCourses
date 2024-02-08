@@ -4,10 +4,10 @@ site_description: 图灵班学习指南
 repo_name: ZJU-Turing/TuringCourses
 repo_url: https://github.com/ZJU-Turing/TuringCourses/
 edit_uri: tree/master/docs
-copyright: Copyright &copy; 2023 浙江大学图灵班
+copyright: Copyright &copy; 2023-2024 浙江大学图灵班
 
 nav:
-  - 主页: 
+  - 主页:
     - index.md
     - 贡献指南: contributing.md
     - 课程页面模板: template.md
@@ -82,7 +82,7 @@ nav:
     - major_module/index.md
     - 数值分析: major_module/numerical_analysis/index.md
     - 应用运筹学基础: major_module/applied_operations_research/index.md
-    - 程序设计方法学: major_module/programming_principle/index.md
+    - 编程语言原理: major_module/principle_of_programming_languages/index.md
     - 计算机科学思想史: major_module/history_of_cs_ideas/index.md
     - 数据挖掘导论: major_module/data_mining/index.md
     - 汇编与接口: major_module/assembly_interface/index.md
@@ -90,9 +90,10 @@ nav:
     - 并行计算与多核编程: major_module/parallel_computing/index.md
     - 计算机系统综合实现: major_module/system_comprehensive_practice/index.md
     - 分布式计算: major_module/distributed_computing/index.md
-    - 大数据存储技术: major_module/big_data_storage/index.md
+    - 大数据存储与计算技术: major_module/big_data_storage/index.md
   - 专业选修课:
     - major_elective/index.md
+    - 技术沟通: major_elective/technology_communication/index.md
     - 图像信息处理: major_elective/digital_image_processing/index.md
     - 脑启发人工智能导论: major_elective/brain_inspired_ai/index.md
     - 人工智能逻辑: major_elective/ai_logic/index.md
@@ -108,15 +109,20 @@ nav:
       - 超算实训: short_term/hpc/index.md
       - 算法竞赛集训: short_term/acm/index.md
       - 安全攻防实践: short_term/ctf/index.md
+      - 大数据可视化: short_term/data_visualization/index.md
     - 课程综合实践 Ⅱ:
       - short_term/index.md
       - C++ 项目管理及工程实践: short_term/cpp_project/index.md
       - Rust 开发实训: short_term/rust/index.md
-  - 其他课程:
+  - 跨专业课程:
     - others/index.md
     - 常微分方程: others/ode/index.md
     - 数值代数: others/numerical_linear_algebra/index.md
     - 数据建模与分析: others/data_modeling_and_analysis/index.md
+    - 抽象代数: others/abstract_algebra/index.md
+    - 经济学类课程集: others/economics/index.md
+    - 金融学类课程集: others/finance/index.md
+    - B/S 体系软件设计: others/browser_server_software/index.md
   - 书评专区:
     - readings/index.md
 
@@ -187,7 +193,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:
