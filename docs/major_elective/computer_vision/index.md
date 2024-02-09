@@ -4,6 +4,26 @@
 <span class="badge cs-badge">CS 专业选修</span>
 </div>
 
+<style>
+.heimu, .heimu a, a .heimu, .heimu a.new {
+    background-color: #252525;
+    color: #252525;
+    text-shadow: none;
+}
+.heimu:hover, .heimu:active,
+.heimu:hover .heimu, .heimu:active .heimu {
+    color: white !important;
+}
+.heimu:hover a, a:hover .heimu,
+.heimu:active a, a:active .heimu {
+    color: lightblue !important;
+}
+.heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
+.heimu:active .new, .heimu .new:active, .new:active .heimu {
+    color: #BA0000 !important;
+}
+</style>
+
 <!-- include custom css -->
 <link rel="stylesheet" type="text/css" href="custom.css">
 
@@ -56,7 +76,7 @@
         - 其他说明
             - 若迟交，最高得分上限 80%
             - 在班级整体完成度不好的情况下，会对作业进行延期，甚至可以变成考试周大作业
-            - 若完成度好，通过进行展示可以得到一定 Bonus，比例未知，从个人得分上感觉没有溢出到期末
+            - 若完成度好，通过进行展示可以得到一定 Bonus，比例未知，增加到总评上
     - 期末考试（50%）
         - 两班历年来都统一由潘老师出题
         - 期末考试闭卷，全中文，全问答题
