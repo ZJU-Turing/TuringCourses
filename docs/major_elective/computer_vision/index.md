@@ -1,31 +1,7 @@
 # 计算机视觉
-
 <div class="badges">
 <span class="badge cs-badge">CS 专业选修</span>
 </div>
-
-<style>
-.heimu, .heimu a, a .heimu, .heimu a.new {
-    background-color: #252525;
-    color: #252525;
-    text-shadow: none;
-}
-.heimu:hover, .heimu:active,
-.heimu:hover .heimu, .heimu:active .heimu {
-    color: white !important;
-}
-.heimu:hover a, a:hover .heimu,
-.heimu:active a, a:active .heimu {
-    color: lightblue !important;
-}
-.heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
-.heimu:active .new, .heimu .new:active, .new:active .heimu {
-    color: #BA0000 !important;
-}
-</style>
-
-<!-- include custom css -->
-<link rel="stylesheet" type="text/css" href="custom.css">
 
 ## 课程学习内容
 
@@ -45,12 +21,11 @@
 
 === "潘纲"
 
-    全中文授课，课件以往年的形成的<font class="heimu" title="你知道的太多了">杂交</font>课件为主，但是也会夹杂着一些随时事 <font class="heimu" title="你知道的太多了">OpenAI</font> 更新的课件（Transformer）。因为潘老师原本就是 CV 方向的，所以对于课程的讲解也是很有深度的。不过从 21 年开始，潘老师的实验开始改革，相比宋老师班会难很多，同时也会邀请实验做的比较好的同学对自己的实验进行讲解，有一定的 Bonus（但没公布比例），原则上一人一次。2023 年冬没有点名的情况。
+    全中文授课，课件以往年的形成的<del>杂交</del>课件为主，但是也会夹杂着一些随着时事（~~OpenAI~~）更新的课件（Transformer）。因为潘老师原本就是 CV 方向的，所以对于课程的讲解也是很有深度的。不过从 21 年开始，潘老师的实验开始改革，相比宋老师班会难很多，同时也会邀请实验做的比较好的同学对自己的实验进行讲解，有一定的 Bonus（但没公布比例），原则上一人一次。2023 年冬没有点名的情况。
 
 === "宋明黎" 
 
-    来自潘老师班的说法：据说宋老师上课和图像信息处理很相近。  
-    TODO：待完善
+    来自潘老师班的说法：据说宋老师上课和图像信息处理很相近。具体信息待完善。
 
 ## 课程教材
 
