@@ -1,7 +1,7 @@
 # 电子工程训练（甲）
 <div class="badges">
-<span class="badge labor-badge">劳育认定</span>
 <span class="badge cross-badge">跨专业课程</span>
+<span class="badge labor-badge">劳育认定</span>
 </div>
 
 ## 课程学习内容
@@ -38,8 +38,7 @@
 
 ## 分数构成
 
-!!! note
-    未找到具体的分数比例，以下为大致的分数构成，具体任务可能会有变化
+!!! warning "未找到具体的分数比例，以下为大致的分数构成，具体任务可能会有变化"
 
 * 出勤
 * 实验样品的验收，比如焊接的电路板成果
