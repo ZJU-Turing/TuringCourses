@@ -69,7 +69,7 @@
 
     </div>
 
-=== "信息电子类"
+=== "信电类"
     <div style="text-align: center" markdown="1">
 
     |课程名称|学分|该专业建议学年学期|资料情况|
