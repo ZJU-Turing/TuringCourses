@@ -74,4 +74,4 @@
 
     |课程名称|学分|该专业建议学年学期|资料情况|
     |:--|:--|:--|:--|
-    |[电子工程训练（甲）](electronic_engineering_training1)|1.5|一（春夏）|较完善✅|
+    |[电子工程训练（甲）](electronic_engineering_training/#course_1)|1.5|一（春夏）|较完善✅|
