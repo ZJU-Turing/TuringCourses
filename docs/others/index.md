@@ -76,3 +76,5 @@
     |:--|:--|:--|:--|
     |[电子工程训练（甲）](electronic_engineering_training/#course_1)|1.5|一（春夏）|较完善✅|
     |[电子工程训练（乙）](electronic_engineering_training/#course_2)|1.5|二（秋冬）|较完善✅|
+
+    </div>
