@@ -1,16 +1,10 @@
----
-fold_toc: True
-abbrs:
-    - 信电类
----
-
 # 电子工程训练
 <div class="badges">
 <span class="badge cross-badge">跨专业课程</span>
 <span class="badge labor-badge">劳育认定</span>
 </div>
 
-电子工程训练是信息与电子工程学院开设的一门专业基础课程，分为电子工程训练（甲）和电子工程训练（乙），两门课程轮流开设。
+电子工程训练是信息与电子工程学院开设的专业基础课程，分为电子工程训练（甲）和电子工程训练（乙），两门课程轮流开设。
 
 ---
 
