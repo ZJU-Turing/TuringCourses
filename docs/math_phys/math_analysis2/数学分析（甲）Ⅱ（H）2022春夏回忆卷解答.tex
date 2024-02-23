@@ -1,0 +1,218 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{mismath} % \ds
+\usepackage{amsfonts,amssymb}
+\usepackage{geometry}
+
+\geometry{a4paper,scale=0.66,top=0.8in,bottom=1.2in,left=1in,right=1in}
+\title{数学分析（甲）II（H）2021 - 2022 春夏期末试答}
+\author{Shad0wash}
+\date{\today}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、}} 一致收敛定义
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    对于函数列 \(\{f_n(x)\}\), \(\forall \varepsilon > 0\), \(\exists N \in \mathbb{N}\), 其取值与 \(x\) 无关, 当 \(n > N\) 时, \(\forall x \in D\), 有 \(\lvert f_n(x) - f(x) \rvert < \varepsilon\), 则称 \(\{f_n(x)\}\) 在 \(D\) 上一致收敛于 \(f(x)\), 记作 \(f_n(x) \xrightarrow{D} f(x)\).
+
+    \(f_n(x) = \dfrac{\sin nx}{n^2}\), \(f(x) = 0\), \(\forall \varepsilon > 0\), \(\exists N = \left[ \varepsilon^{-\frac{1}{2}} \right]\), 当 \(n > N\) 时, \(\forall x \in \mathbb{R}\),
+    \[
+        \lvert f_n(x) - f(x) \rvert = \left\lvert \dfrac{\sin nx}{n^2} - 0 \right\rvert \leqslant \dfrac{1}{n^2} < \dfrac{1}{N^2} = \varepsilon.
+    \]
+    故 \(\left\{ \dfrac{\sin nx}{n^2} \right\}\) 在 \(\mathbb{R}\) 上一致收敛于 \(0\).
+
+\noindent{\heiti\textbf{二、}} 可偏导与可微
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \(f(x, y) = \begin{cases} \dfrac{\sin xy}{\sqrt{x^2 + y^2}}, & x^2 + y^2 \neq 0 \\ 0, & x^2 + y^2 = 0 \end{cases}\), 则
+    \[
+        \lim_{\substack{x \to 0 \\ y \to 0}} f(x, y) = \lim_{\rho \to 0} \dfrac{\rho^2 \lvert \sin \theta \cos \theta \rvert}{\rho} = \lim_{\rho \to 0} \rho \lvert \sin \theta \cos \theta \rvert = 0 = f(0, 0),
+    \]
+    所以 \(f(x, y)\) 在 \((0, 0)\) 处连续. 而
+    \[
+        \lim_{x \to 0} \dfrac{f(x, 0) - f(0, 0)}{x} = 0, \quad \lim_{y \to 0} \dfrac{f(0, y) - f(0, 0)}{y} = 0,
+    \]
+    故 \(f(x, y)\) 在 \((0, 0)\) 处可偏导. 但是
+    \[
+        \lim_{\substack{x \to 0 \\ y \to 0}} \dfrac{f(x, y) - (f'(0, 0) x + f'(0, 0) y)}{\sqrt{x^2 + y^2}} = \lim_{\rho \to 0} \dfrac{\rho^2 \lvert \sin \theta \cos \theta \rvert }{\rho^2} = \lvert \sin \theta \cos \theta \rvert,
+    \]
+    取值与 \(\theta\) 有关, 故 \(f(x, y)\) 在 \((0, 0)\) 处不可微.
+
+
+\noindent{\heiti\textbf{三、}} 隐函数存在定理与隐函数求导
+
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    Warning: 图灵回忆卷此处回忆有误，应为 \(e^{x + y + 1} + x^2y = e\) 在 \((0, 0)\) 的某邻域内唯一确定 \(y\) 关于 \(x\) 的函数.
+
+    记 \(F(x, y) = e^{x + y + 1} + x^2y - e\), \(F(0, 0) = 0\). \(\exists \delta > 0\), 使得 \(F(x, y)\) 在 \(U(O, \delta)\) 内连续, 且 \(F_y'(x, y) = e^{x + y + 1} + x^2\) 在上述 \(U(O, \delta)\) 内连续，并成立 \(F_y'(x, y) > 0\), 故由隐函数存在定理, \(F(x, y)\) 在 \(U(O, \delta)\) 内可唯一确定 \(y\) 关于 \(x\) 的函数 \(y = f(x)\), 且 \(F(x, f(x)) = 0\).
+
+    等式 \(e^{x + y + 1} + x^2y - e = 0\) 两边同时对 \(x\) 求导可得
+    \begin{gather*}
+        e^{x + y + 1} (1 + \dv{y}{x}) + 2xy + x^2 \dv{y}{x} = 0, \\
+        (e^{x + y + 1} + x^2) \dv{y}{x} = -e^{x + y + 1} - 2xy, \\
+    \end{gather*}
+    故 \(\ds \eval{\dv{y}{x}}_{(0, 0)} = -1\).
+    继续对 \(x\) 求导可得
+    \[
+        (e^{x + y + 1} + x^2) \dv[2]{y}{x} + (e^{x + y + 1} (1 + \dv{y}{x}) + 2x) \dv{y}{x} = -(e^{x + y + 1}(1 + \dv{y}{x}) + 2(y + x\dv{y}{x})),
+    \]
+    代入 \((0, 0)\) 可得 \(\ds \eval{\dv[2]{y}{x}}_{(0, 0)} = 0\).
+
+\noindent{\heiti\textbf{四、}} 多元函数积分计算
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    \begin{align*}
+        I & = \int_{0}^{2\pi} \dd{\theta} \int_{0}^{\pi} \dd{\varphi} \int_{0}^{R} \rho^2 \cos^2 \varphi \cdot \rho \cdot \rho^2 \sin \varphi \dd{\rho} \\
+        & = 2\pi \int_{0}^{\pi} \sin \varphi \cos^2 \varphi \dd{\varphi} \int_{0}^{R} \rho^5 \dd{\rho} \\
+        & = -2\pi \times \dfrac{1}{3} \eval{\cos^3 \varphi}_{0}^{\pi} \times \dfrac{1}{6} \eval{\rho^6}_{0}^{R} = \dfrac{2}{9} \pi R^6.
+    \end{align*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    设 \(\varSigma\) 为曲线在平面 \(x - y + z = 2\) 上围成的部分，取上侧. 则
+    \begin{align*}
+        I & = \iint\limits_\varSigma \begin{vmatrix}
+            \dd{x} \dd{y} & \dd{y} \dd{z} & \dd{z} \dd{x} \\[1.5ex]
+            \ds\pdv{x} & \ds\pdv{y} & \ds\pdv{z} \\[1.5ex]
+            z - y & x - z & x - y
+        \end{vmatrix} \\
+        & = \iint\limits_\varSigma (-1 + 1) \dd{x} \dd{y} + (1 - 1) \dd{y} \dd{z} + (1 + 1) \dd{z} \dd{x} \\ & = 2 \iint\limits_\varSigma \dd{z} \dd{x} = 2 \iint\limits_\varSigma \dd{S} \cos \beta = 2 \iint\limits_\varSigma \dfrac{\dd{x} \dd{y}}{\cos \gamma} \cos \beta = -2 \iint\limits_\varSigma \dd{x} \dd{y} = -2\pi
+    \end{align*}
+    其中 \(\vec{n}_0 = (\cos \alpha, \cos \beta, \cos \gamma) = (\dfrac{1}{\sqrt{3}}, -\dfrac{1}{\sqrt{3}}, \dfrac{1}{\sqrt{3}})\) 为平面的单位法向量.
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{3.} 添加 \(L \colon y = 0\), \(x\) 从 \(\pi\) 到 \(0\). \(\ds I = \int\limits_{C + L} - \int\limits_{L} = - \iint\limits_D + \int\limits_{L-}\). \\[1.2ex]
+    \(\ds \int\limits_{L-} = e^x(1 - \cos y) \dd{x} - e^x(1 - \sin y) \dd{y} = 0\). 故
+    \begin{align*}
+        I & = - \iint\limits_D \begin{vmatrix}
+            \ds\pdv{x} & \ds\pdv{y} \\[1.5ex]
+            P & Q
+        \end{vmatrix}= \iint\limits_D (e^x(1 - \sin y) + e^x \sin y) \dd{x} \dd{y} \\
+        & = \iint\limits_D e^x \dd{x} \dd{y} = \int_{0}^{\pi} \dd{x} \int_{0}^{\sin x} e^x \dd{y} = \int_{0}^{\pi} e^x \sin x \dd{x}.
+    \end{align*}
+    进而运用分部积分
+    \begin{gather*}
+        I = \eval{e^x \sin x}_{0}^{\pi} - \int_{0}^{\pi} e^x \cos x \dd{x} = - \eval{e^x \cos x}_{0}^{\pi} - \int_{0}^{\pi} e^x \sin x \dd{x} = (e^\pi + 1) - I, \\
+        I = \dfrac{e^\pi + 1}{2}.
+    \end{gather*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{4.} 添加平面 \(D = \begin{cases}
+        x^2 + y^2 \leqslant 1, \\
+        z = 0
+    \end{cases}\), 取下侧. \(\ds I = \iint\limits_{\varSigma + D} - \iint\limits_{D} = \iiint\limits_{\varOmega} + \iint\limits_{D-}\).
+    \begin{gather*}
+        \iint\limits_{D-} = \iint\limits_{D-} \dd{x} \dd{y} = \pi \\
+        \iiint\limits_{\varOmega} = \iiint\limits_{\varOmega} 2y + 2z + (1 - 2y - 2z) \dd{V} = \iiint\limits_{\varOmega} \dd{V} = \dfrac{2}{3} \pi. \\
+        I = \dfrac{5}{3} \pi.
+    \end{gather*}
+
+\noindent{\heiti\textbf{五、}} 有条件极值
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    讨论点在内部还是在边缘. \(D \colon x^2 + y^2 \leqslant 5\), \(f(x, y) = xy + x - y\).
+
+    \textbf{1.} \((x, y) \in D^o\). 令
+    \[
+        \begin{cases}
+            f_x'(x, y) = y + 1 = 0, \\
+            f_y'(x, y) = x - 1 = 0,
+        \end{cases}
+    \]
+    解得 \((x, y) = (1, -1)\), 设为点 \(P\). 因为 \(x_p^2 + y_p^2 = 2 < 5\), 故 \(P \in D^o\). 但 \(A = f_{xx}''(P) = 0, C = f_{yy}''(P) = 0, B = f_{xy}''(P) = 1\), 有 \(B^2 - AC = 1 > 0\), 所以 \(f(P)\) 不是极值.
+
+    \textbf{2.} \((x, y) \in \partial D\). 利用拉格朗日乘数法, 设 \(L(x, y, \lambda) = xy + x - y - \lambda(x^2 + y^2 - 5)\), 令
+    \[
+        \begin{cases}
+            L_x'(x, y, \lambda) = y + 1 - 2\lambda x = 0, \\
+            L_y'(x, y, \lambda) = x - 1 - 2\lambda y = 0, \\
+            L_\lambda'(x, y, \lambda) = x^2 + y^2 - 5 = 0,
+        \end{cases}
+    \]
+    联立 \(\begin{cases}
+        y + 1 - 2\lambda x = 0, \\
+        x - 1 - 2\lambda y = 0,
+        \end{cases}\) 可得 \((1 - 2\lambda)(x + y) = 0\).
+    \begin{itemize}
+        \item 当 \(\lambda = \dfrac{1}{2}\) 时, 解得 \((x, y) = (2, 1)\) 或 \((x, y) = (-1, -2)\), 分别设为 \(Q_1, Q_2\). 代入得 \(f(Q_1) = f(Q_2) = 3\).
+        \item 当 \(x + y = 0\) 时, 代入解得 \((x, y) = (-\sqrt{5}, \sqrt{5})\) 或 \((x, y) = (\sqrt{5}, -\sqrt{5})\), 分别设为 \(Q_3, Q_4\). 代入得 \(f(Q_3) = f(Q_4) = -5 - 2\sqrt{5}\).
+    \end{itemize}
+    故 \(f(x, y)\) 在 \(D\) 上的最大值为 \(3\), 最小值为 \(-5 - 2\sqrt{5}\). \\
+    （其实也可以三角函数代换来解，说明起来更充分些）
+
+\noindent{\heiti\textbf{六、}} 函数项级数的基本计算
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    设 \(u = \dfrac{1}{3} x\), 则 \(\ds I = \sum_{n = 0}^{+\infty} \dfrac{u^{n}}{n + 1}\). \(u = -1\) 时，\(I\) 收敛；\(u = 1\) 时，\(I\) 发散. 故 \(I\) 的收敛域为 \([-3, 3)\), \(r = 3\). \\
+    \begin{gather*}
+        uI = \sum_{n = 0}^{+\infty} \dfrac{u^{n + 1}}{n + 1} \\
+        (uI)' = \sum_{n = 0}^{+\infty} u^{n} = \dfrac{1}{1 - u}, \quad u \in [-1, 1) \\
+        uI = -\ln (1 - u), \quad u \in [-1, 1) \\
+        I = -\dfrac{\ln (1 - u)}{u} = -\dfrac{3\ln (1 - \frac{1}{3} x)}{x}, \quad x \in [-3, 3).
+    \end{gather*}
+
+\noindent{\heiti\textbf{七、}} Fourier 级数
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    进行周期延拓，其为偶函数，故 \(b_n = 0\).
+    \begin{align*}
+        a_n & = \dfrac{1}{\pi} \int_{0}^{2\pi} \dfrac{1}{4} x(2\pi - x)\cos nx \dd{x} = \dfrac{1}{\pi} \int_{0}^{2\pi} (\dfrac{\pi}{2} x \cos nx - \dfrac{1}{4} x^2 \cos nx) \dd{x} \\
+        & = \dfrac{1}{2} \int_{0}^{2\pi} x \cos nx \dd{x} - \dfrac{1}{4\pi} \int_{0}^{2\pi} x^2 \cos nx \dd{x} = \dfrac{1}{2n} \int_0^{2\pi} x \dd(\sin nx) - \dfrac{1}{4n\pi} \int_0^{2\pi} x^2 \dd(\sin nx) \\
+        & = \dfrac{1}{2n} \eval{x \sin nx}_0^{2\pi} - \dfrac{1}{2n} \int_0^{2\pi} \sin nx \dd{x} - \dfrac{1}{4n\pi} \eval{x^2 \sin nx}_0^{2\pi} + \dfrac{1}{2n\pi} \int_0^{2\pi} x \sin nx \dd{x} \\
+        & = \dfrac{1}{2n\pi} \int_0^{2\pi} x \sin nx \dd{x} = -\dfrac{1}{2n^2\pi} \eval{x \cos nx}_0^{2\pi} + \dfrac{1}{2n^2\pi} \int_0^{2\pi} \cos nx \dd{x} = -\dfrac{1}{n^2}, n \geqslant 1.
+    \end{align*}
+    \[
+        a_0 = \dfrac{1}{\pi} \int_{0}^{2\pi} \dfrac{1}{4} x(2\pi - x) \dd{x} = \dfrac{1}{4\pi} \eval{(\pi x^2 - \dfrac{1}{3} x^3)}_{0}^{2\pi} = \dfrac{1}{4\pi} \times \dfrac{4\pi^3}{3} = \dfrac{\pi^2}{3}.
+    \]
+    所以
+    \begin{gather*}
+        f(x) = \dfrac{\pi^2}{6} - \sum_{n = 1}^{+\infty} \dfrac{\cos nx}{n^2}. \\
+        \dfrac{1}{4} x(2\pi - x) = \dfrac{\pi^2}{6} - \sum_{n = 1}^{+\infty} \dfrac{\cos nx}{n^2}.
+    \end{gather*}
+    当 \(x = 0\) 时，\(\ds \sum_{n = 1}^{+\infty} \dfrac{1}{n^2} = \dfrac{\pi^2}{6}\).
+
+\noindent{\heiti\textbf{八、}} 复杂函数列一致收敛的证明
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \begin{gather*}
+        F(x) = \lim_{n \to +\infty} f_n(x) = \lim_{n \to +\infty} \dfrac{1}{n} \sum_{k = 0}^{n - 1} f(x + \dfrac{k}{n}) = \int_{0}^{1} f(x + t) \dd{t} = \sum_{k = 0}^{n - 1} \int_{\frac{k}{n}}^{\frac{k + 1}{n}} f(x + t) \dd{t}.\\
+        f_n(x) = \dfrac{1}{n} \sum_{k = 0}^{n - 1} f(x + \dfrac{k}{n}) = \sum_{k = 0}^{n - 1} \int_{\frac{k}{n}}^{\frac{k + 1}{n}} f(x + \frac{k}{n}) \dd{t}. \\
+        \lvert f_n(x) - F(x) \rvert = \left\lvert \sum_{k = 0}^{n - 1} \int_{\frac{k}{n}}^{\frac{k + 1}{n}} (f(x + \frac{k}{n}) - f(x + t)) \dd{t} \right\rvert.
+    \end{gather*}
+    \(f(x)\) 在 \(\mathbb{R}\) 上连续，则 \(\forall [\alpha, \beta] \subset \mathbb{R}\), \(f(x)\) 在其上一致连续. 即 \(\forall \varepsilon > 0\), \(\exists \delta > 0\), \(x', x'' \in [\alpha, \beta]\)时，若 \(\lvert x' - x'' \rvert < \delta\), 则 \(\lvert f(x') - f(x'') \rvert < \varepsilon\). \\[1.2ex]
+    \(\forall \varepsilon > 0, \exists N = \left[ \dfrac{1}{\delta} \right] + 1\), 当 \(n > N\) 时，\(\left\lvert (x + \dfrac{k}{n}) - (x + t) \right\rvert \leqslant \dfrac{1}{n} < \delta\), 故 \[
+        \lvert f_n(x) - F(x) \rvert \leqslant \sum_{k = 0}^{n - 1} \int_{\frac{k}{n}}^{\frac{k + 1}{n}} \left\lvert (f(x + \frac{k}{n}) - f(x + t)) \right\rvert \dd{t} = \sum_{k = 0}^{n - 1} \int_{\frac{k}{n}}^{\frac{k + 1}{n}} \varepsilon \dd{t} = \varepsilon.
+    \]
+    即有 \(\{f_n(x)\}\) 在 \(\mathbb{R}\) 上内闭一致收敛.
+\end{document}
