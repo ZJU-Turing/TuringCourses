@@ -55,9 +55,9 @@ Homework(20%) + Lab(40%) + Final(40%)
 * Homework 均为教材习题，网上有答案，由助教批改。去年为了控制平时分，作业批改较严。
 * Lab: lab1(5%) + lab2(5%) + lab3(7%) + lab4(7%) + lab5(8%) + lab6(8%), 实验内容见课程学习内容部分。
     * 其中前五个实验需要验收，第六个实验可以在整个暑假时间内完成，开学前截止且不用验收。实验均需要实验报告。
-    * 每个实验都有查重，查到了会扣掉相应的分数。
+    * 每个实验都有查重，查到了会扣掉该次实验所有分数并扣除 10% 的总评。
     * 第一次没验收成功则验收最高得分 90, 超过验收期限也会有 penalty. 
-    * 去年实验的要求可见[仓库](https://github.com/HobbitQia/ZJU-Courses-Resources/tree/master/ICS)
+    * 2022 年实验的要求可见[仓库](https://github.com/HobbitQia/ZJU-Courses-Resources/tree/master/ICS)，2023 年实验要求可见[仓库](https://github.com/Frankoxer/ZJU-ICS-2023-Labs)
 * Final 是纸质统一考试，没有 cheating sheet, 一般是开学第一周周五（是的，隔了一个暑假）有斩杀线（据说是 50）
 
 ## 学习建议
