@@ -68,3 +68,13 @@
     |[B/S 体系软件设计](browser_server_software)|3.5|三（秋冬）|较完善✅|
 
     </div>
+
+=== "信电类"
+    <div style="text-align: center" markdown="1">
+
+    |课程名称|学分|该专业建议学年学期|资料情况|
+    |:--|:--|:--|:--|
+    |[电子工程训练（甲）](electronic_engineering_training/#course_1)|1.5|一（春夏）|较完善✅|
+    |[电子工程训练（乙）](electronic_engineering_training/#course_2)|1.5|二（秋冬）|较完善✅|
+
+    </div>
