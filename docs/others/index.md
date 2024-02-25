@@ -17,6 +17,7 @@
     |[抽象代数](abstract_algebra/)|4.0|二（秋冬）|较完善✅|
     |[数值代数](numerical_linear_algebra/)|3.0|三（春夏）|较完善✅|
     |[数据建模与分析](data_modeling_and_analysis/)|3.0|三（春夏）|较完善✅|
+    |[数论导引](number_theory/)|3.0|三（春夏）||
     
     </div>
 
