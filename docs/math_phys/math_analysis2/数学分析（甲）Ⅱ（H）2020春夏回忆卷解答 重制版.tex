@@ -1,0 +1,246 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{mismath} % \ds
+\usepackage{amsfonts,amssymb}
+\usepackage{geometry}
+\usepackage{extarrows}
+
+\geometry{a4paper,scale=0.66,top=0.8in,bottom=1.2in,left=1in,right=1in}
+\title{数学分析（甲）II（H）2020春夏期末\quad 重制版答案}
+\author{V1CeVersa}
+\date{\today}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、}} 函数项级数、含参变量积分、广义积分
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    若\(\ds \sum_{n=1}^{\infty}u_n(x)\)一致收敛，其和函数为\(S(x)\)，对任意的\(\varepsilon>0\)，存在仅与\(\varepsilon\)相关的正整数\(N(\varepsilon)\in\mathbb{N}\)，使得当\(n>N(\varepsilon)\)时，有\[\left|\sum_{k=1}^{n}u_k(x)-S(x)\right|<\varepsilon.\]
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    若\(\ds\int_{a}^{+\infty}f(x,y)\dd{y}\)在\(I\)上一致收敛，则对任意的\(\varepsilon>0\)，存在仅与\(\varepsilon\)相关的正实数\(A_0(\varepsilon)\in\mathbb{R}_{+}\)，使得当\(A>A_0(\varepsilon)\)时，有\[\left|\int_{A}^{+\infty}f(x,y)\right|<\varepsilon.\]
+
+\noindent{\heiti\textbf{二、}} 正项级数、方向导数
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    对\(x\geqslant0\)，我们证明不等式\(\sin x\geqslant x-\dfrac{1}{6}x^3\).
+
+    设\(f(x)=\sin x-x +\dfrac{1}{6}x^3,\enspace x\geqslant0\)，\(f'(x) = \cos x -1 +\dfrac{1}{2}x^2\)，\(f''(x) = -\sin x+x\geqslant0\).
+
+    则\(f'(x)\geqslant f'(0) = 0\)，\(f(x)\geqslant f(0)= 0\)，不等式得证.所以
+    \[\sum_{n=1}^{\infty}\frac{1}{n^{2n\sin(1/n)}}\leqslant\sum_{n=1}^{\infty}n^{-2(\frac{1}{n}-\frac{1}{6n^3})} = \sum_{n=1}^{\infty}n^{-(2-\frac{1}{3n^2})}\leqslant\sum_{n=1}^{\infty}n^{-\frac{1}{n^{5/3}}}\]
+
+    根据比较判别法，此正项级数收敛.
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    设\(r=\sqrt{x^2+y^2+z^2}\)，则\(\ds \nabla u = \left(\pdv{u}{x},\pdv{u}{y},\pdv{u}{z}\right) = \left(\frac{x}{r},\frac{y}{r},\frac{z}{r}\right)\).
+
+    曲线在\(P_0\)点的方向向量为\(\ds \vec{l} = \eval{\left(x'(t),y'(t),z'(t)\right)}_{(1,2,3)} = (1,4,12)\)，其单位向量为\(\vec{l}_0 = \dfrac{\vec{l}}{\lvert\vec{l}\rvert} = \dfrac{(1,4,12)}{\sqrt{161}}\).
+    那么\[\pdv{u}{\vec{l}} = \vec{l}_0\cdot\nabla u = \frac{45}{7\sqrt{46}}.\]
+
+\clearpage
+\noindent{\heiti\textbf{三、}} 重积分、曲线积分和曲面积分的计算
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    \begin{equation*}
+        \begin{split}
+            V &= \int_{0}^{\frac{1}{\sqrt{2}}}\dd{z}\iint\limits_{x^2+y^2\leqslant z^2}\dd{x}\dd{y}+\int_{\frac{1}{\sqrt{2}}}^{1}\dd{z}\iint\limits_{x^2+y^2\leqslant 1-z^2}\dd{x}\dd{y}\\
+            &= \int_{0}^{\frac{1}{\sqrt{2}}}\pi z^2\dd{z}+\int_{\frac{1}{\sqrt{2}}}^{1}\pi (1-z^2)\dd{z}\\
+            &= \frac{(2-\sqrt{2})}{3}\pi.
+        \end{split}
+    \end{equation*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    进行一个元的换：\(x=y=\dfrac{\sin\theta}{\sqrt{2}},z = \cos\theta,\theta\in[0,2\pi]\).
+
+    因而\[\dd{s} = \sqrt{2\left(\dfrac{\cos\theta}{\sqrt{2}}\right)^2+(-\sin \theta)^2}\dd{\theta} = \dd{\theta}.\]
+
+    所以
+    \begin{equation*}
+        \begin{split}
+            \oint\limits_{L}(x^2+y^2+z^2)\dd{s} &= \int_{0}^{2\pi}(\sin^2\theta+\cos\theta)\dd{\theta}\\
+            &= \int_{-\pi}^{\pi}(\sin^2\alpha-\cos\alpha)^2\dd{\alpha}\enspace(\theta = \pi+\alpha)\\
+            &= 2\int_{0}^{\pi}(\sin^2\alpha-\cos\alpha)^2\dd{\alpha}\\
+            &= 2\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(\cos^2\beta+\sin\beta)^2\dd{\beta}\enspace(\alpha = \frac{\pi}{2}+\beta)\\
+            &= 2\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(\cos^4\beta+\sin^2\beta+2\cos^2\beta\sin\beta)\dd{\beta}\\
+            &= 2\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(\sin^4\beta-2\sin^3\beta-\sin^2\beta+2\sin\beta+1)\dd{\beta}\\
+            &= 4\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(\sin^4\beta-\sin^2\beta+1)\dd{\beta} = \frac{7}{4}\pi.
+        \end{split}
+    \end{equation*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{3.}
+    进行一个孔的挖：设\(P=\dfrac{-y}{3x^2+4y^2},Q=\dfrac{x}{3x^2+4y^2}\)，由于在任意非原点处，有\[\pdv{P}{y} = \frac{4y^2-3x^2}{(3x^2+4y^2)^2} = \pdv{Q}{x}.\]
+    我们在原点附近取一个非常小的椭圆曲线\(L'\colon 3x^2+4y^2 = \delta^2\)，\(\delta\)充分小，使得\(L'\)完全包含在\(L\)内部，设\(L'\)与\(L\)之间的区域为\(S\)，\(L'\)包含的椭圆为\(S'\). 则由格林公式，有
+    \begin{equation*}
+        \begin{split}
+            \int\limits_{L}\frac{x\dd{y}-y\dd{x}}{3x^2+4y^2} &= \iint\limits_{S}\left(\pdv{Q}{x}-\pdv{P}{y}\right)\dd{x}\dd{y} +\int\limits_{L'}\frac{x\dd{y}-y\dd{x}}{3x^2+4y^2} \\
+            &= \frac{1}{\delta^2}\int\limits_{L'}x\dd{y}-y\dd{x}\\
+            &= \frac{1}{\delta^2}\iint\limits_{S'}(1+1)\dd{x}\dd{y}\\
+            &= \frac{1}{\delta^2}\pi\frac{\delta}{\sqrt{2}} \cdot \frac{\delta}{2} = \frac{\pi}{2\sqrt{3}}.
+        \end{split}
+    \end{equation*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{4.}
+    考虑椭球面的参数表示：\(x = \sin\varphi\cos\theta, y = 2\sin\varphi\sin\theta, z = 3\cos\varphi\)，其中\(\varphi\in[0,\frac{\pi}{2}],\theta\in[0,2\pi]\).
+    计算可知\[\frac{\partial(x,y)}{\partial(\varphi,\theta)} = 2\sin\varphi\cos\varphi = \sin 2\varphi\geqslant0,\frac{\partial (y,z)}{\partial(\varphi,\theta)} = 6\sin^2\varphi\cos\theta.\]
+    由左式可知，参数\((\varphi,\theta)\)决定的法向量是外侧的，由第二类曲面积分的定义：
+    \begin{equation*}
+        \begin{split}
+            \iint\limits_{S}x^3\dd{y}\dd{z} &=\int\limits_{D_{\varphi\theta}}\sin^3\varphi\cos^3\theta\cdot 6\sin^2\varphi\cos\theta\dd{\varphi}\dd{\theta}\\
+            &= 6\int_{0}^{\frac{\pi}{2}}\sin^5\varphi\dd{\varphi}\int_{0}^{2\pi}\cos^4\theta\dd{\theta} = \frac{12}{5}\pi.
+        \end{split}
+    \end{equation*}
+
+\noindent{\heiti\textbf{四、}} 一元函数微分学
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    由于
+    \begin{equation*}
+        \begin{cases}
+            x-y = 1-z\\
+            x+y = 1-2z
+        \end{cases}
+        \implies
+        \begin{cases}
+            x = 1-\dfrac{3}{2}z\\[1.5ex]
+            y = -\dfrac{1}{2}z
+        \end{cases}
+    \end{equation*}
+    所以\[g(z) = f(x(z),y(z),z) = \dfrac{3}{2}\left(|z|+\left\lvert z-\dfrac{2}{3}\right\rvert\right)\geqslant\frac{3}{2}\left\lvert z-\left(z-\frac{2}{3}\right)\right\rvert = 1.\]
+    当且仅当\(z\in\left[0,\dfrac{2}{3}\right]\)时取等，所有极小值点为\(\ds \left(1-\frac{3}{2}z,-\frac{z}{2},z\right),z\in\left[0,\frac{2}{3}\right]\).
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    令\(z=0\)，有\(y = z = 0\)，仅有\(x\)为非零项，则题目所求的极小值点为\((1,0,0)\).
+
+\noindent{\heiti\textbf{五、}} 重积分
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    给出两种方法：
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{法一.}
+    因为\(f(x,1) = f(1,y) = 0\)，所以\[f_x(x,1) = f_y(1,y) = 0.\]
+
+    并且由于被积函数\(xyf_{xy}(x,y)\)在区域\(D\)上连续，所以我们可以交换积分次序.
+    \begin{equation*}
+        \begin{split}
+            \iint\limits_{D}xyf_{xy}(x,y)\dd{x}\dd{y} &= \int_{0}^{1}x\dd{x}\int_{0}^{1}yf_{xy}(x,y)\dd{y}\\
+            &= \int_{0}^{1}x\dd{x}\int_{0}^{1}y\dd{f}_{x}(x,y)\\
+            &= \int_{0}^{1}x\dd{x}\left(\eval{yf_x(x,y)}_0^1-\int_{0}^{1}f_x(x,y)\dd{y}\right)\\
+            &= -\iint\limits_{D}xf_x(x,y)\dd{x}\dd{y}\\
+            &= -\int_{0}^{1}\dd{y}\int_{0}^{1}xf_x(x,y)\dd{x}\\
+            &= -\int_{0}^{1}\dd{y}\left(\eval{xf(x,y)}_0^1-\int_{0}^{1}f(x,y)\dd{x}\right)\\
+            &= \iint\limits_{D}f(x,y)\dd{x}\dd{y}.
+        \end{split}
+    \end{equation*}
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{法二.}
+    设\(L\)为区域\(D = [0,1]\times[0,1]\)的边界曲线，直接计算曲线积分并利用Green公式得：
+    \[0 = \int\limits_{L}xyf_y(x,y)\dd{y}-xyf_x(x,y)\dd{x} = \iint\limits_{D}(yf_y(x,y)+xf_x(x,y)+2xyf_{xy}(x,y))\dd{x}\dd{y}.\]
+    所以\[\iint\limits_{D}xyf_{xy}(x,y)\dd{x}\dd{y} = \frac{1}{2}\iint\limits_{D}y(f_y(x,y)+xf_x(x,y))\dd{x}\dd{y}.\]
+    并且\[0 = \int_{L}xf(x,y)\dd{y}-yf(x,y)\dd{x} = \iint\limits_{D}(xf_x(x,y)+yf_y(x,y)+2f(x,y))\dd{x}\dd{y}\]
+    所以\[\iint\limits_{D}f(x,y)\dd{x}\dd{y} = \frac{1}{2}\iint\limits_{D}(yf_y(x,y)+xf_x(x,y))\dd{x}\dd{y} = \iint\limits_{D}xyf_{xy}(x,y)\dd{x}\dd{y}.\]
+
+\noindent{\heiti\textbf{六、}}Fourier级数
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    设\(u_0(x) = \dfrac{a_0}{2}\)，\(u_n(x)=a_n\cos nx+b_n\sin nx\enspace (n=1,2,\ldots)\). 又由于\[|u_n(x)|=|a_n\cos nx+b_n\sin nx|\leqslant|a_n|+|b_n|\leqslant\frac{M}{n^3},\enspace n\geqslant 1.\]
+    所以\[\left\lvert\frac{a_0}{2}\right\rvert+\sum_{n=1}^\infty |u_n(x)|\leqslant\left\lvert\frac{a_0}{2}\right\rvert+\sum_{n=1}^{\infty}\frac{M}{n^3}\]
+    通过比较判别法显然可以得出该三角级数绝对收敛，故而收敛. 并且，由Weierstrass判别法，其也是一致收敛的.
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    由上，该三角级数一致收敛于其和函数\(S(x) = \dfrac{a_0}{2}+\ds \sum_{n=1}^{\infty}(a_n\cos nx+b_n\sin nx)\)，因而其可以逐项积分. 由三角函数族的正交性，重复Fourier系数的构造过程：
+    \begin{gather*}
+            \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\dd{x} = a_0 + \frac{1}{\pi}\sum_{n=1}^{\infty}a_k\int_{-\pi}^{\pi}\cos kx\dd{x}+\frac{1}{\pi}\sum_{n=1}^{\infty}b_k\int_{-\pi}^{\pi}\sin kx\dd{x};\\
+            \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos nx\dd{x} = \frac{1}{\pi}\sum_{n=1}^{\infty}a_k\int_{-\pi}^{\pi}\cos kx\cos nx\dd{x}+\frac{1}{\pi}\sum_{n=1}^{\infty}b_k\int_{-\pi}^{\pi}\sin kx\cos nx\dd{x} = a_n;\\
+            \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin nx\dd{x} = \frac{1}{\pi}\sum_{n=1}^{\infty}a_k\int_{-\pi}^{\pi}\cos kx\sin nx\dd{x}+\frac{1}{\pi}\sum_{n=1}^{\infty}b_k\int_{-\pi}^{\pi}\sin kx\sin nx\dd{x} = b_n.
+    \end{gather*}
+    即可得知其为Fourier级数.
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{3.}我们首先说明此三角级数可以逐项求导：由于本三角级数一致收敛，显然其点态收敛于其和函数；并且三角级数的每一项都连续可导；所以我们只用证明其逐项求导的级数一致收敛：由
+    \begin{equation*}
+        \begin{split}
+            \sum_{n=1}^{\infty}\left\lvert\dv{x}(a_n\cos nx+b_n\sin nx)\right\rvert &= \sum_{n=1}^{\infty}|n(-a_n\sin nx+b_n\cos nx)|\\
+            &\leqslant\sum_{n=1}^{\infty}n(|a_n|+|b_n|)\leqslant\sum_{n=1}^{\infty}\frac{M}{n^2}.
+        \end{split}
+    \end{equation*}
+    并根据Weierstrass判别法，其逐项求导的级数一致收敛. 这样此三角级数逐项可导，并且其导数为导数的级数，并且连续.
+
+\clearpage
+\noindent{\heiti\textbf{七、}} 隐函数定理
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    本题题干有误，应为：\(F(x,y)\)在带状区域\(x\in[a,b]\)存在连续一阶偏导，\(F_x(x,y)\)有正值下界，证明：在\((x_0,y_0)\)附近可以由\(F(x_0,y_0) = 0\)唯一确定一个隐函数\(y = f(x)\).
+
+\noindent{\heiti\textbf{八、}} 函数项级数
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{1.}
+    设\[f(x) = \cos(\dfrac{\pi}{2}x^{\frac{1}{n}}) - \dfrac{\pi}{n}(1-x), x\in\left[\frac{1}{2}, 1\right].\]
+    由\(\sin x\geqslant \dfrac{2}{\pi}x\)，对\(f(x)\)求导得\[f'(x) = \frac{\pi}{2n}\left(2-x^{\frac{1}{n}-1}\sin(\frac{\pi}{2}x^{\frac{1}{n}})\right)\geqslant\frac{\pi}{2n}\left(2-x^{\frac{1}{n}-1}\frac{2}{\pi}\cdot\frac{\pi}{2}x^{\frac{1}{n}}\right)\geqslant\frac{\pi}{2n}(2-(1/2)^{-1}) = 0.\]
+    所以\(f(x)\)在\(\left[\dfrac{1}{2}, 1\right]\)上单调递增，且\(f(1) = 0\)，所以\(f(x)\leqslant0\)，即\[\cos(\frac{\pi}{2}x^{\frac{1}{n}})\leqslant\frac{\pi}{n}(1-x), x\in\left[\dfrac{1}{2}, 1\right].\]
+
+    \hangindent 2em
+    \hangafter=0
+    \noindent
+    \textbf{2.}
+    由\[\cos(\frac{\pi}{2}x^{\frac{1}{n}})\frac{x^n}{n^2}\leqslant\frac{1}{n^2},x\in\left[\frac{1}{2},1\right].\]
+    且数项级数\(\ds \sum_{n=1}^{\infty}\dfrac{1}{n^2}\)收敛，所以由Weierstrass判别法，原级数在\(\left[\dfrac{1}{2}, 1\right]\)上一致收敛.
+
+\end{document}
