@@ -79,3 +79,12 @@
     |[电子工程训练（乙）](electronic_engineering_training/#course_2)|1.5|二（秋冬）|较完善✅|
 
     </div>
+
+=== "心理学类"
+    <div style="text-align: center" markdown="1">
+
+    |课程名称|学分|该专业建议学年学期|资料情况|
+    |:--|:--|:--|:--|
+    |[心理学导论](introduction_to_psychology)|2.0|一（春夏）|较完善✅|
+
+    </div>

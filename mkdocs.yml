@@ -99,6 +99,8 @@ nav:
     - 人工智能逻辑: major_elective/ai_logic/index.md
     - 计算摄影学: major_elective/computational_photography/index.md
     - 计算机视觉: major_elective/computer_vision/index.md
+    - 社交网络安全与隐私: major_elective/social_network_security/index.md
+    - 量子计算理论基础与软件系统: major_elective/quantum_computing/index.md
   - 短学期课程:
     - short_term/index.md
     - 固定课程:
@@ -126,6 +128,7 @@ nav:
     - 金融学类课程集: others/finance/index.md
     - B/S 体系软件设计: others/browser_server_software/index.md
     - 电子工程训练: others/electronic_engineering_training/index.md
+    - 心理学导论: others/introduction_to_psychology/index.md
   - 书评专区:
     - readings/index.md
 
