@@ -1,5 +1,7 @@
 \documentclass[UTF8,14pt,normal]{ctexart}
 \usepackage{amsmath}
+\usepackage{physics} % \dd, \dv
+\usepackage{mismath} % \ds
 \usepackage{amssymb}
 \usepackage{geometry}
 \geometry{a4paper,scale=0.66,top=1in,bottom=1in,left=1in,right=1in}
@@ -22,28 +24,28 @@
 
 \noindent{\heiti\textbf{二、(32 分)}} 计算：
 
-\textbf{1.} 求 $\displaystyle\iiint\limits_{V}\sqrt{x^2 + y^2 + z^2}\,\mathrm{d}x\mathrm{d}y\mathrm{d}z$，其中 $V = \{(x, y, z)\,\vert\, x^2 + y^2 + z^2 = 1, x\geqslant 0, y\geqslant 0, z\geqslant 0\}$;
+\textbf{1.} 求 $\ds\iiint\limits_{V}\sqrt{x^2 + y^2 + z^2}\dd{x}\dd{y}\dd{z}$，其中 $V = \{(x, y, z) \mid x^2 + y^2 + z^2 = 1, x\geqslant 0, y\geqslant 0, z\geqslant 0\}$;
 
-\textbf{2.} 对于曲线 $L:\ y = \displaystyle\int_0^x\sqrt{\sin t}\,\mathrm{d}t\ (0\leqslant x\leqslant \pi)$，求 $\displaystyle\int\limits_Lx\,\mathrm{d}s$;
+\textbf{2.} 对于曲线 $L \colon y = \ds\int_0^x\sqrt{\sin t}\dd{t}\ (0\leqslant x\leqslant \pi)$，求 $\ds\int\limits_Lx\dd{s}$;
 
-\textbf{3.} 对于曲线 $L:\ y = \sin x$，方向为从 $(0, 0)$ 到 $(\pi, 0)$，求 $\displaystyle\int\limits_L(e^x\sin y-y^2)\,\mathrm{d}x + e^x\cos{y}\, \mathrm{d}y$;
+\textbf{3.} 对于曲线 $L \colon y = \sin x$，方向为从 $(0, 0)$ 到 $(\pi, 0)$，求 $\ds\int\limits_L(e^x\sin y-y^2)\dd{x} + e^x\cos{y} \dd{y}$;
 
-\textbf{4.} 对于圆锥 $z = \sqrt{x^2 + y^2}\ (0\leqslant z\leqslant 1)$，方向为下侧，求 $\displaystyle\iint\limits_{S}y^2\,\mathrm{d}z\mathrm{d}x + (z + 1)\,\mathrm{d}x\mathrm{d}y$.
+\textbf{4.} 对于圆锥 $z = \sqrt{x^2 + y^2}\ (0\leqslant z\leqslant 1)$，方向为下侧，求 $\ds\iint\limits_{S}y^2\dd{z}\dd{x} + (z + 1)\dd{x}\dd{y}$.
 
-\noindent{\heiti\textbf{三、(10 分)}} 设二元函数 $f(x, y)$ 在 $\mathbb{R}^2$ 上存在连续偏导数，且满足 $\dfrac{\partial f}{\partial x} + \dfrac{\partial f}{\partial y} \neq 0$，$z$ 满足 $f(x - z, y - z) = 0$，证明：上式确定的隐函数 $z = z(x, y)$ 满足 \[\dfrac{\partial z}{\partial x} + \dfrac{\partial z}{\partial y} = 1.\]
+\noindent{\heiti\textbf{三、(10 分)}} 设二元函数 $f(x, y)$ 在 $\mathbb{R}^2$ 上存在连续偏导数，且满足 $\ds\pdv{f}{x} + \pdv{f}{y} \neq 0$，$z$ 满足 $f(x - z, y - z) = 0$，证明：上式确定的隐函数 $z = z(x, y)$ 满足 \[\pdv{z}{x} + \pdv{z}{y} = 1.\]
 
 \noindent{\heiti\textbf{四、(10 分)}} 利用条件极值证明 $(x_0, y_0, z_0)$ 到平面 $ax + by + cz + d = 0$ 的距离为 \[\rho = \dfrac{\lvert ax_0 + by_0 + cz_0 + d\rvert}{\sqrt{x_0^2 + y_0^2 + z_0^2}}.\]
 
-\noindent{\heiti\textbf{五、(10 分)}} 叙述函数项级数 $\displaystyle\sum\limits_{n=0}^{\infty} a_n(x)b_n(x)$ 一致收敛的 Dirichlet 判别法，并证明函数项级数 \[\sum_{n=1}^{\infty} \dfrac{n\cos(nx)}{n^2+1}\] 在 $(0, 2\pi)$ 内闭一致收敛.
+\noindent{\heiti\textbf{五、(10 分)}} 叙述函数项级数 $\ds\sum\limits_{n=0}^{\infty} a_n(x)b_n(x)$ 一致收敛的 Dirichlet 判别法，并证明函数项级数 \[\sum_{n=1}^{\infty} \dfrac{n\cos(nx)}{n^2+1}\] 在 $(0, 2\pi)$ 内闭一致收敛.
 
 \noindent{\heiti\textbf{六、(10 分)}} 求周期为 $2$ 的函数 \[f(x) = \begin{cases}
     x^2   & x\in [0 , 1) \\
     0     & x\in [-1, 0)
 \end{cases}\] 的傅立叶展开，与该傅里叶级数在 $[-1, 1]$ 上的取值.
 
-\noindent{\heiti\textbf{七、(10 分)}} 叙述常数项级数收敛的 Cauchy 准则并证明：若 $\displaystyle\sum\limits_{n=1}^{\infty} a_n$ 收敛且 $\displaystyle\sum\limits_{n=1}^{\infty}(b_{n+1} - b_n)$ 绝对收敛，则 $\displaystyle\sum\limits_{n=1}^{\infty} a_nb_n$ 收敛.
+\noindent{\heiti\textbf{七、(10 分)}} 叙述常数项级数收敛的 Cauchy 准则并证明：若 $\ds\sum\limits_{n=1}^{\infty} a_n$ 收敛且 $\ds\sum\limits_{n=1}^{\infty}(b_{n+1} - b_n)$ 绝对收敛，则 $\ds\sum\limits_{n=1}^{\infty} a_nb_n$ 收敛.
 
 \noindent{\heiti\textbf{八、(8 分)}} 设二元函数 $f(x, y)$ 在 $\mathbb{R}^2$ 存在二阶连续偏导数，对任意的 $\theta\in [0, 2\pi)$ 定义函数 \[g_\theta(t) = f(t\cos\theta, t\sin\theta).\]
-若对于任意的 $\theta\in [0, 2\pi)$，$\left.\dfrac{\mathrm{d}g_\theta}{\mathrm{d}t}\right\vert_{t=0} = 0$，$\left.\dfrac{\mathrm{d}^2g_\theta}{\mathrm{d}t^2}\right\vert_{t=0} > 0$，证明：$f(0, 0)$ 是 $f(x, y)$ 的极小值.
+若对于任意的 $\theta\in [0, 2\pi)$，$\ds\left.\dv{g_\theta}{t}\right\vert_{t=0} = 0$，$\ds\left.\dv[2]{g_\theta}{t}\right\vert_{t=0} > 0$，证明：$f(0, 0)$ 是 $f(x, y)$ 的极小值.
 
 \end{document}
