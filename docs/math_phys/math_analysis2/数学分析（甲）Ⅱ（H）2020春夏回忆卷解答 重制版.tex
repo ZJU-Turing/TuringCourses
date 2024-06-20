@@ -51,13 +51,13 @@
     \hangafter=0
     \noindent
     \textbf{2.}
-    设\(r=\sqrt{x^2+y^2+z^2}\)，则\(\ds \nabla u = \left(\pdv{u}{x},\pdv{u}{y},\pdv{u}{z}\right) = \left(\frac{x}{r},\frac{y}{r},\frac{z}{r}\right)\).
-
+    设\(r=\sqrt{x^2+y^2+z^2}\)，则\(\ds \nabla u = \left(\pdv{u}{x},\pdv{u}{y},\pdv{u}{z}\right) = \left(\frac{y^2 + z^2}{r^3},\frac{y}{r},\frac{z}{r}\right)\)，所以
+    \[\eval{\ds \nabla u = \left(\pdv{u}{x},\pdv{u}{y},\pdv{u}{z}\right)}_{(1, 2, 3)} =(\dfrac{13}{14\sqrt{14}}, \dfrac{2}{\sqrt{14}}, \dfrac{3}{\sqrt{14}}).\]
     曲线在\(P_0\)点的方向向量为\(\ds \vec{l} = \eval{\left(x'(t),y'(t),z'(t)\right)}_{(1,2,3)} = (1,4,12)\)，其单位向量为\(\vec{l}_0 = \dfrac{\vec{l}}{\lvert\vec{l}\rvert} = \dfrac{(1,4,12)}{\sqrt{161}}\).
-    那么\[\pdv{u}{\vec{l}} = \vec{l}_0\cdot\nabla u = \frac{45}{7\sqrt{46}}.\]
+    那么\[\pdv{u}{\vec{l}} = \vec{l}_0\cdot\nabla u = \frac{629}{98\sqrt{46}}.\]
 
 \clearpage
-\noindent{\heiti\textbf{三、}} 重积分、曲线积分和曲面积分的计算
+\noindent{\heiti\textbf{三、}} 积分的计算
 
     \hangindent 2em
     \hangafter=0
@@ -82,7 +82,7 @@
     所以
     \begin{equation*}
         \begin{split}
-            \oint\limits_{L}(x^2+y^2+z^2)\dd{s} &= \int_{0}^{2\pi}(\sin^2\theta+\cos\theta)\dd{\theta}\\
+            \oint\limits_{L}(x^2+y^2+z)^2\dd{s} &= \int_{0}^{2\pi}(\sin^2\theta+\cos\theta)^2\dd{\theta}\\
             &= \int_{-\pi}^{\pi}(\sin^2\alpha-\cos\alpha)^2\dd{\alpha}\enspace(\theta = \pi+\alpha)\\
             &= 2\int_{0}^{\pi}(\sin^2\alpha-\cos\alpha)^2\dd{\alpha}\\
             &= 2\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(\cos^2\beta+\sin\beta)^2\dd{\beta}\enspace(\alpha = \frac{\pi}{2}+\beta)\\
@@ -113,7 +113,7 @@
     \textbf{4.}
     考虑椭球面的参数表示：\(x = \sin\varphi\cos\theta, y = 2\sin\varphi\sin\theta, z = 3\cos\varphi\)，其中\(\varphi\in[0,\frac{\pi}{2}],\theta\in[0,2\pi]\).
     计算可知\[\frac{\partial(x,y)}{\partial(\varphi,\theta)} = 2\sin\varphi\cos\varphi = \sin 2\varphi\geqslant0,\frac{\partial (y,z)}{\partial(\varphi,\theta)} = 6\sin^2\varphi\cos\theta.\]
-    由左式可知，参数\((\varphi,\theta)\)决定的法向量是外侧的，由第二类曲面积分的定义：
+    由左式可知，参数\((\varphi,\theta)\)决定的法向量是上侧的，与曲线定向同向，由第二类曲面积分的定义：
     \begin{equation*}
         \begin{split}
             \iint\limits_{S}x^3\dd{y}\dd{z} &=\int\limits_{D_{\varphi\theta}}\sin^3\varphi\cos^3\theta\cdot 6\sin^2\varphi\cos\theta\dd{\varphi}\dd{\theta}\\
@@ -224,7 +224,9 @@
     \hangindent 2em
     \hangafter=0
     \noindent
-    本题题干有误，应为：\(F(x,y)\)在带状区域\(x\in[a,b]\)存在连续一阶偏导，\(F_x(x,y)\)有正值下界，证明：在\((x_0,y_0)\)附近可以由\(F(x_0,y_0) = 0\)唯一确定一个隐函数\(y = f(x)\).
+    本题题干有误，应为：\(F(x,y)\)在带状区域\(x\in[a,b]\)存在连续一阶偏导，\(F_y(x,y)\)有正值下界，证明：在\((x_0,y_0)\)附近可以由\(F(x_0,y_0) = 0\)唯一确定一个隐函数\(y = f(x)\).
+
+    默写隐函数定理的证明则可.
 
 \noindent{\heiti\textbf{八、}} 函数项级数
 
@@ -233,7 +235,8 @@
     \noindent
     \textbf{1.}
     设\[f(x) = \cos(\dfrac{\pi}{2}x^{\frac{1}{n}}) - \dfrac{\pi}{n}(1-x), x\in\left[\frac{1}{2}, 1\right].\]
-    由\(\sin x\geqslant \dfrac{2}{\pi}x\)，对\(f(x)\)求导得\[f'(x) = \frac{\pi}{2n}\left(2-x^{\frac{1}{n}-1}\sin(\frac{\pi}{2}x^{\frac{1}{n}})\right)\geqslant\frac{\pi}{2n}\left(2-x^{\frac{1}{n}-1}\frac{2}{\pi}\cdot\frac{\pi}{2}x^{\frac{1}{n}}\right)\geqslant\frac{\pi}{2n}(2-(1/2)^{-1}) = 0.\]
+    由\(\sin x\leqslant \dfrac{\pi}{2 x}\)，对\(f(x)\)求导得\[f'(x) = \frac{\pi}{2n}\left(2-x^{\frac{1}{n}-1}\sin(\frac{\pi}{2}x^{\frac{1}{n}})\right)
+    \geqslant\frac{\pi}{2n}\left(2-x^{\frac{1}{n}-1}\frac{\pi}{2}\cdot\frac{2}{\pi}x^{-\frac{1}{n}}\right)\geqslant\frac{\pi}{2n}(2-(1/2)^{-1}) = 0.\]
     所以\(f(x)\)在\(\left[\dfrac{1}{2}, 1\right]\)上单调递增，且\(f(1) = 0\)，所以\(f(x)\leqslant0\)，即\[\cos(\frac{\pi}{2}x^{\frac{1}{n}})\leqslant\frac{\pi}{n}(1-x), x\in\left[\dfrac{1}{2}, 1\right].\]
 
     \hangindent 2em
