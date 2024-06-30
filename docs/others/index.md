@@ -18,6 +18,7 @@
     |[数值代数](numerical_linear_algebra/)|3.0|三（春夏）|较完善✅|
     |[数据建模与分析](data_modeling_and_analysis/)|3.0|三（春夏）|较完善✅|
     |[数论导引](number_theory/)|3.0|三（春夏）||
+    |[随机过程](stochastic_process/)|3.0|三（春夏）|较完善✅|
     
     </div>
 
