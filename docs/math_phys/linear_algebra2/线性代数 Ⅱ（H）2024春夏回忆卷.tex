@@ -1,0 +1,44 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.66,top=0.8in,bottom=1.5in,left=1in,right=1in}
+
+\title{\textbf{线性代数 II（H）2023-2024 春夏期末}}
+\author{辅学回忆卷}
+\date{2024 年 6 月 24 日}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、(10 分)}} 求 $x$ 使得矩阵 $\begin{pmatrix}1&1&0\\0&1&1\\1&0&x\end{pmatrix}$ 是正规矩阵，当其是正规矩阵时求出相似的对角矩阵.
+
+\noindent{\heiti\textbf{二、(10 分)}} 设 $U=\operatorname{span}\left\{(1,1,0,0),(1,1,-1,2)\right\}$ 是 $\mathbb{R}^4$ 的子空间，求 $u\in U^\perp$ 使 $\|u-(1,1,2,2)\|$ 最小.
+
+\noindent{\heiti\textbf{三、(10 分)}} 设 $T$ 为复数域上的 $n$ 维线性空间 $V$ 上的线性变换，$T$ 在某组基下对应的矩阵是 $\begin{pmatrix}-6&2&3\\2&0&-1\\-12&4&6\end{pmatrix}$，是否存在线性变换 $S$ 满足 $S^2=T$. 假如存在，求 $S$，假如不存在，说明理由，并求 $T$ 的极小多项式以及 Jordan（若当）标准型.
+
+\noindent{\heiti\textbf{四、(10 分)}} 设 $T$ 是 $\mathbb{R}^3$ 到 $\mathbb{R}^4$ 的线性映射，在自然基下对应的矩阵为 $\begin{pmatrix}1&-1&2\\4&-3&1\\3&4&-2\\6&2&-1\end{pmatrix}$, $f(x,y,z,w)=x-y+z+2w$ 是 $\mathbb{R}^4$ 上的线性泛函，求对偶映射 $T'$ 在相应对偶基下的矩阵以及 $T'(f)$.
+
+\noindent{\heiti\textbf{五、(10 分)}} 定义 $T(x,y,z) = (z,2x,3y)$，求 $T$ 的奇异值.
+
+\noindent{\heiti\textbf{六、(10 分)}} 求过直线 $\begin{cases}x-y+z+4=0\\x+y-3z=0\end{cases}$ 和点 $(1,-1,-1)$ 的平面方程，并求该点到直线的距离.
+
+\noindent{\heiti\textbf{七、(10 分)}} 设 $V$ 是由 $1, \cos x, \sin x$ 所张成的线性空间，求 $V$ 中的向量 $f(x)$，使得等式 \[\int_{-\pi}^{\pi}f(x)g(x)\mathrm{d}x=\int_{-\pi}^{\pi}(2x-1)g(x)\mathrm{d}x\] 对所有 $V$ 中所有 $g(x)$ 都成立.
+
+\noindent{\heiti\textbf{八、(10 分)}} 设 $T$ 是 $n$ 维线性空间 $V$ 到 $m$ 维线性空间 $W$ 的线性变换，证明 $U=\{(v,Tv)\mid v \in V\}$ 是 $V\times W$ 的子空间，并求 $U$ 的维数和 $V\times W /U$ 的维数.
+
+\noindent{\heiti\textbf{九、(20 分)}} 试给出下列命题的真伪. 若命题为真，请给出简要证明；若命题为假，请举出反例.
+
+\textbf{1.} 正算子一定可以对角化，即存在一组基使得该算子在这组基下为对角矩阵.
+
+\textbf{2.} 对于线性变换 $T$ 以及其伴随 $T^*$, 有 $\operatorname{null}T^*=\operatorname{range}T$.
+
+\textbf{3.} 设 $T$ 是实线性空间 $V$ 上的线性变换，线性空间 $\operatorname{null}(T^2+T+I)$ 的维数都是偶数维的.
+
+\textbf{4.} 设 $S$，$T$ 是有限维内积空间上的等距变换，证明 $S$ 相似于 $T$ 当且仅当它们有相同的本征（特征）多项式.
+
+\end{document}

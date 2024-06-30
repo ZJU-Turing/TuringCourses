@@ -48,6 +48,9 @@
 - [（21 级）2022 春夏第四次小测（郑文庭班）](Discrete_Mathematics_Quiz_4_2022.pdf) | [参考解答](21-22 春夏离散郑文庭班第四次小测参考答案.pdf)
 - [（22 级）2023 春夏第一次小测](Discrete_Mathematics_Quiz_1_2023.pdf)
 - [（22 级）2023 春夏第二次小测](Discrete_Mathematics_Quiz_2_2023.pdf)
+- [（23 级）2024 春夏第一次小测](Discrete_Mathematics_Quiz_1_2024.pdf)
+- [（23 级）2024 春夏第三次小测](Discrete_Mathematics_Quiz_3_2024.pdf)
+- [（23 级）2024 春夏第四次小测](Discrete_Mathematics_Quiz_4_2024.pdf)
 
 ## 学长组课程学习建议
 
