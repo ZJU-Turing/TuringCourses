@@ -22,6 +22,7 @@
     + Wet Paper, 对隐写的检测与攻击
     + 使用 Sample pairs 进行隐写分析
 + 电子取证、利用指纹信息进行身份认证等。
+
 老师会在最后一节课进行总复习。
 
 ## 任课教师
@@ -33,14 +34,17 @@
 Cox, I., Miller, M., Bloom, J., Fridrich, J., & Kalker, T. (2007). *Digital watermarking and steganography*. Morgan kaufmann. 一本十分厚的书, 本课程内容除了取证部分外基本都是基于课本展开。虽然此书叙述<del>啰嗦</del>细致, 但也有未能讲清楚的地方。
 
 ## 分数构成
-一般来说分数构成为: lab 40\%, 期末 40\%, 课堂表现 20\%, 可能有稍许浮动。
+
+一般来说分数构成为: lab 40%, 期末 40%, 课堂表现 20%, 可能有稍许浮动。
+
 + lab 为 4~5 次, 基本包括
     + E_BLIND/D_LC 水印系统实现
     + E_SIMPLE_8/D_SIMPLE_8 多位信息水印系统实现
-    + E_BLK_8/D_BLK_8 w/ Hamming Code 或 Trellis Code 水印系统实现
+    + E_BLK_8/D_BLK_8 + Hamming Code 或 Trellis Code 水印系统实现
     + F4, F5 隐写算法实现
     
-    lab 不限定编程语言。代码量约在数百行, 虽不算难但也对编程能力稍有要求。
+lab 不限定编程语言。每次代码量约在数百行, 虽不算难但也对编程能力稍有要求。
+
 + 期末开卷, 包括少量选择、判断以及 8 道简答, 主要侧重课程内容的理解。要求英文作答。
 + 课堂表现分为两个部分:
     + 老师不会点名, 但会随堂 quiz 9 次之多 :-)
