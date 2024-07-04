@@ -71,7 +71,10 @@
 
 ## 推荐书目
 
-关于三维重建，因为这是这门课的一个重点，推荐 [Richard Hartley 和 Andrew Zisserman 的 *Multiple View Geometry in Computer Vision*](https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A) ，这本书中的推导可能比课上的更加简单明快，感兴趣的同学也可以翻阅。
++ Richard Hartley 和 Andrew Zisserman 的 [ *Multiple View Geometry in Computer Vision*](https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A) , 从射影几何角度出发, 极其经典, 但较难读。
++ 三维重建是本课程的重点, 可选读高翔《视觉 SLAM 十四讲》部分章节。
+<!-- ，这本书中的推导可能比课上的更加简单明快，感兴趣的同学也可以翻阅。 -->
+<!-- 我对上一行的内容有异议 -->
 
 ## 参考笔记
 

@@ -49,8 +49,9 @@
 * 100% attention
 * Being active
 
-21 级张老师对 attendance 要求非常严，每节课几乎都有点名（包括第一节课），对于不到课的学生，张老师会劝他们直接退课。另外 20、21 级张国川的智云没有声音，所以上课不听可能对课后理解带来困难。课堂禁止进食、睡觉，如果你这么做他会停止讲课并发声制止你。张国川不喜欢课堂上手机和电脑的使用，但是不会制止你，如果你发出声音会直接发声要求你关闭电子设备，即使手机/电脑发出声音的是助教。
-
+21 级张老师对 attendance 要求非常严，每节课几乎都有点名（包括第一节课），对于不到课的学生，张老师会劝他们直接退课。另外 20、21 级张国川的智云没有声音，所以上课不听可能对课后理解带来困难。课堂禁止进食、睡觉，如果你这么做他会停止讲课并发声制止你。张国川不喜欢课堂上手机和电脑的使用, 可能会制止你。
+<!-- 张国川不喜欢课堂上手机和电脑的使用，但是不会制止你，如果你发出声音会直接发声要求你关闭电子设备，即使手机/电脑发出声音的是助教。 -->
+<!-- 注: 还是可能制止的  [ac01]-->
 ## 课程教材
 
 没有教材，只有张国川专属 PPT。关于参考书， PPT 上有一页如是说道：
@@ -60,15 +61,13 @@
 * Any book on Algorithms
 * Any book on Game Theory
 
-并且针对组合优化、算法、博弈论三个方面给出了三本参考书：
+并且针对组合优化、算法、博弈论三个方面给出了三本参考书, 但非必需看：
 
-* Recommended "Combinatorial Optimization - Algorithms and Complexity, Papademitriou and Steiglitz"
-* Recommended "Algorithm Design, Tardos and Kleinberg"
-* Recommended "Algorithmic Game Theory, Nisan, Roughgarden, Tardos, and Vazirani"
+* Recommended *Combinatorial Optimization - Algorithms and Complexity, Papademitriou and Steiglitz*
+* Recommended *Algorithm Design, Tardos and Kleinberg*
+* Recommended *Algorithmic Game Theory, Nisan, Roughgarden, Tardos, and Vazirani*
 
-遗憾的是，笔者到课程结课也没有看过这三本书，甚至对博弈论一窍不通。
-
-值得一提的是，老师认为使用 PPT 是一种“恶堕”，因此 21 级时基本上都是采用手写板书这种最原始但也是最纯粹的方法，不过这也一定程度上影响了讲课的进度。
+值得一提的是，老师认为使用 PPT 是一种“恶堕”，因此 21 级后基本上都是采用手写板书这种最原始但也是最纯粹的方法，不过这也一定程度上影响了讲课的进度。
 
 ## 分数构成
 
@@ -102,9 +101,16 @@
 个人认为张国川老师的讲课虽然能感受到他已经尽量想让我们能听明白了，但是有的他觉得很清楚很自然的地方笔者感觉并不那么自然，往往私下要推很长一段时间才能恍然大悟（但是有人能够当场听明白）。因此能够跟上张国川老师的课堂还是存在难度的。另外从课程大纲也可以看出越到后期，课程内容愈发前沿与实用，难度也逐渐飙升，课堂真的需要全神贯注。
 
 ## 参考资料
+!!!NOTE: 任何参考资料仅可用于帮助理解课堂内容, 不能代替课上听讲。也不能用作开卷考试资料 (因为考试不会出能让你找到的题目)。
 
-暂无，张国川老师似乎不喜欢我们乱放资料，同时因为这课太难，笔者前期就放弃了制作笔记。
+运筹学范围极广, 文献浩如烟海; 这里仅再介绍与课程相关、最为经典、对大家最有帮助的两本:
++ ***Introduction to Linear Optimization. Dimitris BZertsimas***, 论线性规划无出其右, 无论谁读之都会认同: 这是本条理清晰、丰富细致、值得反复阅读的优秀教材。
++ ***The Design of Approximation Algorithms. D. P. Williamson \& D. B. Shmoys***, 亦十分经典, 张老师授课内容应该有所参考, 例如 Karmarkar-Karp 算法、Steiner 树、无容量限制设施选址问题等部分。
 
+20 级的金鱼马同学为此课程整理了笔记, 并结合康奈尔大学 [ORIE6300](https://damek.github.io/orie63002016.html) 课程等加入了大量的私货 :-) 见 https://www.zhihu.com/column/c_1676006565717573634 中 "数学规划"系列文章, 若你发现了其中舛误纰谬请联系他进行改正。
+
+[斯坦福 CS261 *Optimization and Algorithmic Paradigms*](https://theory.stanford.edu/~trevisan/cs261) 亦是有帮助的课程。
+ 
 ## 学习建议
 认真听课，认真做作业，认真理解 PPT。用爱去对待这一门课。
 

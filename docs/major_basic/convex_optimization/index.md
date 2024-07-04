@@ -47,13 +47,11 @@
 
 * Yurii Nesterov. (2014). *Introductory Lectures on Convex Optimization: A Basic Course.* Springer.
 
-作者是凸优化领域的大佬。前半学期的内容大部分都来自这里。（不要相信书名中的 “basic” :-）
+作者是凸优化领域的巨擘。前半学期的内容大部分都来自这里。（不要相信书名中的 “basic” :-)
 
 * Yurii Nesterov. (2018). *Lectures on Convex Optimization.* Springer.
 
-中文版书名《凸优化教程》，机械工业出版社；前面的内容和上一本差不多，但是许多地方有改动（改正了旧版的一些错误，笔者学习时主要参考的书）。
-
-（PS：虽然这本书是课程的主要教材，但是其内容有些晦涩抽象，越到后面越如此，任何对优化感兴趣的初学者都不应该使用这本书自学。）
+第二本书是第一本的修正和扩充，但是许多地方有改动（改正了旧版的一些错误，笔者学习时主要参考的书）。作者的出发视角很高，且极具理论性，这使得本书与其它优化书籍有截然不同的内容，但是其内容也因此有些晦涩抽象，尤其第二本书越到后面越如此。同时，在某种程度上，本书缺少清晰的脉络，定理也缺乏直观解释或者例题说明，笔者认为初学者都不应该使用这本书自学。
 
 ## 分数构成
 
@@ -89,19 +87,30 @@
 
 * Dimitri P. Bertsekas. (2009). *Convex Optimization Theory*. Athena Scientific.
 
-    中文名《凸优化理论》，清华大学出版社；个人觉得比较细节，相之于前面的好读很多。
+    中文名《凸优化理论》，清华大学出版社; 并不厚, 个人觉得相之于前面的好读很多。
 
 * Sra, Nowozin, Wright. (2011). *Optimization for Machine Learning*. MIT Press.
 
 * R. T. Rockafellar. (1970). *Convex Analysis*. Princeton.
 
-    Rockafellar 是优化领域绕不开的祖师级人物，不过他的文章有些太难了。他的《凸分析》还有《变分分析（Variational Analysis）》等书感觉更适合数学专业的看……
+    Rockafellar 是优化领域绕不开的祖师级人物，不过他的文章有些太难了。本书包含了对凸集、凸函数、凸几何、约束凸优化的详尽理论推导。他的这本《凸分析》还有《变分分析（Variational Analysis）》等书感觉更适合数学专业的看……
 
-* Giuseppe C. Calafiore, \& Laurent El Ghaoui (2014), *Optimization Models*, Cambridge University Press. 据说难度适中：[https://people.eecs.berkeley.edu/~elghaoui/optmodbook.html](https://people.eecs.berkeley.edu/~elghaoui/optmodbook.html)
+* Giuseppe C. Calafiore, \& Laurent El Ghaoui (2014), *Optimization Models*, Cambridge University Press. 据说难度适中, 包含了许多应用举例和分析：[https://people.eecs.berkeley.edu/~elghaoui/optmodbook.html](https://people.eecs.berkeley.edu/~elghaoui/optmodbook.html)
 * 这个领域有很多人喜欢直接把自己写的书挂在 arxiv 上，下面几个都是不错的资料：
     + Sébastien Bubeck, *Convex Optimization: Algorithms and Complexity*, [https://arxiv.org/abs/1405.4980](https://arxiv.org/abs/1405.4980)；
     + Léon Bottou et al., *Optimization Methods for Large-Scale Machine Learning*,  [https://arxiv.org/abs/1606.04838](https://arxiv.org/abs/1606.04838)；
     + Francesco Orabona, *A Modern Introduction to Online Learning*, [https://arxiv.org/abs/1912.13213](https://arxiv.org/abs/1912.13213).
+
+就中文书而言，笔者知道的有：
+
++ 袁亚湘, & 孙文瑜. (1997).最优化理论与方法. 科学出版社. （基本都是算法的纯数学分析和证明）
++ 陈宝林. (2005).最优化理论与算法. 清华大学出版社. （教材）
+
+近年，北京大学文再文老师课题组编写了两本教材：
+
++ （详细版） 刘浩洋, 户将, 李勇锋，文再文，最优化：建模、算法与理论, 高教出版社；
++ （简化版）刘浩洋, 户将, 李勇锋，文再文，最优化计算方法，高教出版社；
+介绍了的最优化的基本概念、典型案例、基本算法和理论，内容紧凑，理论充实（美中不足的缺点可能是印刷质量有点差 :-）网页：http://faculty.bicmr.pku.edu.cn/~wenzw/optbook.html。
 
 ### 课程
 
@@ -111,6 +120,8 @@
 * CSE 535, Theory of Optimization and Continuous Algorithms. <https://yintat.com/teaching/cse535-spring21/>
 * ELE522: Large-Scale Optimization for Data Science. 钱老师的授课内容有所参考：<https://yuxinchen2020.github.io/ele522_optimization/>
 * IE 598: Big Data Optimization. 钱老师的授课内容有所参考：<https://github.com/niaohe/Big-Data-Optimization-Course>
+
+除此之外，如果仅是为了机器学习和深度学习的工作，其实并不一定要深入了解凸优化，一些基本优化算法在深度学习教材或者课程里都会提及。
 
 ### 笔记
 
