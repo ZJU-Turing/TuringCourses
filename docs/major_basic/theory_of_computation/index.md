@@ -62,9 +62,11 @@
 
 21 级无教材，全靠毛哥手写讲义。20 级曾用教材如下：
 
-*《计算理论基础》Elements of the Theory of Computation*
+***《计算理论基础》Elements of the Theory of Computation***
 
 有中文版，但有一些小错误，英文版笔者未发现错误。中文版部分地方没有照抄英文版，做出了一些修改，经过笔者和一位 dl 的合力验证英文版部分地方确实太拗口，中文版做出了一些更易于理解的修改，所以需要批判性阅读。
+
+***Introduction to the Theory of Computation. Michael Sipser*** 亦是一本不错的参考教材。
 
 ## 分数构成
 

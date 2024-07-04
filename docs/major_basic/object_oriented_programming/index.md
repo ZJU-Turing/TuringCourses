@@ -82,7 +82,7 @@
     
         “面向已经了解 C++ 或至少是经验丰富的程序员的人”。覆盖 C++11 标准。
 
-    * 如果你想知道为什么 C++ 的历史，请看 [*The Design and Evolution of C++*](https://link.zhihu.com/?target=https%3A//www.stroustrup.com/dne.html)（《C++语言的设计与演化》）。[*Thriving in a Crowded and Changing World: C++ 2006-2020*](https://link.zhihu.com/?target=https%3A//dl.acm.org/doi/pdf/10.1145/3386320) 可以被视为 D&E 的最新后续。
+    * 如果你想了解 C++ 的历史，请看 [*The Design and Evolution of C++*](https://link.zhihu.com/?target=https%3A//www.stroustrup.com/dne.html)（《C++语言的设计与演化》）。[*Thriving in a Crowded and Changing World: C++ 2006-2020*](https://link.zhihu.com/?target=https%3A//dl.acm.org/doi/pdf/10.1145/3386320) 可以被视为 D&E 的最新后续。
     * [*A Tour of C++* (second edition)](https://link.zhihu.com/?target=https%3A//www.stroustrup.com/tour2.html)（《C++语言导学》）
     
         适合去快速了解 C++ 所提供的功能。这本书以 200 页的篇幅介绍了 C++ 及其标准库的主要特性，且覆盖 C++17 标准（及少量 C++20 标准），对于了解新标准特性也不错。
@@ -113,8 +113,9 @@
     * 其他，如：《深入探索 C++14（Discovering Modern C++)》《现代 C++ 语言核心特性解析》《C++20 高级编程》等
 
 * 可参考 [The Definitive C++ Book Guide and List](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)，Stack Overflow 上整理的书单。也可以逛逛 [Quora](https://www.quora.com/What-is-the-best-C-book-for-a-beginner)。
-* C++ 之父 Bjanre Stroustrup 的 [FAQ](https://www.stroustrup.com/bs_faq.html) 很有意思，值得一看！此外他还有 [C++ Style and Technique FAQ](https://www.stroustrup.com/bs_faq2.html) 。
-* 一些 C++ 书籍的**电子版资源**：https://www.aliyundrive.com/s/z5hLRAELpPP
+* C++ 之父 Bjanre Stroustrup 的 [FAQ](https://www.stroustrup.com/bs_faq.html) 很有意思，值得一看！此外他还有 [C++ Style and Technique FAQ](https://www.stroustrup.com/bs_faq2.html) 。十分建议大大多逛逛 [BS 的主页](https://www.stroustrup.com)。
+<!-- * 一些 C++ 书籍的**电子版资源**：https://www.aliyundrive.com/s/z5hLRAELpPP --> 
+<!-- 这里资源已经远不止 C++ 了, 故在此删除 -->
 
 ## 参考资料
 - RyanFcr 整理的笔记和历年卷：[:material-github: RyanFcr/ZJU_Course:大二春夏/面向对象程序设计OOP](https://github.com/RyanFcr/ZJU_Course/tree/main/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%A4%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1OOP)
