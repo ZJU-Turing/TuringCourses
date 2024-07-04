@@ -18,6 +18,7 @@
     |[数值代数](numerical_linear_algebra/)|3.0|三（春夏）|较完善✅|
     |[数据建模与分析](data_modeling_and_analysis/)|3.0|三（春夏）|较完善✅|
     |[数论导引](number_theory/)|3.0|三（春夏）||
+    |[随机过程](stochastic_process/)|3.0|三（春夏）|较完善✅|
     
     </div>
 
@@ -77,5 +78,14 @@
     |:--|:--|:--|:--|
     |[电子工程训练（甲）](electronic_engineering_training/#course_1)|1.5|一（春夏）|较完善✅|
     |[电子工程训练（乙）](electronic_engineering_training/#course_2)|1.5|二（秋冬）|较完善✅|
+
+    </div>
+
+=== "心理学类"
+    <div style="text-align: center" markdown="1">
+
+    |课程名称|学分|该专业建议学年学期|资料情况|
+    |:--|:--|:--|:--|
+    |[心理学导论](introduction_to_psychology)|2.0|一（春夏）|较完善✅|
 
     </div>

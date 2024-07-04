@@ -8,7 +8,7 @@
 \geometry{a4paper,scale=0.66,top=0.8in,bottom=1.2in,left=1in,right=1in}
 \title{数学分析（甲）II（H）2021 - 2022 春夏期末试答}
 \author{Shad0wash}
-\date{\today}
+\date{2024 年 2 月 8 日}
 
 \linespread{1.2}
 \addtolength{\parskip}{.8em}
@@ -91,11 +91,12 @@
     设 \(\varSigma\) 为曲线在平面 \(x - y + z = 2\) 上围成的部分，取上侧. 则
     \begin{align*}
         I & = \iint\limits_\varSigma \begin{vmatrix}
-            \dd{x} \dd{y} & \dd{y} \dd{z} & \dd{z} \dd{x} \\[1.5ex]
+            \dd{y} \dd{z} & \dd{z} \dd{x} & \dd{x} \dd{y} \\[1.5ex]
             \ds\pdv{x} & \ds\pdv{y} & \ds\pdv{z} \\[1.5ex]
             z - y & x - z & x - y
         \end{vmatrix} \\
-        & = \iint\limits_\varSigma (-1 + 1) \dd{x} \dd{y} + (1 - 1) \dd{y} \dd{z} + (1 + 1) \dd{z} \dd{x} \\ & = 2 \iint\limits_\varSigma \dd{z} \dd{x} = 2 \iint\limits_\varSigma \dd{S} \cos \beta = 2 \iint\limits_\varSigma \dfrac{\dd{x} \dd{y}}{\cos \gamma} \cos \beta = -2 \iint\limits_\varSigma \dd{x} \dd{y} = -2\pi
+        & = \iint\limits_\varSigma (-1 + 1) \dd{y} \dd{z} + (1 - 1) \dd{z} \dd{x} + (1 + 1) \dd{x} \dd{y} \\
+        & = 2 \iint\limits_\varSigma \dd{x} \dd{y} = 2\pi
     \end{align*}
     其中 \(\vec{n}_0 = (\cos \alpha, \cos \beta, \cos \gamma) = (\dfrac{1}{\sqrt{3}}, -\dfrac{1}{\sqrt{3}}, \dfrac{1}{\sqrt{3}})\) 为平面的单位法向量.
 
