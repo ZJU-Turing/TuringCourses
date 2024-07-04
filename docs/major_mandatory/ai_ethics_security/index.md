@@ -2,7 +2,6 @@
 abbrs:
     - AI 伦理安全
 ---
-
 # 人工智能伦理与安全
 <div class="badges">
 <span class="badge is-badge">AI 专业必修</span>
