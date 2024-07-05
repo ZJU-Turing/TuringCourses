@@ -25,16 +25,18 @@
 
 === "宋明黎" 
 
-    来自潘老师班的说法：据说宋老师上课和图像信息处理很相近。具体信息待完善。
+    全中文授课，课件和潘老师班一样，也是在之前的课件上面做修改，今年加入了Transformer部分的讲解，但要求并不深入。2023年冬学期的早八点过几次名。几次作业都比较简单，而且还在用一些比较老的诸如特征人脸识别等的案例，甚至还有部分作业来自Learning Opencv教材。整体上课的感觉跟图像信息处理课确实很像。
 
 ## 课程教材
 
 整体课程以课程讲义为主，没有指定教材，相关的原理可以查询维基或者 OpenCV 等库的说明。不过潘老师课件中有给出一些关于 OpenCV 的书籍，如：
 
-- *Learning OpenCV：Computer Vision with the OpenCVLibrary*, Gary Bradski, Adrian Kaebler
-- 《OpenCV教程—基础篇》，刘瑞祯、于仕琪
+- *Learning OpenCV：Computer Vision with the OpenCVLibrary*, Gary Bradski, Adrian Kaebler (此书使用的 OpenCV 2.0 版本过于老旧, 不建议阅读)
+- 《OpenCV教程—基础篇》，刘瑞祯、于仕琪 (这本比上一本还老 :-)
 
-不过并不是特别需要，使用的相关文档可以直接参考 OpenCV 的 [Documents](https://docs.opencv.org/4.x/d1/dfb/intro.html)。
+建议直接参考 OpenCV 的 [Documents](https://docs.opencv.org/4.x/d1/dfb/intro.html)。
+
+相比其它参考书, 笔者比较推荐 ***Robot Vision .Berthold K.P. Horn*** (中文名《机器视觉》) , 十分经典的一本教材, 侧重数学理论, 与本课程内容更加接近。
 
 ## 分数构成
 
@@ -59,7 +61,16 @@
 
 === "宋明黎" 
 
-    TODO：待完善
+    - 平时编程作业（40-50%）
+        - 使用OpenCV编辑一段视频
+        - 使用OpenCV进行椭圆拟合
+        - Eigenface
+        - 相机标定与鸟瞰图生成
+        - LeNet on MNIST
+    - 期末考试（50-60%）
+        - 两班历年来都统一由潘老师出题
+        - 期末考试闭卷，全中文，全问答题
+        - 充分参考老师提供的提纲及98上的历年卷进行复习即可
 
 ## 学习建议
 
