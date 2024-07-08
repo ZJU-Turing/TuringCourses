@@ -61,6 +61,7 @@ CS61C 课程提供了 [Venus](https://venus.cs61c.org/) 工具，你可以在上
 - xg 计算机系统二流水线 CPU 部分笔记：https://note.tonycrane.cc/cs/system/cs2/topic1/
 - QJJ 计算机组成笔记：https://note.hobbitqia.cc/CO/
 - [2023 春夏期末回忆卷（98 链接）](https://www.cc98.org/topic/5640722)
+- [2024 春夏期末回忆卷（98 链接）](https://www.cc98.org/topic/5922030)
 
 ## 课程学习建议
 本课由理论和实验两部分组成，从分数上看，实验部分与期末考试几乎是同等重要，本课的学习建议也将分为两部分。
