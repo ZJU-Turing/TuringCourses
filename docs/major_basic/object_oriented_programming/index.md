@@ -153,16 +153,17 @@
     比较基础，分四个部分讲解 C++ 的本质，也可以用作入门读物。比较老了，只到 C++98 标准。
 
 * C++ 之父 Bjanre Stroustrup 的几本书：
-    * [*Programming: Principles and Practice using C++*](https://link.zhihu.com/?target=https%3A//www.stroustrup.com/programming.html)（《C++ 程序设计原理与实践》）
+    * [*Programming: Principles and Practice using C++*](https://www.stroustrup.com/programming.html)（《C++ 程序设计原理与实践》）
 
         “适合以前没有编程经验或者已经学完另一种语言，并且希望对现代 C++ 有一个相对温和的介绍的人”，BS 给大一学生写的教材。覆盖 C++11 和 C++14 标准。
 
-    * [*The C++ Programming Language* (4th edition)](https://link.zhihu.com/?target=https%3A//www.stroustrup.com/4th.html)（《C++程序设计语言》）
+    * [*The C++ Programming Language* (4th edition)](https://www.stroustrup.com/4th.html)（《C++程序设计语言》）
 
         “面向已经了解 C++ 或至少是经验丰富的程序员的人”。覆盖 C++11 标准。
 
-    * 如果你想了解 C++ 的历史，请看 [*The Design and Evolution of C++*](https://link.zhihu.com/?target=https%3A//www.stroustrup.com/dne.html)（《C++语言的设计与演化》）。[*Thriving in a Crowded and Changing World: C++ 2006-2020*](https://link.zhihu.com/?target=https%3A//dl.acm.org/doi/pdf/10.1145/3386320) 可以被视为 D&E 的最新后续。
-    * [*A Tour of C++* (second edition)](https://link.zhihu.com/?target=https%3A//www.stroustrup.com/tour2.html)（《C++语言导学》）
+    * 如果你想了解 C++ 的历史，请看 [*The Design and Evolution of C++*](https://www.stroustrup.com/dne.html)（《C++语言的设计与演化》）。[*Thriving in a Crowded and Changing World: C++ 2006-2020*](https://dl.acm.org/doi/pdf/10.1145/3386320) 可以被视为 D&E 的最新后续。
+
+    * [*A Tour of C++* (second edition)](https://www.stroustrup.com/tour2.html)（《C++语言导学》）
 
         适合去快速了解 C++ 所提供的功能。这本书以 200 页的篇幅介绍了 C++ 及其标准库的主要特性，且覆盖 C++17 标准（及少量 C++20 标准），对于了解新标准特性也不错。
 
