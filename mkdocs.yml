@@ -118,6 +118,7 @@ nav:
       - short_term/index.md
       - C++ 项目管理及工程实践: short_term/cpp_project/index.md
       - Rust 开发实训: short_term/rust/index.md
+      - 大模型应用与实践: short_term/llm_practice/index.md
   - 跨专业课程:
     - others/index.md
     - 常微分方程: others/ode/index.md
