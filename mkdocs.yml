@@ -107,7 +107,7 @@ nav:
     - 固定课程:
       - short_term/index.md
       - 计算机系统概论: short_term/ics/index.md
-      - 工程实践: short_term/engineering_practice/index.md
+      - 人工智能实践: short_term/ai_practice/index.md
     - 课程综合实践 Ⅰ:
       - short_term/index.md
       - 超算实训: short_term/hpc/index.md
@@ -118,7 +118,7 @@ nav:
       - short_term/index.md
       - C++ 项目管理及工程实践: short_term/cpp_project/index.md
       - Rust 开发实训: short_term/rust/index.md
-      - 大模型应用与实践: short_term/llm_practice/index.md
+      - 大模型应用与实践: short_term/llm/index.md
   - 跨专业课程:
     - others/index.md
     - 常微分方程: others/ode/index.md
