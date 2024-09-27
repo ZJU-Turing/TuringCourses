@@ -1,0 +1,69 @@
+\documentclass{ctexart}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{geometry}
+
+\geometry{margin=1in}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\section*{\huge 概率论（H）2023-2024 秋冬小测}
+
+\section*{2023 年 10 月 31 日 13:25--14:25}
+
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item 设事件 $ P(A) = 0.5, P(B) = 0.3, P(A \cup B) = 0.6 $，求 $ P(A\overline{B} \cup \overline{A}B)$.
+
+        \item 已知 $ (A \cup \overline{B})(\overline{A} \cup \overline{B}) + \overline{(A \cup B)} + \overline{\overline{A} \cup B} = C $，且 $ P(C) = 0.2 $，试求 $ P(B) $.
+    \end{enumerate}
+
+    \item 老师给学生们布置 10 道习题，某同学能解出其中 7 道习题. 期中考试从中随机选择 5 道题，求
+    \begin{enumerate}
+        \item 该同学能解出所有 5 道考试题的概率.
+        \item 至少能解出其中 4 道题的概率.
+    \end{enumerate}
+
+    \item 设有两批数量相同的零件，已知有一批产品全部合格，另一批产品有五分之一不合格，从两批产品中任取 1 只，经检验是正品，放回原处，并从原所在批次再取 1 只，求这只产品是次品的概率.
+
+    \item 甲、乙两人比赛羽毛球，最终甲赢，比分为 21:17，求全程甲都领先于乙的概率.
+\end{enumerate}
+
+\section*{2023 年 11 月 28 日 13:25--14:25}
+
+\begin{enumerate}
+    \item 假设 $ X $ 的分布函数如下：
+    \[ F(x) = \begin{cases}
+        x / 4 & 0 \leqslant x < 1 \\
+        1 / 2 + (x - 1) / 4 & 1 \leqslant x < 2 \\
+        11/12 & 2 \leqslant x < 3 \\
+        1 & 3 \leqslant x
+    \end{cases} \]
+    \begin{enumerate}
+        \item 计算 $ P\{ X = i \},\enspace i = 1,2,3 $.
+
+        \item 求 $ P\{ 1 < X \leqslant 2 \} $.
+    \end{enumerate}
+
+    \item 随机变量 $ \xi $ 在区间 $ [-\pi/2, \pi/2] $ 上均匀分布，求随机变量 $ \eta = \lvert \sin\xi \rvert $ 的分布密度.
+\end{enumerate}
+
+以下二选一.
+
+\begin{enumerate}[resume]
+    \item 设随机变量 $ X,Y $相互独立，$ Y $ 为 $ [0,1] $ 上的均匀分布，$ X $ 的概率分布为 $ P(X=i) = 1/3, \allowbreak\enspace i = -1, 0, 1 $. 记 $ Z = X + Y $.
+    \begin{enumerate}
+        \item $ P(Z \leqslant 1/2 \mid X = 0) $.
+
+        \item 求 $ Z $ 的概率密度.
+    \end{enumerate}
+
+    \item 假设 $ Z $ 是正随机变量，且有连续密度函数 $ p(x) $. 给定 $ X = x $ 的条件下，$ Y $ 是 $ [0, x] $ 上的均匀分布. 证明：如果 $ Y $与 $ X-Y $ 相互独立，那么
+    \[ p(x) = a^2 x e^{-ax} \quad x > 0,\enspace a > 0 \]
+\end{enumerate}
+
+\end{document}
