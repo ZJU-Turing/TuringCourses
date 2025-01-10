@@ -64,8 +64,8 @@ abbrs:
 
 ## 相关资源
 
-- [Kailqq的普物Ⅱ课程笔记](https://www.kailqq.cc/NOTE/Physics/)
-- [方明虎老师历年期中试题](普物二期中2013-2021.zip)
+- [Kailqq 的普物 Ⅱ 课程笔记](https://www.kailqq.cc/NOTE/Physics/)
+- [方明虎老师历年期中试题](https://pan.zju.edu.cn/share/a523ec4d1c8b723f048f35857f)
 
 ## 学习建议
 
