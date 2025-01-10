@@ -23,6 +23,7 @@
 |面向信息安全的信号处理|2.0|三（秋冬）|×|×|✓||
 |[量子计算理论基础与软件系统](quantum_computing/)|3.0|三（秋冬）|✓|✓|✓|较完善✅|
 |[编程语言原理](../major_module/principle_of_programming_languages)|2.0|三（秋冬）||×|✓|较完善✅|
+|[计算机图形学](computer_graphics/)|2.5|三（秋冬）|✓|✓|×|较完善✅|
 |[专题研讨](special_discussion/)|2.0|三（秋冬）|✓|-|✓|较完善✅|
 |[脑启发人工智能导论](brain_inspired_ai/)|3.0|三（冬）|×|✓|×||
 |[计算机视觉](computer_vision/)|2.0|三（冬）|✓|×|×|较完善✅|
