@@ -41,7 +41,7 @@
 
 ### 上课要求
 
-20、21 级的上课时间均为 1-5 节，1-2 节为 pre 时间（上半学期无 pre 则 1-2 节休息），3-5 节为讲课时间。
+20、21、22 级的上课时间均为 1-5 节，1-2 节为 pre 时间（上半学期无 pre 则 1-2 节休息），3-5 节为讲课时间。
 
 张国川对课堂有很高的要求，具体为（以下摘录 PPT 原话）
 
@@ -77,7 +77,7 @@
     * 基本每次课后都有，每次作业难的可能要做一两天。
     * 可能会有 bonus，计入平时成绩。
 * 论文报告 20%
-    * 3 人一组，从 30+ 篇论文中选择 1 篇，按照助教安排的时间表进行 pre。20 级论文大概分为 steiner 树和次模优化两个主题；21 级的论文的主题有 AI4OR、Network Interdiction、Santa Claus、Fair Division。有的论文非常有难度，甚至会有当年 STOC/FOCS（理论计算机顶会）的 best paper。
+    * 3 人一组（22 级 2 人一组），从 30+ 篇论文中选择 1 篇，按照助教安排的时间表进行 pre。20 级论文大概分为 steiner 树和次模优化两个主题；21 级的论文的主题有 AI4OR、Network Interdiction、Santa Claus、Fair Division；22 级的论文的主题更多，包括 Knapsack、Bin Packing、Minimum Spanning Tree (Extensions)、Steiner Tree、Traveling Salesman Problem(TSP) and Path TSP、Fair Division 以及其他主题。有的论文非常有难度，甚至会有当年 STOC/FOCS（理论计算机顶会）的 best paper。
     * 报告分为初稿和终稿，初稿截止日期较早，老师和助教会对初稿给与修改意见，最后修改后提交终稿。
 * 课堂表现 10%
     * 包括点名、老师的印象。
