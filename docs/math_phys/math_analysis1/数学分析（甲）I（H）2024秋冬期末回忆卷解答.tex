@@ -1,0 +1,103 @@
+\documentclass{ctexbook}
+\usepackage{amsmath, amsfonts, amssymb, geometry}
+\usepackage{enumitem} % 用于自定义列表格式
+
+\geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm}
+
+\begin{document}
+
+\centering
+\subsection*{2024 - 2025学年数学分析I (H)期末试题答案}
+\centering
+\textbf{jayi0908}
+
+\begin{enumerate}
+    \item[一、]计算题
+    \begin{enumerate}
+        \item[(1)] 由定积分定义，令\(f(x)=\ln(1+x)\)，则\\
+        原式 \(=\lim\limits_{n\to\infty}\dfrac{1}{n}\displaystyle\sum\limits_{k=1}^{n}f(\dfrac{k}{n})=\int_{0}^{1}f(x) \mathrm{d}x=2\ln 2-1\).
+        \item[(2)] 由洛必达法则，令\(u=\sqrt{t}\)，则\\
+        原式 \(=\lim\limits_{x\to0}\dfrac{\int_{0}^{x}2u\sin^2u \mathrm{d}u}{x^{4}}=\lim\limits_{x\to0}\dfrac{2x\sin^2x}{4x^3}=\dfrac{1}{2}\lim\limits_{x\to0}\dfrac{\sin^2x}{x^2}=\dfrac{1}{2}\).
+        \item[(3)] \(f'(x)=\left(1+x\right)\arctan x\)，则
+        \begin{enumerate}
+            \item[] \(x\leq -1\)时，\(f'(x)>0\)
+            \item[] \(-1<x<0\)时，\(f'(x)<0\)
+            \item[] \(x\geq 0\)时，\(f'(x)>0\)
+        \end{enumerate}
+        故\(f(x)\)的极大值为\(f(0)=0\)，\\
+        由分部积分，极小值为
+        \begin{align*}
+            f(-1)&=\int_{0}^{-1}(1+x)\arctan x \mathrm{d}x\\
+                & =\dfrac{1}{2}(1+x)^2\arctan x\vert_{0}^{1}-\int_{0}^{-1}\dfrac{(1+x)^2}{2(1+x^2)} \mathrm{d}x\\
+                & =\dfrac{\pi}{2}-\int_{0}^{-1}\dfrac{1}{2} \mathrm{d}x -\int_{0}^{-1}\dfrac{x \mathrm{d}x}{1+x^2}\\
+                & =\dfrac{\pi}{2}+\dfrac{1}{2}-\dfrac{1}{2}\ln(1+x^2)\vert_{0}^{-1}\\
+                & =\dfrac{\pi}{2}+\dfrac{1}{2}-\dfrac{1}{2}\ln 2.
+        \end{align*}
+        \item[(4)] 代入 \(x=0\) 到第一个方程得 \(\sin t+2t=0\)，\\
+        由函数 \(y=\sin x+2x\) 单增知 \(t=0\) 为唯一解，代入第二个方程得 \(y=\dfrac{\pi}{2}\).\\
+        由第二个式子解得\(t=\dfrac{y-\frac{\pi}{2}}{\sin y}\)，代回第一个式子得\(e^x=\sin\dfrac{y-\frac{\pi}{2}}{\sin y}+2\dfrac{y-\frac{\pi}{2}}{\sin y}+1\).\\
+        两边对\(x\)求导得\(e^x=\dfrac{\cos\dfrac{y-\frac{\pi}{2}}{\sin y}\left(y'\sin y-\left(y-\dfrac{\pi}{2}\right)\cos y\right)}{\sin^2 y}+2\dfrac{y'\sin y-\left(y-\dfrac{\pi}{2}\right)\cos y}{\sin^2 y}\).\\
+        代入 \(x=0,y=\dfrac{\pi}{2}\) 得 \(1=3y'\vert_{x=0}\)，故\(\dfrac{\mathrm{d}y}{\mathrm{d}x}\vert_{x = 0}=\dfrac{1}{3}\).
+        \item[(5)]
+        \begin{align*}
+            \int_{0}^{+\infty}\dfrac{xe^{x}}{\left(1+e^{x}\right)^{2}}dx&=-\int_{0}^{+\infty}x \mathrm{d}\dfrac{1}{1+e^x}\\
+                &=\dfrac{-x}{1+e^x}\vert_{0}^{+\infty}+\int_{0}^{+\infty}\dfrac{1}{1+e^x} \mathrm{d}x\\
+                &=\int_{0}^{+\infty}\dfrac{1}{e^x(1+e^x)} \mathrm{d}e^x\\
+                &=\int_{1}^{+\infty}\dfrac{1}{t(t+1)} \mathrm{d}t\\
+                &=\ln\dfrac{t}{t+1}\vert_{1}^{+\infty}\\
+                &=\ln 2.
+        \end{align*}
+    \end{enumerate}
+
+    \item[二、]
+    确界原理：非空有上界的实数集必有上确界，非空有下界的实数集必有下确界.\\
+    证明：对 \(\forall x_0\in(0,1)\)，由于 \(f\) 在 \((0,1)\) 上单增，故 \(x_0\) 左侧的函数值均小于 \(f(x_0)\)，\\
+    令\(E=\{f(x)\vert x\in(0,1),x<x_0\}\)，则 \(E\) 非空有上界，故 \(\exists a=\sup E\)，\\
+    由确界定义，\(\forall\varepsilon_1>0,\exists x_1\in(0,1),x_1<x_0\)，使得 \(a-\varepsilon_1<f(x_1)\leq a\).\\
+    则 \(\forall\varepsilon_2\in (0,a-f(x_1)),\exists x_2\in(x_1,x_0),\)，使得 \(f(x_1)<a-\varepsilon_2<f(x_2)<a\).\\
+    同理可一直构造出 \(x_1<x_2<\cdots<x_n<\cdots<x_0\)，使得 \(f(x_{n-1})<a-\varepsilon_n<f(x_n)<a\)，\\
+    且 \(\{a-f(x_n)\}\) 收敛于 \(0\).\\
+    由\(f\)单调性不难知\(\lim\limits_{x\to x_0^-}f(x)=a\)，即左极限存在。同理右极限存在。故不存在第二类间断点\\
+    易知 \(f\) 作为连续区间上的单增函数不存在可去间断点，故其间断点只能是跳跃间断点，得证.
+    
+    \item[三、]
+    证明：\(x_{n+1}-x_{n}=\dfrac{1}{4(1-x_n)}-x_n=\dfrac{(1-2x_n)^2}{4(1-x_n)}>0\)，故 \(\{x_n\}\) 单调递增.\\
+    且若 \(x_n<\dfrac{1}{2}\)，则 \(x_{n+1}=\dfrac{1}{4(1-x_n)}<\dfrac{1}{4(1-\frac{1}{2})}=\dfrac{1}{2}\)，故 \(\{x_n\}\) 有上界. 故 \(\{x_n\}\) 收敛.\\
+    设 \(\lim\limits_{n\to\infty}x_{n}=a\)，则 \(a=\dfrac{1}{4(1-a)}\)，解得 \(a=\dfrac{1}{2}\).得证.
+
+    \item[四、]由导数局部保号性与拉格朗日中值定理，\\
+    \(\exists x_1\in U_+^o(0),x_2\in U_-^o(2025),\exists \xi_1\in (0,x_1),\exists \xi_2\in (x_2,2025)\)，\\
+    使得\(f(x_1)=f'(\xi_1)x_1>0,f(x_2)=f'(\xi_2)(x_2-2025)<0\)，由\(f\)连续及零点存在性定理得证.
+
+    \item[五、]一致连续：\(\forall\varepsilon>0,\exists\delta>0,\forall x,y\in I,\vert x-y\vert<\delta\Rightarrow\vert f(x)-f(y)\vert<\varepsilon\)，则称\(f\)在\(I\)上一致连续.\\
+    证明：不难证明，若\(f\)在\(I_1\)上一致连续，在\(I_2\)上也一致连续，且\(I_1\)与\(I_2\)为两个相接的区间，则\(f\)在\(I_1\cup I_2\)上一致连续.\\
+    (只需任取\(\dfrac{\varepsilon}{2}\)，相应的有两个\(\delta_1,\delta_2\)，取\(\delta=\min{\delta_1,\delta_2}\)，
+    则可证明\(\forall x,y\in I_1\cup I_2,\vert x-y\vert<\delta\Rightarrow\vert f(x)-f(y)\vert<\varepsilon\))\\
+    \(\lim\limits_{x\to 0}f(x)=\lim\limits_{x\to 0}\dfrac{\ln x}{x^{-\frac{1}{2}}}=\lim\limits_{x\to 0}\dfrac{x^{-1}}{-\frac{1}{2}x^{-\frac{3}{2}}}=0\)，故\(f(x)\)在\((0,1]\)上一致连续.\\
+    故只需证明\(f(x)\)在\((1,+\infty)\)上一致连续.\\
+    由拉格朗日中值定理，只需证明\(f'(x)\)在\((1,+\infty)\)上有界.\\
+    \(f'(x)=\dfrac{\ln x}{2\sqrt{x}}+\dfrac{\sqrt{x}}{x}=\dfrac{2\ln\sqrt{x}+2}{2\sqrt{x}}=\dfrac{\ln t+1}{t}\).\\
+    其中\(t=\sqrt{x}\)，且不难证明在\((1,+\infty)\)上\(0<\dfrac{\ln t+1}{t}<1\)恒成立，得证.
+    
+    \item[六、]注意到\(\int_{0}^{1}x^2 \mathrm{d}x=\frac{1}{3}\)，故只需证明\(\int_{0}^{1}f(x^2) \mathrm{d}x\leq f(\int_{0}^{1}x^2 \mathrm{d}x)\).\\
+    由定积分定义与琴生不等式，\\
+    \begin{align*}
+        f(\int_{0}^{1}x^2 \mathrm{d}x)&=f(\lim\limits_{n\to\infty}\dfrac{1}{n}\displaystyle\sum\limits_{k=1}^{n}\dfrac{k^2}{n^2})\\
+        &\geq \lim\limits_{n\to\infty}\dfrac{1}{n}\displaystyle\sum\limits_{k=1}^{n}f(\dfrac{k^2}{n^2})\\
+        &=\int_{0}^{1}f(x^2) \mathrm{d}x.
+    \end{align*}
+    得证。
+
+    \item[七、]\(f\in C[0,1]\),证明：
+    \begin{enumerate}[leftmargin=*,labelwidth=!,labelsep=0pt]
+        \item[(1)] 令\(F(t)=\int_{0}^{t}f(x)\mathrm{d}x+\int_{1-t}^{1}f(x)\mathrm{d}x,t\in [0,\dfrac{1}{2}]\).
+        则由\(f\in C[0,1]\)知\(F(t)\in C[0,\dfrac{1}{2}]\)，且\(F(0)=0,F(\dfrac{1}{2})=\int_{0}^{1}f(x)\mathrm{d}x\).\\
+        由介值定理，\(\exists\xi\in[0,\dfrac{1}{2}]\),使得\(F(\xi)=\dfrac{1}{2}F(\dfrac{1}{2})=\dfrac{1}{2}\int_{0}^{1}f(x) \mathrm{d}x\).\\
+        \item[(2)] 不成立，反例：
+        \(f(x)=\cos 2\pi x\)，则\(F(t)=\dfrac{1}{2\pi}\sin 2\pi x\vert_{0}^{t}+\dfrac{1}{2\pi}\sin 2\pi x\vert_{1-t}^{1}=\dfrac{1}{\pi}\sin 2\pi t\)，\\
+        \(F(0)=F(\dfrac{1}{2})=0\)，但不存在\(\xi\in (0,\dfrac{1}{2})\)使得\(F(\xi)=0\)，故结论不成立.
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
