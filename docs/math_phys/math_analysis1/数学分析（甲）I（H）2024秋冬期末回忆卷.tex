@@ -1,0 +1,57 @@
+\documentclass{ctexbook}
+\usepackage{amsmath, amsfonts, amssymb, geometry}
+\usepackage{enumitem} % 用于自定义列表格式
+
+\geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm}
+\AtBeginDocument{
+    \abovedisplayskip=3pt plus 3pt minus 3pt
+    \belowdisplayskip=3pt plus 3pt minus 3pt
+    \abovedisplayshortskip=0pt plus 3pt
+    \belowdisplayshortskip=3pt plus 3pt minus 3pt
+}
+
+\begin{document}
+
+\centering
+\subsection*{2024 - 2025学年数学分析I (H)期末试题}
+\centering
+\textbf{图灵回忆卷}
+
+\begin{enumerate}[leftmargin=*,labelwidth=!,labelsep=0pt]
+    \item[一、]计算题
+    \begin{enumerate}[leftmargin=*,labelwidth=!,labelsep=0pt]
+        \item[(1)] \(\lim\limits_{n\to\infty}\dfrac{1}{n}\displaystyle\sum\limits_{k=1}^{n}\ln\left(1+\dfrac{k}{n}\right)\).
+        \item[(2)] \(\lim\limits_{x\to0}\dfrac{\int_{0}^{x^{2}}\left(\sin{\sqrt{t}}\right)^{2} \mathrm{d}t}{x^{4}}\).
+        \item[(3)] \(f(x)=\int_{0}^{x}\left(1+t\right)\arctan t \mathrm{d}t\), 求\(f(x)\)的极值.
+        \item[(4)] 求由如下方程：
+            \(
+            \begin{cases}
+                e^{x}=\sin t+2t+1\\
+                t\sin y-y+\dfrac{\pi}{2}=0
+            \end{cases}
+            \)
+            确定的\(y,x\)所对应的\(\dfrac{\mathrm{d}y}{\mathrm{d}x}\vert_{x = 0}\).
+        \item[(5)] \(\int_{0}^{+\infty}\dfrac{xe^{x}}{\left(1+e^{x}\right)^{2}} \mathrm{d}x\).
+    \end{enumerate}
+
+    \item[二、]叙述确界原理，并用确界原理证明：定义在\((0,1)\)上的单增函数的间断点只能是跳跃间断点.
+    
+    \item[三、]数列\(\{x_n\}\)满足：\(0<x_{1}<\dfrac{1}{2},x_{n+1}=\dfrac{1}{4(1-x_{n})},\forall n \in \mathbb{N_+}\),
+    证明：\(\{x_n\}\)收敛，且\(\lim\limits_{n\to\infty}x_{n}=\dfrac{1}{2}\).
+    
+    \item[四、]\(f\in C[0,2025]\),且\(f(0)=f(2025)=0,f_{+}^{\prime}(0)>0,f_{-}^{\prime}(2025)>0\),
+    证明：至少存在一个\(\xi\)使得\(\xi\in(0,2025)\)且\(f(\xi)=0\).
+
+    \item[五、]叙述一致连续定义，并证明：\(f(x)=\sqrt{x}\ln x\)在\((0,+\infty)\)上一致连续.
+    
+    \item[六、]\(f(x)\)在\(\mathbb{R}\)上有连续二阶导数，且\(f''(x)<0\),证明：\(\int_{0}^{1}f(x^{2}) \mathrm{d}x\leq f(\dfrac{1}{3})\).
+    
+    \item[七、]\(f\in C[0,1]\),证明：
+    \begin{enumerate}[leftmargin=*,labelwidth=!,labelsep=0pt]
+        \item[(1)] \(\exists\xi\in[0,\dfrac{1}{2}]\),使得\(\dfrac{1}{2}\int_{0}^{1}f(x) \mathrm{d}x=\int_{0}^{\xi}f(x) \mathrm{d}x+\int_{1-\xi}^{1}f(x) \mathrm{d}x\).
+        \item[(2)] 将\(\xi\in[0,\dfrac{1}{2}]\)改为\(\xi\in(0,\dfrac{1}{2})\),结论是否成立？证明或否定.
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
