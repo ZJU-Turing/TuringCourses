@@ -1,6 +1,7 @@
 ---
 abbrs:
     - 普物Ⅱ
+    - 普物二
 ---
 
 # 普通物理学 Ⅱ（H）
@@ -64,7 +65,7 @@ abbrs:
 
 ## 相关资源
 
-- [Kailqq 的普物 Ⅱ 课程笔记](https://www.kailqq.cc/NOTE/Physics/)
+- [Kailqq 的普物 Ⅱ 课程笔记](https://note.kailqq.cc/NOTE/Physics/)
 - [方明虎老师历年期中试题](https://pan.zju.edu.cn/share/a523ec4d1c8b723f048f35857f)
 
 ## 学习建议
