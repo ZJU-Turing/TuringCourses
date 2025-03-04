@@ -20,7 +20,7 @@
 |[数据库系统](../major_mandatory/database/)|4.0|二（春夏）|-|?|✓|较完善✅|
 |[人工智能逻辑](ai_logic/)|3.0|二（春夏）|×|✓|×|较完善✅|
 |[技术沟通](technology_communication/)|2.0|二（夏）|✓|✓|✓|较完善✅|
-|面向信息安全的信号处理|2.0|三（秋冬）|×|×|✓||
+|[面向信息安全的信号处理](signal_processing_for_cybersecurity/)|2.0|三（秋冬）|×|×|✓|较完善✅|
 |[量子计算理论基础与软件系统](quantum_computing/)|3.0|三（秋冬）|✓|✓|✓|较完善✅|
 |[编程语言原理](../major_module/principle_of_programming_languages)|2.0|三（秋冬）||×|✓|较完善✅|
 |[计算机图形学](computer_graphics/)|2.5|三（秋冬）|✓|✓|×|较完善✅|
