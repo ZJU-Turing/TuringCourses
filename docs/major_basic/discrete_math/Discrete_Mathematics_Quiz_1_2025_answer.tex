@@ -49,8 +49,8 @@
     \end{enumerate}
     \item[2.] \begin{enumerate}
         \item[a)] $p\oplus q\equiv(p\land\lnot q)\lor(\lnot p\land q)\equiv\lnot(\lnot(p\land\lnot q)\land\lnot(\lnot p\land q))$.
-        \item[b)] 由与非的性质，$p|q=\lnot(p\land q)$，$p|\mathrm{T}=\lnot p$，\\
-        故上式即可翻译为 $(\lnot(p\land\lnot q))|(\lnot(\lnot p\land q))\equiv (p|(\lnot q))|((\lnot p)|q)\equiv (p|(q|\mathrm{T}))|((p|\mathrm{T})|q)$.
+        \item[b)] 由与非的性质，$p|q=\lnot(p\land q)$，$p|p=\lnot p$，\\
+        故上式即可翻译为 $(\lnot(p\land\lnot q))|(\lnot(\lnot p\land q))\equiv (p|(\lnot q))|((\lnot p)|q)\equiv (p|(q|q))|((p|p)|q)$.
     \end{enumerate}
     \item[3.] 列真值表即可，最后得到结果为 $(p\lor q\lor r)\land(\lnot p\lor\lnot q\lor r)$.
     \item[4.] $f_1(1,2)=(a,a)$，$f_2(1,2)=(a,b)$，$f_3(1,2)=(b,a)$，$f_4(1,2)=(b,b)$，为全部的映射。\\
@@ -92,7 +92,14 @@
     同理，若 $m$ 是奇数，则 $f_2+f_3=f_4$，$f_4+f_5=f_6$，$\cdots$，$f_{m-1}+f_m=f_{m+1}<f_{m+2}\leq f_{i_{m+1}}$，\\
     故 $n+1=1+f_1+(f_2+f_3)+\cdots+(f_{m-1}+f_m)+\displaystyle\sum_{j=m+1}^k f_{i_j}=f_2+f_4+f_6+\cdots+f_{m+1}+\displaystyle\sum_{j=m+1}^k f_{i_j}$，为不同的 Fibonacci 数之和，\\
     不论哪种情况，都可以得到 $n+1$ 可被不同的 Fibonacci 数之和表示，\\
-    故由归纳法，知任意的正整数 $n>2$ 都可以被不同的 Fibonacci 数之和表示。得证。
+    故由归纳法，知任意的正整数 $n>2$ 都可以被不同的 Fibonacci 数之和表示。得证。\\
+    \vspace{1em}
+    另证：用强归纳法，归纳奠基已做，对于归纳过渡，假设所有小于 $n$ 且大于 $2$ 的正整数均可以被不同的 Fibonacci 数之和表示，\\
+    设 $f$ 为小于 $n$ 的最大的 Fibonacci 数（则 $f\geq 3$，因为归纳奠基是 $n=3$，故这里 $n\geq 4$），则考虑 $n-f$： \\
+    若 $n-f=1$ 或 $2$，则 $n=f+1$ 或 $n=f+2$，为两个不同的 Fibonacci 数之和，成立。\\
+    若 $n-f\geq 3$，由归纳假设，$n-f$ 可被不同的 Fibonacci 数之和表示，为 $f_1,f_2,\cdots,f_k$，\\
+    由于 $f$ 是小于 $n$ 的最大的 Fibonacci 数，故 $f_1,f_2,\cdots,f_k$ 均小于 $f$，从而 $n=f_1+f_2+\cdots+f_k+f$ 也是不同的 Fibonacci 数之和，\\
+    不论哪种情况都可以得到 $n$ 可被不同的 Fibonacci 数之和表示，故由强归纳法知任意的正整数 $n>2$ 都可以被不同的 Fibonacci 数之和表示。得证。
 \end{enumerate}
 
 \end{document}
