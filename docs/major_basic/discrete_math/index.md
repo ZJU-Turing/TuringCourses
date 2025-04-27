@@ -53,7 +53,7 @@
 - [（23 级）2024 春夏第一次小测](Discrete_Mathematics_Quiz_1_2024.pdf)
 - [（23 级）2024 春夏第三次小测](Discrete_Mathematics_Quiz_3_2024.pdf)
 - [（23 级）2024 春夏第四次小测](Discrete_Mathematics_Quiz_4_2024.pdf)
-- [（24 级）2025 春夏第一次小测](Discrete_Mathematics_Quiz_1_2025.pdf)
+- [（24 级）2025 春夏第一次小测](Discrete_Mathematics_Quiz_1_2025.pdf) | [参考解答](Discrete_Mathematics_Quiz_1_2025_answer.pdf)
 
 ## 学长组课程学习建议
 
