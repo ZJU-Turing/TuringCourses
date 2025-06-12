@@ -3,7 +3,7 @@
 \geometry{a4paper,scale=0.66,top=1in,bottom=1in,left=1in,right=1in}
 
 \title{\vspace{-4em}\textbf{数学分析（甲）II（H）2023-2024 春夏期末答案}}
-\author{图灵回忆卷}
+\author{图灵回忆卷\quad\quad by jayi0908}
 
 \linespread{1.6}
 \addtolength{\parskip}{.2em}
@@ -27,31 +27,32 @@
     从而 $\Delta z=f_x'(0,0)\Delta x+f_y'(0,0)\Delta y+o(\rho)$，故 $f(x,y)$ 在 $(0,0)$ 可微。
     \item[\textbf{二、}] \textbf{(32 分)}
     \begin{enumerate}
-        \item[\textbf{1.}] 设 $x=r\cos\theta\cos\varphi$，$y=r\cos\theta\sin\varphi$，$z=r\sin\theta$，则 \\
+        \item[\textbf{1.}] 利用球坐标变换，设 $x=r\sin\theta\cos\varphi$，$y=r\sin\theta\sin\varphi$，$z=r\cos\theta$，
+        $0\le r\le 1$，$0\le\theta\le\dfrac{\pi}{2}$，$0\le\varphi\le\dfrac{\pi}{2}$，则
         $J(r,\theta,\varphi)=\begin{vmatrix}
         x_r & x_{\theta} & x_{\varphi} \\
         y_r & y_{\theta} & y_{\varphi} \\
         z_r & z_{\theta} & z_{\varphi}
-        \end{vmatrix}=-r^2\cos\theta$
+        \end{vmatrix}=r^2\sin\theta$
         \begin{align*}
-        \text{故} & \quad\iiint_{V}\sqrt{x^2+y^2+z^2}\dd{x}\dd{y}\dd{z} \\
-        & =\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{\pi}{2}}\int_0^1r\cdot r^2\cos\theta\dd{r}\dd{\theta}\dd{\varphi} \\
-        & =\int_0^{\frac{\pi}{2}}\int_0^{\frac{\pi}{2}}\frac{1}{4}\cos\theta\dd{\theta}\dd{\varphi} \\
+        \text{故} \quad\iiint_{V}\sqrt{x^2+y^2+z^2}\dd{x}\dd{y}\dd{z} 
+        & =\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{\pi}{2}}\int_0^1r\cdot r^2\sin\theta\dd{r}\dd{\theta}\dd{\varphi} \\
+        & =\int_0^{\frac{\pi}{2}}\int_0^{\frac{\pi}{2}}\frac{1}{4}\sin\theta\dd{\theta}\dd{\varphi} \\
         & =\int_0^{\frac{\pi}{2}}\frac{1}{4}\dd{\varphi}=\frac{\pi}{8}.
         \end{align*}
         \item[\textbf{2.}] $f(x)=\ds\int_0^x\sqrt{\sin t}\dd{t}$，$f'(x)=\sqrt{\sin x}$，
         \begin{align*}
-        \text{故} &\quad\int_L x\dd{s} \\
+        \text{故} \quad\int_L x\dd{s}
         & =\int_0^{\pi}x\cdot\sqrt{1+\sin x}\dd{x} \\
         & =\int_0^{\pi}x\sqrt{(\sin\frac{x}{2}+\cos\frac{x}{2})^2}\dd{x} \\
         & =4\int_0^{\frac{\pi}{2}}x(\sin x+\cos x)\dd{x} \\
         & =4(x\sin x-x\cos x+\sin x+\cos x)\vert_0^{\frac{\pi}{2}}=2\pi.
         \end{align*}
         \item[\textbf{3.}] $P(x,y)=e^x\sin y-y^2$，$Q(x,y)=e^x\cos y$，设 $A(0,0)$，$B(\pi,0)$，$L':L+\overline{BA}$ 为闭合曲线，
-        围成闭区域 $D$，$\dfrac{\partial Q}{\partial x}=e^x\cos y$，$\dfrac{\partial P}{\partial y}=e^x\cos y-2y$ \\
+        围成闭区域 $D$，$\dfrac{\partial Q}{\partial x}=e^x\cos y$，$\dfrac{\partial P}{\partial y}=e^x\cos y-2y$. \\
         由格林公式 $$\oint_{L'}P\dd{x}+Q\dd{y}=-\iint_D 2y\dd{\sigma}=-\int_0^\pi\dd{x}\int_0^{\sin x}2y\dd{y}=-\int_0^\pi \sin^2x\dd{x}=-\frac{\pi}{2}$$ \\
         在 $AB$ 上 $P(x,y)=0$，$\dd{y}=0$，故 $\ds\oint_{AB}P\dd{x}+Q\dd{y}=0$，故 $\ds\oint_{L}P\dd{x}+Q\dd{y}=-\frac{\pi}{2}$.
-        \item[\textbf{4.}] 设 $x=r\cos\theta$，$y=\cos\theta$，$z=r$，$0\le r\le 1$ \\
+        \item[\textbf{4.}] 设 $x=r\cos\theta$，$y=r\sin\theta$，$z=r$，$0\le r\le 1$，$0\le\theta\le 2\pi$. \\
         则 $\dfrac{\partial(z,x)}{\partial(r,\theta)}=\begin{vmatrix}
         1 & 0 \\
         \cos\theta & -r\sin\theta
@@ -60,20 +61,22 @@
         \sin\theta & -r\cos\theta
         \end{vmatrix}=r$，从而为负向。
         \begin{align*}
-        \text{故}& \quad\iint_Sy^2\dd{z}\dd{x}+(z+1)\dd{x}\dd{y} \\
+        \text{故} \quad\iint_Sy^2\dd{z}\dd{x}+(z+1)\dd{x}\dd{y}
         &=-\int_0^{2\pi}\int_0^1(r^2\sin^2\theta\cdot (-r\sin\theta)+(r+1)r)\dd{r}\dd{\theta} \\
         &=\frac{1}{4}\int_0^{2\pi}\sin^3\theta\dd{\theta}-\frac{5}{6}\int_0^{2\pi}\dd{\theta} \\
         &=\frac{1}{8}\int_0^{2\pi}\sin\theta(1-\cos 2\theta)\dd{\theta}-\frac{5\pi}{3}=-\frac{5\pi}{3}.
         \end{align*}
     \end{enumerate}
-    \item[\textbf{三、}] \textbf{(10 分)} $f(x-z,y-z)=0$，故 $\dfrac{\partial f}{\partial x}=f_1\cdot(1-\dfrac{\partial z}{\partial x})+f_2\cdot(-\dfrac{\partial z}{\partial x})=0$，
-    $\dfrac{\partial f}{\partial y}=f_1\cdot(-\dfrac{\partial z}{\partial y})+f_2\cdot(1-\dfrac{\partial z}{\partial y})=0$，其中 $f_1,f_2$ 分别为 $f$ 两个分量的偏导数。\\
-    两式相加得：$(f_1+f_2)(1-\dfrac{\partial z}{\partial x}-\dfrac{\partial z}{\partial y})=0$，且由条件，$f_1+f_2\neq 0$，故 $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=1.$
+    \item[\textbf{三、}] \textbf{(10 分)} $f(x-z,y-z)=0$，故 $f_x=f_1$，$f_y=f_2$，$f_z=-(f_1+f_2)\neq 0$ \\
+    由隐函数定理 $\dfrac{\partial z}{\partial x}=-\dfrac{f_x}{f_z}=\dfrac{f_1}{f_1+f_2}$，$\dfrac{\partial z}{\partial y}=-\dfrac{f_y}{f_z}=\dfrac{f_2}{f_1+f_2}$，
+    故 $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=1$.
     \item[\textbf{四、}] \textbf{(10 分)} 即求平面上一点 $(x,y,z)$，使得 $f(x,y,z)=\sqrt{(x-x_0)^2+(y-y_0)^2+(z-z_0)^2}$ 取到最小值。 \\
     用拉格朗日乘数法，设 $F(x,y,z,\lambda)=\sqrt{(x-x_0)^2+(y-y_0)^2+(z-z_0)^2}+\lambda(ax+by+cz+d)$，有 
-    $F_x=\dfrac{x-x_0}{f(x,y,z)}+\lambda a$，$F_y=\dfrac{y-y_0}{f(x,y,z)}+\lambda b$，$F_z=\dfrac{z-z_0}{f(x,y,z)}+\lambda c$，$F_\lambda=ax+by+cz+d$。\\
-    令 $F_x=0$，$F_y=0$，$F_z=0$，$F_\lambda=0$，则有 $\dfrac{x-x_0}{a}=\dfrac{y-y_0}{b}=\dfrac{z-z_0}{c}:=t$，\\ 
-    故 $x=x_0+at$，$y=y_0+bt$，$z=z_0+ct$。\\
+    $F_x=\dfrac{x-x_0}{f(x,y,z)}+\lambda a$，$F_y=\dfrac{y-y_0}{f(x,y,z)}+\lambda b$，$F_z=\dfrac{z-z_0}{f(x,y,z)}+\lambda c$，$F_\lambda=ax+by+cz+d$. \\
+    令 $F_x=0$，$F_y=0$，$F_z=0$，$F_\lambda=0$，\\
+    若 $abc\neq 0$，则有 $\dfrac{x-x_0}{a}=\dfrac{y-y_0}{b}=\dfrac{z-z_0}{c}:=t$，即 $x=x_0+at$，$y=y_0+bt$，$z=z_0+ct$；\\
+    若 $abc=0$，比如 $a=0$，则 $x=x_0=x_0+at$，对于 $b,c$ 同理，即仍可写成 $x=x_0+at$，$y=y_0+bt$，$z=z_0+ct$. \\
+    故 $x=x_0+at$，$y=y_0+bt$，$z=z_0+ct$.\\
     代入 $F_\lambda=0$ 得 $a(x_0+at)+b(y_0+bt)+c(z_0+ct)+d=0$，即 $t=-\dfrac{ax_0+by_0+cz_0+d}{a^2+b^2+c^2}$。\\
     故 $f(x,y,z)=\sqrt{(at)^2+(bt)^2+(ct)^2}=\dfrac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}$ 为所求距离。
     \item[\textbf{五、}] \textbf{(10 分)} Dirichlet 判别法：
@@ -116,7 +119,22 @@
     &< \varepsilon_1(|b_{n+1}|+|b_{n+2}-b_{n+1}|+\cdots+|b_{n+p}-b_{n+p-1}|) \\
     &< \varepsilon_1(M+\varepsilon_2) = \varepsilon.
     \end{align*}
-    由 Cauchy 收敛准则，$\sum a_n b_n$ 收敛。
+    由 Cauchy 收敛准则，$\sum a_n b_n$ 收敛。\\
+    注，本题也有利用 Abel 变换的做法： \\
+    令 $A_n=\ds\sum_{k=1}^na_k$，$A_0=0$，则 $\ds\sum_{k=1}^na_nb_n=\ds\sum_{k=1}^n(A_k-A_{k-1})b_k=A_nb_n+\ds\sum_{k=1}^{n-1}A_k(b_k-b_{k+1})$. \\
+    由于 $\sum a_n$ 收敛，故 $\{A_n\}$ 为收敛数列； \\
+    由于 $\sum (b_{n+1}-b_n)$ 绝对收敛，故其部分和 $\{b_n\}$ 也是收敛数列，故 $\{A_n b_n\}$ 也是收敛数列。\\
+    故即证 $\sum A_n(b_n-b_{n+1})$ 收敛。 \\
+    由 Cauchy 收敛准则，对 $\forall \varepsilon_1>0,\exists N_1\in\mathbb{N}_+,\forall n>N_1,\forall p\in\mathbb{N}_+$，有 $\ds\sum_{i=1}^p|b_{n+i+1}-b_{n+i}|<\varepsilon_1$ \\
+    设 $\ds\lim_{n\to\infty}A_n=A$，则 $\exists N_2\in\mathbb{N}_+,\forall n>N_2, |A_n|<\dfrac{3}{2}|A|$， \\
+    对 $\forall \varepsilon>0$，取 $\varepsilon_1=\dfrac{2\varepsilon}{3|A|}$，$N=\max{N_1,N_2}$，则对 $\forall n>N, \forall p\in\mathbb{N}_+$，有 \\
+    \begin{align*}
+    |\ds\sum_{i=1}^pA_{n+i}(b_{n+i}-b_{n+1+i})|
+    &\le\ds\sum_{i=1}^p|A_{n+i}||b_{n+1+i}-b_{n+i}| \\
+    &<\dfrac{3|A|}{2}\ds\sum_{i=1}^p|b_{n+1+i}-b_{n+i}| \\
+    &<\dfrac{3|A|}{2}\cdot\varepsilon_1<\varepsilon
+    \end{align*}
+    由 Cauchy 收敛准则，$\sum A_n(b_n-b_{n+1})$ 收敛，得证。
     \item[\textbf{八、}] \textbf{(8 分)} $$ \dfrac{\dd{g_{\theta}}}{\dd{t}}=f_1\cos\theta+f_2\sin\theta=0, $$
     \begin{align*} 
     \dfrac{\dd{^2g_{\theta}}}{\dd{t^2}}&=f_{11}\cos^2\theta+2f_{12}\cos\theta\sin\theta+f_{22}\sin^2\theta \\
