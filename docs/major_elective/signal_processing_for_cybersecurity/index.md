@@ -54,7 +54,7 @@
 
 咸鱼暄学长语雀链接：[面向信息安全的信号处理](https://www.yuque.com/xianyuxuan/coding/signal_processing)
 
-## 回议卷
+## 回忆卷
 
 22 级：大题基本完整，小题只补充部分（实在记不起来），但小题考察内容范围和 21 级历年卷基本相同：[24-25 秋冬学期面向信息安全的信号处理回忆卷](SignalProcess-2425.pdf)
 
