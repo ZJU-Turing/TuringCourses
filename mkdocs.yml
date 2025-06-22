@@ -95,6 +95,7 @@ nav:
     - major_elective/index.md
     - 技术沟通: major_elective/technology_communication/index.md
     - 图像信息处理: major_elective/digital_image_processing/index.md
+    - 面向信息安全的信号处理: major_elective/signal_processing_for_cybersecurity/index.md
     - 脑启发人工智能导论: major_elective/brain_inspired_ai/index.md
     - 人工智能逻辑: major_elective/ai_logic/index.md
     - 计算摄影学: major_elective/computational_photography/index.md
@@ -104,6 +105,8 @@ nav:
     - 量子计算理论基础与软件系统: major_elective/quantum_computing/index.md
     - 多媒体安全: major_elective/multimedia_security/index.md
     - 计算机图形学: major_elective/computer_graphics/index.md
+    - 智能视觉信息采集: major_elective/intelligent_acquisition_of_visual_information/index.md
+    - 计算机图形学研究进展: major_elective/research_advances_in_computer_graphics/index.md
   - 短学期课程:
     - short_term/index.md
     - 固定课程:

@@ -26,6 +26,8 @@
 
     此外，据笔者了解，21、22 级都是同一位助教，助教人很好，去年还推动老师捞了平时分，平时有问题可以多去问问。
 
+    似乎 23 也调了分，不过具体情况还不确定。
+
 ## 分数构成
 小测占 40%、期末占 60%，李明班测 2-3 次，郑文庭班固定测 4 次。
 
@@ -51,6 +53,7 @@
 - [（23 级）2024 春夏第一次小测](Discrete_Mathematics_Quiz_1_2024.pdf)
 - [（23 级）2024 春夏第三次小测](Discrete_Mathematics_Quiz_3_2024.pdf)
 - [（23 级）2024 春夏第四次小测](Discrete_Mathematics_Quiz_4_2024.pdf)
+- [（24 级）2025 春夏第一次小测](Discrete_Mathematics_Quiz_1_2025.pdf) | [参考解答](Discrete_Mathematics_Quiz_1_2025_answer.pdf)
 
 ## 学长组课程学习建议
 

@@ -20,16 +20,18 @@
 |[数据库系统](../major_mandatory/database/)|4.0|二（春夏）|-|?|✓|较完善✅|
 |[人工智能逻辑](ai_logic/)|3.0|二（春夏）|×|✓|×|较完善✅|
 |[技术沟通](technology_communication/)|2.0|二（夏）|✓|✓|✓|较完善✅|
-|面向信息安全的信号处理|2.0|三（秋冬）|×|×|✓||
+|[面向信息安全的信号处理](signal_processing_for_cybersecurity/)|2.0|三（秋冬）|×|×|✓|较完善✅|
 |[量子计算理论基础与软件系统](quantum_computing/)|3.0|三（秋冬）|✓|✓|✓|较完善✅|
 |[编程语言原理](../major_module/principle_of_programming_languages)|2.0|三（秋冬）||×|✓|较完善✅|
 |[计算机图形学](computer_graphics/)|2.5|三（秋冬）|✓|✓|×|较完善✅|
+|[智能视觉信息采集](intelligent_acquisition_of_visual_information/)|2.5|三（秋冬）|×|✓|×|较完善✅|
 |[专题研讨](special_discussion/)|2.0|三（秋冬）|✓|-|✓|较完善✅|
 |[脑启发人工智能导论](brain_inspired_ai/)|3.0|三（冬）|×|✓|×||
 |[计算机视觉](computer_vision/)|2.0|三（冬）|✓|×|×|较完善✅|
 |[计算机科学思想史](../major_module/history_of_cs_ideas/)|2.0|三（春夏）||✓|✓|较完善✅|
 |[计算摄影学](computational_photography/)|4.0|三（春夏）|✓|×|×|较完善✅|
 |[社交网络安全与隐私](social_network_security/)|2.0|三（夏）|×|×|✓|较完善✅|
+|[计算机图形学研究进展](research_advances_in_computer_graphics/)|4.0|三(春夏)|✓|×|×|较完善✅|
 
 </div>
 
