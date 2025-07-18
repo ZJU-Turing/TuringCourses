@@ -28,6 +28,7 @@
 |[专题研讨](special_discussion/)|2.0|三（秋冬）|✓|-|✓|较完善✅|
 |[脑启发人工智能导论](brain_inspired_ai/)|3.0|三（冬）|×|✓|×||
 |[计算机视觉](computer_vision/)|2.0|三（冬）|✓|×|×|较完善✅|
+|[数据可视化导论](introduction_to_data_visualization/)|2.0|二（夏）|✓|✓|✓|较完善✅|
 |[计算机科学思想史](../major_module/history_of_cs_ideas/)|2.0|三（春夏）||✓|✓|较完善✅|
 |[计算摄影学](computational_photography/)|4.0|三（春夏）|✓|×|×|较完善✅|
 |[社交网络安全与隐私](social_network_security/)|2.0|三（夏）|×|×|✓|较完善✅|
