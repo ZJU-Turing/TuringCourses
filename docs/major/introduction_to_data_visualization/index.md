@@ -1,8 +1,8 @@
-# 数据可视化导论
-<div class="badges">
-<span class="badge is-badge">CS/AI/IS 专业选修</span>
-</div>
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/introduction_to_data_visualization/
+---
 
+# 数据可视化导论
 
 ## 课程学习内容
 

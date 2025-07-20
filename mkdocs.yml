@@ -17,7 +17,7 @@ nav:
     - 形势与政策 Ⅰ: political/situation_policy1/index.md
     - 思想道德与法治: political/morality_law/index.md
     - 中国近现代史纲要（H）: political/modern_history/index.md
-    - 马克思主义基本原理（H）: political/marxism/index.md
+    - 马克思主义基本原理（H）: political/marxism_basic/index.md
     - 毛泽东思想和中国特色社会主义理论体系概论（H）: political/mao_thought/index.md
     - 习近平新时代中国特色社会主义思想概论: political/xi_thought/index.md
     - 形势与政策 Ⅱ: political/situation_policy2/index.md
@@ -38,7 +38,7 @@ nav:
     - 普通物理学实验 Ⅰ（H）: math_phys/physics_experiment1/index.md
     - 概率论与数理统计: math_phys/probability/index.md
   - 专业必修课:
-    - major/mandatory.md
+    - major/mandatory/index.md
     - 程序设计与算法基础: major/programming/index.md
     - 数据结构基础: major/data_structure/index.md
     - 离散数学理论基础: major/discrete_math/index.md
@@ -53,7 +53,7 @@ nav:
     - 计算机网络: major/computer_networks/index.md
     - 编译原理: major/compilers_principles/index.md
   - 专业选修课:
-    - major/elective.md
+    - major/elective/index.md
     - 汇编语言: major/assemble/index.md
     - 网络空间安全导论: major/cyberspace_security/index.md
     - 数值分析: major/numerical_analysis/index.md
@@ -64,26 +64,11 @@ nav:
     - 计算机图形学研究进展: major/research_advances_in_computer_graphics/index.md
     - 技术沟通: major/technology_communication/index.md
     - 社交网络安全与隐私: major/social_network_security/index.md
-  - 专业模块课:
-    - major_module/index.md
-    - 应用运筹学基础: major_module/applied_operations_research/index.md
-    - 编程语言原理: major_module/principle_of_programming_languages/index.md
-    - 计算机科学思想史: major_module/history_of_cs_ideas/index.md
-    - 数据挖掘导论: major_module/data_mining/index.md
-    - 汇编与接口: major_module/assembly_interface/index.md
-    - 嵌入式系统: major_module/embedded_system/index.md
-    - 并行计算与多核编程: major_module/parallel_computing/index.md
-    - 计算机系统综合实现: major_module/system_comprehensive_practice/index.md
-    - 分布式计算: major_module/distributed_computing/index.md
-    - 大数据存储与计算技术: major_module/big_data_storage/index.md
-    - 面向信息安全的信号处理: major_elective/signal_processing_for_cybersecurity/index.md
-    - 脑启发人工智能导论: major_elective/brain_inspired_ai/index.md
-    - 人工智能逻辑: major_elective/ai_logic/index.md
-    - 计算摄影学: major_elective/computational_photography/index.md
-    - 数据可视化导论: major_elective/introduction_to_data_visualization/index.md
-    - 量子计算理论基础与软件系统: major_elective/quantum_computing/index.md
-    - 多媒体安全: major_elective/multimedia_security/index.md
-    - 智能视觉信息采集: major_elective/intelligent_acquisition_of_visual_information/index.md
+    - 数据可视化导论: major/introduction_to_data_visualization/index.md
+    - 数据挖掘导论: major/data_mining/index.md
+    - 量子计算理论基础与软件系统: major/quantum_computing/index.md
+    - 机器学习: major/machine_learning/index.md
+    - 大数据存储与计算技术: major/big_data_storage/index.md
   - 短学期课程:
     - short_term/index.md
     - 固定课程:

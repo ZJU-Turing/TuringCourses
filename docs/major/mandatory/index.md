@@ -72,7 +72,6 @@
     |[计算机体系结构](https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/computer_architecture/)|3.5|三（秋冬）|较完善✅|
     |[软件工程](https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/software_engineering/)|2.5|三（春夏）|较完善✅|
     |[认知神经科学导论](https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/cognitive_neuroscience/)|3.0|二（春夏）|较完善✅|
-    |[机器学习](https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/machine_learning/)|4.0|三（秋冬）|较完善✅|
     |[人工智能伦理与安全](https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/ai_ethics_security/)|2.0|三（春夏）|较完善✅|
     |[人工智能实践](https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/ai_practice/)|3.0|四（秋冬）||
     |[计算机视觉导论](https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/computer_vision/)|3.5|三（秋冬）|较完善✅|

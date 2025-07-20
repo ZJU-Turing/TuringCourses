@@ -1,15 +1,10 @@
 ---
 abbrs:
     - 量子计算
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/quantum_computing/
 ---
 
 # 量子计算理论基础与软件系统
-
-<div class="badges">
-<span class="badge cs-badge">CS 专业选修</span>
-<span class="badge ai-badge">AI 专业选修</span>
-<span class="badge is-badge">IS 专业选修</span>
-</div>
 
 ## 课程学习内容
 

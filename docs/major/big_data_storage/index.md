@@ -1,7 +1,8 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_module/big_data_storage/
+---
+
 # 大数据存储与计算技术
-<div class="badges">
-<span class="badge cs-badge">CS 专业模块-计算机系统</span>
-</div>
 
 ## 课程学习内容
 

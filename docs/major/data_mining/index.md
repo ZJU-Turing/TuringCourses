@@ -1,7 +1,8 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_module/data_mining/
+---
+
 # 数据挖掘导论
-<div class="badges">
-<span class="badge cs-badge">CS 专业模块-计算机科学</span>
-</div>
 
 ## 课程学习内容
 
