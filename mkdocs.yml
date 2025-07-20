@@ -17,7 +17,7 @@ nav:
     - 形势与政策 Ⅰ: political/situation_policy1/index.md
     - 思想道德与法治: political/morality_law/index.md
     - 中国近现代史纲要（H）: political/modern_history/index.md
-    - 马克思主义基本原理（H）: political/marxism_basic/index.md
+    - 马克思主义基本原理（H）: political/marxism/index.md
     - 毛泽东思想和中国特色社会主义理论体系概论（H）: political/mao_thought/index.md
     - 习近平新时代中国特色社会主义思想概论: political/xi_thought/index.md
     - 形势与政策 Ⅱ: political/situation_policy2/index.md
@@ -37,46 +37,21 @@ nav:
     - 普通物理学 Ⅱ（H）: math_phys/physics2/index.md
     - 普通物理学实验 Ⅰ（H）: math_phys/physics_experiment1/index.md
     - 概率论与数理统计: math_phys/probability/index.md
-  - 专业基础课:
-    - major_basic/index.md
-    - 程序设计与算法基础: major_basic/programming/index.md
-    - 网络空间安全导论: major_basic/cyberspace_security/index.md
-    - 离散数学理论基础: major_basic/discrete_math/index.md
-    - 人工智能引论: major_basic/ai_basic/index.md
-    - 数据结构基础: major_basic/data_structure/index.md
-    - 高级数据结构与算法分析: major_basic/advanced_data_structure/index.md
-    - 计算机逻辑设计基础: major_basic/logic_design/index.md
-    - 计算机组成与设计: major_basic/computer_organization/index.md
-    - 面向对象程序设计: major_basic/object_oriented_programming/index.md
-    - 理论计算机科学导引: major_basic/theory_of_computation/index.md
-    - 优化基本理论与方法: major_basic/convex_optimization/index.md
-    - 操作系统原理与实践: major_basic/operating_system/index.md
-    - 计算机系统 Ⅰ: major_basic/computer_system1/index.md
-    - 计算机系统 Ⅱ: major_basic/computer_system2/index.md
-    - 计算机系统 Ⅲ: major_basic/computer_system3/index.md
   - 专业必修课:
-    - major_mandatory/index.md
-    - 数据库系统: major_mandatory/database/index.md
-    - 计算机网络: major_mandatory/computer_networks/index.md
-    - 计算机体系结构: major_mandatory/computer_architecture/index.md
-    - 软件工程: major_mandatory/software_engineering/index.md
-    - 编译原理: major_mandatory/compilers_principles/index.md
-    - 认知神经科学: major_mandatory/cognitive_neuroscience/index.md
-    - 机器学习: major_mandatory/machine_learning/index.md
-    - 人工智能伦理与安全: major_mandatory/ai_ethics_security/index.md
-    - 人工智能实践: major_mandatory/ai_practice/index.md
-    - 计算机视觉导论: major_mandatory/computer_vision/index.md
-    - 设计认知与设计智能: major_mandatory/design_cognition/index.md
-    - 人工智能芯片与系统: major_mandatory/ai_chips_systems/index.md
-    - 自然语言处理导论: major_mandatory/natural_language_processing/index.md
-    - 汇编语言: major_mandatory/assemble/index.md
-    - 密码学: major_mandatory/cryptography/index.md
-    - 数据安全与隐私保护: major_mandatory/data_security/index.md
-    - 软件安全原理和实践: major_mandatory/software_security/index.md
-    - 网络安全原理与实践: major_mandatory/network_security/index.md
-    - 人工智能安全: major_mandatory/ai_security/index.md
-    - 无线与物理网安全基础: major_mandatory/wireless_iot_security/index.md
-    - 系统安全原理和实践: major_mandatory/system_security/index.md
+    - major/mandatory.md
+    - 程序设计与算法基础: major/programming/index.md
+    - 数据结构基础: major/data_structure/index.md
+    - 离散数学理论基础: major/discrete_math/index.md
+    - 高级数据结构与算法分析: major/advanced_data_structure/index.md
+    - 面向对象程序设计: major/object_oriented_programming/index.md
+    - 理论计算机科学导引: major/theory_of_computation/index.md
+    - 计算机系统 Ⅰ: major/computer_system1/index.md
+    - 计算机系统 Ⅱ: major/computer_system2/index.md
+    - 计算机系统 Ⅲ: major/computer_system3/index.md
+    - 人工智能引论: major/ai_basic/index.md
+    - 数据库系统: major/database/index.md
+    - 计算机网络: major/computer_networks/index.md
+    - 编译原理: major/compilers_principles/index.md
   - 专业模块课:
     - major_module/index.md
     - 数值分析: major_module/numerical_analysis/index.md

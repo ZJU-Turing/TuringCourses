@@ -27,7 +27,9 @@
                 {% endif %}
               </li>
               <li class="md-version__item">
-                {% if page.canonical_url %}
+                {% if page.meta and page.meta.grave %}
+                  <a href="{{ page.meta.grave }}" class="md-version__link">grave</a>
+                {% elif page.canonical_url %}
                   <a href="{{ page.canonical_url.replace('TuringCourses', 'TuringCoursesGrave') }}" class="md-version__link">grave</a>
                 {% else %}
                   <a href="https://zju-turing.github.io/TuringCoursesGrave/" class="md-version__link">grave</a>
