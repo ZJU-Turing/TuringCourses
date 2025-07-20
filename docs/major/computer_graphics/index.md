@@ -1,8 +1,8 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_graphics/
+---
+
 # 计算机图形学
-<div class="badges">
-<span class="badge cs-badge">CS 专业选修</span>
-<span class="badge ai-badge">AI 专业选修</span>
-</div>
 
 ## 课程学习内容
 

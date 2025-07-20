@@ -1,9 +1,8 @@
-# 专题研讨
-<div class="badges">
-<span class="badge cs-badge">CS 专业选修</span>
-<span class="badge is-badge">IS 专业选修</span>
-</div>
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/special_discussion/
+---
 
+# 专题研讨
 
 ## 课程学习内容
 

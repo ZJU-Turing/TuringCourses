@@ -1,7 +1,8 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_vision/
+---
+
 # 计算机视觉
-<div class="badges">
-<span class="badge cs-badge">CS 专业选修</span>
-</div>
 
 ## 课程学习内容
 

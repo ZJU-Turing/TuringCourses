@@ -1,9 +1,8 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/technology_communication/
+---
+
 # 技术沟通
-<div class="badges">
-<span class="badge cs-badge">CS 专业选修</span>
-<span class="badge ai-badge">AI 专业选修</span>
-<span class="badge is-badge">IS 专业选修</span>
-</div>
 
 !!! info "本课程旧名“面向信息技术的沟通技巧”"
 

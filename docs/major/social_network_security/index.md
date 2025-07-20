@@ -1,8 +1,8 @@
-# 社交网络安全与隐私
-<div class="badges">
-<span class="badge is-badge">IS 专业选修</span>
-</div>
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/social_network_security/
+---
 
+# 社交网络安全与隐私
 
 ## 课程学习内容
 课如其名，主要讲授在社交网络中常见的安全问题，大致有如下主题：

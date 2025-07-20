@@ -52,9 +52,20 @@ nav:
     - 数据库系统: major/database/index.md
     - 计算机网络: major/computer_networks/index.md
     - 编译原理: major/compilers_principles/index.md
+  - 专业选修课:
+    - major/elective.md
+    - 汇编语言: major/assemble/index.md
+    - 网络空间安全导论: major/cyberspace_security/index.md
+    - 数值分析: major/numerical_analysis/index.md
+    - 图像信息处理: major/digital_image_processing/index.md
+    - 计算机图形学: major/computer_graphics/index.md
+    - 专题研讨: major/special_discussion/index.md
+    - 计算机视觉: major/computer_vision/index.md
+    - 计算机图形学研究进展: major/research_advances_in_computer_graphics/index.md
+    - 技术沟通: major/technology_communication/index.md
+    - 社交网络安全与隐私: major/social_network_security/index.md
   - 专业模块课:
     - major_module/index.md
-    - 数值分析: major_module/numerical_analysis/index.md
     - 应用运筹学基础: major_module/applied_operations_research/index.md
     - 编程语言原理: major_module/principle_of_programming_languages/index.md
     - 计算机科学思想史: major_module/history_of_cs_ideas/index.md
@@ -65,23 +76,14 @@ nav:
     - 计算机系统综合实现: major_module/system_comprehensive_practice/index.md
     - 分布式计算: major_module/distributed_computing/index.md
     - 大数据存储与计算技术: major_module/big_data_storage/index.md
-  - 专业选修课:
-    - major_elective/index.md
-    - 技术沟通: major_elective/technology_communication/index.md
-    - 图像信息处理: major_elective/digital_image_processing/index.md
     - 面向信息安全的信号处理: major_elective/signal_processing_for_cybersecurity/index.md
     - 脑启发人工智能导论: major_elective/brain_inspired_ai/index.md
     - 人工智能逻辑: major_elective/ai_logic/index.md
     - 计算摄影学: major_elective/computational_photography/index.md
-    - 计算机视觉: major_elective/computer_vision/index.md
     - 数据可视化导论: major_elective/introduction_to_data_visualization/index.md
-    - 专题研讨: major_elective/special_discussion/index.md
-    - 社交网络安全与隐私: major_elective/social_network_security/index.md
     - 量子计算理论基础与软件系统: major_elective/quantum_computing/index.md
     - 多媒体安全: major_elective/multimedia_security/index.md
-    - 计算机图形学: major_elective/computer_graphics/index.md
     - 智能视觉信息采集: major_elective/intelligent_acquisition_of_visual_information/index.md
-    - 计算机图形学研究进展: major_elective/research_advances_in_computer_graphics/index.md
   - 短学期课程:
     - short_term/index.md
     - 固定课程:

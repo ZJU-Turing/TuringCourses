@@ -1,8 +1,8 @@
-# 图像信息处理 
-<div class="badges">
-<span class="badge cs-badge">CS 专业选修</span>
-</div>
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/digital_image_processing/
+---
 
+# 图像信息处理
 
 ## 课程学习内容
 教授内容以图像基本概念、基本操作为基础，围绕图像合成与编辑核心，并介绍了当前数字图像处理的现状、发展和一些关键技术。

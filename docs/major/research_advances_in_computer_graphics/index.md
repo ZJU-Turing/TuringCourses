@@ -1,7 +1,8 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/research_advances_in_computer_graphics/
+---
+
 # 计算机图形学研究进展
-<div class="badges">
-<span class="badge cs-badge">CS 专业选修</span>
-</div>
 
 ## 课程学习内容
 
