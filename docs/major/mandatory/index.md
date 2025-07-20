@@ -1,3 +1,7 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/
+---
+
 # 专业必修课
 
 按培养方案分为计算机类通识课程、专业基础课程、专业必修课程三个部分。

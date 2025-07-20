@@ -1,3 +1,7 @@
+---
+grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/
+---
+
 # 专业选修课
 
 按培养方案分为专业选修课程和个性修读课程-本专业进阶模块两个部分。
