@@ -36,78 +36,39 @@ nav:
     - 普通物理学 Ⅰ（H）: math_phys/physics1/index.md
     - 普通物理学 Ⅱ（H）: math_phys/physics2/index.md
     - 普通物理学实验 Ⅰ（H）: math_phys/physics_experiment1/index.md
-    - 普通物理学实验 Ⅱ（H）: math_phys/physics_experiment2/index.md
-    - 概率论（H）: math_phys/probability/index.md
-  - 专业基础课:
-    - major_basic/index.md
-    - 程序设计与算法基础: major_basic/programming/index.md
-    - 网络空间安全导论: major_basic/cyberspace_security/index.md
-    - 离散数学理论基础: major_basic/discrete_math/index.md
-    - 人工智能引论: major_basic/ai_basic/index.md
-    - 数据结构基础: major_basic/data_structure/index.md
-    - 高级数据结构与算法分析: major_basic/advanced_data_structure/index.md
-    - 计算机逻辑设计基础: major_basic/logic_design/index.md
-    - 计算机组成与设计: major_basic/computer_organization/index.md
-    - 面向对象程序设计: major_basic/object_oriented_programming/index.md
-    - 理论计算机科学导引: major_basic/theory_of_computation/index.md
-    - 优化基本理论与方法: major_basic/convex_optimization/index.md
-    - 操作系统原理与实践: major_basic/operating_system/index.md
-    - 计算机系统 Ⅰ: major_basic/computer_system1/index.md
-    - 计算机系统 Ⅱ: major_basic/computer_system2/index.md
-    - 计算机系统 Ⅲ: major_basic/computer_system3/index.md
+    - 概率论与数理统计: math_phys/probability/index.md
   - 专业必修课:
-    - major_mandatory/index.md
-    - 数据库系统: major_mandatory/database/index.md
-    - 计算机网络: major_mandatory/computer_networks/index.md
-    - 计算机体系结构: major_mandatory/computer_architecture/index.md
-    - 软件工程: major_mandatory/software_engineering/index.md
-    - 编译原理: major_mandatory/compilers_principles/index.md
-    - 认知神经科学: major_mandatory/cognitive_neuroscience/index.md
-    - 机器学习: major_mandatory/machine_learning/index.md
-    - 人工智能伦理与安全: major_mandatory/ai_ethics_security/index.md
-    - 人工智能实践: major_mandatory/ai_practice/index.md
-    - 计算机视觉导论: major_mandatory/computer_vision/index.md
-    - 设计认知与设计智能: major_mandatory/design_cognition/index.md
-    - 人工智能芯片与系统: major_mandatory/ai_chips_systems/index.md
-    - 自然语言处理导论: major_mandatory/natural_language_processing/index.md
-    - 汇编语言: major_mandatory/assemble/index.md
-    - 密码学: major_mandatory/cryptography/index.md
-    - 数据安全与隐私保护: major_mandatory/data_security/index.md
-    - 软件安全原理和实践: major_mandatory/software_security/index.md
-    - 网络安全原理与实践: major_mandatory/network_security/index.md
-    - 人工智能安全: major_mandatory/ai_security/index.md
-    - 无线与物理网安全基础: major_mandatory/wireless_iot_security/index.md
-    - 系统安全原理和实践: major_mandatory/system_security/index.md
-  - 专业模块课:
-    - major_module/index.md
-    - 数值分析: major_module/numerical_analysis/index.md
-    - 应用运筹学基础: major_module/applied_operations_research/index.md
-    - 编程语言原理: major_module/principle_of_programming_languages/index.md
-    - 计算机科学思想史: major_module/history_of_cs_ideas/index.md
-    - 数据挖掘导论: major_module/data_mining/index.md
-    - 汇编与接口: major_module/assembly_interface/index.md
-    - 嵌入式系统: major_module/embedded_system/index.md
-    - 并行计算与多核编程: major_module/parallel_computing/index.md
-    - 计算机系统综合实现: major_module/system_comprehensive_practice/index.md
-    - 分布式计算: major_module/distributed_computing/index.md
-    - 大数据存储与计算技术: major_module/big_data_storage/index.md
+    - major/mandatory/index.md
+    - 程序设计与算法基础: major/programming/index.md
+    - 数据结构基础: major/data_structure/index.md
+    - 离散数学理论基础: major/discrete_math/index.md
+    - 高级数据结构与算法分析: major/advanced_data_structure/index.md
+    - 面向对象程序设计: major/object_oriented_programming/index.md
+    - 理论计算机科学导引: major/theory_of_computation/index.md
+    - 计算机系统 Ⅰ: major/computer_system1/index.md
+    - 计算机系统 Ⅱ: major/computer_system2/index.md
+    - 计算机系统 Ⅲ: major/computer_system3/index.md
+    - 人工智能引论: major/ai_basic/index.md
+    - 数据库系统: major/database/index.md
+    - 计算机网络: major/computer_networks/index.md
+    - 编译原理: major/compilers_principles/index.md
   - 专业选修课:
-    - major_elective/index.md
-    - 技术沟通: major_elective/technology_communication/index.md
-    - 图像信息处理: major_elective/digital_image_processing/index.md
-    - 面向信息安全的信号处理: major_elective/signal_processing_for_cybersecurity/index.md
-    - 脑启发人工智能导论: major_elective/brain_inspired_ai/index.md
-    - 人工智能逻辑: major_elective/ai_logic/index.md
-    - 计算摄影学: major_elective/computational_photography/index.md
-    - 计算机视觉: major_elective/computer_vision/index.md
-    - 数据可视化导论: major_elective/introduction_to_data_visualization/index.md
-    - 专题研讨: major_elective/special_discussion/index.md
-    - 社交网络安全与隐私: major_elective/social_network_security/index.md
-    - 量子计算理论基础与软件系统: major_elective/quantum_computing/index.md
-    - 多媒体安全: major_elective/multimedia_security/index.md
-    - 计算机图形学: major_elective/computer_graphics/index.md
-    - 智能视觉信息采集: major_elective/intelligent_acquisition_of_visual_information/index.md
-    - 计算机图形学研究进展: major_elective/research_advances_in_computer_graphics/index.md
+    - major/elective/index.md
+    - 汇编语言: major/assemble/index.md
+    - 网络空间安全导论: major/cyberspace_security/index.md
+    - 数值分析: major/numerical_analysis/index.md
+    - 图像信息处理: major/digital_image_processing/index.md
+    - 计算机图形学: major/computer_graphics/index.md
+    - 专题研讨: major/special_discussion/index.md
+    - 计算机视觉: major/computer_vision/index.md
+    - 计算机图形学研究进展: major/research_advances_in_computer_graphics/index.md
+    - 技术沟通: major/technology_communication/index.md
+    - 社交网络安全与隐私: major/social_network_security/index.md
+    - 数据可视化导论: major/introduction_to_data_visualization/index.md
+    - 数据挖掘导论: major/data_mining/index.md
+    - 量子计算理论基础与软件系统: major/quantum_computing/index.md
+    - 机器学习: major/machine_learning/index.md
+    - 大数据存储与计算技术: major/big_data_storage/index.md
   - 短学期课程:
     - short_term/index.md
     - 固定课程:
