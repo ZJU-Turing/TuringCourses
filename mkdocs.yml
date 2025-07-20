@@ -36,8 +36,7 @@ nav:
     - 普通物理学 Ⅰ（H）: math_phys/physics1/index.md
     - 普通物理学 Ⅱ（H）: math_phys/physics2/index.md
     - 普通物理学实验 Ⅰ（H）: math_phys/physics_experiment1/index.md
-    - 普通物理学实验 Ⅱ（H）: math_phys/physics_experiment2/index.md
-    - 概率论（H）: math_phys/probability/index.md
+    - 概率论与数理统计: math_phys/probability/index.md
   - 专业基础课:
     - major_basic/index.md
     - 程序设计与算法基础: major_basic/programming/index.md
