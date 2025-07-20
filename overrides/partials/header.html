@@ -16,6 +16,25 @@
           <span class="md-ellipsis">
             {{ config.site_name }}
           </span>
+          <div class="md-version">
+            <button class="md-version__current">latest</button>
+            <ul class="md-version__list">
+              <li class="md-version__item">
+                {% if page.canonical_url %}
+                  <a href="{{ page.canonical_url }}" class="md-version__link">latest</a>
+                {% else %}
+                  <a href="https://zju-turing.github.io/TuringCourses/" class="md-version__link">latest</a>
+                {% endif %}
+              </li>
+              <li class="md-version__item">
+                {% if page.canonical_url %}
+                  <a href="{{ page.canonical_url.replace('TuringCourses', 'TuringCoursesGrave') }}" class="md-version__link">grave</a>
+                {% else %}
+                  <a href="https://zju-turing.github.io/TuringCoursesGrave/" class="md-version__link">grave</a>
+                {% endif %}
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">

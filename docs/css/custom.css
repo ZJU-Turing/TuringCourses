@@ -215,3 +215,122 @@ body[data-md-prefers-color-scheme=true] .md-icon .unknown-mode {
 [data-md-color-scheme="default"] .ai-badge {
   color: #FFFFFF;
 }
+
+.md-version {
+    flex-shrink: 0;
+    font-size: .8rem;
+    height: 2.4rem
+}
+
+[dir=ltr] .md-version__current {
+    margin-left: 1.4rem;
+    margin-right: .4rem
+}
+
+[dir=rtl] .md-version__current {
+    margin-left: .4rem;
+    margin-right: 1.4rem
+}
+
+.md-version__current {
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    top: .05rem
+}
+
+[dir=ltr] .md-version__current:after {
+    margin-left: .4rem
+}
+
+[dir=rtl] .md-version__current:after {
+    margin-right: .4rem
+}
+
+.md-version__current:after {
+    background-color: currentcolor;
+    content: "";
+    display: inline-block;
+    height: .6rem;
+    -webkit-mask-image: var(--md-version-icon);
+    mask-image: var(--md-version-icon);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    width: .4rem
+}
+
+.md-version__alias {
+    margin-left: .3rem;
+    opacity: .7
+}
+
+.md-version__list {
+    background-color: var(--md-default-bg-color);
+    border-radius: .1rem;
+    box-shadow: var(--md-shadow-z2);
+    color: var(--md-default-fg-color);
+    list-style-type: none;
+    margin: .2rem .8rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    scroll-snap-type: y mandatory;
+    top: .15rem;
+    transition: max-height 0ms .5s,opacity .25s .25s;
+    z-index: 3
+}
+
+.md-version:focus-within .md-version__list,.md-version:hover .md-version__list {
+    max-height: 10rem;
+    opacity: 1;
+    transition: max-height 0ms,opacity .25s
+}
+
+@media (hover: none),(pointer:coarse) {
+    .md-version:hover .md-version__list {
+        animation:hoverfix .25s forwards
+    }
+
+    .md-version:focus-within .md-version__list {
+        animation: none
+    }
+}
+
+.md-version__item {
+    line-height: 1.8rem
+}
+
+[dir=ltr] .md-version__link {
+    padding-left: .6rem;
+    padding-right: 1.2rem
+}
+
+[dir=rtl] .md-version__link {
+    padding-left: 1.2rem;
+    padding-right: .6rem
+}
+
+.md-version__link {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    scroll-snap-align: start;
+    transition: color .25s,background-color .25s;
+    white-space: nowrap;
+    width: 100%
+}
+
+.md-version__link:focus,.md-version__link:hover {
+    color: var(--md-accent-fg-color)
+}
+
+.md-version__link:focus {
+    background-color: var(--md-default-fg-color--lightest)
+}

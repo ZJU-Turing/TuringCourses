@@ -1,7 +1,5 @@
 # 图灵班学习指南
 
-> **Warning** 正在建设中
-
 <div align="center">
 
 > 折大之初，谁传道之？  
@@ -20,6 +18,7 @@
 
 浙江大学图灵班各门课程的学习指南以及学习资源。
 
-网站：https://ZJU-Turing.github.io/TuringCourses
+- 主站：https://ZJU-Turing.github.io/TuringCourses/
+- 存档站（CS/AI/IS 三专业版）：https://zju-turing.github.io/TuringCoursesGrave/
 
 关于贡献，详见 https://ZJU-Turing.github.io/TuringCourses/contributing/
