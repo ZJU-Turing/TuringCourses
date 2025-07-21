@@ -4,12 +4,6 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/data_structur
 
 # 数据结构基础
 
-<div class="badges">
-<span class="badge cs-badge">CS 专业基础</span>
-<span class="badge ai-badge">AI 专业基础</span>
-<span class="badge is-badge">IS 专业基础</span>
-</div>
-
 ## 课程学习内容
 
 FDS 按专题授课，主要介绍栈、队列、树、堆、并查集、图等数据结构，以及最短路、搜索、网络流、排序、哈希等算法。求各专题之间联系不大，不存在前一节课不听后一节课就听不懂的情况。课程难度适中，课程要求主要是掌握简单算法的算法流程（会手算具体样例、会写代码实现），对于一些相对复杂的算法（比如网络流、Tarjan 算法）以及复杂度和定理的证明点到为止，一般只在作业中要求，不会出现在考试中。
