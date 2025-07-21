@@ -133,8 +133,8 @@ nav:
     - 抽象代数: others/abstract_algebra/index.md
     - 数论导引: others/number_theory/index.md
     - 随机过程: others/stochastic_process/index.md
-    - 信息理论: others/information_theory/index.md
     - 点集拓扑: others/point_set_topology/index.md
+    - 信息理论: others/information_theory/index.md
     - 经济学类课程集: others/economics/index.md
     - 金融学类课程集: others/finance/index.md
     - B/S 体系软件设计: others/browser_server_software/index.md
