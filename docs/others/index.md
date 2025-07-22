@@ -20,6 +20,7 @@
     |[数论导引](number_theory/)|3.0|三（春夏）||
     |[随机过程](stochastic_process/)|3.0|三（春夏）|较完善✅|
     |[点集拓扑](point_set_topology/)|2.0|一（春夏）|仅介绍|
+    |[信息理论](information_theory/)|2.0|二（春夏）|仅介绍|
     
     </div>
 
