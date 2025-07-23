@@ -1,0 +1,133 @@
+\documentclass{ctexart}
+\usepackage{amsmath, amssymb, geometry,enumitem}
+
+\geometry{a4paper,scale=0.66,top=1in,bottom=1in,left=1in,right=1in}
+
+\title{\vspace{-4em}\textbf{线性代数 II（H）2024-2025 春夏期中答案}}
+\author{图灵回忆卷\quad\quad by jayi0908}
+\date{2025 年 4 月 23 日}
+
+\linespread{1.6}
+\addtolength{\parskip}{.2em}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item[\textbf{一、}] \textbf{(10 分)} 设所求直线为 \(x=1+at, y=bt, z=2+ct\)（\(t\in\mathbb{R}\)）。  \\
+    由于平面 \(3x - y + 2z + 2 = 0\) 的法向量为\(\overrightarrow{n}=(3,-1,2)\)，故 $3a - b + 2c = 0 \quad (1)$. \\
+    已知直线参数方程：\(x=1+4s, y=-1-2s, z=s\)（\(s\in\mathbb{R}\)），  
+    相交即坐标相等，解得：  
+    \[at=4s,\ bt=-1-2s,\ 2+ct=s\]  
+    消去\(s,t\)并结合(1)，得方向向量\(\boldsymbol{v}=(12,-22,-29)\)。故所求直线为：
+    \[\dfrac{x-1}{12}=\dfrac{y}{-22}=\dfrac{z-2}{-29}.\]
+
+    \item[\textbf{二、}] \textbf{(10 分)} 证明：
+    先证明 $\operatorname{range}(T-I) + \operatorname{null}(T-I) = V$：\\
+    对任意\(v\in V\)，由 \(T^2 - 3T + 2I = 0\) 得 \((T - I)(T - 2I) = 0\). \\
+    令 \(v_1=(2I-T)v\)，则 \((T-I)v_1=0\)，即 \(v_1\in\text{null}(T - I)\)；
+    \(v_2=(T-I)v\)，则 \(v_2\in\text{range}(T - I)\)； \\
+    显然 \(v = v_1 + v_2\)，故 \(V = \text{null}(T - I) + \text{range}(T - I)\)。 \\
+    再证明交集为零元：\\
+    设 \(u\in\text{null}(T - I) \cap \text{range}(T - I)\)，则 \(Tu = u\) 且存在 \(w\) 使 \(u=(T - I)w\)，代入得 \(u=(T-I)w=Tw-w=u-w \implies w=0 \implies u=0\). \\
+    综上：$V = \text{null}(T - I) \oplus \text{range}(T - I)$.
+    
+    \item[\textbf{三、}] \textbf{(10 分)} 对任意 \(v\in V\)，设 \(v = \displaystyle\sum_{i=1}^n c_i v_i\)（\(c_i\in\mathbb{F}\)），则：  
+    \[
+    \psi(v) = \psi\left(\sum_{i=1}^n c_i v_i\right) = \sum_{i=1}^n c_i \psi(v_i)
+    \]  
+    又对偶基 \(\{\varphi_i\}\) 满足 \(\varphi_i(v_j)=\delta_{ij}\)，故：  
+    \[
+    \left(\sum_{i=1}^n \psi(v_i)\varphi_i\right)(v) = \sum_{i=1}^n \psi(v_i)\varphi_i\left(\sum_{j=1}^n c_j v_j\right) = \sum_{i=1}^n \psi(v_i)c_i
+    \]  
+    两边相等，故 \(\psi = \displaystyle\sum_{i=1}^n \psi(v_i)\varphi_i\).
+    \item[\textbf{四、}] \textbf{(10 分)}
+    \begin{enumerate}
+        \item[\textbf{1.}] 设 \(\deg p = m\)，对任意\(f\in\mathcal{P}(\mathbb{C})\)，由带余除法得 \(f = pq + r\)（\(r=0\) 或 \(\deg r < m\)），故 \(f + U = r + U\)。若 \(r_1 + U = r_2 + U\)，则 \(r_1 - r_2 = pq\)，由次数关系得 \(r_1 = r_2\)，故 \(\dim(\mathcal{P}(\mathbb{C})/U) = m\)（$\mathcal{P}(\mathbb{C})/U$ 的维数等价于余数多项式 $r$ 构成的空间维数，自然为 $m$）.
+        \item[\textbf{2.}] 次数小于 \(m\) 的多项式 \(1,x,\cdots,x^{m-1}\) 的等价类线性无关且张成商空间，故基为：\[\{1 + U,\ x + U,\ \cdots,\ x^{m-1} + U\}.\]
+    \end{enumerate}
+    \item[\textbf{五、}] \textbf{(10 分)} \textbf{必要性：}设 \(S,T\) 可同时对角化，则存在 \(V\) 的一组基 \(\{v_1, v_2, \ldots, v_n\}\)（设 $P=(v_1,\cdots,v_n)$），使得 \([S] = P\operatorname{diag}(\lambda_1,\cdots,\lambda_n)P^{-1}, \quad [T] = P\operatorname{diag}(\mu_1,\cdots,\mu_n)P^{-1}\)，则
+    \[ [ST] = [S][T] = P\operatorname{diag}(\lambda_1\mu_1,\cdots,\lambda_n\mu_n)P^{-1} = [T][S] = [TS] \]  
+    因此必要性成立。
+
+    \textbf{充分性：} 因 \(S\) 可对角化，故 \(V\) 可分解为 \(S\) 的特征子空间的直和：\(V = \displaystyle\bigoplus_{\lambda \in \sigma(S)} E(\lambda, S)\)，其中 \(\sigma(S)\) 是 \(S\) 的特征值集，\(E(\lambda, S) = \{v \in V \mid Sv = \lambda v\}\) 为对应特征子空间。 \\
+    任取 \(\lambda \in \sigma(S)\) 及 \(v \in E(\lambda, S)\)，则 \(Sv = \lambda v\). 由 \(ST = TS\)，得：  
+    \[
+    S(Tv) = T(Sv) = T(\lambda v) = \lambda (Tv)
+    \]  
+    故 \(Tv \in E(\lambda, S)\)，即 \(T(E(\lambda, S)) \subseteq E(\lambda, S)\)，因此 \(E(\lambda, S)\) 是 \(T\) 的不变子空间。 \\
+    因 \(T\) 可对角化，其在不变子空间 \(E(\lambda, S)\) 上的限制 \(T|_{E(\lambda, S)}\) 仍可对角化。故 \(E(\lambda, S)\) 存在一组由 \(T|_{E(\lambda, S)}\) 的特征向量组成的基，记为 \(B_\lambda\)。则 \(B_\lambda \subseteq E(\lambda, S)\)，\(B_\lambda\) 中的向量也是 \(S\) 的特征向量（对应特征值 \(\lambda\)）。 \\
+    从而令 \(B = \displaystyle\bigcup_{\lambda \in \sigma(S)} B_\lambda\)，则 \(B\) 是 \(V\) 的一组基（由直和性质），且每个向量均为 \(S\) 和 \(T\) 的共同特征向量。因此 \(S,T\) 在基 \(B\) 下的矩阵均为对角矩阵，即 \(S,T\) 可同时对角化。充分性成立。得证。
+    \item[\textbf{六、}] \textbf{(10 分)} 特征子空间 \(E(\lambda, A) = \ker(\lambda I - A)\)，其维数为 \(n - r(\lambda I - A)\).\\
+    因矩阵与其转置秩相等，即 \(r(\lambda I - A) = r(\lambda I - A^T)\)，故：  
+    \[
+    \dim E(\lambda, A) = n - r(\lambda I - A) = n - r(\lambda I - A^T) = \dim E(\lambda, A^T).
+    \]
+    \item[\textbf{七、}] \textbf{(10 分)} 
+    \begin{enumerate}
+        \item[\textbf{(1)}] 先证明 \((W_1 + W_2)^\perp \subseteq W_1^\perp \cap W_2^\perp\)：  \\
+        任取 \(v\in(W_1 + W_2)^\perp\)，则对 $\forall v_1\in W_1$，\(v\perp v_1\)；对 $\forall v_2\in W_2$，\(v\perp v_2\)，故 \(v\in W_1^\perp \cap W_2^\perp\).  
+        再证明 \((W_1 + W_2)^\perp \supseteq W_1^\perp \cap W_2^\perp\)：\\
+        任取 \(v\in W_1^\perp \cap W_2^\perp\)，对 \(w_1 + w_2\in W_1 + W_2\)，\(\langle v, w_1 + w_2\rangle = \langle v, w_1\rangle + \langle v, w_2\rangle = 0\)，故\(v\in(W_1 + W_2)^\perp\). 
+        \item[\textbf{(2)}] 对 \(W_1^\perp, W_2^\perp\) 用 (1) 得 \((W_1^\perp + W_2^\perp)^\perp = W_1 \cap W_2\)，两边取正交补即证.  
+    \end{enumerate}
+    \item[\textbf{八、}] \textbf{(10 分)} 
+    \begin{enumerate}
+        \item[\textbf{1.}] 已知 $v_1,\cdots,v_k$ 是 $C=XX^T$ 的单位特征向量，且 $C$ 是实对称矩阵。实对称矩阵的不同特征值对应的特征向量必正交（以本题为例，设 $Cv=\lambda v$，$Cw=\mu w$，则 $\lambda v^{T}w=(Cv)^{T}w=v^{T}Cw=\mu v^{T}w$，由于 $\lambda\neq\mu$ 可得 $v^{T}w=\langle v,w \rangle=0$），故：  
+        \[
+        \langle v_i, v_j \rangle = v_i^T v_j = \delta_{ij}
+        \]  
+        故 $\{v_1,\cdots,v_k\}$ 是 $V$ 的规范正交基。
+        
+        正交投影需满足两个条件：\emph{幂等性}（$P_V^2=P_V$）和\emph{对称性}（$P_V^T=P_V$）。 
+
+        幂等性：因 $U=(v_1,\cdots,v_k)$ 的列是规范正交基，故 $U^T U=I$，因此：  
+        \[
+        P_V^2 = (UU^T)(UU^T) = U(U^T U)U^T = UI_k U^T = UU^T = P_V
+        \]  
+
+        对称性：  
+        \[
+        P_V^T = (UU^T)^T = (U^T)^T U^T = UU^T = P_V
+        \]  
+        且 $P_V$ 的值域为 $\operatorname{span}\{v_1,\cdots,v_k\}=V$，故 $P_V$ 是 $\mathbb{R}^n$ 到 $V$ 的正交投影。
+        \item[\textbf{2.}] 对任意向量$x$和正交投影$P$，有正交分解$x=Px+(x-Px)$，故：  
+        \[
+        \|x\|^2 = \|Px\|^2 + \|x-Px\|^2 \implies \|x-Px\|^2 = \|x\|^2 - \|Px\|^2
+        \]  
+        因此总投影误差可写为：  
+        \[
+        \sum_{i=1}^p \|x_i - Px_i\|^2 = \sum_{i=1}^p \|x_i\|^2 - \sum_{i=1}^p \|Px_i\|^2
+        \]  
+        因 $\sum\|x_i\|^2$ 是常数（与 $P$ 无关），故即证：$\displaystyle\sum_{i=1}^p \|P_V x_i\|^2 \ge \displaystyle\sum_{i=1}^p \|P_W x_i\|^2.$  
+        \[
+        \|P_V x_i\|^2 = (P_V x_i)^T (P_V x_i) = x_i^T P_V^T P_V x_i = x_i^T P_V x_i \quad (\text{因} \, P_V^T=P_V=P_V^2)
+        \]  
+        故总和为：  
+        \[
+        \sum_{i=1}^p x_i^T P_V x_i = \operatorname{tr}\left(P_V \sum_{i=1}^p x_i x_i^T\right) = \operatorname{tr}(P_V C)
+        \]  
+        （注：$x^T A x = \operatorname{tr}(A x x^T) \quad (1)$，且$C=XX^T=\sum x_i x_i^T$） \\
+        设 $C$ 的特征值为 $\lambda_1 \ge \lambda_2 \ge \cdots \ge \lambda_n > 0$，对应的规范正交特征向量为$v_1,\cdots,v_n$，则 $C=\displaystyle\sum_{i=1}^n \lambda_i v_i v_i^T$。
+        对 $P_V=UU^T$（$U=(v_1,\cdots,v_k)$），有：  
+        \[
+        \operatorname{tr}(P_V C) = \operatorname{tr}\left(\sum_{i=1}^k v_i v_i^T \cdot \sum_{j=1}^n \lambda_j v_j v_j^T\right) = \sum_{i=1}^k \lambda_i \quad (\text{仅当}\space i=j\space\text{时迹非零})
+        \]  
+        对任意 $k$ 维子空间 $W$ 的正交投影 $P_W=QQ^T$（$Q$ 的列是 $W$ 的规范正交基），利用 (1) 有：$\operatorname{tr}(P_W v_i v_i^{T})=v_i^{T}QQ^{T}v_i=\|v_i^T Q\|^2$，从而：  
+        \[
+        \operatorname{tr}(P_W C) = \sum_{i=1}^n \lambda_i \cdot \|v_i^T Q\|^2
+        \]  
+        因 $\displaystyle\sum_{i=1}^n \|v_i^T Q\|^2 = \operatorname{tr}(Q^T (\displaystyle\sum_{i=1}^n v_i v_i^T) Q) = \operatorname{tr}(Q^T I Q) = k$，由特征值的排序性，最大的 $\operatorname{tr}(P_W C)$ 必为 $\displaystyle\sum_{i=1}^k \lambda_i$（当 $Q$ 的列取前 $k$ 个特征向量时达到）。
+
+        因此 $\sum\|P_V x_i\|^2 \ge \sum\|P_W x_i\|$，得证。
+    \end{enumerate}
+    \item[\textbf{九、}] \textbf{(20 分)} \begin{enumerate}
+        \item[\textbf{1.}] \textbf{假}：反例 \(\boldsymbol{a}=\boldsymbol{i},\boldsymbol{b}=\boldsymbol{i},\boldsymbol{c}=\boldsymbol{j}\)，\((\boldsymbol{a}\times\boldsymbol{b})\times\boldsymbol{c}=\boldsymbol{0}\times\boldsymbol{j}=\boldsymbol{0}\)，\(\boldsymbol{a}\times(\boldsymbol{b}\times\boldsymbol{c})=\boldsymbol{i}\times\boldsymbol{k}\neq\boldsymbol{0}\)，不等。
+        \item[\textbf{2.}] \textbf{真}：代数基本定理的结果。
+        \item[\textbf{3.}] \textbf{假}：反例 \(T=\begin{pmatrix}0&1\\0&0\end{pmatrix}\) 不可对角化，无对角矩阵表示。
+        \item[\textbf{4.}] \textbf{假}：内积需满足正定性，取 \(f(t)\) 在 \([0,\frac{1}{2}]\) 为0，在 \((\frac{1}{2},1]\) 非零，则 \(\langle f,f\rangle=0\) 但 \(f\neq0\)，不是内积。  
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.66,top=0.8in,bottom=1.5in,left=1in,right=1in}
+
+\title{\textbf{线性代数 II（H）2024-2025 春夏期中}}
+\author{图灵回忆卷}
+\date{2025 年 4 月 23 日}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、(10 分)}} 求过点 $(1, 0, 2)$ 与平面 $3x - y + 2z + 2 = 0$ 平行，且与直线 $\dfrac{x-1}{4}=\dfrac{y+1}{-2}=\dfrac{z}{1}$ 相交的直线方程。
+
+\noindent{\heiti\textbf{二、(10 分)}} 设 $V$ 为有限维线性空间，$T$ 是 $V$ 到 $V$ 的线性映射。若 $T^2 - 3T + 2I = 0$，证明：
+\[V = \text{null}(T - I) \oplus \text{range}(T - I)\]
+
+\noindent{\heiti\textbf{三、(10 分)}} 设 $v_1, \ldots, v_n$ 为有限维线性空间 $V$ 的一组基，$\varphi_1, \ldots, \varphi_n$ 为其对偶基。设 $\psi \in V^*$，证明：
+\[\psi = \psi(v_1)\varphi_1 + \cdots + \psi(v_n)\varphi_n\]
+
+\noindent{\heiti\textbf{四、(10 分)}} 设 $p \in \mathbb{C}[x]$，$p \neq 0$，令 $U = \{pq \mid q \in \mathcal{P}(\mathbb{C})\}$。
+
+\textbf{1.} 证明：$\dim(\mathcal{P}(\mathbb{C}) / U) = \deg p$；
+
+\textbf{2.} 求 $\mathcal{P}(\mathbb{C}) / U$ 的一组基。
+
+\noindent{\heiti\textbf{五、(10 分)}} 设 $V$ 为有限维内积空间，$S, T \in L(V)$. 称 $S,T$ 可同时对角化，若存在 $V$ 的一组基，使得 $S$ 和 $T$ 在这组基下的矩阵都是对角矩阵。若 $S$ 和 $T$ 可对角化，证明：它们可同时对角化当且仅当 $ST = TS$.
+
+\noindent{\heiti\textbf{六、(10 分)}} 设 $A$ 为 $n$ 阶实方阵，记 $A^{T}$ 为 $A$ 的转置。证明 $\dim E(\lambda, A) = \dim E(\lambda, A^{T})$。
+
+\noindent{\heiti\textbf{七、(10 分)}} 设 $W_1, W_2$ 为有限维内积空间的子空间。证明：
+\[(W_1 + W_2)^\perp = W_1^\perp \cap W_2^\perp;\quad (W_1 \cap W_2)^\perp = W_1^\perp + W_2^\perp\]
+
+\noindent{\heiti\textbf{八、(10 分)}} 考虑 $\mathbb{R}^n$ 上的标准内积，设列向量 $x_1,\cdots,x_p\in\mathbb{R}^n$，$\displaystyle\sum_{i=1}^p x_i=0$. 记 $X=(x_1,\cdots,x_p)$，设 $XX^{T}$ 有 $n$ 个不同的正特征值，给定 $k\in\mathbb{N}_+$，$k<n$，考虑 PCA 算法：
+\begin{enumerate}
+    \item[\textbf{1.}] $C=XX^{T}$
+    \item[\textbf{2.}] 取 $\lambda_1\ge\cdots\lambda_k$ 为 $C$ 最大的 $k$ 个特征值，$v_1,\cdots,v_k$ 为对应的单位特征向量
+    \item[\textbf{3.}] 令 $V=\operatorname{span}\{v_1,\cdots,v_k\}$，$U=(v_1,\cdots,v_k)$，$P_V=UU^{T}$
+    \item[\textbf{4.}] 令 $y_i=P_V x_i$，$i=1,\cdots,n$
+\end{enumerate}
+
+\noindent{\text{证明}}：
+\begin{enumerate}
+    \item[\textbf{1.}] $\{v_1,\cdots,v_k\}$ 为 $V$ 的规范正交基，且 $P_V$ 为 $\mathbb{R}^n$ 到 $V$ 的正交投影.
+    \item[\textbf{2.}] PCA 算法最小化投影误差. 即 $\forall W$ 为 $\mathbb{R}^n$ 的 $k$ 维子空间，$P_W$ 为正交投影，$\displaystyle\sum_{i=1}^p \|x_i-y_i\|^2 \le \displaystyle\sum_{i=1}^p \|x_i-P_W x_i\|^2$.
+\end{enumerate}
+
+\noindent{\heiti\textbf{九、(20 分)}} 试判断下列命题的真伪。若命题为真，请给出简要证明；若命题为假，请举出反例。
+
+\textbf{1.} 任意空间向量 $\mathbf{a}, \mathbf{b}, \mathbf{c}$ 满足 $(\mathbf{a}\times\mathbf{b})\times\mathbf{c} = \mathbf{a}\times(\mathbf{b}\times\mathbf{c})$；
+
+\textbf{2.} 每个非常数的复系数多项式都有零点；
+
+\textbf{3.} 设 $T \in L(V)$，存在 $V$ 的一组基 $\{v_1, \ldots, v_n\}$，使得 $T$ 关于这组基的矩阵是对角矩阵；
+
+\textbf{4.} 设 $V = C([0,1])$（即 $V$ 为 $[0,1]$ 区间上连续函数全体构成的线性空间），$\langle f, g \rangle = \displaystyle\int_0^{\frac{1}{2}} f(t)g(t)\mathrm{d}t$ 为 $V$ 上的内积。
+
+\end{document}

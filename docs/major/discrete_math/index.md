@@ -59,6 +59,8 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/discrete_math
 !!! abstract
     21 级学长组编写、22 级学长组修改后的学习建议。
 
+    25 级学长组补充：对历年小测题的拟合有时能让你收获意想不到的结果（<del>指可能碰到一些原题</del>）。
+
 逻辑、集合、算法可以快速过掉，这里教的很简单，考试也不怎么考，计数原理就是高中的组合数学，后面生成函数一章和图论三章请仔细看。
  
 ### 第 0 级【考前突击党，目标不挂】
