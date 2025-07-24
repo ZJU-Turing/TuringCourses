@@ -1,0 +1,115 @@
+\documentclass{ctexart}
+\usepackage{amsmath, amssymb, geometry,enumitem}
+
+\geometry{a4paper,scale=0.66,top=1in,bottom=1in,left=1in,right=1in}
+
+\title{\vspace{-4em}\textbf{线性代数 II（H）2024-2025 春夏期末答案}}
+\author{图灵回忆卷\quad\quad by jayi0908}
+\date{2025 年 6 月 18 日}
+
+\linespread{1.6}
+\addtolength{\parskip}{.2em}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item[\textbf{一、}] \textbf{(16 分)} 点 \(P_0(1,0,1)\) 到平面 \(x+y+z=D\) 的距离为 \(\sqrt{3}\)，由点到平面距离公式：
+    \[
+    \frac{|1+0+1-D|}{\sqrt{1^2+1^2+1^2}} = \sqrt{3} \implies |2-D|=3 \implies D=5 \quad(D>0)
+    \]
+    直线 \(\begin{cases}x+y+z=5 \\ x-y+z=1\end{cases}\) 的方向向量为两平面法向量的叉乘：
+    \[
+    \boldsymbol{n}_1=(1,1,1),\ \boldsymbol{n}_2=(1,-1,1) \implies \boldsymbol{v}=\boldsymbol{n}_1\times\boldsymbol{n}_2=(2,0,-2)
+    \]
+    取直线上点\(Q(0,2,3)\)，向量\(\overrightarrow{P_0Q}=(-1,2,2)\)，外积：
+    \[ \overrightarrow{P_0Q}\times\boldsymbol{v}=(-4,2,-4) \]
+    距离为：
+    \[
+    \frac{|\overrightarrow{P_0Q}\times\boldsymbol{v}|}{|\boldsymbol{v}|} = \frac{6}{2\sqrt{2}} = \frac{3\sqrt{2}}{2}.
+    \]
+
+    \item[\textbf{二、}] \textbf{(16 分)} 
+    \begin{enumerate}
+        \item[(1)] \(W=\{a_0x^2+b_0x|a_0,b_0\in\mathbb{R}\}\)，设 \(f(x)=a_1 x^2+b_1 x+c_1\in W^\perp\)，由正交性得：
+        \[
+        \int_0^1 (a_1 x^2+b_1 x+c_1)(a_0x^2+b_0x)dx=0
+        \]
+        \[
+        \implies a_0(\frac{1}{5}a_1+\frac{1}{4}b_1+\frac{1}{3}c_1)+b_0(\frac{1}{4}a_1+\frac{1}{3}b_1+\frac{1}{2}c_1) = 0 \implies b_1=-4c_1, a_1=\frac{10}{3}c_1
+        \]
+        取 \(c_1=3\)，得 \(W^\perp=\operatorname{span}\{10x^2-12x+3\}\).
+        \item[(2)] 设 $p(x)=a_0x^2+b_0x+c_0$，则 
+        \[\langle p,f\rangle=a_0(\frac{1}{5}a_1+\frac{1}{4}b_1+\frac{1}{3}c_1)+b_0(\frac{1}{4}a_1+\frac{1}{3}b_1+\frac{1}{2}c_1)+c_0(\frac{1}{3}a_1+\frac{1}{2}b_1+c_1)=p(0)=c_0\]
+        从而由 (1) 可得：$b_1=-4c_1, a_1=\dfrac{10}{3}c_1, \dfrac{1}{3}a_1+\dfrac{1}{2}b_1+c_1=1$ \\
+        解得 $c_1=9$，$f(x)=30x^2-36x+9$.
+    \end{enumerate}
+    \item[\textbf{三、}] \textbf{(12 分)} 证明：由条件 \(A\) 为幂零矩阵，且 $A^3=B^6\neq O$，$A^4=B^8=O$（因为 $B$ 只有 $7$ 阶且幂零），故 $B$ 的若当块一定是 $J_7(0)$，故 $r(A)=r(B^2)=5$.
+    \item[\textbf{四、}] \textbf{(12 分)} 幂零算子 \(T\) 的秩为1，故其 Jordan 标准形有 $n-1$ 个若当块，只能为一个 $J_2(0)$ 和 $n-2$ 个 $J_1(0)$，即一个除了第一行第二列元素为 1 之外其余元素均为 0 的方阵。\\
+    对任意 \(a\)，\(U_a=\text{span}\{e_2,e_1+ae_3\}\) 是二维 \(T\)-不变子空间，且有无穷多个。得证。
+    \item[\textbf{五、}] \textbf{(20 分)} \begin{enumerate}
+        \item[\textbf{1.}] \textbf{假}：反例：设\(T\)在基下的矩阵为\(\begin{pmatrix}1&0&0\\0&2&1\\0&0&2\end{pmatrix}\)，特征值为1和2，但  
+        \[
+        T^2 - 3T + 2I = \begin{pmatrix}1&0&0\\0&4&4\\0&0&4\end{pmatrix} - \begin{pmatrix}3&0&0\\0&6&3\\0&0&6\end{pmatrix} + \begin{pmatrix}2&0&0\\0&2&0\\0&0&2\end{pmatrix} = \begin{pmatrix}0&0&0\\0&0&1\\0&0&0\end{pmatrix} \neq O.
+        \]
+        \item[\textbf{2.}] \textbf{假}：反例：设算子 $T$ 在自然基下的矩阵为 \(\begin{pmatrix}1&-1&0&0\\1&1&0&0\\0&0&1&-1\\0&0&1&1\end{pmatrix}\)，显然每个对角块对应一个非平凡不变子空间，但是它的特征多项式为 $(x^2-2x+2)^2$ 无实根，故没有实特征值。
+
+        \item[\textbf{3.}] \textbf{真}：设 \(W\) 是 \(U\) 的补空间，取 \(W\) 的基 \(\varepsilon_1,\cdots,\varepsilon_s\) 并扩展成 \(V\) 的一组基 \(\varepsilon_1,\cdots,\varepsilon_s,\cdots,\varepsilon_n\).对任意 \(v \in V\)，\(v =\displaystyle\sum_{i=1}^n b_i \varepsilon_i\)，故 \(v + U = \displaystyle\sum_{i=1}^s b_i(\varepsilon_i + U)\)（因为对 $s+1\ge k\ge n$，由于 $\varepsilon_k\in U$，故 $\varepsilon_k+U$ 为 \(V/U\) 的零元），且 \(\{\varepsilon_i + U\}_{i=1}^s\) 是线性无关组，因此是 \(V/U\) 的基。  
+        \item[\textbf{4.}] \textbf{假}：非标准正交基下对称矩阵未必对应自伴算子。例如基 \(\{(1,0),(1,1)\}\) 上矩阵 \(\begin{pmatrix}0&1\\1&0\end{pmatrix}\)，其在自然基下的矩阵表示为 \(\begin{pmatrix}1&1\\0&-1\end{pmatrix}\)，不难验证其不满足 \(\langle Tv, w \rangle = \langle v, Tw \rangle\)。
+        \item[\textbf{5.}] \textbf{真}：设 \(s\) 是奇异值，则 \(s = \sqrt{\lambda}\)，\(\lambda\) 为 \(G = T^*T\) 的特征值。取单位特征向量 \(\alpha\)，则 \(\|T\alpha\|^2 = \langle T^*T\alpha, \alpha \rangle = \lambda\langle \alpha,\alpha \rangle=\lambda\)，故 \(\|T\alpha\| = s\).
+    \end{enumerate}
+    \item[\textbf{六、}] \textbf{(12 分)} 
+    设 $U=\operatorname{span}\{\varepsilon_1,\varepsilon_2,\varepsilon_3\}$，\(V=\operatorname{span}\{\varepsilon_4,\varepsilon_5\}\)，\\
+    \(T|_U\)满足\((T|_U)^2 = 3T|_U\)，极小多项式为 \(x(x-3)\)； \\
+    \(T|_V\)满足\((T|_V)^2 = 2T|_V\)，极小多项式为 \(x(x-2)\)； \\
+    从而整体极小多项式为最小公倍式：\(x(x-2)(x-3)\).\\
+    归纳易得 \((T|_U)^n = 3^{n-1}T|_U\)，\((T|_V)^n = 2^{n-1}T|_V\)，故  
+    \[
+    T^{2025618}(\varepsilon_i) = 3^{2025617}(\varepsilon_1+\varepsilon_2+\varepsilon_3) \, (i=1,2,3), \quad T^{2025618}(\varepsilon_j) = 2^{2025617}(\varepsilon_4+\varepsilon_5) \, (j=4,5).
+    \]
+    \item[\textbf{七、}] \textbf{(12 分)} 
+    (1) \(\implies\) (2)：\\
+    假设 \(T\) 是正规算子，则存在一组标准正交基 \(\{f_k\}\) 使得 \(T f_k = \mu_k f_k\) 且 \(T^* f_k = \overline{\mu}_k f_k\)。于是： \[G f_k = T^* T f_k = |\mu_k|^2 f_k.\]
+    设 \(\lambda_i\) 为 \(G\) 的不同特征值，特征空间 \(E(\lambda_i, G)\) 由满足 \(|\mu_k|^2 = \lambda_i\) 的 \(f_k\) 张成。取 \(\{\varepsilon_{ij}\}_{j=1}^{d_i}\) 为 \(E(\lambda_i, G)\) 的标准正交基。定义 \(S\) 在 \(E(\lambda_i, G)\) 上的作用为：
+    \[S \varepsilon_{ij} = \frac{\mu_k}{\sqrt{\lambda_i}} \varepsilon_{ij}\]
+    其中 \(\mu_k\) 是 \(\varepsilon_{ij}\) 对应的 \(T\) 的特征值。由于 \(\left|\dfrac{\mu_k}{\sqrt{\lambda_i}}\right| = 1\)，从而 \(S\) 在 \(E(\lambda_i, G)\) 上是等距同构且 \(E(\lambda_i, G)\) 在 \(S\) 下不变。将其扩展至整个空间可知 \(S\) 仍为等距同构，且每个 \(E(\lambda_i, G)\) 在 \(S\) 下不变。\\
+    对任意向量 \(v\)，展开得：
+    \[
+    T v = \sum_k \mu_k \langle v, f_k \rangle f_k = \sum_i \sum_{j} \mu_k \langle v, \varepsilon_{ij} \rangle \varepsilon_{ij} = \sum_{i,j} \sqrt{\lambda_i} \langle v, \varepsilon_{ij} \rangle S \varepsilon_{ij},
+    \]
+    故 (2) 成立。
+
+    (2) \(\implies\) (1)：\\
+    已知 \(T v = \displaystyle\sum_{i,j} \sqrt{\lambda_i} \langle v, \varepsilon_{ij} \rangle S \varepsilon_{ij}\)，其中 \(\{\varepsilon_{ij}\}\) 是 \(E(\lambda_i, G)\) 的标准正交基，\(S\) 在 \(E(\lambda_i, G)\) 不变。 \\
+    计算 \(T^*\)：
+    对任意 \(u, v\)，
+    \begin{align*}
+        \langle T u, v \rangle 
+        &= \left\langle \sum_{i,j} \sqrt{\lambda_i} \langle u, \varepsilon_{ij} \rangle S \varepsilon_{ij}, v \right\rangle = \sum_{i,j} \sqrt{\lambda_i} \langle u, \varepsilon_{ij} \rangle \langle S \varepsilon_{ij}, v \rangle \\
+        &= \overline{ \sum_{i,j} \sqrt{\lambda_i} \langle v, S\varepsilon_{ij} \rangle \langle \varepsilon_{ij}, u \rangle} = \overline{\left\langle \sum_{i,j} \sqrt{\lambda_i} \langle v, S \varepsilon_{ij} \rangle \varepsilon_{ij}, u \right\rangle}.
+    \end{align*}
+    因此，
+    \[T^* v = \sum_{i,j} \sqrt{\lambda_i} \langle v, S \varepsilon_{ij} \rangle \varepsilon_{ij}.\]
+
+    由于
+    \[\langle T v, S \varepsilon_{ij} \rangle = \left\langle \sum_{k,l} \sqrt{\lambda_k} \langle v, \varepsilon_{k,l} \rangle S \varepsilon_{k,l}, S \varepsilon_{ij} \right\rangle = \sum_{k,l} \sqrt{\lambda_k} \langle v, \varepsilon_{k,l} \rangle \langle S \varepsilon_{k,l}, S \varepsilon_{ij} \rangle = \sqrt{\lambda_i} \langle v, \varepsilon_{ij} \rangle,\]
+    故\[T^* T v = \sum_{i,j} \sqrt{\lambda_i}\cdot\sqrt{\lambda_i} \langle v, \varepsilon_{ij} \rangle \varepsilon_{ij} = G v.\]
+    同理：\[T T^* v = \sum_{i,j} \lambda_i \langle v, S \varepsilon_{ij} \rangle S \varepsilon_{ij}.\]
+    因为 $S$ 是酉算子，且 $E(\lambda_i, G)$ 在 $S$ 下不变，故 \(\{S \varepsilon_{ij}\}\) 是 \(E(\lambda_i, G)\) 的标准正交基，故 \(T T^* = \displaystyle\sum_i \lambda_i \langle v, S \varepsilon_{ij} \rangle S \varepsilon_{ij} = G\)。因此 \(T^* T = T T^*\)，即 \(T\) 正规。
+
+    (1) \(\implies\) (3)：\\
+    假设 \(T\) 正规，则 \(\operatorname{Im} T = (\operatorname{Ker} T)^\perp\)（因正规算子满足 \(\operatorname{Ker} T = \operatorname{Ker} T^*\)）。 \\
+    对 $T^2$ 用极分解，有 $T^2=S'\sqrt{(T^2)^*T^2}=S'\sqrt{T^*(T^*T)T}=S'\sqrt{(T^*T)^2}=S'G$，成立。
+
+    (3) \(\implies\) (1)：\\
+    由条件，对 $\forall v$，$\|T^2v\|=\|T^*Tv\|$，即
+    \[\langle T^2v,T^2v \rangle-\langle T^*Tv,T^*Tv \rangle=\langle T^*T^2v,v \rangle-\langle T(T^*T)v,Tv \rangle=\langle (T^*T-TT^*)Tv,Tv \rangle=0.\]
+    由于 $T^*T-TT^*$ 是自伴的，故由自伴算子的性质知 $T^*T-TT^*$ 在 $\operatorname{Im} T$ 上的限制为零算子。 \\
+    由于 $\operatorname{Im} T=(\operatorname{Ker} T)^\perp=(\operatorname{Ker} T^*)^\perp$，则 $\operatorname{Ker} T = \operatorname{Ker} T^*$，故对 $\forall v\in \operatorname{Ker} T$，有 $(T^*T-TT^*)v=0$，即 $T^*T-TT^*$ 在 $\operatorname{Ker} T=(\operatorname{Im} T)^\perp$ 上的限制为零算子。\\
+    因此 $T^*T-TT^*$ 在整个空间上为零算子，即 $T^*T=TT^*$，即 $T$ 是正规算子。\\
+    综上，(1)(2)(3)等价。
+
+\end{enumerate}
+
+\end{document}

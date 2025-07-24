@@ -1,0 +1,122 @@
+\documentclass{ctexart}
+\usepackage{amsmath, amssymb, geometry,enumitem, physics, mismath}
+\geometry{a4paper,scale=0.66,top=1in,bottom=1in,left=1in,right=1in}
+
+\title{\vspace{-4em}\textbf{数学分析（甲）II（H）2023-2024 春夏期末答案}}
+\author{图灵回忆卷\quad\quad by jayi0908}
+
+\linespread{1.6}
+\addtolength{\parskip}{.2em}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item[\textbf{一、}] \textbf{(10 分)} 定义：设 $f(x,y)$ 在 $P_0(x_0,y_0)$ 的邻域 $\mathrm{U}(P_0)$ 上有定义，对 $P(x_0+\Delta x, y_0+\Delta y)\in\mathrm{U}(P_0)$，
+    若 $\Delta z = f(x_0+\Delta x, y_0+\Delta y)-f(x_0, y_0)$ 可表示为 
+    $A\Delta x+B\Delta y+o(\rho)$，\\
+    其中 $\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$，$A,B$ 为仅与 $P_0$ 有关的常数，则称 $f(x,y)$ 在 $P_0(x_0,y_0)$ 可微。 \\
+    证明：$f(x,0)=0$，$f_x'(0,0)=0$，$f(0,y)=0$，$f_y'(0,0)=0$ \\
+    $\Delta z=f(\Delta x,\Delta y)=\dfrac{(\Delta x)^2\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}=\dfrac{(\Delta x)^2\Delta y}{\rho}.$
+    \begin{align*} 
+    \text{故}& \quad\lim_{\rho \to 0}\frac{\mathrm{d}z}{\rho} \\
+    & =\lim_{\rho \to 0}\frac{\Delta z-f(0,0)-f_x'(0,0)\Delta x-f_y'(0,0)\Delta y}{\rho} \\
+    & =\lim_{\rho \to 0}\frac{(\Delta x)^2\Delta y}{\rho^2} \\
+    & =\lim_{\rho \to 0}\rho\cos^2\theta\sin\theta=0
+    \end{align*}
+    从而 $\Delta z=f_x'(0,0)\Delta x+f_y'(0,0)\Delta y+o(\rho)$，故 $f(x,y)$ 在 $(0,0)$ 可微。
+    \item[\textbf{二、}] \textbf{(40 分)}
+    \begin{enumerate}
+        \item[\textbf{1.}] 设$\begin{cases}
+        F(x,y,z)=x^2+y^2+ze^z-2 \\
+        G(x,y,z)=x^2+xy+y^2-1
+        \end{cases}$，$P(1,-1,0)$，则
+        \[\frac{\partial(F,G)}{\partial(y,z)}=-(z+1)e^z\cdot(x+2y)\vert_P=1\]
+        \[\frac{\partial(F,G)}{\partial(z,x)}=(z+1)e^z\cdot(2x+y)\vert_P=1\]
+        \[\frac{\partial(F,G)}{\partial(x,y)}=2x(x+2y)-2y(2x+y)\vert_P=0\]
+        故切线为 $\begin{cases}
+        x=1+t \\
+        y=-1+t \\
+        z=0
+        \end{cases}$.
+        \item[\textbf{2.}] 设抛物线 $y=x^2$ 将 $D$ 分为上半区域 $D_1$ 和下半区域 $D_2$，则
+        \begin{align*}
+        I_1
+        & =\iint_{D_1}(y-x^2)\dd{x}\dd{y}-\iint_{D_2}|y-x^2|\dd{x}\dd{y} \\
+        & =\int_{-1}^1\dd{x}\int_{x^2}^2(y-x^2)\dd{y}-\int_{-1}^1\dd{x}\int_0^{x^2}(y-x^2)\dd{y} \\
+        & =\int_{-1}^1\dd{x}\left[\frac{y^2}{2}-x^2y\right]_{x^2}^2-\int_{-1}^1\dd{x}\left[\frac{y^2}{2}-x^2y\right]_0^{x^2} \\
+        & =\int_{-1}^1(\frac{4}{2}-2x^2-\frac{x^4}{2}+x^4)\dd{x}-\int_{-1}^1(\frac{x^4}{2}-x^4)\dd{x} \\
+        & =\int_{-1}^1(2-2x^2+x^4)\dd{x} \\
+        & =\left[2x-\frac{2}{3}x^3+\frac{1}{5}x^5\right]_{-1}^1 \\
+        & =2\times\left(2-\frac{2}{3}+\frac{1}{5}\right)\\
+        & =\frac{46}{15}.
+        \end{align*}
+        \item[\textbf{3.}] $P(x,y)=-2xe^{-x^2}\sin y-y$，$Q(x,y)=e^{-x^2}\cos{y}$，$A(1,0)$，$B(-1,0)$，$L':L+\overline{BA}$ 为闭合曲线，
+        围成闭区域 $D$，$\dfrac{\partial Q}{\partial x}=-2xe^{-x^2}\cos y$，$\dfrac{\partial P}{\partial y}=-2xe^{-x^2}\cos y-1$.
+        由格林公式： $$\oint_{L'}P\dd{x}+Q\dd{y}=\iint_D(\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y})\dd{\sigma}=\iint_D \dd{\sigma}=\frac{\pi}{2}$$
+        在 $AB$ 上 $P(x,y)=0$，$\dd{y}=0$，故 $\ds\oint_{AB}P\dd{x}+Q\dd{y}=0$，故 $I_2=\ds\oint_{L}P\dd{x}+Q\dd{y}=\frac{\pi}{2}$.
+        \item[\textbf{4.}] 设 $x=\sin\theta\cos\varphi$，$y=\sin\theta\sin\varphi$，$z=\cos\theta$，$0\le \theta\le \dfrac{\pi}{2}$，$0\le\varphi\le 2\pi$.
+        则 $\dfrac{\partial(y,z)}{\partial(\theta,\varphi)}=\sin^2\theta\cos\varphi$，$\dfrac{\partial(z,x)}{\partial(\theta,\varphi)}=\sin^2\theta\sin\varphi$，
+        $\dfrac{\partial(x,y)}{\partial(\theta,\varphi)}=\sin\theta\cos\theta$. 设 $D=[0,\frac{\pi}{2}]\times[0,2\pi]$，故：
+        \begin{align*}
+        I_3&=\iint_D(\sin^4\theta(\cos^3\varphi+\sin^3\varphi)-\sin^3\theta+(\cos^2\theta+1)\sin\theta\cos\theta)\dd{\theta}\dd{\varphi} \\
+        &=\int_0^{\frac{\pi}{2}}\dd{\theta}\int_0^{2\pi}(\frac{1}{4}\sin^4\theta(\cos 3\varphi+3\cos\varphi-\sin 3\varphi+3\sin\varphi)+(\cos^2\theta+1)\sin\theta\cos\theta-\sin^3\theta)\dd{\varphi} \\
+        &=\int_0^{\frac{\pi}{2}}(\frac{1}{4}\sin^4\theta(\frac{1}{3}(\sin 3\varphi+\cos 3\varphi)+3(\sin\varphi-\cos\varphi))+((\cos^2\theta+1)\sin\theta\cos\theta-\sin^3\theta)\varphi)\vert_{0}^{2\pi}\dd{\theta} \\
+        &=2\pi\int_0^{\frac{\pi}{2}}\frac{1}{4}((\cos 2\theta+3)\sin 2\theta+\sin 3\theta-3\sin\theta)\dd{\theta} \\
+        &=\frac{\pi}{2}(-\frac{1}{8}\cos 4\theta-\frac{3}{2}\cos 2\theta-\frac{1}{3}\cos 3\theta+3\cos\theta)\vert_{0}^{\frac{\pi}{2}} \\
+        &=\frac{\pi}{6}.
+        \end{align*}
+        \item[\textbf{5.}] 用球坐标变换：$x=r\sin\theta\cos\varphi$，$y=r\sin\theta\sin\varphi$，$z=1+r\cos\theta$，$0\le r\le 1$，$0\le\theta\le\dfrac{\pi}{2}$，$0\le\varphi\le\pi$，则
+        \begin{align*}
+        I_4&=\int_0^{\pi}\dd{\varphi}\int_0^{\frac{\pi}{2}}\dd{\theta}\int_0^1\dfrac{r^2\sin\theta}{\sqrt{r^2+1+2r\cos\theta}}\dd{r} \\
+        &=\pi\int_0^1\dd{t}\int_0^1\dfrac{r^2}{\sqrt{r^2+2rt+1}}\dd{r} \\
+        &=\pi\int_0^1\frac{r^2}{\sqrt{2r}}\dd{r}\int_0^1\dfrac{1}{\sqrt{t+(\frac{r^2+1}{2r})}}\dd{t} \\
+        &=\pi\int_0^1\frac{2r^2}{\sqrt{2r}}\dd{r}(\sqrt{t+(\frac{r^2+1}{2r})})\vert_0^1 \\
+        &=\pi\int_0^1(r^2+r-r\sqrt{r^2+1})\dd{r} \\
+        &=\pi(\frac{1}{3}r^3+\frac{1}{2}r^2-\frac{1}{3}(r^2+1)^{\frac{3}{2}})\vert_0^1 \\
+        &=\frac{\pi(7-4\sqrt{2})}{6}.
+        \end{align*}
+    \end{enumerate}
+    \item[\textbf{三、}] \textbf{(10 分)} 证明：由题目条件，设 $\forall (x,y)\in D$，$|f_y'(x,y)|\le M$，且对于 $\forall P_0(x_0,y_0)$，$\forall\varepsilon_1>0$，$\exists\delta_1>0$，使得对 $\forall x\in U(x_0,\delta_1)$，有 $|f(x,y_0)-f(x_0,y_0)|<\varepsilon_1$， \\
+    对 $\forall\varepsilon>0$，取 $\varepsilon_1=\frac{\varepsilon}{2}$，$\delta=\min\{\delta_1,\frac{\varepsilon}{2M}\}$，
+    则对 $\forall (x_0+\Delta x, y_0+\Delta y)\in U(P_0;\Delta)$，由拉格朗日中值定理，存在 $0\le\theta\le 1$，使得
+    \begin{align*}
+    &\quad|f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)| \\
+    &\le |f(x_0+\Delta x,y_0+\Delta y)-f(x_0+\Delta x,y_0)|+|f(x_0+\Delta x,y_0)-f(x_0,y_0)| \\
+    &\le |f_x'(x_0+\theta\Delta x)\Delta y|+|f(x_0+\Delta x,y_0)-f(x_0,y_0)| \\
+    &< M\cdot\frac{\varepsilon}{2M}+\frac{\varepsilon}{2}=\varepsilon.
+    \end{align*}
+    故由定义，$f(x,y)$ 在 $D$ 上连续.
+    \item[\textbf{四、}] \textbf{(10 分)} \[\dfrac{\partial f}{\partial\overline{l}}(x,y,z)=\dfrac{\sqrt{2}}{2}f_x'(x,y,z)-\dfrac{\sqrt{2}}{2}f_y'(x,y,z)=\dfrac{\sqrt{2}}{2}(4x+2y-2x-4y)=\sqrt{2}(x-y).\]
+    设 $P(\sin\theta\cos\varphi,\dfrac{\sqrt{2}}{2}\sin\theta\sin\varphi,\dfrac{\sqrt{3}}{3}\cos\theta)$，则 $\dfrac{\partial f}{\partial\overline{l}}(P)=\sin\theta(\sqrt{2}\cos\varphi-\sin\varphi)\le\sqrt{3}$，当 $\theta=\dfrac{\pi}{2}$，$\varphi=\arctan{\sqrt{2}}-\dfrac{\pi}{2}$（即 $P(\dfrac{\sqrt{6}}{3},-\dfrac{\sqrt{6}}{6},0)$） 时取等。
+    \item[\textbf{五、}] \textbf{(10 分)} 由条件，需要对 $f(x)$ 进行偶延拓，故
+    \begin{align*}
+    a_n&=\frac{2}{\pi}\int_0^\pi(1+x)\cos{nx}\dd{x}\\
+    &=\frac{2}{\pi}(\frac{1}{n}(1+x)\sin{nx}+\frac{1}{n^2}\cos{nx})\vert_0^\pi\\
+    &=-\frac{4}{n^2\pi}.
+    \end{align*}
+    故 $\ds\lim_{n\to\infty}n^2\sin{a_{2n-1}}=\ds\lim_{n\to\infty}\dfrac{-4}{\pi}\cdot(\dfrac{n}{2n-1})^2=-\dfrac{1}{\pi}$.
+    \item[\textbf{六、}] \textbf{(10 分)} 证明：由题目条件与变限积分的性质知 $f_{n+1}(1)=0,f_{n+1}'(x)=-f_n(x)$，更进一步：$f_n^{(k)}(x)=(-1)^kf_{n-k}(x)$，$0\le k\le n-1$. \\
+    从而 $f_n(x)$ 为 $n-1$ 阶可导的，且直到第 $n-1$ 阶导数均连续，用泰勒展开：
+    \[f_n(x)=\ds\sum_{k=0}^{n-2}\frac{f_n^{(k)}(1)}{k!}(x-1)^k+\frac{f_n^{(n-1)}(\xi)}{(n-1)}(\xi-1)^{n-1}=\frac{f(\xi)}{(n-1)!}(\xi-1)^{n-1}\]
+    其中 $\xi\in(0,1)$，由于 $f$ 为 $[0,1]$ 上的连续函数，故存在 $M>0$ 使得 $|f(\xi)|\le M$，故 $|f_n(x)|\le\dfrac{1}{(n-1)!}$，$n\ge 2$ \\
+    从而由Weierstrass判别法可知 $\{f_n(x)\}$ 在 $[0,1]$ 上一致收敛。（因为 $\ds\sum\dfrac{1}{n!}$ 是收敛级数）
+    \item[\textbf{七、}] \textbf{(10 分)} 
+    \begin{enumerate}
+        \item[\textbf{(1)}] （这个证法有点丑陋了×）\\
+        记 $b_n=\dfrac{a_n}{R_{n-1}}=\dfrac{R_{n-1}-R_n}{R_{n-1}}=1-\dfrac{R_n}{R_{n-1}}\in(0,1)$，分两种情况：
+        \begin{enumerate}
+            \item 当有无穷多个 $b_n\ge\frac{1}{2}$ 时，取出这些项即得 $\sum b_n$ 发散。
+            \item $\exists N>0$，$\forall n>N$，$0<b_n<\frac{1}{2}$ 恒成立，对函数 $x+x^2+\ln(1-x)$ 求导可得该函数在 $(0,\frac{1}{2})$ 上单调递增，且在 $x=0$ 处取值为 $0$，因此在 $(0,\frac{1}{2})$ 上有 \[-\ln(1-x)<x+x^2<2x.\]
+            从而 \[2\sum_{n=N+1}^{\infty}b_n >\sum_{n=N+1}^{\infty}-\ln(1-b_n)=\sum_{n=N+1}^{\infty}\ln(\dfrac{R_{n-1}}{R_n})\]
+            由于 $\displaystyle\lim_{n\to\infty}R_n=0$ 可知上式发散。
+        \end{enumerate}
+        从而总有 $\displaystyle\sum_{n=1}^{\infty}\dfrac{a_n}{R_{n-1}}$ 发散。
+        \item[\textbf{(2)}] 利用积分中值定理，设 $f(x)=x^{p-1}$ 为单减函数，则 \[\dfrac{R_{n-1}-R_n}{R_{n-1}^{1-p}}<\int_{R_n}^{R_{n-1}}f(x)\dd{x}\] \\
+        从而 \[\sum_{n=1}^{\infty}\dfrac{a_n}{R_{n-1}^{1-p}}<\lim_{n\to\infty}\int_{R_n}^{R_0}\dfrac{1}{x^{1-p}}\dd{x}\]
+        由 $\displaystyle\lim_{n\to\infty}R_n=0$ 以及瑕积分 $\displaystyle\lim_{t\to 0}\int_t^{R_0}x^{p-1}\dd{x}$ 收敛，可知 $\displaystyle\sum_{n=1}^{\infty}\dfrac{a_n}{R_{n-1}^{1-p}}$ 收敛。
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
