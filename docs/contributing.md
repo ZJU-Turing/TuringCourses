@@ -44,13 +44,11 @@
 │   ├── general/            # 通识选修课
 │   ├── images/             # 仅用来保存网站图标
 │   ├── js/                 # 本站用到的所有 js 脚本
-│   ├── major_basic/        # 专业基础课
-│   ├── major_elective/     # 专业选修课
-│   ├── major_mandatory/    # 专业必修课
+│   ├── major/              # 所有专业课程
 │   ├── math_phys/          # 数理基础课
 │   ├── others/             # 其他课程
 │   ├── political/          # 思政军体课
-│   ├── readings/           # 书评专区
+│   ├── readings/           # 书评专区（待建设）
 │   └── short_term/         # 短学期课程
 ├── mkdocs.yml          # mkdocs 站点设置
 ├── overrides/          # mkdocs-material 个性主题设置
