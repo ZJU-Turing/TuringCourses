@@ -184,10 +184,3 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.arithmatex:
       generic: true
-
-validation:
-  links:
-    not_found: warn
-    anchors: warn
-    absolute_links: ignore
-    unrecognized_links: ignore

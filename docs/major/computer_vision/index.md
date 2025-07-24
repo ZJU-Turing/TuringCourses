@@ -16,7 +16,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_v
 
 ### 先修要求
 
-无先修要求，只要会基本的 C 和 Python 语法即可。老师的课堂/实验会从基本的 OpenCV 使用与图像处理开始，比较容易上手，包括之后的 CNN 处的实验也是很经典的。不过本课程和 [图像信息处理](../digital_image_processing) 有相通之处，在修习完图像信息处理之后（特别是后半段内容）再修习本课程会有一定的帮助。
+无先修要求，只要会基本的 C 和 Python 语法即可。老师的课堂/实验会从基本的 OpenCV 使用与图像处理开始，比较容易上手，包括之后的 CNN 处的实验也是很经典的。不过本课程和 [图像信息处理](../digital_image_processing/index.md) 有相通之处，在修习完图像信息处理之后（特别是后半段内容）再修习本课程会有一定的帮助。
 
 ## 任课教师
 

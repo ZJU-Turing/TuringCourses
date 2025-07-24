@@ -69,12 +69,12 @@
 - 尽量不要上传有版权的文件，例如课件等
 - 对于自己的笔记、复习提纲等材料：
     - 如果有自己的网站，推荐放在自己的网站并在此插入链接
-    - 也可以将文件上传到对应课程文件夹中，并插入相对链接，例如[数分一](math_phys/math_analysis1/)页面中的历年卷
+    - 也可以将文件上传到对应课程文件夹中，并插入相对链接，例如[数分一](math_phys/math_analysis1/index.md)页面中的历年卷
 - 尽量规范编写 markdown，避免出现格式错误
     - 如果你实在搞不定，不要担心，尽管上传，我们发现后会及时进行修改
 
 !!! note
-    针对还完全没有内容的空页面，我们提供了一个[模板](../template/)，可以在模板的[源码](https://github.com/ZJU-Turing/TuringCourses/blob/master/docs/template.md?plain=1)基础上修改使用。
+    针对还完全没有内容的空页面，我们提供了一个[模板](template.md)，可以在模板的[源码](https://github.com/ZJU-Turing/TuringCourses/blob/master/docs/template.md?plain=1)基础上修改使用。
 
 ### 贡献方式
 #### Pull Request（推荐）
