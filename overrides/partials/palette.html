@@ -1,0 +1,21 @@
+{# better then material's palette, especially for giscus #}
+<div class="md-header__options">
+    <div class="md-header-nav__scheme md-header-nav__button md-source__icon md-icon">
+        <a href="javascript:toggleScheme();" title="Light mode" class="light-mode">
+            {% set icon = "material/weather-sunny" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </a>
+        <a href="javascript:toggleScheme();" title="Dark mode" class="dark-mode">
+            {% set icon = "material/weather-night" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </a>
+        <a href="javascript:toggleScheme();" title="System preference" class="system-mode">
+            {% set icon = "material/theme-light-dark" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </a>
+        <a href="javascript:toggleScheme();" title="Unknown scheme" class="unknown-mode">
+            {% set icon = "material/help-circle" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </a>
+    </div>
+</div>

@@ -105,6 +105,9 @@ nav:
   - 书评专区:
     - readings/index.md
 
+not_in_nav: |
+  major/introduction_to_data_visualization/数据可视化导论小测.md
+
 theme:
   name: 'material'
   language: 'zh'
@@ -123,7 +126,9 @@ theme:
     - navigation.tabs
     - navigation.footer
     - navigation.indexes
+    - navigation.instant
     - navigation.sections
+    - navigation.instant.progress
   font:
     # text: Noto Serif SC
     code: JetBrains Mono
@@ -169,8 +174,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -179,3 +184,10 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.arithmatex:
       generic: true
+
+validation:
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: ignore
+    unrecognized_links: ignore
