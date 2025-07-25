@@ -43,7 +43,7 @@
 │   ├── political/          # 思政军体课
 │   ├── readings/           # 书评专区（待建设）
 │   └── short_term/         # 短学期课程
-├── hooks               # 本文档专用扩展功能（默认仅开启 evaluations）
+├── hooks/              # 本文档专用扩展功能（默认仅开启 evaluations）
 ├── mkdocs.yml          # mkdocs 站点设置
 ├── overrides/          # mkdocs-material 个性主题设置
 └── requirements.txt    # 本站构建所需全部 python 依赖
