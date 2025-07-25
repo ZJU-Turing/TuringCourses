@@ -140,12 +140,13 @@ plugins:
   - heti:
       extra_skipped_class:
         - arithmatex
-  - turing_changelog
+  # - turing_changelog
   - turing_contributors
   - turing_outdate_warning
 
 hooks:
   - hooks/evalutations.py
+  - hooks/changelog.py
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback
