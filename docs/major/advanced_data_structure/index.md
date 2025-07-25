@@ -1,4 +1,6 @@
 ---
+abbrs:
+    - ads
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/advanced_data_structure/
 ---
 

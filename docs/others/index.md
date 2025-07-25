@@ -13,14 +13,14 @@
 
     |课程名称|学分|该专业建议学年学期|资料情况|
     |:--|:--|:--|:--|
-    |[常微分方程](ode/)|1.0 / 2.0 / 3.5|一（春夏）/ 二（秋冬）|较完善✅|
-    |[抽象代数](abstract_algebra/)|4.0|二（秋冬）|较完善✅|
-    |[数值代数](numerical_linear_algebra/)|3.0|三（春夏）|较完善✅|
-    |[数据建模与分析](data_modeling_and_analysis/)|3.0|三（春夏）|较完善✅|
-    |[数论导引](number_theory/)|3.0|三（春夏）||
-    |[随机过程](stochastic_process/)|3.0|三（春夏）|较完善✅|
-    |[点集拓扑](point_set_topology/)|2.0|一（春夏）|仅介绍|
-    |[信息理论](information_theory/)|2.0|二（春夏）|仅介绍|
+    |[常微分方程](ode/index.md)|1.0 / 2.0 / 3.5|一（春夏）/ 二（秋冬）|较完善✅|
+    |[抽象代数](abstract_algebra/index.md)|4.0|二（秋冬）|较完善✅|
+    |[数值代数](numerical_linear_algebra/index.md)|3.0|三（春夏）|较完善✅|
+    |[数据建模与分析](data_modeling_and_analysis/index.md)|3.0|三（春夏）|较完善✅|
+    |[数论导引](number_theory/index.md)|3.0|三（春夏）||
+    |[随机过程](stochastic_process/index.md)|3.0|三（春夏）|较完善✅|
+    |[点集拓扑](point_set_topology/index.md)|2.0|一（春夏）|仅介绍|
+    |[信息理论](information_theory/index.md)|2.0|二（春夏）|仅介绍|
     
     </div>
 
@@ -29,14 +29,14 @@
 
     |课程名称|学分|该专业建议学年学期|资料情况|
     |:--|:--|:--|:--|
-    |[微观经济学](economics/#course_1)|3.0|一（春夏）|较完善✅|
-    |[宏观经济学](economics/#course_2)|3.0|二（秋冬）|较完善✅|
-    |[中级微观经济学](economics/#course_5)|3.0|二（秋冬）|较完善✅|
-    |[中级宏观经济学](economics/#course_7)|3.0|二（春夏）|仅介绍|
-    |[经济思想史](economics/#course_8)|3.0|二（春夏）|仅介绍|
-    |[博弈论](economics/#course_6)|3.0|三（秋冬）|较完善✅|
-    |[计量经济学 / 中级计量经济学](economics/#course_3)|3.0|二（春夏）/ 三（秋冬）|较完善✅|
-    |[政治经济学](economics/#course_4)|3.0|三（春夏）|较完善✅|
+    |[微观经济学](economics/index.md#course_1)|3.0|一（春夏）|较完善✅|
+    |[宏观经济学](economics/index.md#course_2)|3.0|二（秋冬）|较完善✅|
+    |[中级微观经济学](economics/index.md#course_5)|3.0|二（秋冬）|较完善✅|
+    |[中级宏观经济学](economics/index.md#course_7)|3.0|二（春夏）|仅介绍|
+    |[经济思想史](economics/index.md#course_8)|3.0|二（春夏）|仅介绍|
+    |[博弈论](economics/index.md#course_6)|3.0|三（秋冬）|较完善✅|
+    |[计量经济学 / 中级计量经济学](economics/index.md#course_3)|3.0|二（春夏）/ 三（秋冬）|较完善✅|
+    |[政治经济学](economics/index.md#course_4)|3.0|三（春夏）|较完善✅|
 
     </div>
 
@@ -45,17 +45,17 @@
 
     |课程名称|学分|该专业建议学年学期|资料情况|
     |:--|:--|:--|:--|
-    |[金融学](finance/#course_1)|3.0|一（春夏）|仅介绍|
-    |[会计学](finance/#course_2)|3.0|一（春夏）|仅介绍|
-    |[公司金融](finance/#course_3)|3.0|二（秋冬）|较完善✅|
-    |[商业银行经营与管理](finance/#course_10)|3.0|二（秋冬）/ 三（春夏）|仅介绍|
-    |[投资学 / 证券投资学](finance/#course_4)|3.0|二（春夏）|较完善✅|
-    |[国际金融学](finance/#course_8)|3.0|二（春夏）/ 三（秋冬）|仅介绍|
-    |[固定收益证券分析和模型](finance/#course_5)|3.0|三（秋冬）|较完善✅|
-    |[量化投资](finance/#course_11)|3.0|三（秋冬）|仅介绍|
-    |[金融工程学](finance/#course_7)|3.0|三（春夏）|仅介绍|
-    |[保险学](finance/#course_9)|3.0|三（春夏）|仅介绍|
-    |[资产定价](finance/#course_6)|3.0|四（秋冬）|仅介绍|
+    |[金融学](finance/index.md#course_1)|3.0|一（春夏）|仅介绍|
+    |[会计学](finance/index.md#course_2)|3.0|一（春夏）|仅介绍|
+    |[公司金融](finance/index.md#course_3)|3.0|二（秋冬）|较完善✅|
+    |[商业银行经营与管理](finance/index.md#course_10)|3.0|二（秋冬）/ 三（春夏）|仅介绍|
+    |[投资学 / 证券投资学](finance/index.md#course_4)|3.0|二（春夏）|较完善✅|
+    |[国际金融学](finance/index.md#course_8)|3.0|二（春夏）/ 三（秋冬）|仅介绍|
+    |[固定收益证券分析和模型](finance/index.md#course_5)|3.0|三（秋冬）|较完善✅|
+    |[量化投资](finance/index.md#course_11)|3.0|三（秋冬）|仅介绍|
+    |[金融工程学](finance/index.md#course_7)|3.0|三（春夏）|仅介绍|
+    |[保险学](finance/index.md#course_9)|3.0|三（春夏）|仅介绍|
+    |[资产定价](finance/index.md#course_6)|3.0|四（秋冬）|仅介绍|
 
     </div>
 
@@ -69,7 +69,7 @@
 
     |课程名称|学分|该专业建议学年学期|资料情况|
     |:--|:--|:--|:--|
-    |[B/S 体系软件设计](browser_server_software)|3.5|三（秋冬）|较完善✅|
+    |[B/S 体系软件设计](browser_server_software/index.md)|3.5|三（秋冬）|较完善✅|
 
     </div>
 
@@ -78,8 +78,8 @@
 
     |课程名称|学分|该专业建议学年学期|资料情况|
     |:--|:--|:--|:--|
-    |[电子工程训练（甲）](electronic_engineering_training/#course_1)|1.5|一（春夏）|较完善✅|
-    |[电子工程训练（乙）](electronic_engineering_training/#course_2)|1.5|二（秋冬）|较完善✅|
+    |[电子工程训练（甲）](electronic_engineering_training/index.md#course_1)|1.5|一（春夏）|较完善✅|
+    |[电子工程训练（乙）](electronic_engineering_training/index.md#course_2)|1.5|二（秋冬）|较完善✅|
 
     </div>
 
@@ -88,6 +88,6 @@
 
     |课程名称|学分|该专业建议学年学期|资料情况|
     |:--|:--|:--|:--|
-    |[心理学导论](introduction_to_psychology)|2.0|一（春夏）|较完善✅|
+    |[心理学导论](introduction_to_psychology/index.md)|2.0|一（春夏）|较完善✅|
 
     </div>

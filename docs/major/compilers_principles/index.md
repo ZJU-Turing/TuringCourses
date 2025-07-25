@@ -1,4 +1,6 @@
 ---
+abbrs:
+    - compiler
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/compilers_principles/
 ---
 

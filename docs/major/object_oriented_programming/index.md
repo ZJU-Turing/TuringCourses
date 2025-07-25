@@ -1,4 +1,6 @@
 ---
+abbrs:
+    - oop
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_oriented_programming/
 ---
 

@@ -11,18 +11,11 @@
     $ git clone https://github.com/ZJU-Turing/TuringCourses.git
     $ cd TuringCourses
     ```
-2. 安装 python 依赖（mkdocs 以及 material）
+2. 安装 python 依赖
     ```shell
     $ pip install -r requirements.txt
     ```
-3. 安装本文档专用插件
-    ```shell
-    $ git clone https://github.com/ZJU-Turing/TuringPlugins.git
-    $ cd TuringPlugins
-    $ pip install -e .
-    $ cd ..
-    ```
-4. 启动 mkdocs 本地服务
+3. 启动 mkdocs 本地服务
     ```shell
     $ mkdocs serve
     ```
@@ -44,14 +37,13 @@
 │   ├── general/            # 通识选修课
 │   ├── images/             # 仅用来保存网站图标
 │   ├── js/                 # 本站用到的所有 js 脚本
-│   ├── major_basic/        # 专业基础课
-│   ├── major_elective/     # 专业选修课
-│   ├── major_mandatory/    # 专业必修课
+│   ├── major/              # 所有专业课程
 │   ├── math_phys/          # 数理基础课
 │   ├── others/             # 其他课程
 │   ├── political/          # 思政军体课
-│   ├── readings/           # 书评专区
+│   ├── readings/           # 书评专区（待建设）
 │   └── short_term/         # 短学期课程
+├── hooks/              # 本文档专用扩展功能（默认仅开启 evaluations）
 ├── mkdocs.yml          # mkdocs 站点设置
 ├── overrides/          # mkdocs-material 个性主题设置
 └── requirements.txt    # 本站构建所需全部 python 依赖
@@ -69,12 +61,12 @@
 - 尽量不要上传有版权的文件，例如课件等
 - 对于自己的笔记、复习提纲等材料：
     - 如果有自己的网站，推荐放在自己的网站并在此插入链接
-    - 也可以将文件上传到对应课程文件夹中，并插入相对链接，例如[数分一](math_phys/math_analysis1/)页面中的历年卷
+    - 也可以将文件上传到对应课程文件夹中，并插入相对链接，例如[数分一](math_phys/math_analysis1/index.md)页面中的历年卷
 - 尽量规范编写 markdown，避免出现格式错误
     - 如果你实在搞不定，不要担心，尽管上传，我们发现后会及时进行修改
 
 !!! note
-    针对还完全没有内容的空页面，我们提供了一个[模板](../template/)，可以在模板的[源码](https://github.com/ZJU-Turing/TuringCourses/blob/master/docs/template.md?plain=1)基础上修改使用。
+    针对还完全没有内容的空页面，我们提供了一个[模板](template.md)，可以在模板的[源码](https://github.com/ZJU-Turing/TuringCourses/blob/master/docs/template.md?plain=1)基础上修改使用。
 
 ### 贡献方式
 #### Pull Request（推荐）

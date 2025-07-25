@@ -1,4 +1,6 @@
 ---
+abbrs:
+    - 离散
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/discrete_math/
 ---
 

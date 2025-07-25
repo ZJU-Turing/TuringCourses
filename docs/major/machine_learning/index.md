@@ -1,4 +1,6 @@
 ---
+abbrs:
+    - ml
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/machine_learning/
 ---
 

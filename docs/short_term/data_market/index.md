@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 数据要素市场
+---
+
 # 数据要素市场概论
 <div class="badges">
 <span class="badge is-badge">大二短学期</span>
