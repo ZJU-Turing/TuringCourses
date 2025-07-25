@@ -1,4 +1,7 @@
 ---
+abbrs:
+    - 计算机系统 II
+    - 计算机系统Ⅱ
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_system2/
 ---
 

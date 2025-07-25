@@ -1,4 +1,7 @@
 ---
+abbrs:
+    - 计算机系统 I
+    - 计算机系统Ⅰ
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_system1/
 ---
 

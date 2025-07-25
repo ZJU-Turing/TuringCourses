@@ -1,4 +1,7 @@
 ---
+abbrs:
+    - 计算理论
+    - toc
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_computation/
 ---
 

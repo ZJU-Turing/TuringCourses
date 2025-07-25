@@ -1,3 +1,8 @@
+---
+abbrs:
+    - ode
+---
+
 # 常微分方程
 <div class="badges">
 <span class="badge general-badge">通识课程</span>

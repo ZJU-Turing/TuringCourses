@@ -1,3 +1,8 @@
+---
+abbrs:
+    - ACM 短学期
+---
+
 # 算法竞赛集训（ACM）
 <div class="badges">
 <span class="badge cs-badge">大一短学期</span>

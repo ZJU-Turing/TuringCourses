@@ -1,4 +1,6 @@
 ---
+abbrs:
+    - fds
 grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/data_structure/
 ---
 
