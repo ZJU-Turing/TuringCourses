@@ -111,7 +111,6 @@ not_in_nav: |
 theme:
   name: 'material'
   language: 'zh'
-  # logo: images/icon.png
   icon:
     logo: material/notebook-outline
     repo: fontawesome/brands/github
@@ -130,7 +129,6 @@ theme:
     - navigation.sections
     - navigation.instant.progress
   font:
-    # text: Noto Serif SC
     code: JetBrains Mono
   palette:
     - scheme: default

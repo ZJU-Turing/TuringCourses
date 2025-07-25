@@ -11,18 +11,11 @@
     $ git clone https://github.com/ZJU-Turing/TuringCourses.git
     $ cd TuringCourses
     ```
-2. 安装 python 依赖（mkdocs 以及 material）
+2. 安装 python 依赖
     ```shell
     $ pip install -r requirements.txt
     ```
-3. 安装本文档专用插件
-    ```shell
-    $ git clone https://github.com/ZJU-Turing/TuringPlugins.git
-    $ cd TuringPlugins
-    $ pip install -e .
-    $ cd ..
-    ```
-4. 启动 mkdocs 本地服务
+3. 启动 mkdocs 本地服务
     ```shell
     $ mkdocs serve
     ```
@@ -50,6 +43,7 @@
 │   ├── political/          # 思政军体课
 │   ├── readings/           # 书评专区（待建设）
 │   └── short_term/         # 短学期课程
+├── hooks               # 本文档专用扩展功能（默认仅开启 evaluations）
 ├── mkdocs.yml          # mkdocs 站点设置
 ├── overrides/          # mkdocs-material 个性主题设置
 └── requirements.txt    # 本站构建所需全部 python 依赖
