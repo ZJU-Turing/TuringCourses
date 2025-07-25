@@ -35,7 +35,7 @@ nav:
     - 数学分析（甲）Ⅱ（H）: math_phys/math_analysis2/index.md
     - 普通物理学 Ⅰ（H）: math_phys/physics1/index.md
     - 普通物理学 Ⅱ（H）: math_phys/physics2/index.md
-    - 普通物理学实验 Ⅰ（H）: math_phys/physics_experiment1/index.md
+    - 普通物理学实验 Ⅰ: math_phys/physics_experiment1/index.md
     - 概率论与数理统计: math_phys/probability/index.md
   - 专业必修课:
     - major/mandatory/index.md
@@ -140,12 +140,12 @@ plugins:
   - heti:
       extra_skipped_class:
         - arithmatex
-  # - turing_changelog
-  - turing_contributors
+  # - turing_contributors
   - turing_outdate_warning
 
 hooks:
   - hooks/evalutations.py
+  - hooks/contributors.py
   - hooks/changelog.py
 
 extra_css:

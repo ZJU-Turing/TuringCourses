@@ -35,7 +35,7 @@ jobs:
           pip install -e .
           cd ..
       - name: Build site
-        run: mkdocs build
+        run: FULL=1 mkdocs build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
