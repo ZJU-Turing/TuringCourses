@@ -82,8 +82,8 @@ def _get_changelog_items(page: Page):
             res += f"\n## {year} 年\n"
         commit_sha = commit.hexsha[:7]
         commit_url = f"https://github.com/ZJU-Turing/TuringCourses/commit/{commit.hexsha}"
-        message = commit.message.split("\n")[0]
-        if message.startswith("Merge pull request") or "[skip changelog]" in message:
+        message = commit.summary
+        if (message.startswith("Merge pull request") or "[skip changelog]" in commit.message):
             continue
         commit_message = re.sub(r"#(\d+)", r"[#\1](https://github.com/ZJU-Turing/TuringCourses/pull/\1)", message)
         time = commit.committed_datetime.strftime("%m-%d")
