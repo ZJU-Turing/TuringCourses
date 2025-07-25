@@ -70,7 +70,7 @@ def on_page_markdown(
 
 def _get_latest_commit_timestamp(path: str) -> int:
     realpath = os.path.realpath(path)
-    commit_timestamp = repo.log(realpath, format="%at", n=1)
+    commit_timestamp = repo.git.log(realpath, format="%at", n=1)
     if commit_timestamp == "":
         commit_timestamp = time.time()
     return int(commit_timestamp)
