@@ -1,3 +1,9 @@
+---
+abbrs:
+    - 计算机系统 III
+    - 计算机系统Ⅲ
+---
+
 # 计算机系统 Ⅲ
 
 <div class="badges">

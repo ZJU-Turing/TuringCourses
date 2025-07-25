@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 离散
+---
+
 # 离散数学理论基础
 <div class="badges">
 <span class="badge cs-badge">CS 专业基础</span>

@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 超算
+---
+
 # 超算实训（HPC）
 <div class="badges">
 <span class="badge cs-badge">大一短学期</span>

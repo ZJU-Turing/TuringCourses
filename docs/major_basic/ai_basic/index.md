@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 人工智能基础
+---
+
 # 人工智能引论
 <div class="badges">
 <span class="badge cs-badge">CS 专业基础</span>

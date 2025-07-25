@@ -1,3 +1,9 @@
+---
+abbrs:
+    - 计算机系统 I
+    - 计算机系统Ⅰ
+---
+
 # 计算机系统 Ⅰ
 <div class="badges">
 <span class="badge is-badge">IS 专业基础</span>

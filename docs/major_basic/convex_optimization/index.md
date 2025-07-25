@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 凸优化
+---
+
 # 优化基本理论与方法
 
 <div class="badges">

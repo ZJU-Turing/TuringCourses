@@ -1,3 +1,8 @@
+---
+abbrs:
+    - fds
+---
+
 # 数据结构基础
 
 <div class="badges">

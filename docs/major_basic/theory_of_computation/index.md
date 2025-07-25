@@ -1,3 +1,9 @@
+---
+abbrs:
+    - 计算理论
+    - toc
+---
+
 # 理论计算机科学导引
 
 <div class="badges">

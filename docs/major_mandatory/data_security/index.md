@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 数据安全
+---
+
 # 数据安全与隐私保护
 <div class="badges">
 <span class="badge is-badge">IS 专业必修</span>

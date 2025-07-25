@@ -1,3 +1,8 @@
+---
+abbrs:
+    - AAA 短学期
+---
+
 # 安全攻防实践（CTF）
 <div class="badges">
 <span class="badge cs-badge">大一短学期</span>

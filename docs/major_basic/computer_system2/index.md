@@ -1,3 +1,9 @@
+---
+abbrs:
+    - 计算机系统 II
+    - 计算机系统Ⅱ
+---
+
 # 计算机系统 Ⅱ
 <div class="badges">
 <span class="badge is-badge">IS 专业基础</span>

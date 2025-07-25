@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 软件安全
+---
+
 # 软件安全原理和实践
 <div class="badges">
 <span class="badge is-badge">IS 专业必修</span>

@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 体系结构
+---
+
 # 计算机体系结构
 <div class="badges">
 <span class="badge cs-badge">CS 专业必修</span>

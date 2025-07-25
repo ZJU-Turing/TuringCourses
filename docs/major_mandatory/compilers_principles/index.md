@@ -1,3 +1,8 @@
+---
+abbrs:
+    - compiler
+---
+
 # 编译原理
 
 <div class="badges">

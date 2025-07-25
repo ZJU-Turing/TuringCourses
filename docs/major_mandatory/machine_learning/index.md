@@ -1,3 +1,8 @@
+---
+abbrs:
+    - ml
+---
+
 # 机器学习
 
 <div class="badges">

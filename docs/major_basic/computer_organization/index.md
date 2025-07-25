@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 计组
+---
+
 # 计算机组成与设计
 <div class="badges">
 <span class="badge cs-badge">CS 专业基础</span>

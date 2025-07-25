@@ -1,3 +1,8 @@
+---
+abbrs:
+    - 嵌入式
+---
+
 # 嵌入式系统
 <div class="badges">
 <span class="badge cs-badge">CS 专业模块-计算机系统</span>
