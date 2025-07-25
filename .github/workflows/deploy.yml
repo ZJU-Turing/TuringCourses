@@ -28,12 +28,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          git clone https://github.com/ZJU-Turing/TuringPlugins.git
-          cd TuringPlugins
-          pip install -e .
-          cd ..
+        run: pip install -r requirements.txt
       - name: Build site
         run: FULL=1 mkdocs build
       - name: Upload artifact
