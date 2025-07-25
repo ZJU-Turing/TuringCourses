@@ -9,7 +9,7 @@ from mkdocs.utils.meta import get_data
 
 from git import Repo, Commit
 
-enabled = os.getenv("CHANGELOG", "0") == "1" or os.getenv("FULL", "0") == "1"# default to enabled
+enabled = os.getenv("CHANGELOG", "0") == "1" or os.getenv("FULL", "0") == "1"
 logger = logging.getLogger("mkdocs.hooks.changelog")
 
 template = """- <span style="font-family: var(--md-code-font-family)">{time} [{commit_sha}]({commit_url}) </span>{commit_message}{links}"""

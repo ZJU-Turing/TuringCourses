@@ -5,7 +5,7 @@ import logging
 from mkdocs.config import config_options
 from mkdocs.structure.pages import Page
 
-enabled = os.getenv("EVALUATIONS", "1") == "1" or os.getenv("FULL", "0") == "1" # default to enabled
+enabled = os.getenv("EVALUATIONS", "1") == "1" or os.getenv("FULL", "0") == "1"
 logger = logging.getLogger("mkdocs.hooks.evaluations")
 
 art_tag = "![](https://img.shields.io/badge/-美育认定-blue?style=flat-square)"

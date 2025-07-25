@@ -9,7 +9,7 @@ from mkdocs.structure.pages import Page
 from jinja2 import Template
 from git import Repo
 
-enabled = os.getenv("CONTRIBUTORS", "0") == "1" or os.getenv("FULL", "0") == "1" # default to enabled
+enabled = os.getenv("CONTRIBUTORS", "0") == "1" or os.getenv("FULL", "0") == "1"
 logger = logging.getLogger("mkdocs.hooks.contributors")
 
 TEMPLATE = """
