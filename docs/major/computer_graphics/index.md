@@ -20,7 +20,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_g
 
 ## 任课教师
 
-[吴鸿智](http://hongzhiwu.com/) 吴老师讲课比较好，会经常发问，对一些原理的东西也会比较深入地讲解
+[吴鸿智](http://hongzhiwu.com/)，吴老师讲课比较好，会经常发问，对一些原理的东西也会比较深入地讲解
 
 ## 课程教材
 
@@ -28,7 +28,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_g
 + Fundamentals of Computer Graphics, Peter Shirley, Steve Marschner, AK Peters
 + 计算机图形学——原理、方法及应用，潘云鹤，董金祥，陈德人，2003
 + OpenGL Programming Guide, Fourth Edition, Addison-Wesley, 2003,（OpenGL编程指南，人民邮电出版社）
-+ OpenGL Distilled, Paul Martz , Addison-Wesley, Addison-WesleyProfessional; 1ST edition（OpenGL2.0精髓，人民邮电出版社）
++ OpenGL Distilled, Paul Martz, Addison-Wesley, Addison-WesleyProfessional; 1ST edition（OpenGL2.0精髓，人民邮电出版社）
 + [The NeHetutorials](http://nehe.gamedev.net)
 
 ## 分数构成

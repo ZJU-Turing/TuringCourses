@@ -17,7 +17,7 @@ abbrs:
 
 === "吴志祥"
 
-    吴志祥老师讲课清晰给分好（建议熟悉一下吴志祥老师的口音，比如听一下线代 Ⅰ 吴志祥班的智云，听习惯了问题不大）。22 级是老师第一次教 done right 的线代二。吴志祥老师课上会讲解 done right 上的课本定理证明和部分例题，思路清晰，每周布置几道 done right 的课后题（网上有答案，但是不够全（参考[:material-github: celiopassos/linear-algebra-done-right-solutions](https://github.com/celiopassos/linear-algebra-done-right-solutions)）。上课很少签到，印象中签了一次还是数字签到。
+    吴志祥老师讲课清晰给分好（建议熟悉一下吴志祥老师的口音，比如听一下线代 Ⅰ 吴志祥班的智云，听习惯了问题不大）。22 级是老师第一次教 done right 的线代二。吴志祥老师课上会讲解 done right 上的课本定理证明和部分例题，思路清晰，每周布置几道 done right 的课后题，网上有答案，但是不够全（参考[:material-github: celiopassos/linear-algebra-done-right-solutions](https://github.com/celiopassos/linear-algebra-done-right-solutions)）。上课很少签到，印象中签了一次还是数字签到。
 
     习题课：22 级助教的习题课和老师上课讲的感觉是两套体系（雾，听起来可能有些吃力，我反正是去拿作业，也坚持听完了hhh，课后有什么问题提问可以得到很好的答复）。期中是助教出题（老师可能会暗示助教出难一点，所以考出来成绩可能比较低，不过期中占比可能不大）期中是在习题课上考而且会延时到下节课，所以尽量不要在习题课的下一节课选身体素质课。
 

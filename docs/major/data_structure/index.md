@@ -30,7 +30,7 @@ FDS 按专题授课，主要介绍栈、队列、树、堆、并查集、图等�
     4. 二叉搜索树
         - 查找、插入
         - 删除根节点
-        - 支持删除指定节点(带 lazy tag 后的查找和删除)
+        - 支持删除指定节点（带 lazy tag 后的查找和删除）
     5. 堆
         - 线性建堆及其复杂度证明
         - push & pop
@@ -72,7 +72,7 @@ FDS 按专题授课，主要介绍栈、队列、树、堆、并查集、图等�
         - 快速排序
         - 归并排序
         - table sort
-        - bucket sort（桶排序） & radix sort（基数排序）
+        - bucket sort（桶排序）& radix sort（基数排序）
         - 其他
             - 稳定的排序
             - 基于交换的排序的复杂度下界证明
@@ -208,7 +208,7 @@ FDS 是同学们第一次接触“互评”的课程。在互评中你的程序�
 
 0. 删除个人信息（老师会发一个 ppt 专门教怎么删除个人信息）
 1. 封面
-    - 标题 + 日期 (没写 -1，下面同理)
+    - 标题 + 日期（没写 -1，下面同理）
 2. Chapter 1 Introduction
     - 自己描述题目，不能照搬照抄 (-3)
 3. Chapter 2 Algorithm Specification
@@ -216,7 +216,7 @@ FDS 是同学们第一次接触“互评”的课程。在互评中你的程序�
     - 不要直接贴项目代码，伪代码应该比源代码更好理解。
 4. Chapter 3 Testing Result
     - 每一组测试样例都要写 purpose (-3)
-    - 至少一组综合测试样例 (comprehensive test case)，数据规模的上下边界各一组，极限情况 (extreme case) 必须测试到，再加 n 组随机数据 (-4，一般不会要求非常严格)
+    - 至少一组综合测试样例 (comprehensive test case)，数据规模的上下边界各一组，极限情况 (extreme case) 必须测试到，再加 n 组随机数据（-4，一般不会要求非常严格）
     - 可以搞点图表来展示运行时间
     - 较大的数据应该给出生成数据的程序（不然可能被质疑数据来源）
 5. Chapter 4 Analysis and Comments
@@ -224,6 +224,6 @@ FDS 是同学们第一次接触“互评”的课程。在互评中你的程序�
         - 例如循环的复杂度要这么写：*The loop runs for N times and the complexity of each loop body is O(1), so the total time complexity is O(N).*
     - 时间和空间都要写到
 6. 代码
-    - 一定要多写注释，至少写到代码总长度的 30% 以上 (-50，某些老师如 cyll 管得比较严)
+    - 一定要多写注释，至少写到代码总长度的 30% 以上（-50，某些老师如 cyll 管得比较严）
 7. README
     - 怎么编译？怎么运行？怎么输入？期望的输出？最好能给一组样例输入输出

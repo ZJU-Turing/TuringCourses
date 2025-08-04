@@ -34,9 +34,9 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 - *《软件调试》* 张银奎（各类底层硬件机制和调试方法）
 - *《汇编语言程序设计》* 白洪欢，科学出版社（已绝版，就是老师自己印的那本）
 - *《IBM-PC汇编语言程序设计》* 沈美明，清华大学出版社（比较老的中文教材）
-- *《Windows汇编语言程序设计教程》* 谭毓安 ，电子工业出版社（比较老的中文教材）
+- *《Windows汇编语言程序设计教程》* 谭毓安，电子工业出版社（比较老的中文教材）
 - *Professional Assembly Language*, Richard Blum
-- *The Art of Assembly Language*, Randall Hyde （不过这个系列使用的主要工具是 HLA，与一般的汇编差别较大）
+- *The Art of Assembly Language*, Randall Hyde（不过这个系列使用的主要工具是 HLA，与一般的汇编差别较大）
 - *The Art of 64-bit Assembly*, Randall Hyde
 - *Assembly Language for x86 processors*, Kip R. Irvine（一本内容丰富的汇编书籍，电子工业出版社的黑皮系列里有。目前最新版是第 8 版）
 - *Modern x86 Assembly Language Programming*, Daniel Kusswurm（少数能称得上 Modern 的汇编书）

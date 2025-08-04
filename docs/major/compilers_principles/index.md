@@ -7,9 +7,9 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/compilers
 # 编译原理
 
 ## 课程学习内容
-首先简要介绍一下 “编译” 或者 “编译器” 这个更加广泛的方向，一般高级语言、面向通用 CPU 平台的编译器涉及的内容大致可以分为以下几个部分:
+首先简要介绍一下 “编译” 或者 “编译器” 这个更加广泛的方向，一般高级语言、面向通用 CPU 平台的编译器涉及的内容大致可以分为以下几个部分：
 
-- 前端：指编译器读取我们文本文件的源代码，理解代码的结构和语义，生成 语法树（AST）
+- 前端：指编译器读取我们文本文件的源代码，理解代码的结构和语义，生成语法树（AST）
 - 中端：根据语法树生成中间表示（IR），做一些 target independent optimization
 - 后端：根据 IR 生成汇编，并做 target dependent optimization
 - 其他：相关的运行时（Runtime）和语言设计等
@@ -37,7 +37,7 @@ Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 
 ## 参考笔记
 友情感谢  xyx 学长
 
-- xyx 的语雀: https://www.yuque.com/xianyuxuan/coding/compiler
+- xyx 的语雀：<https://www.yuque.com/xianyuxuan/coding/compiler>
 
 ## 学习建议
 
@@ -53,12 +53,12 @@ Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 
 
 ## 相关课程与书籍推荐
 
-该部分仅面向认为课程内容过少，对编译领域感兴趣，想要深入学习相关技术的同学，只建议有余力的情况下学习:
+该部分仅面向认为课程内容过少，对编译领域感兴趣，想要深入学习相关技术的同学，只建议有余力的情况下学习：
 
 - [THU Rust](https://lab.cs.tsinghua.edu.cn/rust/)，清华大学 Rust 程序设计课程。
 - [CMU 15-745](https://www.cs.cmu.edu/afs/cs/academic/class/15745-s19/www/)，研究生课程，主要内容是使用 LLVM 编写优化 Pass，能够熟悉 LLVM 的架构，主要问题是近几年的 slides 和 materials 需要 CMU 教职工身份认证，没有资源的话可以看 19 年的。如果你有兴趣，可以提前在假期的时候先写一写，这样对付我们学校的大作业相对能比较从容。
 - [LLVM 笔记](https://www.cnblogs.com/Five100Miles/)，LLVM 一些核心概念和重要源码的解读，熟悉 C++ 的同学初学 LLVM 可以先看这个。
 - [Static Program Analysis - DC888](https://homepages.dcc.ufmg.br/~fernando/classes/dcc888/)，经典的面向编译器分析和编译优化的课程
-- 中科大的编译原理课程，大作业是从中端和后端的几个 topic 中选一查阅资料加代码实现，似乎有给框架，涉及 SSA, Phi, RA, Optimize, Lowering 等话题，内容丰富，可参考他们的 [大作业展示](https://space.bilibili.com/273391839)。
-- 北京大学熊老师的 [程序分析课程](https://xiongyingfei.github.io/SA/2022/main.htm)
+- 中科大的编译原理课程，大作业是从中端和后端的几个 topic 中选一查阅资料加代码实现，似乎有给框架，涉及 SSA, Phi, RA, Optimize, Lowering 等话题，内容丰富，可参考他们的[大作业展示](https://space.bilibili.com/273391839)。
+- 北京大学熊老师的[程序分析课程](https://xiongyingfei.github.io/SA/2022/main.htm)
 - 相关延伸的和 AI 相关的如 [tvm](https://tvm.apache.org/)，需要有一定 HPC 经验。

@@ -23,7 +23,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_orient
 
     <del>不出意外的话后续几年图灵班 OOP 的预置老师还会是翁恺老师。</del>尽管翁恺老师在 21 级风评飞速下跌，大有晚节不保的情况，但作为永平奖获得者和在 OOP 课程组辛勤耕耘 20 余年的老师，翁恺老师授课毫无疑问还是最有水平的，也会做出很多课程外的知识拓展，因此不太推荐更换预置的翁恺老师。
 
-    翁恺老师的 OOP 应该稳定是 8 个实验，20 级是七个简单的 OJ lab 还有一个组队的大作业；21 级是 8 个 Project ，其中需要手批并且提交报告的三个 project 需要投入的时间较多；22 级是 6 个 lab 加 2 个 project，其中 lab 难度不高，考察基础知识点，project 则是由助教手改，需要对其要求与实现上点心。要注意的是 project 的实验要求并不一定完全在 pta 上给出，至少 22 级 project1 的一些更细致的评分与要求被上传到了学在浙大上。
+    翁恺老师的 OOP 应该稳定是 8 个实验，20 级是七个简单的 OJ lab 还有一个组队的大作业；21 级是 8 个 Project，其中需要手批并且提交报告的三个 project 需要投入的时间较多；22 级是 6 个 lab 加 2 个 project，其中 lab 难度不高，考察基础知识点，project 则是由助教手改，需要对其要求与实现上点心。要注意的是 project 的实验要求并不一定完全在 pta 上给出，至少 22 级 project1 的一些更细致的评分与要求被上传到了学在浙大上。
 
     与大二下诸多神仙课程比较，这门课难度不是特别大，但期末考试考纲不定，每个老师教的东西也不定，C++ 的相关规则本来就是很零散的知识点，复习起来也没有想象中那么容易。不过翁恺老师讲的很多比较难的都不在考察范围（上课基本只会讲到 C++98 标准，仅涉及少量 C++11 标准），极大减轻了负担。
 
@@ -64,7 +64,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_orient
     === "20 级"
         - quiz 5%
         - Homework 10%
-        - 七个 Labs（一次上机期中考试） 15%
+        - 七个 Labs（一次上机期中考试）15%
         - 一个大 Project 15% team work（2 人一组）
             - MUD 游戏
             - 日记本
@@ -208,7 +208,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_orient
     * 其他，如：《深入探索 C++14 (Discovering Modern C++)》《现代 C++ 语言核心特性解析》《C++20 高级编程》等
 
 * 可参考 [The Definitive C++ Book Guide and List](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)，Stack Overflow 上整理的书单。也可以逛逛 [Quora](https://www.quora.com/What-is-the-best-C-book-for-a-beginner)。
-* C++ 之父 Bjanre Stroustrup 的 [FAQ](https://www.stroustrup.com/bs_faq.html) 很有意思，值得一看！此外他还有 [C++ Style and Technique FAQ](https://www.stroustrup.com/bs_faq2.html) 。十分建议大大多逛逛 [BS 的主页](https://www.stroustrup.com)。
+* C++ 之父 Bjanre Stroustrup 的 [FAQ](https://www.stroustrup.com/bs_faq.html) 很有意思，值得一看！此外他还有 [C++ Style and Technique FAQ](https://www.stroustrup.com/bs_faq2.html)。十分建议大大多逛逛 [BS 的主页](https://www.stroustrup.com)。
 <!-- * 一些 C++ 书籍的**电子版资源**：https://www.aliyundrive.com/s/z5hLRAELpPP -->
 <!-- 这里资源已经远不止 C++ 了, 故在此删除 -->
 

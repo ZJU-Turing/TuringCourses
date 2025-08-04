@@ -83,7 +83,7 @@ LALU 开源仓库：[:material-github: yhwu-is/Linear-Algebra-Left-Undone](https
 ## 课程学习建议与推荐书目分级
 
 !!! warning "避坑提示"
-    请不要在自学的时候使用 ***同济大学《工程数学 线性代数》*** 作为参考书。
+    请不要在自学的时候使用***同济大学《工程数学·线性代数》***作为参考书。
 
 ### 第 0 级【考前如何突击，从几乎零开始】
 
@@ -96,7 +96,7 @@ LALU 开源仓库：[:material-github: yhwu-is/Linear-Algebra-Left-Undone](https
 
 如果想看网课，推荐 Gilbert Strang 的网课，他的视频有两个系列，一个是非常古老的，还有一个是 2020 version，后者不太完整。
 
-课外有兴趣可以看 3Blue1Brown 的系列视频[线性代数的本质](https://www.bilibili.com/video/BV1ys411472E)，可以建立起对线性代数有更直观的认识。（3Blue1Brown 的[微积分的本质](https://www.bilibili.com/video/BV1qW411N7FU) 系列也值得一看）
+课外有兴趣可以看 3Blue1Brown 的系列视频[线性代数的本质](https://www.bilibili.com/video/BV1ys411472E)，可以建立起对线性代数有更直观的认识。（3Blue1Brown 的[微积分的本质](https://www.bilibili.com/video/BV1qW411N7FU)系列也值得一看）
 
 #### 书籍推荐
 

@@ -119,7 +119,7 @@ xww 老师会发电子版，但期末考试开卷，买一本还是相当有必�
 ## 参考资源
 
 - [QJJ 的学期回顾](https://www.cc98.org/topic/5511167)（内有回忆卷，个人和部分学长的建议）
-- [QJJ 的资源 repo](https://github.com/HobbitQia/ZJU-Courses-Resources/tree/master/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90(NA)) （内有作业 1-13 反馈（由许威威老师在期末时公布）内有作业部分易错点的讲解；2022-2023 FALL 期末回忆卷；所有 PPT 整合在一起的pdf）
+- [QJJ 的资源 repo](https://github.com/HobbitQia/ZJU-Courses-Resources/tree/master/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%28NA%29)（内有作业 1-13 反馈（由许威威老师在期末时公布）内有作业部分易错点的讲解；2022-2023 FALL 期末回忆卷；所有 PPT 整合在一起的pdf）
 - [ZhouTimeMachine 的笔记](https://zhoutimemachine.github.io/note/courses/numerical/analysis/)
 
 

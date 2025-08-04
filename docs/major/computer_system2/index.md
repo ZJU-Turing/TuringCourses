@@ -56,7 +56,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_syst
 - xg 的系统 Ⅱ 笔记：https://note.tonycrane.cc/cs/system/cs2/  
     这回所有内容基本上都记了，可以参考
 - shrike505 的系统 Ⅱ 笔记：https://nest.shrike505.cc/notes/ComputerScience/ComputerSystem2/  
-    考虑到这可能是大二上较为简单的主课（普通物理学.jpg），所以记得很详细:)
+    考虑到这可能是大二上较为简单的主课，所以记得很详细
 
 ## 历年卷
 
