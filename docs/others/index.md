@@ -21,6 +21,7 @@
     |[随机过程](stochastic_process/index.md)|3.0|三（春夏）|较完善✅|
     |[点集拓扑](point_set_topology/index.md)|2.0|一（春夏）|仅介绍|
     |[信息理论](information_theory/index.md)|2.0|二（春夏）|仅介绍|
+    |[实分析](real_analysis/index.md)|3.0|三（春夏）|较完善✅|
     
     </div>
 
