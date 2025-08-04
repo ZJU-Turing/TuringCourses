@@ -28,8 +28,10 @@
 
 ### 推荐书单
 
-<!-- 补充推荐书单 -->
-- Thomas, M. T. C. A. J., & Joy, A. T. (2006). *Elements of information theory. Wiley-Interscience*. 很厚一本，虽然是非常经典的书，但并不推荐初学者使用：此书过于啰嗦，容易让初学者抓不到重点。可以把它当作参考书或工具书。
-- 对于希望自学信息论的同学, 个人推荐 Alajaji, F., & Chen, P. N. (2018). *An introduction to single-user information theory*. Singapore: Springer. 一书, 有配套课程: 台湾交通大学陈伯宁老师的 《[消息理論](https://ocw.nycu.edu.tw/?course_page=all-course%2Fcollege-of-electrical-and-computer-engineering%2F%E6%B6%88%E6%81%AF%E7%90%86%E8%AB%96-information-theory-107%E5%AD%B8%E5%B9%B4%E5%BA%A6-%E9%9B%BB%E6%A9%9F%E5%B7%A5%E7%A8%8B%E5%AD%B8%E7%B3%BB-%E9%99%B3%E4%BC%AF%E5%AF%A7%E8%80%81%E5%B8%AB)》: [YouTube](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsWS54o6gNWeDGXeI7c3eUd) | [B 站](https://www.bilibili.com/video/BV14N41197bN), 该课程理论扎实、深入浅出, 学之体验不错。
+- Thomas, M. T. C. A. J., & Joy, A. T. (2006). *Elements of information theory. Wiley-Interscience*.
 
+    很厚一本，虽然是非常经典的书，但并不推荐初学者使用，此书过于啰嗦，容易让初学者抓不到重点。可以把它当作参考书或工具书。
 
+- Alajaji, F., & Chen, P. N. (2018). *An introduction to single-user information theory*. Singapore: Springer.
+
+    对于希望自学信息论的同学，个人推荐这本。有配套课程：台湾交通大学陈伯宁老师的《[消息理論](https://ocw.nycu.edu.tw/?course_page=all-course%2Fcollege-of-electrical-and-computer-engineering%2F%E6%B6%88%E6%81%AF%E7%90%86%E8%AB%96-information-theory-107%E5%AD%B8%E5%B9%B4%E5%BA%A6-%E9%9B%BB%E6%A9%9F%E5%B7%A5%E7%A8%8B%E5%AD%B8%E7%B3%BB-%E9%99%B3%E4%BC%AF%E5%AF%A7%E8%80%81%E5%B8%AB)》：[YouTube](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsWS54o6gNWeDGXeI7c3eUd) | [B 站](https://www.bilibili.com/video/BV14N41197bN)，该课程理论扎实、深入浅出，学之体验不错。

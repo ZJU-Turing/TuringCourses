@@ -97,12 +97,12 @@ nav:
     - 随机过程: others/stochastic_process/index.md
     - 点集拓扑: others/point_set_topology/index.md
     - 信息理论: others/information_theory/index.md
+    - 实分析: others/real_analysis/index.md
     - 经济学类课程集: others/economics/index.md
     - 金融学类课程集: others/finance/index.md
     - B/S 体系软件设计: others/browser_server_software/index.md
     - 电子工程训练: others/electronic_engineering_training/index.md
     - 心理学导论: others/introduction_to_psychology/index.md
-    - 实分析: others/real_analysis/index.md
   - 书评专区:
     - readings/index.md
 
