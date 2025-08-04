@@ -205,7 +205,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_orient
 
         深入了解模板<del>的奇技淫巧</del>。
 
-    * 其他，如：《深入探索 C++14（Discovering Modern C++)》《现代 C++ 语言核心特性解析》《C++20 高级编程》等
+    * 其他，如：《深入探索 C++14 (Discovering Modern C++)》《现代 C++ 语言核心特性解析》《C++20 高级编程》等
 
 * 可参考 [The Definitive C++ Book Guide and List](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)，Stack Overflow 上整理的书单。也可以逛逛 [Quora](https://www.quora.com/What-is-the-best-C-book-for-a-beginner)。
 * C++ 之父 Bjanre Stroustrup 的 [FAQ](https://www.stroustrup.com/bs_faq.html) 很有意思，值得一看！此外他还有 [C++ Style and Technique FAQ](https://www.stroustrup.com/bs_faq2.html) 。十分建议大大多逛逛 [BS 的主页](https://www.stroustrup.com)。

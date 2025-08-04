@@ -5,7 +5,7 @@
 
 ## 课程学习内容
 
-**计算机系统概论**（*Introducion to Computing Systems*, 以下简称 **ICS** 或者**计概**）从计算机最底层的逻辑门一直到各种数字逻辑结构，再到冯·诺伊曼架构、LC-3 汇编语言，最后到高级语言 C。
+**计算机系统概论**（*Introducion to Computing Systems*，以下简称 **ICS** 或者**计概**）从计算机最底层的逻辑门一直到各种数字逻辑结构，再到冯·诺伊曼架构、LC-3 汇编语言，最后到高级语言 C。
 
 课程以 LC-3 这种精简的汇编语言为载体，覆盖了我们后续课程 **数字逻辑设计/计算机逻辑设计基础+计算机组成/计算机组成与设计** 的主体内容。
 
@@ -53,12 +53,12 @@ Patt 教授及其学生执笔的教材。上课基本按照教材内容，作业
 Homework(20%) + Lab(40%) + Final(40%)
 
 * Homework 均为教材习题，网上有答案，由助教批改。去年为了控制平时分，作业批改较严。
-* Lab: lab1(5%) + lab2(5%) + lab3(7%) + lab4(7%) + lab5(8%) + lab6(8%), 实验内容见课程学习内容部分。
+* Lab: lab1(5%) + lab2(5%) + lab3(7%) + lab4(7%) + lab5(8%) + lab6(8%)，实验内容见课程学习内容部分。
     * 其中前五个实验需要验收，第六个实验可以在整个暑假时间内完成，开学前截止且不用验收。实验均需要实验报告。
     * 每个实验都有查重，查到了会扣掉该次实验所有分数并扣除 10% 的总评。
-    * 第一次没验收成功则验收最高得分 90, 超过验收期限也会有 penalty. 
+    * 第一次没验收成功则验收最高得分 90，超过验收期限也会有 penalty. 
     * 2022 年实验的要求可见[仓库](https://github.com/HobbitQia/ZJU-Courses-Resources/tree/master/ICS)，2023 年实验要求可见[仓库](https://github.com/Frankoxer/ZJU-ICS-2023-Labs)
-* Final 是纸质统一考试，没有 cheating sheet, 一般是开学第一周周五（是的，隔了一个暑假）有斩杀线（据说是 50）
+* Final 是纸质统一考试，没有 cheating sheet，一般是开学第一周周五（是的，隔了一个暑假）有斩杀线（据说是 50）
 
 ## 学习建议
 
@@ -76,7 +76,7 @@ Homework(20%) + Lab(40%) + Final(40%)
 这里贴出其他学校比较有名的 ICS 课程及其资源：
 
 * [CMU 15-213](http://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/schedule.html)  
-教材是计算机界的“圣经” [CSAPP](http://csapp.cs.cmu.edu/3e/home.html), 即 *Computer Systems: A Programmer's Perspective*
+教材是计算机界的“圣经” [CSAPP](http://csapp.cs.cmu.edu/3e/home.html)，即 *Computer Systems: A Programmer's Perspective*
 * [南京大学 ICS 课程实验 - PA](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/)
 
 上述资源的难度、深度、广度均远大于计概，仅供各位参考。

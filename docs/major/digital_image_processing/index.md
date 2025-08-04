@@ -39,7 +39,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/digital_im
 无
 
 ## 推荐书单
--  *Digital Image Processing Using MATLAB*, Gonzalez. 此书最新有第 4 版, 增加了神经网络等内容。但就课程内容仅用第 3 版也足够。
+-  *Digital Image Processing Using MATLAB*, Gonzalez. 此书最新有第 4 版，增加了神经网络等内容。但就课程内容仅用第 3 版也足够。
 - *《数字图像处理编程入门》*，吕凤军
 
 ## 分数构成

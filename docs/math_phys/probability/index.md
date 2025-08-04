@@ -66,18 +66,18 @@ abbrs:
 
 * ***《概率论基础》 李贤平***（中国经典的概率论教材，显然浙大这本教材在很多地方参考了这本书）
 * ***Introduction to Poabability. Dimitri P.Bertsekas \& John N. Tsitsiklis*** MIT 概率论入门课程基础上便携的教材.
-* 以下为高等概率论（真正的概率论）相关教材, 很多内容需要对测度论和实变函数论的深入理解才能完全理解其数学内涵，毕竟，概率就是一种测度嘛。
-    * ***《概率》 施利亚耶夫*** 作者是前苏联著名数学家、院士, 柯尔莫哥洛夫的学生。本书分为两卷, 仅第一卷第一章为初等概率论, 其后则引入了测度。
+* 以下为高等概率论（真正的概率论）相关教材，很多内容需要对测度论和实变函数论的深入理解才能完全理解其数学内涵，毕竟，概率就是一种测度嘛。
+    * ***《概率》 施利亚耶夫*** 作者是前苏联著名数学家、院士，柯尔莫哥洛夫的学生。本书分为两卷，仅第一卷第一章为初等概率论，其后则引入了测度。
     * ***A Course in Probability Theory. Kai Lai Chung***
-    钟开莱大师的书, 丰富严谨。
+    钟开莱大师的书，丰富严谨。
     * ***Foundations of Modern Probability. Olav Kallenberg*** 比施利亚耶夫更可口的教材，但是测度论需求很高，如果没有一定了解第一章大概就已经死了吧（瘫）
     * ***Probability Theory: A Comprehensive Course. Achin Klenke*** 虽然是 UTM 但确实面向研究生，介绍了一部分随机过程的内容。但是这本书对测度论的介绍更加全面，属于那种，可以一看，但可能直到学期结束还没能看完的书。
     * ***Probability Theory. M. Loève*** 两卷，很厚，是 GTM。这本书和施利亚耶夫有点像，但是更加强调测度的观点。
-    * ***Real Analysis and Probability. R.M. Dudley***, 以及 ***Probability: Throey and Examples. R. Durrett***, 两本经典的基于测度的概率论教材, 不可不提。
-    * ***Measure Theory, Probability, and Stochastic Processes. Jean-François Le Gall***, 一本新书, 是作者在巴黎高师讲义的整理, 写作很好, 从基本的实分析和测度论讲起, 到概率论, 再到鞅论和布朗运动。
-    * UT Austin 数院教授 Gordan Žitković 的[授课资料](https://web.ma.utexas.edu/users/gordanz/lecture_notes_page.html), 内容包括高等概率论、随机过程、数理统计等等。
-    * ***《伊藤清概率论》 伊藤清***, "随机分析之父"、概率大师伊藤清的著作, 仅有百余页, 就用测度论将概率论梳理了一遍。此书预设了读者有足够的实变基础。
-    * 为了让同学们更好地食用, 这里简单推荐一些测度论教材:
-        - ***《概率论与测度论基础》程士宏***, 一本短小精悍、简明扼要的教材, 但有些干, 引入概念稍有生硬。B 站有[视频讲解](https://www.bilibili.com/video/BV1pw411Z7Ds)。
-        - ***Measure Theory. Paul R. Halmos***, 极其经典的教材, 作者 Paul Halmos 是鞅论创始人 Joseph Doob 的学生, 亦是一位杰出的数学家。可以主要侧重看此书 1-6 章 + 第 9 章。唯一算是缺点的是此书成书较早, 符号较为古老。
-        - ***An Introduction to Measure Theory. Terence Tao.*** 陶哲轩写的教材, 特点就是清晰易懂、十分细致。其主页上有[电子版](https://www.stat.rice.edu/~dobelman/courses/texts/qualify/Measure.Theory.Tao.pdf)。
+    * ***Real Analysis and Probability. R.M. Dudley***，以及 ***Probability: Theory and Examples. R. Durrett***，两本经典的基于测度的概率论教材，不可不提。
+    * ***Measure Theory, Probability, and Stochastic Processes. Jean-François Le Gall***，一本新书，是作者在巴黎高师讲义的整理，写作很好，从基本的实分析和测度论讲起，到概率论，再到鞅论和布朗运动。
+    * UT Austin 数院教授 Gordan Žitković 的[授课资料](https://web.ma.utexas.edu/users/gordanz/lecture_notes_page.html)，内容包括高等概率论、随机过程、数理统计等等。
+    * ***《伊藤清概率论》 伊藤清***，"随机分析之父"、概率大师伊藤清的著作，仅有百余页，就用测度论将概率论梳理了一遍。此书预设了读者有足够的实变基础。
+    * 为了让同学们更好地食用，这里简单推荐一些测度论教材:
+        - ***《概率论与测度论基础》程士宏***，一本短小精悍、简明扼要的教材，但有些干，引入概念稍有生硬。B 站有[视频讲解](https://www.bilibili.com/video/BV1pw411Z7Ds)。
+        - ***Measure Theory. Paul R. Halmos***，极其经典的教材，作者 Paul Halmos 是鞅论创始人 Joseph Doob 的学生，亦是一位杰出的数学家。可以主要侧重看此书 1-6 章 + 第 9 章。唯一算是缺点的是此书成书较早，符号较为古老。
+        - ***An Introduction to Measure Theory. Terence Tao.*** 陶哲轩写的教材，特点就是清晰易懂、十分细致。其主页上有[电子版](https://www.stat.rice.edu/~dobelman/courses/texts/qualify/Measure.Theory.Tao.pdf)。

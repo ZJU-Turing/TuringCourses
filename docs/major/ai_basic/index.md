@@ -39,8 +39,8 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/ai_basic/
         - 搜索算法的时空复杂度、完备性、最优性
         - 搜索算法的启发函数、评价函数
         - 贪婪搜索，A*搜索，可容性、一致性
-        - minmax对抗、$\alpha-\belta$剪枝
-        - 蒙特卡洛树搜索、$\epsilon$贪心，UCB1，上限置信区间算法
+        - minmax对抗、$\alpha-\beta$ 剪枝
+        - 蒙特卡洛树搜索、$\epsilon$ 贪心，UCB1，上限置信区间算法
     4. 机器学习
         - 有监督、无监督学习的区别
         - 3个集的区别：训练集、验证集、测试集

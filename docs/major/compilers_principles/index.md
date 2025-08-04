@@ -32,7 +32,7 @@ Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 
 - *Engineering a Compiler (2nd/3rd ed.)*, Cooper, Keith D., Torczon, Linda（俗称“橡书”）
 - *Advanced Compiler Design and Implementation*, Steven S.Muchnick（俗称“鲸书”）
 - *Optimizing Compilers for Modern Architectures*, Allen
-- *Parsing Techniques: A Practical Guide*， Grune, Jacobs
+- *Parsing Techniques: A Practical Guide*, Grune, Jacobs
 
 ## 参考笔记
 友情感谢  xyx 学长

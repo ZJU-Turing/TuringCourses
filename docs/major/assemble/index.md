@@ -40,10 +40,10 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 - *The Art of 64-bit Assembly*, Randall Hyde
 - *Assembly Language for x86 processors*, Kip R. Irvine（一本内容丰富的汇编书籍，电子工业出版社的黑皮系列里有。目前最新版是第 8 版）
 - *Modern x86 Assembly Language Programming*, Daniel Kusswurm（少数能称得上 Modern 的汇编书）
-- *Beginning X64 Assembly Programming*, Jo Van Hoey（不错的入门书, 64 位）
+- *Beginning X64 Assembly Programming*, Jo Van Hoey（不错的入门书，64 位）
 - *Assembly Language for Intel-Based Computers*, Kip Irvine（32 位）
 - *Practical Malware Analysis*, Michael Sikorski,  Andrew Honig（二进制分析，病毒分析，逆向工程，侧重实战）
-- [*Intel 80386 Programmer’s Manual*](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm), 以及 *[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)* 
+- [*Intel 80386 Programmer’s Manual*](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm)，以及 *[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)* 
 - *[Microsoft Macro Assembler reference](https://learn.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference?view=msvc-170)*
 
 还有一些可以看的网课：

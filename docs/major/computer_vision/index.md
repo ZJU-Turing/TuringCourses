@@ -32,12 +32,12 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_v
 
 整体课程以课程讲义为主，没有指定教材，相关的原理可以查询维基或者 OpenCV 等库的说明。不过潘老师课件中有给出一些关于 OpenCV 的书籍，如：
 
-- *Learning OpenCV：Computer Vision with the OpenCVLibrary*, Gary Bradski, Adrian Kaebler (此书使用的 OpenCV 2.0 版本过于老旧, 不建议阅读)
-- 《OpenCV教程—基础篇》，刘瑞祯、于仕琪 (这本比上一本还老 :-)
+- *Learning OpenCV：Computer Vision with the OpenCVLibrary*, Gary Bradski, Adrian Kaebler（此书使用的 OpenCV 2.0 版本过于老旧，不建议阅读）
+- 《OpenCV教程—基础篇》，刘瑞祯、于仕琪（这本比上一本还老）
 
 建议直接参考 OpenCV 的 [Documents](https://docs.opencv.org/4.x/d1/dfb/intro.html)。
 
-相比其它参考书, 笔者比较推荐 ***Robot Vision .Berthold K.P. Horn*** (中文名《机器视觉》) , 十分经典的一本教材, 侧重数学理论, 与本课程内容更加接近。
+相比其它参考书，笔者比较推荐 ***Robot Vision .Berthold K.P. Horn***（中文名《机器视觉》），十分经典的一本教材，侧重数学理论，与本课程内容更加接近。
 
 ## 分数构成
 
