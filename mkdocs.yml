@@ -146,12 +146,15 @@ hooks:
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback
+  - https://unpkg.com/katex@0/dist/katex.min.css
   - css/tasklist.css
   - css/card.css
   - css/custom.css
 
 extra_javascript:
   - js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 markdown_extensions:
   - toc:
