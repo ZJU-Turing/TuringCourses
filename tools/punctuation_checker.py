@@ -9,6 +9,17 @@ S = "`~!@#\\$%\\^&\\*\\(\\)-_=\\+\\[\\]{}\\\\\\|;:'\",<.>\\/\\?"
 EN_BD = ",.;:?!"
 BD = r"。．，、：；！‼？⁇·・‧「『（《〈【〖〔［｛」』）》〉】〗〕］｝"
 
+RULES = [
+    ("WARNING", "出现制表符", r"\t"),
+    ("ERROR", "中文字符间出现空格", rf"[{CJK}] +[{CJK}]"),
+    ("ERROR", "中英字符后接标点间出现空格", rf"[{A}{N}{CJK}] +[{EN_BD}{BD}]"),
+    ("ERROR", "中文字符后接英文标点", rf"[{CJK}][{EN_BD}]"),
+    ("ERROR", "英文标点后接中文字符", rf"[{EN_BD}][{CJK}]"),
+    ("ERROR", "中文标点后接空格", rf"[{BD}] "),
+]
+
+EXCLUDE = ["./docs/major/introduction_to_data_visualization/数据可视化导论小测.md"]
+
 
 class ResultLogger:
     def __init__(self, github_url: str = "", github_ref: str = ""):
@@ -16,19 +27,19 @@ class ResultLogger:
         self.github_ref = github_ref
         self.results = []
 
+    def log(self, level: str, message: str, path: str, line_no: int):
+        self.results.append((level, message, path, line_no + 1))
+
     def info(self, message: str, path: str, line_no: int):
-        self.results.append(("INFO", message, path, line_no + 1))
+        self.log("INFO", message, path, line_no)
 
     def warn(self, message: str, path: str, line_no: int):
-        self.results.append(("WARNING", message, path, line_no + 1))
+        self.log("WARNING", message, path, line_no)
 
     def error(self, message: str, path: str, line_no: int):
-        self.results.append(("ERROR", message, path, line_no + 1))
+        self.log("ERROR", message, path, line_no)
 
     def export_result_ci(self):
-        assert self.github_url and self.github_ref, (
-            "GitHub URL and ref must be provided for CI export."
-        )
         with open("results.txt", "w", encoding="utf-8") as f:
             if self.results:
                 f.write("标点符号使用情况检查结果（可能存在误判，请人工甄别）：\n\n")
@@ -130,42 +141,25 @@ class PunctuationChecker:
                 in_comment = False
                 line = line.split("-->")[-1]
 
-            if "\t" in line:
-                self.logger.warn("出现制表符", self.path, idx)
-            if re.findall(rf"[{CJK}] +[{CJK}]", line):
-                self.logger.error("中文字符间出现空格", self.path, idx)
-            if re.findall(rf"[{A}{N}{CJK}] +[{EN_BD}{BD}]", line):
-                self.logger.error("中英字符后接标点间出现空格", self.path, idx)
-            if re.findall(rf"[{CJK}][{EN_BD}]", line):
-                self.logger.error("中文字符后接英文标点", self.path, idx)
-            if re.findall(rf"[{EN_BD}][{CJK}]", line):
-                self.logger.error("英文标点后接中文字符", self.path, idx)
-            if re.findall(rf"[{BD}] ", line.strip()):
-                self.logger.error("中文标点后接空格", self.path, idx)
+            for level, msg, pattern in RULES:
+                if re.search(pattern, line.strip(" ")):
+                    self.logger.log(level, msg, self.path, idx)
+
             self.check_parentheses(line, idx)
 
 
 if __name__ == "__main__":
-    exclude = ["./docs/major/introduction_to_data_visualization/数据可视化导论小测.md"]
-    if len(sys.argv) == 4:
-        files = sys.argv[1].split()
-        github_url = sys.argv[2].replace(".git", "")
-        github_ref = sys.argv[3]
-    elif len(sys.argv) == 2:
-        files = sys.argv[1].split()
-        github_url, github_ref = "", ""
-    else:
-        files = []
-        github_url, github_ref = "", ""
+    github_url = os.getenv("GITHUB_URL", "").replace(".git", "")
+    github_ref = os.getenv("GITHUB_REF", "")
     logger = ResultLogger(github_url, github_ref)
-
-    if files:
+    if len(sys.argv) == 2:
+        files = sys.argv[1].split()
         for file_path in files:
             if not os.path.exists(file_path):
                 logger.info("文件已被删除", file_path, 0)
                 continue
             PunctuationChecker(file_path, logger)
-        if os.getenv("CI", "0") == "1":
+        if github_url and github_ref:
             logger.export_result_ci()
         else:
             logger.export_result_console()
@@ -174,7 +168,7 @@ if __name__ == "__main__":
             for file in files:
                 if file.endswith(".md"):
                     file_path = os.path.join(root, file)
-                    if file_path in exclude:
+                    if file_path in EXCLUDE:
                         continue
                     PunctuationChecker(file_path, logger)
         logger.export_result_rich()

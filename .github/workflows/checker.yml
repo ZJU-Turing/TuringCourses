@@ -36,13 +36,11 @@ jobs:
         if: steps.changed-files.outputs.any_changed == 'true'
         id: punctuation-check
         env:
-          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-          CI: 1
+          GITHUB_URL: ${{ github.event.pull_request.head.repo.clone_url }}
+          GITHUB_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           python tools/punctuation_checker.py \
-                 "${{ env.CHANGED_FILES }}" \
-                 "${{ github.event.pull_request.head.repo.clone_url }}" \
-                 "${{ github.event.pull_request.head.ref }}"
+                 "${{ steps.changed-files.outputs.all_changed_files }}"
       - name: Comment PR
         if: steps.changed-files.outputs.any_changed == 'true'
         uses: thollander/actions-comment-pull-request@v3
