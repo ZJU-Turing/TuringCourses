@@ -1,0 +1,49 @@
+name: Check Punctuation
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency: ci-${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  check-punctuation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v46
+        with:
+          files: |
+            **/*.md
+      - name: Check punctuation
+        if: steps.changed-files.outputs.any_changed == 'true'
+        id: punctuation-check
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          CI: 1
+        run: |
+          python tools/punctuation_checker.py \
+                 "${{ env.CHANGED_FILES }}" \
+                 "${{ github.event.pull_request.head.repo.clone_url }}" \
+                 "${{ github.event.pull_request.head.ref }}"
+      - name: Comment PR
+        if: steps.changed-files.outputs.any_changed == 'true'
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          file-path: results.txt
+          comment-tag: punctuation-check
