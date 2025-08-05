@@ -12,8 +12,20 @@ logger = logging.getLogger("mkdocs.hooks.outdate")
 
 # settings
 month = 12
-exclude = ['index.md', 'template.md', 'changelog.md', 'contributing.md', 'general/index.md',
-           'short_term/index.md', 'political/index.md', 'others/index.md', 'math_phys/index.md', 'readings/index.md', 'major/mandatory/index.md', 'major/elective/index.md']
+exclude = [
+    "index.md",
+    "template.md",
+    "changelog.md",
+    "contributing.md",
+    "general/index.md",
+    "short_term/index.md",
+    "political/index.md",
+    "others/index.md",
+    "math_phys/index.md",
+    "readings/index.md",
+    "major/mandatory/index.md",
+    "major/elective/index.md",
+]
 exclude_todo = True
 
 CSS_INJECTION = """
@@ -48,6 +60,7 @@ else:
 
 repo = Repo(".")
 
+
 def on_page_markdown(
     markdown: str, page: Page, config: config_options.Config, files, **kwargs
 ) -> str:
@@ -59,14 +72,20 @@ def on_page_markdown(
     if exclude_todo:
         if "#TODO" in markdown:
             return markdown
-        
+
     file_path = page.file.abs_src_path
     if "general" in page.file.src_uri:
         file_path = "docs/general/data.csv"
     page_timestamp = _get_latest_commit_timestamp(file_path)
     diff_month = month
 
-    return "!!! warning \"%s\"\n\n\n%s\n%s%s" % (page_timestamp, markdown, CSS_INJECTION, JS_INJECTION % diff_month)
+    return '!!! warning "%s"\n\n\n%s\n%s%s' % (
+        page_timestamp,
+        markdown,
+        CSS_INJECTION,
+        JS_INJECTION % diff_month,
+    )
+
 
 def _get_latest_commit_timestamp(path: str) -> int:
     realpath = os.path.realpath(path)

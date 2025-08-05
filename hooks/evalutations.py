@@ -24,16 +24,17 @@ with open("docs/general/data.csv", "r", encoding="UTF-8") as f:
     csv_reader = csv.DictReader(f)
     all_items = list(csv_reader)
     all_items.sort(key=lambda x: int(x["年级"]), reverse=True)
-    
+
+
 def on_page_markdown(
     markdown: str, page: Page, config: config_options.Config, files, **kwargs
 ) -> str:
     if not enabled or not page.meta.get("evaluations"):
         return markdown
     return markdown.replace(
-        "{{ evaluations }}",
-        _get_page_markdown(page.meta.get("evaluations").strip())
+        "{{ evaluations }}", _get_page_markdown(page.meta.get("evaluations").strip())
     )
+
 
 def _get_page_markdown(class_name: str) -> str:
     markdown = ""
@@ -56,16 +57,19 @@ def _get_page_markdown(class_name: str) -> str:
                 markdown += f"### {course}\n\n"
             for grade in list(grades_set)[::-1]:
                 markdown += f'=== "{grade} 级"\n'
-                grade_items = list(filter(lambda x: int(x["年级"]) == grade, course_items))
+                grade_items = list(
+                    filter(lambda x: int(x["年级"]) == grade, course_items)
+                )
                 for item in grade_items:
                     formated = template.format(
                         score=item["评分"],
                         name=item["姓名"] if item["姓名"].strip() else "匿名",
-                        content=_indent(item["评价"])
+                        content=_indent(item["评价"]),
                     )
                     markdown += _indent(formated) + "\n"
             markdown += "\n"
     return markdown
+
 
 def _indent(text: str, amount: int = 4) -> str:
     return "\n".join(" " * amount + line for line in text.splitlines())

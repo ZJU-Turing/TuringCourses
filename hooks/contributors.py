@@ -68,6 +68,7 @@ else:
 
 repo = Repo(".")
 
+
 def on_page_markdown(
     markdown: str, page: Page, config: config_options.Config, files, **kwargs
 ) -> str:
@@ -85,9 +86,9 @@ def on_page_markdown(
     contributors = _get_contributors(src_path, old_path)
 
     return markdown + TEMPLATE.format(
-        last_updated=last_updated,
-        contributors=contributors
+        last_updated=last_updated, contributors=contributors
     )
+
 
 def _get_last_updated(path: str) -> str:
     if "general" in path and not path.endswith("index.md"):
@@ -95,6 +96,7 @@ def _get_last_updated(path: str) -> str:
     for commit in repo.iter_commits(paths=path):
         return commit.committed_datetime.strftime("%Y-%m-%d")
     return "1970-01-01"
+
 
 def _get_contributors(path: str, old_path: str | None) -> str:
     contributors = _fetch_contributors_from_github(path, old_path)
@@ -106,14 +108,18 @@ def _get_contributors(path: str, old_path: str | None) -> str:
     raw = Template(CONTRIBUTORS_TEMPLATE).render(contributors=contributors)
     return re.sub(r"(\n| {2,})", "", raw).strip()
 
+
 def _fetch_contributors_from_github(path: str, old_path: str | None) -> list:
     contributors = []
     if old_path is not None:
         fetch_url = f"https://github.com/ZJU-Turing/TuringCourses/contributors-list/v1.0.0/{old_path}"
         contributors.extend(_fetch_contributors_from_url(fetch_url))
-    fetch_url = f"https://github.com/ZJU-Turing/TuringCourses/contributors-list/master/{path}"
+    fetch_url = (
+        f"https://github.com/ZJU-Turing/TuringCourses/contributors-list/master/{path}"
+    )
     contributors.extend(_fetch_contributors_from_url(fetch_url))
     return _distinct(contributors)
+
 
 def _fetch_contributors_from_url(fetch_url: str) -> list:
     contributors = []
@@ -127,17 +133,18 @@ def _fetch_contributors_from_url(fetch_url: str) -> list:
     else:
         content = res.text
         re_results = re.findall(
-            r"<a.*?href=\"/(?P<id>.*?)\".*?src=\"(?P<avatar>.*?)\"",
-            content,
-            re.DOTALL
+            r"<a.*?href=\"/(?P<id>.*?)\".*?src=\"(?P<avatar>.*?)\"", content, re.DOTALL
         )
         for result in re_results:
-            contributors.append({
-                "id": result[0],
-                "avatar": result[1].split("?")[0],
-                "url": f"https://github.com/{result[0]}"
-            })
+            contributors.append(
+                {
+                    "id": result[0],
+                    "avatar": result[1].split("?")[0],
+                    "url": f"https://github.com/{result[0]}",
+                }
+            )
     return contributors
+
 
 def _distinct(contributors: list) -> list:
     ret = []
