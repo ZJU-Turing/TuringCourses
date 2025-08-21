@@ -7,6 +7,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/programming/
 # 程序设计与算法基础
 
 ## 课程学习内容
+
 这门课是仅面向图灵班的编程基础课，相当于非图灵班同学的 C 程序设计基础 + 程序设计专题。虽然涵盖了两门课程的内容，但是去掉了两门课程的不合理的地方。上课内容是一般的 C 语言基础 + 排序 + 链表，难度相对于普通教学班会有所提高。
 
 ## 任课教师
@@ -23,8 +24,8 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/programming/
 
     由于何钦铭老师没有补分集，所以想要拿到高分的话，平时的课内题目、作业和实验需要尽量少错（尤其是作业里的判断和选择）。
 
-
 ## 课程教材
+
 ***C 程序设计语言 (K&R)***
 
 按翁恺的话讲，这本书是最著名和经典的 C 语言教材，但现在已经过时了。建议把它作为英文阅读材料而不是编程教材书。因此笔者建议不订这本教材（雾）。
@@ -40,7 +41,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/programming/
         - **有补分集**，可补 3 分平时分（24 级无补分集）
     - 期末 40%：120 分钟，包括理论考试与实验考试
     - 所有的作业、实验、测验、考试都在 PTA 上进行，题目集分数归一化处理
-    
+
     23 级开始对于分数构成进行了调整，增加了期末占比，但还是只要作业认真做，并且没有被查重（程算查重并不严重）是很容易拿到满分的，历届总评平均分也都很高。
 
     24 级除了没有补分集之外与前几年差别不大。
@@ -55,14 +56,16 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/programming/
     - **没有补分集**
 
 ## 推荐书单
+
 - *C Primer Plus*, Stephen Prata
 - *C 和指针*（*Pointers on C*, Kenneth A. Reek）
 - *C 陷阱与缺陷*（*C Traps and Pitfalls*, Andrew Koenig）
 - *C 专家编程*（*Expert C Programming*, Peter van der Linden）
 
 ## 参考笔记
-- ZhouTimeMachine 整理的程算易错题：https://zhoutimemachine.github.io/note/courses/C-review/
-- xg 整理的 50 道程设常问、易错题：https://note.tonycrane.cc/cs/pl/c_cpp/#_6  
+
+- ZhouTimeMachine 整理的程算易错题：<https://zhoutimemachine.github.io/note/courses/C-review/>
+- xg 整理的 50 道程设常问、易错题：<https://note.tonycrane.cc/cs/pl/c_cpp/#_6>  
     虽然是非图灵的 C 小程，理论题目比程算要刁钻，这些问题仍然可以参考一下
 
 ## 学长组课程学习建议
@@ -74,20 +77,24 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/programming/
     不要靠近大部分中国人写的教材。不要使用任何 **谭浩强的 C 语言教材**，严重地误人子弟。
 
 ### 第 0 级【编程零基础小白】
+
 编程小白强烈建议课前把中国大学 MOOC 翁恺老师的“程序设计入门——C 语言”和“C 程序设计进阶”看一下，这两门课的视频也是老师课前预习给的资料。课后的作业自己独立完成，代码会查重，抄袭记零分，千万不要从 CSDN 这种网站直接复制粘贴代码，建议看懂他人代码后一定要自己理解重新敲，否则毁人一生。总之就是上课一定要理解（翁恺会讲一些小白可能完全无法理解的东西，但是你可以记住课后自己多了解），代码一定要多打。
 
 同时似乎从 21 级开始取消了 bonus（可以用来补平时分），因此平时作业和实验需要小心，课上也会有突击小测。但整体内容不难，如果有好好预习的话问题不大。期中考试和期末考试有相当一部分是作业和实验的原题，难度不算大，但基本上是英文题面，平时要注意专业名词的积累，不然考试的时候就两眼一抹黑了。
 
 #### 资料推荐
+
 - 推荐学习网站：**菜鸟教程**（百度搜索即可）
 - 推荐教材：***C Primer Plus, Stephen Prata***. 这本书比较厚，有精力的同学可以通读，读不完也可以作为参考书，补充上课所学
 
 ### 第 1 级【前信息竞赛选手】
+
 信息竞赛生，省一等奖选手可以免听本门课程，非省一选手可以在课上摸鱼（其实非省一选手发邮件给老师也是可以被接受的），当然翁恺还是会讲一些有意思的东西值得一听。课程的后期涉及到指针，并行计算，多文件编程等知识，信息竞赛用的比较少，听一听还是受益匪浅的。而且翁恺老师会潜移默化地给大家灌输优化程序的思维和工程的思维，对“深受竞赛毒害”的同学来说还是很有帮助的。
 
 以及信息竞赛目前使用的都是 C++ 语言，但本课程是 C，习惯了 C++ 的 OIer 一定要分清其二者的区别。
 
 #### 书籍推荐
+
 - ***The C Programming Language Ritchie & Kernighan***（也就是教材，经典原著）
 - ***C 和指针（Pointers on C, Kenneth A. Reek）***
 - ***C 陷阱与缺陷（C Traps and Pitfalls, Andrew Koenig）***
@@ -100,4 +107,5 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/programming/
 各位对自己实力有信息的竞赛生可以选择提前修读数据结构基础（培养方案中是应于大一春夏修读），其中内容大概包括时空复杂性、堆栈、队列、树、图、链表、排序。当然如果对自己实力不够自信也可以按照最正常的方案大一春夏学期再学，超前学习只是可以方便各位大一春夏学期空出时间选择其他有意思的课程。如果学到一半想放弃也可以期中弃修课程。
 
 ## 课外拓展
+
 身为图灵班的学生，如果你仔细研究了培养方案你会发现在整个大一几乎没有多少要与计算机打交道的课程（仅有程算、数据结构基础、系统 I / 计逻，以及选修的汇编语言）。而且据笔者了解，许多同学到大二大三对计算机的了解仍然仅限于课上所学，受制于各种原因，无论是理论知识还是实践能力远没有达到计算机学生应有的水平。笔者建议有空仔细阅读我们学长组所写的[如何让自己看上去、闻上去都像一个 CS 人](https://turing2022.tonycrane.cc/cser/)，学习[竺院辅学计划网站](https://ckc-agc.bowling233.top/)上的实用技能拾遗和系统知识拾遗，或者参考 [CS 自学指南](https://csdiy.wiki/)，尽早地走上正途。

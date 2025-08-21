@@ -48,7 +48,7 @@
 
 ## 参考笔记
 
-- shad0wash 的笔记：https://note.shad0wash.cc/math/NumberTheory/
+- shad0wash 的笔记：<https://note.shad0wash.cc/math/NumberTheory/>
 
 ## 课程学习建议
 

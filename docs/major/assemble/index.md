@@ -5,22 +5,26 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 # 汇编语言
 
 ## 课程学习内容
+
 汇编语言这门课的主要内容就是学习较为古老的 8086 汇编、80386 的一小部分 32 位指令以及一小部分的 80386 保护模式基础知识。
 
 !!! note "注意"
     除此之外还有一门课程叫 “汇编语言程序设计基础”（俗称长名汇编），是一门通识课，内容差不太多，但是作业和考试都要简单一些，只有短名的 “汇编语言” 是培养方案中写的 IS 专业必修、CS/AI 专业选修，选课时要注意一下。
 
 ## 任课教师
+
 浙江大学《汇编语言》课程数十年来只有一位老师：**白洪欢**。
 
 老师富有个性，上课硬核，擅长当黑客、逆向、密码学、拆东西。也是 AAA 战队的指导老师。白老师有自己的课程网站，会有学习汇编语言专用的虚拟机。虽然讲的内容很老，甚至可以说是过时的，但是小白老师也是少有的能将一门课讲清楚、讲透的老师。不过 22 年的汇编课可能由于考试有些难，普遍作业、考试完成的不够好，导致小白老师有些不满意，最后成绩普遍较低。
 
 ## 授课教材
+
 这门课的教材是小白老师自己写的书，不过不是通过教务网来预订的，而是在上几周课后会发通知来买这本书。是 A4 纸印刷、装订的一本“书”，涵盖了本门课程的全部知识点，上课没跟上的可以好好看看书。
 
 除此之外，每节课程小白老师都是通过 word 文档来讲授，这些文档都可以在他的主页 [cc.zju.edu.cn/bhh](http://cc.zju.edu.cn/bhh) 上找到。
 
 ## 分数构成
+
 四次作业（40%）+ 期末考试（60%）
 
 作业是用纯 8086 汇编来写程序，会逐次变难，最后一次相当于大作业，一般是写游戏（20 级推箱子，21 级走迷宫），不过后几次作业都会给对应的 C 语言源码，大概只需要翻译、调试。
@@ -28,6 +32,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 期末考试是纯笔试，有判断、填空、阅读程序、补全程序等类型的题目。考试偏理论，需要好好复习一下，特别是 21 年保护模式考了很多，不复习的话根本不知道怎么答。以及课上讲的指令一定都要清楚作用是什么，否则可能所有程序都读不懂（因为每个程序都比较综合）。
 
 ## 推荐书单
+
 - *《汇编语言》* 王爽，清华大学出版社（经典汇编课本，第一推荐）
 - *《x86 汇编语言 - 从实模式到保护模式》* 李忠，电子工业出版社（经典汇编课本）
 - *《琢石成器》*罗云斌，32 位汇编
@@ -43,14 +48,14 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 - *Beginning X64 Assembly Programming*, Jo Van Hoey（不错的入门书，64 位）
 - *Assembly Language for Intel-Based Computers*, Kip Irvine（32 位）
 - *Practical Malware Analysis*, Michael Sikorski,  Andrew Honig（二进制分析，病毒分析，逆向工程，侧重实战）
-- [*Intel 80386 Programmer’s Manual*](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm)，以及 *[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)* 
+- [*Intel 80386 Programmer’s Manual*](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm)，以及 *[Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)*
 - *[Microsoft Macro Assembler reference](https://learn.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference?view=msvc-170)*
 
 还有一些可以看的网课：
 
-+ 华中科技大学：[汇编语言程序设计](https://www.bilibili.com/video/BV1Nt411V7fa)
-+ 西安交通大学：[微机原理与接口技术](https://www.icourse163.org/course/xjtu-1001647001)（不全讲汇编，侧重硬件）
-+ 清华大学：[汇编语言程序设计](https://www.xuetangx.com/course/THU08091000320/14767518)（推荐）
+- 华中科技大学：[汇编语言程序设计](https://www.bilibili.com/video/BV1Nt411V7fa)
+- 西安交通大学：[微机原理与接口技术](https://www.icourse163.org/course/xjtu-1001647001)（不全讲汇编，侧重硬件）
+- 清华大学：[汇编语言程序设计](https://www.xuetangx.com/course/THU08091000320/14767518)（推荐）
 
 一些工具：
 
@@ -59,8 +64,9 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 - [x86 Processor Information](https://www.sandpile.org)
 
 ## 参考笔记
-- xg 的汇编笔记：https://note.tonycrane.cc/cs/pl/asm/
-- https://www.cc98.org/topic/5239637
+
+- xg 的汇编笔记：<https://note.tonycrane.cc/cs/pl/asm/>
+- <https://www.cc98.org/topic/5239637>
 
 ## 学长组课程学习建议
 
@@ -77,4 +83,4 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 
 对于实验环境，小白会给一个 xp 虚拟机，里面是带有需要的软件的，不过整体还是很臃肿的。vscode 上有一个 dosbox 插件，也是可以用的，这样就不用在虚拟机里 debug 了（最后还是要在虚拟机里跑一下的，以免在老师那里出错）。
 
-对于最后的考试，建议在考前好好看一看书，一些指令要记牢。考试内容是几个判断几个填空，程序填空和阅读程序填写结果。相信四次作业能完成的考试也不会差。只要理解了汇编语言、记住了指令，程序填空和阅读程序问题不大。判断填空会有一些基础的知识点，和一些保护模式的知识点，想要拿满的话要注意一下这些。复习/学习的时候可以参考一下 xg 的这篇笔记 https://note.tonycrane.cc/cs/pl/asm/，基本包含了这门课的所有知识点。
+对于最后的考试，建议在考前好好看一看书，一些指令要记牢。考试内容是几个判断几个填空，程序填空和阅读程序填写结果。相信四次作业能完成的考试也不会差。只要理解了汇编语言、记住了指令，程序填空和阅读程序问题不大。判断填空会有一些基础的知识点，和一些保护模式的知识点，想要拿满的话要注意一下这些。复习/学习的时候可以参考一下 xg 的这篇笔记 <https://note.tonycrane.cc/cs/pl/asm/>，基本包含了这门课的所有知识点。

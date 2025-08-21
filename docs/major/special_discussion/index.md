@@ -13,7 +13,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/special_di
 - 混合现实注册定位技术
 - 虚拟现实绘制技术
 - 虚拟现实听觉和力触觉计算技术
-- 虚拟/混合现实交互技术 
+- 虚拟/混合现实交互技术
 
 **以及在最后一节课会有每个人的研讨项目讲解与演示。**
 
@@ -45,7 +45,6 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/special_di
             2. 商用导向，基于开源标准化的 Apple ARKit/Google ARCore 等高度封装的 AR/VR 工具链，实现一个 VR/AR 应用，**其评判侧重点在于整个 App 的设计创意和思路**。
 
     22 级期中作业的时候，老师体谅大家期中时间紧张，deadline 向后拖延了一两周。最后一周的课程就直接用于展示，每位同学上台使用 PPT 介绍自己的项目思路和实现效果，并用程序/相关设备演示，最后提交 PPT 和代码即可。
-
 
 ## 学习建议
 

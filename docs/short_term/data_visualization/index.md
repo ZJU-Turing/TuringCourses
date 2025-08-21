@@ -1,4 +1,5 @@
 # 大数据可视化
+
 <div class="badges">
 <span class="badge cs-badge">大一短学期</span>
 <span class="badge cs-badge">课程综合实践 Ⅰ</span>
@@ -65,4 +66,3 @@
 - 前端开发框架：[Vue](https://cn.vuejs.org/guide/introduction.html)、[React](https://react.docschina.org/learn) 等
 - 前端数据可视化工具库：[Echarts](https://echarts.apache.org/handbook/zh/get-started/)、[D3.js](https://d3js.org/getting-started)、[Chart.js](https://www.chartjs.org/docs/latest/getting-started/)、[AntV](https://antv.antgroup.com/zh)、[Highcharts](https://www.highcharts.com.cn) 等
 - 前端组件库：[Element UI](https://element-plus.org/zh-CN/#/zh-CN)、[Material UI](https://mui.com/material-ui)、[Ant Design](https://ant.design/docs/react/introduce-cn)、[Tailwind CSS](https://www.tailwindcss.cn)、[Daisy UI](https://daisyui.com/) 等
-

@@ -66,7 +66,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/cyberspace_se
 
 ## 参考内容
 
-- xg 的课程报告（仅供参考）：https://note.tonycrane.cc/sec/vulns/log4j/
+- xg 的课程报告（仅供参考）：<https://note.tonycrane.cc/sec/vulns/log4j/>
 
 ## 课程学习建议
 

@@ -8,11 +8,11 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_g
 
 主要讲述计算机图形学解决的基本问题，基础原则和方法，基础编程技能，但是不包含具体的编程指导和图像信息处理工具的使用，主要讲述了
 
-+ Rasterization
-+ Transform, view and Hidden Surface Removal
-+ Color, Surface, Materials and Textures
-+ Rendering
-+ Research(in Graphics and Vision)
+- Rasterization
+- Transform, view and Hidden Surface Removal
+- Color, Surface, Materials and Textures
+- Rendering
+- Research(in Graphics and Vision)
 
 还会介绍 OpenGL 和可编程管线，但是提到的 OpenGL 的实现是比较老的版本，如果这里作业使用老版本那么在后面的任务中可能会遇到一些问题。
 
@@ -24,22 +24,22 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_g
 
 ## 课程教材
 
-+ Computer Graphics with OpenGL, Fourth Edition, D. Hearn, M. P. Baker（电子工业出版社）
-+ Fundamentals of Computer Graphics, Peter Shirley, Steve Marschner, AK Peters
-+ 计算机图形学——原理、方法及应用，潘云鹤，董金祥，陈德人，2003
-+ OpenGL Programming Guide, Fourth Edition, Addison-Wesley, 2003,（OpenGL 编程指南，人民邮电出版社）
-+ OpenGL Distilled, Paul Martz, Addison-Wesley, Addison-WesleyProfessional; 1ST edition（OpenGL2.0 精髓，人民邮电出版社）
-+ [The NeHetutorials](http://nehe.gamedev.net)
+- Computer Graphics with OpenGL, Fourth Edition, D. Hearn, M. P. Baker（电子工业出版社）
+- Fundamentals of Computer Graphics, Peter Shirley, Steve Marschner, AK Peters
+- 计算机图形学——原理、方法及应用，潘云鹤，董金祥，陈德人，2003
+- OpenGL Programming Guide, Fourth Edition, Addison-Wesley, 2003,（OpenGL 编程指南，人民邮电出版社）
+- OpenGL Distilled, Paul Martz, Addison-Wesley, Addison-WesleyProfessional; 1ST edition（OpenGL2.0 精髓，人民邮电出版社）
+- [The NeHetutorials](http://nehe.gamedev.net)
 
 ## 分数构成
 
-+ Assignment(30%)
+- Assignment(30%)
 
     课程一共有 9 次小的作业，分别是 opengl 绘制椭圆/绘制旗帜/书面作业1（简单变换）/solar system/书面作业2（简单原理解释）/大作业组队 + proposal/dream car/给太阳系添加光源/给太阳系添加纹理
 
     小作业的设计基本上都是为了最后的课程项目准备的，里面用到的基本方法也都要求在最后的课程项目中体现，这么来看设计还是相对合理的。你需要的是从头开始学习 OpenGL 并理解他的逻辑，课程没有包含这一部分的指导，你需要通过网上的资料自己进行学习。这一部分主要是学习框架需要花费比较多的时间精力。这一部分的给分只要完成了基本要求都是满分，但是需要注意 deadline，有每天减一半的 late penalty。
 
-+ Course Project(40%)
+- Course Project(40%)
 
     简单三维建模及真实感绘制（基础90分+高级15分）（以2-3人为一组实现，教师以给平均分的形式打分）。基本上是实现一个游戏，workload 并不小，在大三上众多专业课中也算是名列前茅。一方面要熟悉 OpenGL 的框架，另一方面也需要良好的 C++ 编程能力。
 
@@ -47,7 +47,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_g
 
     总而言之，这一部分的分数基本是是与你的投入成正比的，也是需要在最后一次课上进行展示的，你需要把你实现所有的酷炫的都展示给老师看。
 
-+ In-class Performance(30)
+- In-class Performance(30)
 
     课程会进行几次**不提前通知**的 Quiz，这是可能造成失分最多的地方。Quiz 可能与课程内容没有直接关系，允许携带一张 A4 作为 "Cheating" sheet。这一部分主要由于突击性而且题目也比较灵活，是可能造成失分的“重灾区”。当然吴鸿智老师在 24-25 秋冬降低了这一部分的比例(23%)，更多的加到了作业里。
 

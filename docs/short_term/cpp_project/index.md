@@ -4,6 +4,7 @@ abbrs:
 ---
 
 # C++ 项目管理及工程实践
+
 <div class="badges">
 <span class="badge is-badge">大二短学期</span>
 <span class="badge is-badge">课程综合实践 Ⅱ</span>

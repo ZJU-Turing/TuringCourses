@@ -1,10 +1,10 @@
 # 目录
-docs/political/index.md
-docs/math_phys/index.md
-docs/major/mandatory/index.md
-docs/major/elective/index.md
-docs/short_term/index.md
-docs/others/index.md
+# docs/political/index.md
+# docs/math_phys/index.md
+# docs/major/mandatory/index.md
+# docs/major/elective/index.md
+# docs/short_term/index.md
+# docs/others/index.md
 
 # 历年卷
 *.tex

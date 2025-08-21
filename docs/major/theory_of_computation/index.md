@@ -20,23 +20,23 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
     - **正则语言**的定义，正则语言和 FA 的等价性，互相转换的方法
     - 正则语言封闭运算，**泵定理** (pumping theorem)，如何证明不正则
     - DFA 的状态最小化方法
-* 上下文无关语言 (Context-Free Language, CFL)
+- 上下文无关语言 (Context-Free Language, CFL)
     - 上下文无关**语法** (CFG) 的定义，CFG 和 CFL 的关系
     - Chomsky 范式 (CNF)，转换 CNF 的方法
     - **下推自动机** (pushdown automata, PDA)，PDA 和 CFG 等价性
     - CFL 封闭运算，**泵定理**，如何证明不是 CFL
-* 图灵机 (Turing Machine, TM) 基础
+- 图灵机 (Turing Machine, TM) 基础
     - TM 定义、TM 构建、TM 的功能（**判定/半判定**语言，**计算函数**），递归函数
     - 变种图灵机、非确定性图灵机与标准确定性图灵机 (STM) 的等价性
-* 不可判定性 (Undecidability)
+- 不可判定性 (Undecidability)
     - Church-Turing 论题
     - 可判定问题的图灵机构建方法与**规约**
     - **停机问题**，及可由停机问题规约出的其他问题的不可判定性证明
     - Rice 定理与通用的可/不可判定或半判定的证明方法
     - 程序的自输出问题与 Recursion 定理、语言的**枚举**和字典序枚举（略讲）
-* 函数的可计算性
+- 函数的可计算性
     - 原始递归函数定义、μ 递归函数定义、μ 递归函数与可计算函数的等价性
-* 复杂度理论
+- 复杂度理论
     - 时间复杂度，P、NP、NP 完全问题的定义及与图灵机关系
     - SAT/3-SAT 问题、Clique 问题、Vertex Cover 问题属于 NP 完全问题的证明
     - 空间复杂度，PSPACE、NPSPACE、EXP 问题的定义与关系
@@ -84,11 +84,10 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 ## 参考资料
 
-- TonyCrane 的课程笔记：https://note.tonycrane.cc/cs/tcs/toc/
-- HobbitQia 的课程笔记：https://note.hobbitqia.cc/TCS/
+- TonyCrane 的课程笔记：<https://note.tonycrane.cc/cs/tcs/toc/>
+- HobbitQia 的课程笔记：<https://note.hobbitqia.cc/TCS/>
 - [ZhouTimeMachine 的笔记](https://zhoutimemachine.github.io/note/courses/toc/)（20 级的 jxg 版本）
-    
+
 ## 学习建议
 
 计院很少有毛哥这种能把理论课讲得非常流畅的老师，需要好好珍惜，课上跟住老师这门课可以说完全不成问题。而且毛哥给分也可以说非常慷慨，和之前的金小刚完全形成了鲜明对比（x）。同时考试也没有套路题，不需要靠历年卷，只要弄懂课上内容加上看一看作业和小测题就足够了。有任何问题也都可以在课后去找毛哥问，每次都会非常清晰地给出解答。
-

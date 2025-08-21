@@ -7,6 +7,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/compilers
 # 编译原理
 
 ## 课程学习内容
+
 首先简要介绍一下“编译”或者“编译器”这个更加广泛的方向，一般高级语言、面向通用 CPU 平台的编译器涉及的内容大致可以分为以下几个部分：
 
 - 前端：指编译器读取我们文本文件的源代码，理解代码的结构和语义，生成语法树（AST）
@@ -23,9 +24,11 @@ Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 
 期末考试可以带 cheating sheet，题目比较传统，选择和简答题。选择部分刁钻题还是有一些的，建议对一些概念和算法流程要比较清楚。
 
 ## 分数构成
+
 书面作业（10%）+ 课堂 Quiz（10%）+ 期中考试（15%）+ Project（25%）+ 期末考试（40%），期末考斩杀线为 40 分。
 
 ## 相关书单
+
 - *Compiler Contruction and Practice*, Kenneth C. Loudon（2022 春夏学期教材）
 - *Compiler -- Principles, Techniques and Tools (2nd ed.)*, Aho, Sethi and Ullman（俗称“龙书”）
 - *Modern Compiler Implementation in C (Java, ML)*, Andrew Appel（俗称“虎书”）
@@ -35,6 +38,7 @@ Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 
 - *Parsing Techniques: A Practical Guide*, Grune, Jacobs
 
 ## 参考笔记
+
 友情感谢  xyx 学长
 
 - xyx 的语雀：<https://www.yuque.com/xianyuxuan/coding/compiler>

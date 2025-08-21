@@ -4,6 +4,7 @@ abbrs:
 ---
 
 # 大模型应用与实践
+
 <div class="badges">
 <span class="badge is-badge">大二短学期</span>
 <span class="badge is-badge">课程综合实践 Ⅱ</span>
@@ -39,7 +40,6 @@ abbrs:
 
 [朱霖潮](https://person.zju.edu.cn/linchao)老师上课讲的很清楚，质量很好且有求必应。很照顾还没跟上进度的学生，并且手上还会随机刷新小零食，分给同学。下课前会做当堂课的内容总结，帮同学重新梳理思路。而且很喜欢同学问问题（“问题其实就是一种 Prompting”），跟他多多交流。
 
-
 ## 分数构成
 
 本课程没有考勤分，不过朱老师会给多次出勤的同学小零食
@@ -53,11 +53,11 @@ Lab1 和 Lab2 都是认定型分数，只要验收通过就是满分。
 
 ## 参考资料
 
-- 可以下载本地大模型的社区：https://huggingface.co/
-- 可以用于运行本地大模型的工具：https://ollama.com/download
-    - 对应的模型库：https://ollama.com/library  
+- 可以下载本地大模型的社区：<https://huggingface.co/>
+- 可以用于运行本地大模型的工具：<https://ollama.com/download>
+    - 对应的模型库：<https://ollama.com/library>  
 
 下面是笔者在 2024 年短学期的资源：
 
 - 该课程的笔记，可以用于参考大致的上课内容：[大模型应用与实践课程笔记](https://miraitowaves.github.io/notebook/Course/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5/)
-- Assignment2：https://github.com/miraitowaves/prompt-engineering
+- Assignment2：<https://github.com/miraitowaves/prompt-engineering>
