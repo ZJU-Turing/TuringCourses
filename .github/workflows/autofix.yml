@@ -30,6 +30,7 @@ jobs:
         if: steps.changed-files.outputs.any_changed == 'true'
         with:
           globs: ${{ steps.changed-files.outputs.all_changed_files }}
+          separator: " "
       - name: Running autocorrect
         continue-on-error: true
         if: steps.changed-files.outputs.any_changed == 'true'
