@@ -1,0 +1,40 @@
+name: AutoFix Format
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+
+concurrency: ci-${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v46
+        with:
+          files: '**/*.md'
+      - name: Running markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v20
+        continue-on-error: true
+        if: steps.changed-files.outputs.any_changed == 'true'
+        with:
+          globs: ${{ steps.changed-files.outputs.all_changed_files }}
+          separator: ' '
+      - name: Running autocorrect
+        continue-on-error: true
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          curl -sSL https://git.io/JcGER | sh
+          autocorrect --fix ${{ steps.changed-files.outputs.all_changed_files }}
+      - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27
