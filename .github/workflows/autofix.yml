@@ -35,6 +35,7 @@ jobs:
         continue-on-error: true
         if: steps.changed-files-comma.outputs.any_changed == 'true'
         with:
+          fix: true
           globs: ${{ steps.changed-files-comma.outputs.all_changed_files }}
           separator: ','
       - name: Running autocorrect
