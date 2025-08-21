@@ -11,7 +11,7 @@
     - 测度
     - 外测度、Carathéodory's theorem
     - 基本族和预测度，测度的扩张
-    - Borel测度、Lebesgue-Stieltjes 测度
+    - Borel 测度、Lebesgue-Stieltjes 测度
 * 积分
     - 简单函数、可测函数
     - 非负/实值/复值可测函数的积分
@@ -31,7 +31,7 @@
     - 复测度
     - $\mathbb{R}^n$ 中的微分
         - Hardy-Littlewood 极大函数
-        - Lebesgue微分定理
+        - Lebesgue 微分定理
     - 有界变差函数、绝对连续函数
     - 分部积分公式、微积分基本定理
 * $L^p$ 空间
@@ -91,11 +91,13 @@
 
 ### 参考笔记
 
+<!-- autocorrect-disable -->
 + CC98 论坛上的资料
-    + 【数学之韵】春夏学期实分析笔记 <https://www.cc98.org/topic/5571377> ;
+    + 【数学之韵】春夏学期实分析笔记 <https://www.cc98.org/topic/5571377>
     + 【数学之韵】本研合上“实分析”课程笔记（完结撒花✿✿ヽ(°▽°)ノ✿）<https://www.cc98.org/topic/5824771>
-    + 【数学之韵】数应大二下数学课总结（复变函数、实变函数、实分析、微分几何）<https://www.cc98.org/topic/6228937/2#6> ;
-    + 【数学之韵】数学之韵回忆卷&经验帖专楼 <https://www.cc98.org/topic/5926511/3#9> ;
+    + 【数学之韵】数应大二下数学课总结（复变函数、实变函数、实分析、微分几何）<https://www.cc98.org/topic/6228937/2#6>
+    + 【数学之韵】数学之韵回忆卷&经验帖专楼 <https://www.cc98.org/topic/5926511/3#9>
+<!-- autocorrect-enable -->
 <!-- 其它资料待补充 -->
 
 ### 推荐书单

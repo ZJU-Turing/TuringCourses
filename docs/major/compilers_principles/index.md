@@ -7,7 +7,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/compilers
 # 编译原理
 
 ## 课程学习内容
-首先简要介绍一下 “编译” 或者 “编译器” 这个更加广泛的方向，一般高级语言、面向通用 CPU 平台的编译器涉及的内容大致可以分为以下几个部分：
+首先简要介绍一下“编译”或者“编译器”这个更加广泛的方向，一般高级语言、面向通用 CPU 平台的编译器涉及的内容大致可以分为以下几个部分：
 
 - 前端：指编译器读取我们文本文件的源代码，理解代码的结构和语义，生成语法树（AST）
 - 中端：根据语法树生成中间表示（IR），做一些 target independent optimization
@@ -18,7 +18,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/compilers
 
 书面作业一般是理论题目，通常是和上面这些算法相关的，一般不难。
 
-Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 和用 bison 写 parser，非常简单。大作业（3人一组）是写一个完整的编译器，实现语言和被编译的语言不限，可以自己设计，验收是需要你用被编译的语言写解决 3 个 task 的代码（类似于程算的题目），用你写的编译器编译后根据输出检查正确性，对生成的代码质量没有要求。
+Project 分两个小 lab 和一个大作业，小 lab 是用 flex 写 tokenzier 和用 bison 写 parser，非常简单。大作业（3 人一组）是写一个完整的编译器，实现语言和被编译的语言不限，可以自己设计，验收是需要你用被编译的语言写解决 3 个 task 的代码（类似于程算的题目），用你写的编译器编译后根据输出检查正确性，对生成的代码质量没有要求。
 
 期末考试可以带 cheating sheet，题目比较传统，选择和简答题。选择部分刁钻题还是有一些的，建议对一些概念和算法流程要比较清楚。
 

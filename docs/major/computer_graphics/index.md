@@ -27,8 +27,8 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_g
 + Computer Graphics with OpenGL, Fourth Edition, D. Hearn, M. P. Baker（电子工业出版社）
 + Fundamentals of Computer Graphics, Peter Shirley, Steve Marschner, AK Peters
 + 计算机图形学——原理、方法及应用，潘云鹤，董金祥，陈德人，2003
-+ OpenGL Programming Guide, Fourth Edition, Addison-Wesley, 2003,（OpenGL编程指南，人民邮电出版社）
-+ OpenGL Distilled, Paul Martz, Addison-Wesley, Addison-WesleyProfessional; 1ST edition（OpenGL2.0精髓，人民邮电出版社）
++ OpenGL Programming Guide, Fourth Edition, Addison-Wesley, 2003,（OpenGL 编程指南，人民邮电出版社）
++ OpenGL Distilled, Paul Martz, Addison-Wesley, Addison-WesleyProfessional; 1ST edition（OpenGL2.0 精髓，人民邮电出版社）
 + [The NeHetutorials](http://nehe.gamedev.net)
 
 ## 分数构成

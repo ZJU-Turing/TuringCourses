@@ -27,7 +27,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/digital_im
 ## 任课教师
 本门课程只由宋明黎一位老师开设。
 
-授课方式：双语（绝大部分PPT为英文，老师授课使用汉语）。
+授课方式：双语（绝大部分 PPT 为英文，老师授课使用汉语）。
 
 授课水平：口齿清晰，逻辑清晰，智云 1.5 倍速刚好。
 

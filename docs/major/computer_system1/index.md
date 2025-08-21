@@ -81,7 +81,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_syst
 
 ### 实验部分
 
-这门课的实验占了分数的主要部分，分为 Lab0-Lab5 和最后的 Project，部分实验是 bonus，可以加平时分 or 实验分（24级）
+这门课的实验占了分数的主要部分，分为 Lab0-Lab5 和最后的 Project，部分实验是 bonus，可以加平时分 or 实验分（24 级）
 
 实验环境需要 logisim 来做逻辑电路设计和 vivado 来利用 Verilog 语言做硬件设计（vivado 很大，而且需要 Windows 系统，建议提前下载），并且会每人发一块 FPGA 开发板，这个板子会跟随你整个系统三门课，每学期末交还。
 

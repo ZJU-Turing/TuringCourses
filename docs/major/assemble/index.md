@@ -21,7 +21,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 除此之外，每节课程小白老师都是通过 word 文档来讲授，这些文档都可以在他的主页 [cc.zju.edu.cn/bhh](http://cc.zju.edu.cn/bhh) 上找到。
 
 ## 分数构成
-四次作业（40%）+期末考试（60%）
+四次作业（40%）+ 期末考试（60%）
 
 作业是用纯 8086 汇编来写程序，会逐次变难，最后一次相当于大作业，一般是写游戏（20 级推箱子，21 级走迷宫），不过后几次作业都会给对应的 C 语言源码，大概只需要翻译、调试。
 
@@ -29,12 +29,12 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_mandatory/assemble/
 
 ## 推荐书单
 - *《汇编语言》* 王爽，清华大学出版社（经典汇编课本，第一推荐）
-- *《x86汇编语言-从实模式到保护模式》* 李忠，电子工业出版社（经典汇编课本）
+- *《x86 汇编语言 - 从实模式到保护模式》* 李忠，电子工业出版社（经典汇编课本）
 - *《琢石成器》*罗云斌，32 位汇编
 - *《软件调试》* 张银奎（各类底层硬件机制和调试方法）
 - *《汇编语言程序设计》* 白洪欢，科学出版社（已绝版，就是老师自己印的那本）
-- *《IBM-PC汇编语言程序设计》* 沈美明，清华大学出版社（比较老的中文教材）
-- *《Windows汇编语言程序设计教程》* 谭毓安，电子工业出版社（比较老的中文教材）
+- *《IBM-PC 汇编语言程序设计》* 沈美明，清华大学出版社（比较老的中文教材）
+- *《Windows 汇编语言程序设计教程》* 谭毓安，电子工业出版社（比较老的中文教材）
 - *Professional Assembly Language*, Richard Blum
 - *The Art of Assembly Language*, Randall Hyde（不过这个系列使用的主要工具是 HLA，与一般的汇编差别较大）
 - *The Art of 64-bit Assembly*, Randall Hyde

@@ -34,7 +34,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/introducti
     + 跨媒体可视化
 + 课程答辩
 
-最后一节晚课会进行课程答辩，即展示大作业，需要提前将视频和PPT提交到学在浙大上。
+最后一节晚课会进行课程答辩，即展示大作业，需要提前将视频和 PPT 提交到学在浙大上。
 
 ## 任课教师
 
@@ -46,7 +46,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/introducti
 
 ## 分数构成
 
-包含线上 quiz（30%，具体情况在课程群通知）、两次小 lab (5%+10%) 以及一次课程大作业（50% 可选择参与实验室项目或设计开发数据可视化作品/系统），出勤率占5%，但是除了最后一次要求全员上台的展示，2025年夏学期从来没有点过名。
+包含线上 quiz（30%，具体情况在课程群通知）、两次小 lab (5%+10%) 以及一次课程大作业（50% 可选择参与实验室项目或设计开发数据可视化作品/系统），出勤率占 5%，但是除了最后一次要求全员上台的展示，2025 年夏学期从来没有点过名。
 
 + lab 即大小作业有三次，分别为：
     + 讲述你身边或接触到的一个优秀可视化案例，需要使用现学或者数据库系统现学的 html5+css3 实现。文字要求不多，笔者介绍了巫英才老师去年发的论文，借鉴了网上找到的 css 框架。
@@ -59,6 +59,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/introducti
 
 ## 参考资料
 
+<!-- autocorrect-disable -->
 <a href="./数据可视化导论小测.pdf" download="2025年数据可视化导论小测">小测试题与答案</a>
 
 <a href="./可视化入门指南：从数据到洞察的艺术-CSDN博客.pdf" download="可视化入门指南：从数据到洞察的艺术-CSDN博客">小测答案（旧）</a>
@@ -71,3 +72,4 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/introducti
 
 [tableau 中的计算字段](https://help.tableau.com/current/pro/desktop/zh-cn/calculations_calculatedfields_create.htm)
 
+<!-- autocorrect-enable -->
