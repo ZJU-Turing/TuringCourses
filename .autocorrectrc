@@ -93,6 +93,7 @@ spellcheck:
     - OSS
     - P2P
     - PaaS
+    - PDF
     - PPT
     - RabbitMQ
     - Redis
