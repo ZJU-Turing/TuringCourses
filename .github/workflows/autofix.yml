@@ -1,4 +1,4 @@
-name: AutoFix Format
+name: autofix.ci # For security reasons, this workflow must be named "autofix.ci"
 
 on:
   pull_request:
