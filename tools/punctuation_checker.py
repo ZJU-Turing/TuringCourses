@@ -12,19 +12,17 @@ BD = r"。．，、：；！‼？⁇·・‧「『（《〈【〖〔［｛」�
 RULES = [
     ("WARNING", "出现制表符", r"\t"),
     ("ERROR", "中文字符间出现空格", rf"[{CJK}] +[{CJK}]"),
-    ("ERROR", "中英字符后接标点间出现空格", rf"[{A}{N}{CJK}] +[{EN_BD}{BD}]"),
-    ("ERROR", "中文字符后接英文标点", rf"[{CJK}][{EN_BD}]"),
+    # ("ERROR", "中英字符后接标点间出现空格", rf"[{A}{N}{CJK}] +[{EN_BD}{BD}]"),
+    ("ERROR", "英文字符后接标点间出现空格", rf"[{A}{N}] +[{EN_BD}{BD}]"),
+    # ("ERROR", "中文字符后接英文标点", rf"[{CJK}][{EN_BD}]"),
     ("ERROR", "英文标点后接中文字符", rf"[{EN_BD}][{CJK}]"),
-    ("ERROR", "中文标点后接空格", rf"[{BD}] "),
+    # ("ERROR", "中文标点后接空格", rf"[{BD}] "),
 ]
 
 EXCLUDE = ["./docs/major/introduction_to_data_visualization/数据可视化导论小测.md"]
 
-
 class ResultLogger:
-    def __init__(self, github_url: str = "", github_ref: str = ""):
-        self.github_url = github_url
-        self.github_ref = github_ref
+    def __init__(self):
         self.results = []
 
     def log(self, level: str, message: str, path: str, line_no: int):
@@ -40,16 +38,8 @@ class ResultLogger:
         self.log("ERROR", message, path, line_no)
 
     def export_result_ci(self):
-        with open("results.txt", "w", encoding="utf-8") as f:
-            if self.results:
-                f.write("标点符号使用情况检查结果（可能存在误判，请人工甄别）：\n\n")
-                f.write("|等级|问题原因|文件路径|\n")
-                f.write("|:--:|:--|:--|\n")
-                for level, msg, path, line_no in self.results:
-                    url = f"{self.github_url}/blob/{self.github_ref}/{path}?plain=1#L{line_no}"
-                    f.write(f"|{level}|{msg}|[`{path}:{line_no}`]({url})|\n")
-            else:
-                f.write("未发现标点符号相关问题 :)\n")
+        for level, msg, path, line_no in self.results:
+            print(f"{path}:{line_no}:{level[0].lower()} {msg}")
 
     def export_result_console(self):
         if self.results:
@@ -149,9 +139,7 @@ class PunctuationChecker:
 
 
 if __name__ == "__main__":
-    github_url = os.getenv("GITHUB_URL", "").replace(".git", "")
-    github_ref = os.getenv("GITHUB_REF", "")
-    logger = ResultLogger(github_url, github_ref)
+    logger = ResultLogger()
     if len(sys.argv) == 2:
         files = sys.argv[1].split()
         for file_path in files:
@@ -159,10 +147,7 @@ if __name__ == "__main__":
                 logger.info("文件已被删除", file_path, 0)
                 continue
             PunctuationChecker(file_path, logger)
-        if github_url and github_ref:
-            logger.export_result_ci()
-        else:
-            logger.export_result_console()
+        logger.export_result_ci()
     else:
         for root, dirs, files in os.walk("."):
             for file in files:

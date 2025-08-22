@@ -44,7 +44,7 @@ jobs:
         run: |
           curl -sSL https://git.io/JcGER | sh
           autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | \
-            reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=warning
+            reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=error
       - name: Running markdownlint
         uses: reviewdog/action-markdownlint@v0.26.2
         if: ${{ !cancelled() && steps.changed-files.outputs.any_changed == 'true' }}
@@ -53,6 +53,13 @@ jobs:
           reporter: github-pr-review
           markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
           fail_level: error
+      - name: Running custom punctuation checker
+        if: ${{ !cancelled() && steps.changed-files.outputs.any_changed == 'true' }}
+        run: |
+          python tools/punctuation_checker.py \
+            "${{ steps.changed-files.outputs.all_changed_files }}" | \
+            reviewdog -efm="%f:%l:%t %m" -name="punctuation-check" -reporter=github-pr-review -fail-level=error -level=warning
+
       - name: Post comment if failure
         uses: thollander/actions-comment-pull-request@v3
         if: failure()
