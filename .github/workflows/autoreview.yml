@@ -47,7 +47,7 @@ jobs:
             reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=warning
       - name: Running markdownlint
         uses: reviewdog/action-markdownlint@v0.26.2
-        if: steps.changed-files.outputs.any_changed == 'true'
+        if: ${{ !cancelled() && steps.changed-files.outputs.any_changed == 'true' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
