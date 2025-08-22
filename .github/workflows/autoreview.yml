@@ -7,7 +7,9 @@ on:
       - '**/*.md'
 
 permissions:
+  checks: write
   contents: read
+  pull-requests: write
 
 concurrency: ci-${{ github.workflow }}-${{ github.ref }}
 
@@ -37,16 +39,16 @@ jobs:
         continue-on-error: true
         if: steps.changed-files.outputs.any_changed == 'true'
         env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEW_GITHUB_TOKEN }}
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           curl -sSL https://git.io/JcGER | sh
-          autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | reviewdog -f=rdjson -name=autocorrect -level=warning -reporter=github-pr-review
+          autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | reviewdog -f=rdjson -level=warning -reporter=github-pr-review
       - name: Running markdownlint
         uses: reviewdog/action-markdownlint@v0.26.2
         continue-on-error: true
         if: steps.changed-files.outputs.any_changed == 'true'
         with:
-          github_token: ${{ secrets.REVIEW_GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
           level: warning
