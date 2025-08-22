@@ -6,23 +6,32 @@
 如果你想要为本网站进行贡献，以下是一些指南。
 
 ## 本地构建
+
 1. 克隆本项目 repo
+
     ```shell
     $ git clone https://github.com/ZJU-Turing/TuringCourses.git
     $ cd TuringCourses
     ```
+
 2. 安装 python 依赖
+
     ```shell
     $ pip install -r requirements.txt
     ```
+
 3. 启动 mkdocs 本地服务
+
     ```shell
     $ mkdocs serve
     ```
+
     - 之后即可通过浏览器访问 localhost:8000 预览网站
 
 ## 贡献内容
+
 ### 网站结构
+
 目前本站内容根据课程类别进行分组，然后在根据课程单独分页，每页内记录关于该课程的介绍、学习资料、学习技巧等。
 
 在源代码层面，使用 markdown 进行编写，每一门课程是一个文件夹，路径和网站链接路径保持一致，文件夹内 `index.md` 为该门课程的主页，文件夹内可以存放该课程的图片素材、学习资料等等。整体结构在 `mkdocs.yml` 文件中的 `nav` 部分定义。
@@ -50,6 +59,7 @@
 ```
 
 ### 贡献守则
+
 你可以对本网站进行任何贡献，包括完善、更新页面内容，添加新页面，样式修改等等。
 
 如果是添加新页面的话，请记得同时更新好 `mkdocs.yml` 的 `nav` 部分，使新页面能够正常通过站点目录被访问。
@@ -69,7 +79,9 @@
     针对还完全没有内容的空页面，我们提供了一个[模板](template.md)，可以在模板的[源码](https://github.com/ZJU-Turing/TuringCourses/blob/master/docs/template.md?plain=1)基础上修改使用。
 
 ### 贡献方式
+
 #### Pull Request（推荐）
+
 推荐通过 PR（即 Pull Request）的形式来进行贡献，具体流程：
 
 - 在 GitHub 网页端点击右上角的 fork，将本仓库 fork 到自己的账号下
@@ -78,12 +90,43 @@
 - 等待其他人审核、修改，然后合并到本 repo 中
 
 #### 直接提交
+
 对于在 Organization 中的同学，如果实在觉得 PR 过程有些复杂，也可以直接修改、提交到本仓库中（可以在线修改，也可以 clone 到本地修改然后 commit、push）。如果在提交中存在问题，我们后续会及时进行修改。（不过还是不推荐这种方式）
 
 !!! note
     可以直接通过页面标题右侧的编辑按钮 :material-pencil: 定位到对应的 GitHub 页面进行修改。
 
+### 格式检查
+
+在进行 PR 时，GitHub Action 会自动对修改内容进行格式和语法的检测，并进行 Code Review。如果存在格式问题，请按照指引和修改建议进行修复。
+
+同时也建议先在本地进行格式检查（请自行根据链接 repo 中的 README 进行工具安装）：
+
+- 利用 [huacnlee/autocorrect](https://github.com/huacnlee/autocorrect/) 进行中英文混排的标点检查
+
+    ```shell
+    $ autocorrect --lint # 对所有文件进行格式检查
+    $ autocorrect --fix  # 对所有文件自动进行修复
+    $ autocorrect --lint docs/index.md # 只对某一/某几个文件进行检查（fix 同理）
+    ```
+
+- 利用 [igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) 进行 markdown 语法规范的检查
+
+    ```shell
+    $ markdownlint **/*.md # 对所有文件进行语法检查
+    $ markdownlint --fix **/*.md # 对所有文件自动进行修复
+    $ markdownlint docs/index.md # 只对某一/某几个文件进行检查（fix 同理）
+    ```
+
+- 利用仓库中的 `tools/punctuation_checker.py` 进行额外的标点用法检查
+
+    ```shell
+    $ python tools/punctuation_checker.py # 对所有文件进行标点用法检查（需 pip install rich）
+    $ python tools/punctuation_checker.py docs/index.md # 只对某一/某几个文件进行检查
+    ```
+
 ## 问题反馈
+
 如果你发现本网站内容存在问题，请优先在对应页面下方评论区中进行评论，或者在 repo 中开一个 issue 来提出问题。
 
 如果你发现本网站存在侵犯您权益的内容，请通过 issue 联系我们，我们会进行删除。

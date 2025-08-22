@@ -4,7 +4,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/
 
 # 专业选修课
 
-按培养方案分为专业选修课程和个性修读课程-本专业进阶模块两个部分。
+按培养方案分为专业选修课程和个性修读课程 - 本专业进阶模块两个部分。
 
 <style>
 .md-typeset table:not([class]) th {
@@ -54,7 +54,7 @@ PS：另有科研训练系列课程，为发表 CCF A 或 ZJU 100 类论文时�
 |算法设计与分析|2.5|三（秋冬）||
 |[机器学习](../machine_learning/index.md)|2.0|三（秋冬）|较完善✅|
 |物联网技术基础与应用开发|2.0|三（秋冬）||
-|[大数据存储与计算技术](../big_data_storage/index.md)|1.5|三（春夏）|计算机系统|较完善✅|
+|[大数据存储与计算技术](../big_data_storage/index.md)|1.5|三（春夏）|较完善✅|
 
 </div>
 

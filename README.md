@@ -22,7 +22,7 @@
 
 浙江大学图灵班各门课程的学习指南以及学习资源。
 
-- 主站：https://ZJU-Turing.github.io/TuringCourses/
-- 存档站（CS/AI/IS 三专业版）：https://zju-turing.github.io/TuringCoursesGrave/
+- 主站：<https://ZJU-Turing.github.io/TuringCourses/>
+- 存档站（CS/AI/IS 三专业版）：<https://zju-turing.github.io/TuringCoursesGrave/>
 
-关于贡献，详见 https://ZJU-Turing.github.io/TuringCourses/contributing/
+关于贡献，详见 <https://ZJU-Turing.github.io/TuringCourses/contributing/>

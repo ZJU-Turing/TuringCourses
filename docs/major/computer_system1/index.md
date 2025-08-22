@@ -61,11 +61,11 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_syst
 
 ## 参考笔记
 
-- xg 的系统 Ⅰ 笔记：https://note.tonycrane.cc/cs/system/cs1/  
+- xg 的系统 Ⅰ 笔记：<https://note.tonycrane.cc/cs/system/cs1/>  
     只有数据表示和 ISA 两个部分记了
-- QJJ 的计逻笔记：https://note.hobbitqia.cc/Logic/  
+- QJJ 的计逻笔记：<https://note.hobbitqia.cc/Logic/>  
     计逻与前半部分内容大差不差，可以参考
-- 修佬的数逻笔记：https://note.isshikih.top/cour_note/D2QD_DigitalDesign/  
+- 修佬的数逻笔记：<https://note.isshikih.top/cour_note/D2QD_DigitalDesign/>  
     非图灵的数逻课程，同样可以参考一下
 
 ## 学长组课程学习建议
@@ -81,7 +81,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_syst
 
 ### 实验部分
 
-这门课的实验占了分数的主要部分，分为 Lab0-Lab5 和最后的 Project，部分实验是 bonus，可以加平时分 or 实验分（24级）
+这门课的实验占了分数的主要部分，分为 Lab0-Lab5 和最后的 Project，部分实验是 bonus，可以加平时分 or 实验分（24 级）
 
 实验环境需要 logisim 来做逻辑电路设计和 vivado 来利用 Verilog 语言做硬件设计（vivado 很大，而且需要 Windows 系统，建议提前下载），并且会每人发一块 FPGA 开发板，这个板子会跟随你整个系统三门课，每学期末交还。
 

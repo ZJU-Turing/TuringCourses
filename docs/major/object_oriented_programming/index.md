@@ -117,16 +117,16 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_orient
                 xww的平时作业并不友好，而且要求也很怪，诸如文件流关闭、写注释等细枝末节扣的很迷惑，助教也不甚给力，后半学期批作业毫无进度，有同学错过了ddl而导致了扣分。
 
                 - student 1 & 2: 主要考察文件读写输入输出等操作，注意一定要和要求的输出格式*一模一样*
-                - adventure: 要求是2维的随机迷宫，注意要确保有到公主房间的可行路径
+                - adventure: 要求是 2 维的随机迷宫，注意要确保有到公主房间的可行路径
                 - personal diary: 这个是彻底的依托，竟然强制要求重定向而不允许文件输入输出，导致传入参数很困难，老师的说明也含混不清，同学们问了很多次又改为允许重载输入函数让有限的操作可以读文件
-                - fraction: 注意分数的初始化，0分母检测（好像要求不能throw还是什么的，总之有特殊要求，注意负数！！！）
-                - vector: 中规中矩的project
-                - 大作业：allocator & memory pool，要求在给定内存大小的情况下尽量快的完成功能，但是具体给多大内存不知道，并且要执行的操作也不清楚，速度要求似乎与oop背道而驰。老师发出的测试程序也存在一定错误，需要自己阅读修改。
-                    - 给分规则（100 分制）：功能完成，测试程序通过，得到基础评分 88 分。剩下 12 分按速度排名给分：前1/3得到12分，后2/3按排名线性分配12~0分，四舍五入。
+                - fraction: 注意分数的初始化，0 分母检测（好像要求不能 throw 还是什么的，总之有特殊要求，注意负数！！！）
+                - vector: 中规中矩的 project
+                - 大作业：allocator & memory pool，要求在给定内存大小的情况下尽量快的完成功能，但是具体给多大内存不知道，并且要执行的操作也不清楚，速度要求似乎与 oop 背道而驰。老师发出的测试程序也存在一定错误，需要自己阅读修改。
+                    - 给分规则（100 分制）：功能完成，测试程序通过，得到基础评分 88 分。剩下 12 分按速度排名给分：前 1/3 得到 12 分，后 2/3 按排名线性分配 12~0 分，四舍五入。
 
-                另外xww似乎不是很喜欢发书面的通知，24春夏的几次作业ddl都是课上口头通知，通常来讲是2周一个作业，但是自从某次延期1周之后就含混不清了，直到期末考结束才说明迟交penalty，扣的也比较狠，但是大作业的ddl还是放宽到了考试的前一晚。
+                另外 xww 似乎不是很喜欢发书面的通知，24 春夏的几次作业 ddl 都是课上口头通知，通常来讲是 2 周一个作业，但是自从某次延期 1 周之后就含混不清了，直到期末考结束才说明迟交 penalty，扣的也比较狠，但是大作业的 ddl 还是放宽到了考试的前一晚。
 
-                由于xww的平时作业不包含理论题，如果平时不常去听课的话，期末考的选择/填空可能会发懵
+                由于 xww 的平时作业不包含理论题，如果平时不常去听课的话，期末考的选择/填空可能会发懵
         - 期末 50%
             课程组统一的期末考试。<!-- 期末主观题的给分还挺好 -->
 
@@ -143,11 +143,11 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_orient
 
 ## 课程教材
 
-* *《C++ 程序设计》Intruduction to Programming with C++ (Third Edition)* [美] Y. Daniel Liang（梁勇）
+- *《C++ 程序设计》Intruduction to Programming with C++ (Third Edition)* [美] Y. Daniel Liang（梁勇）
 
     课程组指定教材，<del>但没有什么用处</del>比较基础、简单易懂
 
-* *《C++ 编程思想》Thinking in C++* [美] Bruce Eckel
+- *《C++ 编程思想》Thinking in C++* [美] Bruce Eckel
 
     一本比较经典的 C++ 教材，作者 Bruce Eckel 是著名的编程教育家。翁恺老师的大部分课件都是按照这本书内容编排。当然这本书有很多考试不考察的内容，如果时间不够可以只看老师 PPT 涉及内容对应的部分。
 
@@ -155,68 +155,68 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/object_orient
 
 读万卷书，行万里路。
 
-* *C++ Primer* (5th edition), [美] Stanley B. Lippman / [美] Josée Lajoie / [美] Barbara E. Moo
+- *C++ Primer* (5th edition), [美] Stanley B. Lippman / [美] Josée Lajoie / [美] Barbara E. Moo
 
     经典 C++ 教材，有十分详尽的语法讲解。不过整本书看起来像是语法字典，可能并不容易读，建议用到某一特性再去找。第五版教材包括了 C++11 标准。
 
-* *C++ Primer Plus* (6th edition)，[美] Stephen Prata
+- *C++ Primer Plus* (6th edition)，[美] Stephen Prata
 
     傻瓜式的、从 0 开始的 C++ 教材，有人觉得很面面俱到，个人觉得啰里啰嗦。
 
-* *Essential C++*, [美] Stanley B·Lippman
+- *Essential C++*, [美] Stanley B·Lippman
 
     比较基础，分四个部分讲解 C++ 的本质，也可以用作入门读物。比较老了，只到 C++98 标准。
 
-* C++ 之父 Bjanre Stroustrup 的几本书：
-    * [*Programming: Principles and Practice using C++*](https://www.stroustrup.com/programming.html)（《C++ 程序设计原理与实践》）
+- C++ 之父 Bjanre Stroustrup 的几本书：
+    - [*Programming: Principles and Practice using C++*](https://www.stroustrup.com/programming.html)（《C++ 程序设计原理与实践》）
 
         “适合以前没有编程经验或者已经学完另一种语言，并且希望对现代 C++ 有一个相对温和的介绍的人”，BS 给大一学生写的教材。覆盖 C++11 和 C++14 标准。
 
-    * [*The C++ Programming Language* (4th edition)](https://www.stroustrup.com/4th.html)（《C++程序设计语言》）
+    - [*The C++ Programming Language* (4th edition)](https://www.stroustrup.com/4th.html)（《C++ 程序设计语言》）
 
         “面向已经了解 C++ 或至少是经验丰富的程序员的人”。覆盖 C++11 标准。
 
-    * 如果你想了解 C++ 的历史，请看 [*The Design and Evolution of C++*](https://www.stroustrup.com/dne.html)（《C++语言的设计与演化》）。[*Thriving in a Crowded and Changing World: C++ 2006-2020*](https://dl.acm.org/doi/pdf/10.1145/3386320) 可以被视为 D&E 的最新后续。
+    - 如果你想了解 C++ 的历史，请看 [*The Design and Evolution of C++*](https://www.stroustrup.com/dne.html)（《C++ 语言的设计与演化》）。[*Thriving in a Crowded and Changing World: C++ 2006-2020*](https://dl.acm.org/doi/pdf/10.1145/3386320) 可以被视为 D&E 的最新后续。
 
-    * [*A Tour of C++* (second edition)](https://www.stroustrup.com/tour2.html)（《C++语言导学》）
+    - [*A Tour of C++* (second edition)](https://www.stroustrup.com/tour2.html)（《C++ 语言导学》）
 
         适合去快速了解 C++ 所提供的功能。这本书以 200 页的篇幅介绍了 C++ 及其标准库的主要特性，且覆盖 C++17 标准（及少量 C++20 标准），对于了解新标准特性也不错。
 
-* 关于 C++ 的 STL（标准模板库），想要了解其内部实现细节，可参考侯捷老师《STL源码剖析》，但侯捷老师这本书不适合初学者，而且标准比较老，后面几章有些已经用不上了。另外也可以看 Scott Meyers, *Effective STL*。
-* *Effective C++*, [美] Scott Meyers
+- 关于 C++ 的 STL（标准模板库），想要了解其内部实现细节，可参考侯捷老师《STL 源码剖析》，但侯捷老师这本书不适合初学者，而且标准比较老，后面几章有些已经用不上了。另外也可以看 Scott Meyers, *Effective STL*。
+- *Effective C++*, [美] Scott Meyers
 
     讲解一些实际套路和原理，结合具体情况教你如何写程序，写了很多 C++ 各种容易踩坑的点。有些很有帮助，后面有些可能有点难。这本书还有后作 *More Effective C++*，更高深了（×。两本书都只涉及 C++98/03 标准，少量内容有些过时。
 
-* *C++ Without Fear*, Brian Overland
+- *C++ Without Fear*, Brian Overland
 
     比较老（指 C++98 标准）的入门书籍。
 
-* *Functional Programming in C++*, Ivan Cukic
+- *Functional Programming in C++*, Ivan Cukic
 
     （给老司机们）了解 C++ 函数式编程
 
-* （给老司机们）进一步探索现代 C++：
-    * *Modern Effective C++*, [美] Scott Meyers
+- （给老司机们）进一步探索现代 C++：
+    - *Modern Effective C++*, [美] Scott Meyers
 
         教你怎么用 C++11 和 C++14，既有语法也有实例讲解，带你走向现代 C++。后面有点难。
 
-    * [《现代 C++ 快速上手 (Modern C++ Tutoral)》](https://github.com/changkun/modern-cpp-tutorial)》，Ou Changkun，字面意思，快速上手。
-    * *C++ Templates* (2nd edition)，[美] David Vandevoorde / [德] Nicolai M.Josuttis / [美] Douglas Gregor
+    - [《现代 C++ 快速上手 (Modern C++ Tutoral)》](https://github.com/changkun/modern-cpp-tutorial)》，Ou Changkun，字面意思，快速上手。
+    - *C++ Templates* (2nd edition)，[美] David Vandevoorde / [德] Nicolai M.Josuttis / [美] Douglas Gregor
 
         深入了解模板<del>的奇技淫巧</del>。
 
-    * 其他，如：《深入探索 C++14 (Discovering Modern C++)》《现代 C++ 语言核心特性解析》《C++20 高级编程》等
+    - 其他，如：《深入探索 C++14 (Discovering Modern C++)》《现代 C++ 语言核心特性解析》《C++20 高级编程》等
 
-* 可参考 [The Definitive C++ Book Guide and List](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)，Stack Overflow 上整理的书单。也可以逛逛 [Quora](https://www.quora.com/What-is-the-best-C-book-for-a-beginner)。
-* C++ 之父 Bjanre Stroustrup 的 [FAQ](https://www.stroustrup.com/bs_faq.html) 很有意思，值得一看！此外他还有 [C++ Style and Technique FAQ](https://www.stroustrup.com/bs_faq2.html)。十分建议大大多逛逛 [BS 的主页](https://www.stroustrup.com)。
+- 可参考 [The Definitive C++ Book Guide and List](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)，Stack Overflow 上整理的书单。也可以逛逛 [Quora](https://www.quora.com/What-is-the-best-C-book-for-a-beginner)。
+- C++ 之父 Bjanre Stroustrup 的 [FAQ](https://www.stroustrup.com/bs_faq.html) 很有意思，值得一看！此外他还有 [C++ Style and Technique FAQ](https://www.stroustrup.com/bs_faq2.html)。十分建议大大多逛逛 [BS 的主页](https://www.stroustrup.com)。
 <!-- * 一些 C++ 书籍的**电子版资源**：https://www.aliyundrive.com/s/z5hLRAELpPP -->
-<!-- 这里资源已经远不止 C++ 了, 故在此删除 -->
+<!-- 这里资源已经远不止 C++ 了，故在此删除 -->
 
 ## 参考资料
 
 - RyanFcr 整理的笔记和历年卷：[:material-github: RyanFcr/ZJU_Course:大二春夏/面向对象程序设计OOP](https://github.com/RyanFcr/ZJU_Course/tree/main/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%A4%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1OOP)
-- Stanford CS106L 课程：https://www.cc98.org/topic/5401931
-- 贺老师的专栏：https://www.zhihu.com/column/c_1561843704159232000
+- Stanford CS106L 课程：<https://www.cc98.org/topic/5401931>
+- 贺老师的专栏：<https://www.zhihu.com/column/c_1561843704159232000>
 - Isshiki 的课堂笔记：[📔 \[大一寒假\] ZJU Object-Oriented Programing Using C++ (yuque.com)](https://www.yuque.com/isshikixiu/codes/wk_oop)
 - 咸鱼暄学长的 [C++ Weekly Tips](https://www.yuque.com/xianyuxuan/saltfish_shop/weekly017) 和[快速入门 C++ 写题](https://xuan-insr.github.io/cpp/cpp_for_contests/)
 

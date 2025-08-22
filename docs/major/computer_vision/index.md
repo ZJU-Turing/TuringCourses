@@ -24,7 +24,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_v
 
     全中文授课，课件以往年的形成的<del>杂交</del>课件为主，但是也会夹杂着一些随着时事（~~OpenAI~~）更新的课件（Transformer）。因为潘老师原本就是 CV 方向的，所以对于课程的讲解也是很有深度的。不过从 21 年开始，潘老师的实验开始改革，相比宋老师班会难很多，同时也会邀请实验做的比较好的同学对自己的实验进行讲解，有一定的 Bonus（但没公布比例），原则上一人一次。2023 年冬没有点名的情况。
 
-=== "宋明黎" 
+=== "宋明黎"
 
     全中文授课，课件和潘老师班一样，也是在之前的课件上面做修改，今年加入了Transformer部分的讲解，但要求并不深入。2023年冬学期的早八点过几次名。几次作业都比较简单，而且还在用一些比较老的诸如特征人脸识别等的案例，甚至还有部分作业来自Learning Opencv教材。整体上课的感觉跟图像信息处理课确实很像。
 
@@ -33,7 +33,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_v
 整体课程以课程讲义为主，没有指定教材，相关的原理可以查询维基或者 OpenCV 等库的说明。不过潘老师课件中有给出一些关于 OpenCV 的书籍，如：
 
 - *Learning OpenCV：Computer Vision with the OpenCVLibrary*, Gary Bradski, Adrian Kaebler（此书使用的 OpenCV 2.0 版本过于老旧，不建议阅读）
-- 《OpenCV教程—基础篇》，刘瑞祯、于仕琪（这本比上一本还老）
+- 《OpenCV 教程—基础篇》，刘瑞祯、于仕琪（这本比上一本还老）
 
 建议直接参考 OpenCV 的 [Documents](https://docs.opencv.org/4.x/d1/dfb/intro.html)。
 
@@ -60,18 +60,18 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/computer_v
         - 期末考试闭卷，全中文，全问答题
         - 充分参考老师提供的提纲进行复习即可
 
-=== "宋明黎" 
+=== "宋明黎"
 
     - 平时编程作业（40-50%）
-        - 使用OpenCV编辑一段视频
-        - 使用OpenCV进行椭圆拟合
+        - 使用 OpenCV 编辑一段视频
+        - 使用 OpenCV 进行椭圆拟合
         - Eigenface
         - 相机标定与鸟瞰图生成
         - LeNet on MNIST
     - 期末考试（50-60%）
         - 两班历年来都统一由潘老师出题
         - 期末考试闭卷，全中文，全问答题
-        - 充分参考老师提供的提纲及98上的历年卷进行复习即可
+        - 充分参考老师提供的提纲及 98 上的历年卷进行复习即可
 
 ## 学习建议
 
