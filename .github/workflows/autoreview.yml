@@ -68,7 +68,7 @@ jobs:
         with:
           comment-tag: autoreview-comment
           message: |
-            源码格式/语法检查未通过，请根据 GitHub Action 给出的 Code Review 审查建议进行修改。
+            源码格式/语法检查未通过，请根据 GitHub Action 给出的 Code Review 审查建议进行修改（未给出修改建议的需根据提示手动修改），修改完成后请点击 "Resolve conversation"。
 
             对于有争议的修改建议，可暂时不进行修改并在 PR 中进行讨论。
 
@@ -80,19 +80,3 @@ jobs:
           comment-tag: autoreview-comment
           message: |
             源码格式/语法检查已通过。
-
-      # - name: Check punctuation
-      #   if: steps.changed-files.outputs.any_changed == 'true'
-      #   id: punctuation-check
-      #   env:
-      #     GITHUB_URL: ${{ github.event.pull_request.head.repo.clone_url }}
-      #     GITHUB_REF: ${{ github.event.pull_request.head.ref }}
-      #   run: |
-      #     python tools/punctuation_checker.py \
-      #            "${{ steps.changed-files.outputs.all_changed_files }}"
-      # - name: Comment PR
-      #   if: steps.changed-files.outputs.any_changed == 'true'
-      #   uses: thollander/actions-comment-pull-request@v3
-      #   with:
-      #     file-path: results.txt
-      #     comment-tag: punctuation-check
