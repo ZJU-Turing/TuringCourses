@@ -1,0 +1,68 @@
+name: Format Auto Review
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+
+concurrency: ci-${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  auto-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Setup reviewdog
+        uses: reviewdog/action-setup@v1.3.2
+        with:
+          reviewdog_version: latest
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v46
+        with:
+          files: '**/*.md'
+
+      - name: Running autocorrect
+        continue-on-error: true
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEW_GITHUB_TOKEN }}
+        run: |
+          curl -sSL https://git.io/JcGER | sh
+          autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | reviewdog -f=rdjson -name=autocorrect -level=warning -reporter=github-pr-review
+      - name: Running markdownlint
+        uses: reviewdog/action-markdownlint@v0.26.2
+        continue-on-error: true
+        if: steps.changed-files.outputs.any_changed == 'true'
+        with:
+          github_token: ${{ secrets.REVIEW_GITHUB_TOKEN }}
+          reporter: github-pr-review
+          markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
+          level: warning
+
+      # - name: Check punctuation
+      #   if: steps.changed-files.outputs.any_changed == 'true'
+      #   id: punctuation-check
+      #   env:
+      #     GITHUB_URL: ${{ github.event.pull_request.head.repo.clone_url }}
+      #     GITHUB_REF: ${{ github.event.pull_request.head.ref }}
+      #   run: |
+      #     python tools/punctuation_checker.py \
+      #            "${{ steps.changed-files.outputs.all_changed_files }}"
+      # - name: Comment PR
+      #   if: steps.changed-files.outputs.any_changed == 'true'
+      #   uses: thollander/actions-comment-pull-request@v3
+      #   with:
+      #     file-path: results.txt
+      #     comment-tag: punctuation-check
