@@ -21,6 +21,7 @@ RULES = [
 
 EXCLUDE = ["./docs/major/introduction_to_data_visualization/数据可视化导论小测.md"]
 
+
 class ResultLogger:
     def __init__(self):
         self.results = []
