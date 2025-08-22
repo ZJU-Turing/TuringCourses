@@ -38,7 +38,6 @@ jobs:
           files: '**/*.md'
 
       - name: Running autocorrect
-        continue-on-error: true
         if: steps.changed-files.outputs.any_changed == 'true'
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,23 +47,30 @@ jobs:
             reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=warning
       - name: Running markdownlint
         uses: reviewdog/action-markdownlint@v0.26.2
-        continue-on-error: true
         if: steps.changed-files.outputs.any_changed == 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
           fail_level: error
-      - name: Post comment
+      - name: Post comment if failure
         uses: thollander/actions-comment-pull-request@v3
         if: failure()
         with:
+          comment-tag: autoreview-comment
           message: |
             源码格式/语法检查未通过，请根据 GitHub Action 给出的 Code Review 审查建议进行修改。
 
             对于有争议的修改建议，可暂时不进行修改并在 PR 中进行讨论。
 
             > 注：可通过 "Files changed" 页面中的 "Add suggestion to batch" 功能来批量采纳修改建议。
+      - name: Post comment if success
+        uses: thollander/actions-comment-pull-request@v3
+        if: success()
+        with:
+          comment-tag: autoreview-comment
+          message: |
+            源码格式/语法检查已通过。
 
       # - name: Check punctuation
       #   if: steps.changed-files.outputs.any_changed == 'true'
