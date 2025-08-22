@@ -42,7 +42,8 @@ jobs:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           curl -sSL https://git.io/JcGER | sh
-          autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | reviewdog -f=rdjson -level=warning -reporter=github-pr-review
+          autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | \
+            reviewdog -f=rdjson -level=warning -reporter=github-pr-review
       - name: Running markdownlint
         uses: reviewdog/action-markdownlint@v0.26.2
         continue-on-error: true
@@ -51,7 +52,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
-          level: warning
 
       # - name: Check punctuation
       #   if: steps.changed-files.outputs.any_changed == 'true'
