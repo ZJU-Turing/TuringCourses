@@ -96,6 +96,35 @@
 !!! note
     可以直接通过页面标题右侧的编辑按钮 :material-pencil: 定位到对应的 GitHub 页面进行修改。
 
+### 格式检查
+
+在进行 PR 时，GitHub Action 会自动对修改内容进行格式和语法的检测，并进行 Code Review。如果存在格式问题，请按照指引和修改建议进行修复。
+
+同时也建议先在本地进行格式检查（请自行根据链接 repo 中的 README 进行工具安装）：
+
+- 利用 [huacnlee/autocorrect](https://github.com/huacnlee/autocorrect/) 进行中英文混排的标点检查
+
+    ```shell
+    $ autocorrect --lint # 对所有文件进行格式检查
+    $ autocorrect --fix  # 对所有文件自动进行修复
+    $ autocorrect --lint docs/index.md # 只对某一/某几个文件进行检查（fix 同理）
+    ```
+
+- 利用 [igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) 进行 markdown 语法规范的检查
+
+    ```shell
+    $ markdownlint **/*.md # 对所有文件进行语法检查
+    $ markdownlint --fix **/*.md # 对所有文件自动进行修复
+    $ markdownlint docs/index.md # 只对某一/某几个文件进行检查（fix 同理）
+    ```
+
+- 利用仓库中的 `tools/punctuation_checker.py` 进行额外的标点用法检查
+
+    ```shell
+    $ python tools/punctuation_checker.py # 对所有文件进行标点用法检查（需 pip install rich）
+    $ python tools/punctuation_checker.py docs/index.md # 只对某一/某几个文件进行检查
+    ```
+
 ## 问题反馈
 
 如果你发现本网站内容存在问题，请优先在对应页面下方评论区中进行评论，或者在 repo 中开一个 issue 来提出问题。
