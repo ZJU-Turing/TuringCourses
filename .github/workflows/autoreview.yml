@@ -1,7 +1,7 @@
 name: Format Auto Review
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, reopened, synchronize]
     paths:
       - '**/*.md'
@@ -21,6 +21,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -43,7 +45,7 @@ jobs:
         run: |
           curl -sSL https://git.io/JcGER | sh
           autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | \
-            reviewdog -f=rdjson -level=warning -reporter=github-pr-review
+            reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=warning
       - name: Running markdownlint
         uses: reviewdog/action-markdownlint@v0.26.2
         continue-on-error: true
@@ -52,6 +54,17 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
+          fail_level: error
+      - name: Post comment
+        uses: thollander/actions-comment-pull-request@v3
+        if: failure()
+        with:
+          message: |
+            源码格式/语法检查未通过，请根据 GitHub Action 给出的 Code Review 审查建议进行修改。
+
+            对于有争议的修改建议，可暂时不进行修改并在 PR 中进行讨论。
+
+            > 注：可通过 "Files changed" 页面中的 "Add suggestion to batch" 功能来批量采纳修改建议。
 
       # - name: Check punctuation
       #   if: steps.changed-files.outputs.any_changed == 'true'
