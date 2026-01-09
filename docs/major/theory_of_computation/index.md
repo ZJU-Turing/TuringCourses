@@ -70,7 +70,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 毛宇尘可以说是新式古法上课，全程使用 iPad 手写概念与证明过程并投屏，没有任何 Slides 和讲义参考，并且不允许除最后一排外的同学使用电脑，这也就要求在课后花很多时间消化内容，或是对着智云/电子书反复学习概念。
 
-这门课只有图灵一个班，所以讲课内容、作业、小测、考试都由毛哥自己发挥，内容相比计算理论有很大拓展（何计算理论 H ？这课还确实能替换计算理论）。作业比较偏向理论与证明，更多考察是否真的掌握了这些知识，而非只是知道做题方法；小测和考试也都是这个风格，只要掌握了课上讲的东西，是肯定能写出东西的。
+这门课只有图灵一个班，所以讲课内容、作业、小测、考试都由毛哥自己发挥，内容相比计算理论有很大拓展（何计算理论 H？这课还确实能替换计算理论）。作业比较偏向理论与证明，更多考察是否真的掌握了这些知识，而非只是知道做题方法；小测和考试也都是这个风格，只要掌握了课上讲的东西，是肯定能写出东西的。
 
 ## 课程教材
 
@@ -114,10 +114,10 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 前人们的笔记：
 
-- （23 级） srk505 的笔记，写的有点近似讲义了：<https://nest.shrike505.cc/notes/ComputerScience/TCS/>
-- （21 级） TonyCrane 的课程笔记：<https://note.tonycrane.cc/cs/tcs/toc/>
-- （21 级） HobbitQia 的课程笔记：<https://note.hobbitqia.cc/TCS/>
-- （20 级） [ZhouTimeMachine 的笔记](https://zhoutimemachine.github.io/note/courses/toc/)
+- （23 级）srk505 的笔记，写的有点近似讲义了：<https://nest.shrike505.cc/notes/ComputerScience/TCS/>
+- （21 级）TonyCrane 的课程笔记：<https://note.tonycrane.cc/cs/tcs/toc/>
+- （21 级）HobbitQia 的课程笔记：<https://note.hobbitqia.cc/TCS/>
+- （20 级）[ZhouTimeMachine 的笔记](https://zhoutimemachine.github.io/note/courses/toc/)
 
 和“计算理论”重合的部分，也可在 CC98 等地方搜索计算理论的相关资料参考。
 
