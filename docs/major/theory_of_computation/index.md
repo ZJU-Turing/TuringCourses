@@ -32,7 +32,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
     - 正则语言封闭运算，**泵定理** (pumping theorem) 及其应用
     - **下推自动机** (PDA) 相比普通 FA 的增强
     - 上下文无关**语法** (CFG) 的定义，CFG 和 PDA 的等价性，互相转换的方法
-- 图灵机 (Turing Machine, TM) 
+- 图灵机 (Turing Machine, TM)
     - TM 的定义与基本概念、计算过程
     - 图灵完备性 (Turing Completeness)，NAND-TM/RAM 程序
     - 通用图灵机 UTM 的构造与工作原理
@@ -70,7 +70,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 毛宇尘可以说是新式古法上课，全程使用 iPad 手写概念与证明过程并投屏，没有任何 Slides 和讲义参考，并且不允许除最后一排外的同学使用电脑，这也就要求在课后花很多时间消化内容，或是对着智云/电子书反复学习概念。
 
-这门课只有图灵一个班，所以讲课内容、作业、小测、考试都由毛哥自己发挥，内容相比《计算理论》有很大拓展（何计算理论（H）？这课还确实能替换计算理论）。作业比较偏向理论与证明，更多考察是否真的掌握了这些知识，而非只是知道做题方法；小测和考试也都是这个风格，只要掌握了课上讲的东西，是肯定能写出东西的。
+这门课只有图灵一个班，所以讲课内容、作业、小测、考试都由毛哥自己发挥，内容相比计算理论有很大拓展（何计算理论 H ？这课还确实能替换计算理论）。作业比较偏向理论与证明，更多考察是否真的掌握了这些知识，而非只是知道做题方法；小测和考试也都是这个风格，只要掌握了课上讲的东西，是肯定能写出东西的。
 
 ## 课程教材
 
@@ -78,11 +78,11 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 20 级曾用教材如下：
 
-***《计算理论基础》Elements of the Theory of Computation***
+**《计算理论基础》Elements of the Theory of Computation**
 
 有中文版，但有一些小错误，英文版笔者未发现错误。中文版部分地方没有照抄英文版，做出了一些修改，经过笔者和一位 dl 的合力验证英文版部分地方确实太拗口，中文版做出了一些更易于理解的修改，所以需要批判性阅读。
 
-***Introduction to the Theory of Computation. Michael Sipser*** 亦是一本不错的参考教材。
+**Introduction to the Theory of Computation. Michael Sipser** 亦是一本不错的参考教材。
 
 ## 分数构成
 
@@ -97,7 +97,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
     - 期末考试（60%）
         - myc 最爱出神秘题目，看到第一眼直接发懵的那种
         - 10 道判断题，剩下全是大题
-    - 小测+作业的总分可以由期末分数覆盖（注意不是覆盖单项）
+    - 小测 + 作业的总分可以由期末分数覆盖（注意不是覆盖单项）
 
 === "21 级"
 
@@ -114,10 +114,10 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 前人们的笔记：
 
-- (23 级) srk505 的笔记，写的有点近似讲义了：<https://nest.shrike505.cc/notes/ComputerScience/TCS/>
-- (21 级) TonyCrane 的课程笔记：<https://note.tonycrane.cc/cs/tcs/toc/>
-- (21 级) HobbitQia 的课程笔记：<https://note.hobbitqia.cc/TCS/>
-- (20 级) [ZhouTimeMachine 的笔记](https://zhoutimemachine.github.io/note/courses/toc/)
+- （23 级） srk505 的笔记，写的有点近似讲义了：<https://nest.shrike505.cc/notes/ComputerScience/TCS/>
+- （21 级） TonyCrane 的课程笔记：<https://note.tonycrane.cc/cs/tcs/toc/>
+- （21 级） HobbitQia 的课程笔记：<https://note.hobbitqia.cc/TCS/>
+- （20 级） [ZhouTimeMachine 的笔记](https://zhoutimemachine.github.io/note/courses/toc/)
 
 和“计算理论”重合的部分，也可在 CC98 等地方搜索计算理论的相关资料参考。
 
@@ -129,6 +129,4 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 在换新教材后，课程内容的难点更加偏向复杂度理论，然而这部分内容并没有在 23 级考试中占据特别大的比重。图灵机之前的内容相对容易理解一些，需要对每个概念都掌握扎实（例如 22 级期末考了一道用双栈 PDA 模拟图灵机，23 级考了一道同时跑 PDA 和 DFA 的题目，这都要求你对这些基本概念有清晰的理解），要掌握正则/非正则的判断和证明（怎么画/构造 FA），CFL 的判断和证明（怎么构造 CFG/PDA，虽然很多情况下写 CFG 会更方便，但是有些时候很难想，需要用 PDA）。在图灵机及之后的内容逐渐抽象，理解难度也会增加，重点是对（多项式时间）归约的掌握，要熟练掌握用莱斯定理和归约来证明不可计算性的问题（至少车轱辘话要会写 [ac01]）。
 
-每次作业批改结束/小测结束后助教都会发布答案，一定要对着看看懂。平时作业和小测的题目是复习考试的最好资料，考试题目风格也和这些题目比较接近，但是第一眼看到容易使人发懵。
-
-计院很少有毛哥这种能把理论课讲得非常流畅的老师，需要好好珍惜，课上跟住老师这门课可以说完全不成问题。而且毛哥给分也可以说非常慷慨，和之前的金小刚完全形成了鲜明对比（x）。同时考试也没有套路题，不需要靠历年卷，只要弄懂课上内容加上看一看作业和小测题就足够了。有任何问题也都可以在课后去找毛哥问，每次都会非常清晰地给出解答。
+每次作业批改结束/小测结束后助教都会发布答案，一定要对着看看懂。平时作业和小测的题目是复习考试的最好资料，考试题目风格也和这些题目比较接近，但是第一眼看到容易使人发懵，弄懂课上内容加上看一看作业和小测题会有很大的帮助。有任何问题也都可以在课后去找毛哥问，每次都会非常清晰地给出解答。
