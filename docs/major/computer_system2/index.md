@@ -12,21 +12,21 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_syst
 系统贯通系列的第二门课程，主要包括计组（一点体系结构）、操作系统两个部分，也称为硬件和软件两个部分。具体内容是，硬件部分重点为 RISC-V 流水线 CPU，还有一些其他的硬件优化技术介绍等；软件部分从操作系统基础讲起，包括操作系统调用、进程线程、调度、同步等内容。
 
 !!! note "课程大纲"
-    来自 23 级卢立申文博老师班
+    来自 24 级卢立申文博老师班
 
-    - Instruction Classification and Design Principle ~ 1.5 week
+    - Instruction Classification and Design Principle ~ 1 week
     - Concept, Category, Architecture and Design of Pipeline CPU ~ 1.5 weeks
     - Hazard of Pipeline CPU ~ 2 weeks
     - Software/Hardware Interfaces ~ 1 week
     - Introduction of OS ~ 2 weeks
-    - Interrupt ~ 2 week
+    - Interrupt ~ 2 weeks
     - Process and Thread ~ 2 weeks 
-    - Scheduling, Synchronization and Deadlock ~ 3 weeks
+    - Scheduling, Synchronization and Deadlock ~ 2.5 weeks
     - Final Review ~ 1 week
 
 ## 任课教师
 
-硬件部分还是由系统一的卢立老师继续教授。软件部分 20 级为申文博老师，21 级为周亚金老师，都很 nice 的。随着系统逐渐成为计院软硬件课程的主流，必修这门课的同学也越来越多，之后会有更多老师开班。
+24 级图灵班该课程预置的是卢立老师和申文博老师，没有必要更换预置。应硬件部分由卢立老师教授，软件部分由申文博老师教授。卢立老师上课稍微有点催眠，但大部分时候还是讲得比较清楚的，课上互动不多，听课比较轻松。申文博老师上课则比较活跃，讲得非常不错，唯一的缺点就是比较注重学生的 participation，24 级常做的操作是从后排开始开火车让同学回答问题，并且不定时的会把课上提的问题让同学们写在纸上记名上交，记为平时点名的分数，采取严格的准出计数，基本上不存在本人未到还能签上到的情况。
 
 这门课的助教也很重要，无论是实验指导还是课后答疑，负责的助教都会有很大的帮助。
 
@@ -39,13 +39,28 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/computer_syst
     === "卢立、申文博老师班"
         作业（10%）（实则最后没有这部分，应该是换成了签到）+ 实验（60%）+ 期末考试（30%）
 
+=== "24 级"
+    作业（10%）+ 实验（60%）+ 期末考试（30%）
+
 ## 学习建议
 
-硬件课有可能老师会在课上让做一下小题最后上交答题纸来记录课堂参与度。作业次数不一定，21 级只有硬件课留了两次作业，23 级卢立申文博老师班则完全没有作业。同样实验是重头，期末半开卷，难度不高。注意和某些计院专业课一样，这门课也参与了计院的朋辈辅学项目，期末时可以跟着学长的复习课过一遍可能出的大题题型。
+关于作业，留的次数不一定，21 级只有硬件课留了两次作业，24 级卢立申文博老师班也是这种情况，23 级卢立申文博老师班则完全没有作业。同样实验是重头，期末半开卷，难度不高。注意和某些计院专业课一样，这门课也参与了计院的朋辈辅学项目，期末时可以跟着学长的复习课过一遍可能出的大题题型。
 
-关于实验，硬件部分应该有三个，第一个是上学期的单周期 CPU，照顾一下当时没完成的同学，第二个就是流水线 CPU，第三个是冒险的处理（Forwarding 模块 & Axi 总线模型）。硬件实验还是有些麻烦的，调试不太容易，出问题勤问助教就好。软件部分实验和其他专业的 os 实验差不多，第一个实验是编译、调试 Linux 内核，第二个实验开始根据框架一步一步实现操作系统的功能。面对给的框架可能不知道从何入手，这时候可以参考 Linux 的源码。最后一个实验是综合性实验，但实际来说就是硬件实验，需要在之前的流水线 CPU 上添加 RISC-V 特权模式的一小部分功能，来跑起来一个简化的小 kernel。
+24 级的系统二有 7 个平时实验、1 个综合实验和 1 个 Bonus 实验：
 
-和系统一一样，这门课也是相当好拿分的，甚至 20 级的均绩都达到了 4.8 分。实验不拖 ddl 全部认真完成，期末简单复习一下，成绩完全不用担心。
+- lab0: 系统 I 的单周期 CPU
+- lab1: 基础五级流水线 CPU
+- lab2: 竞争处理及 AXI4-lite 总线内存模型
+- lab3: 卷积加速器
+- lab4: RISC-V 64 内核引导
+- lab5: RISC-V 64 时钟中断处理
+- lab6: RISC-V 64 内核线程调度
+- Bonus lab: ARM 架构下 Linux 内核的编译与 QEMU 仿真
+- lab7: 综合实验
+
+其中 lab0 到 lab3 以及综合实验属于硬件实验，调试起来比较困难，建议留足时间；lab4 到 lab6 及 Bonus 属于软件实验，会让同学们根据给定的框架一步一步实现操作系统的功能，较为简单，遇到不会的问题可以参考 Linux 的源码或者问大模型解决。具体内容可以参考[实验文档](https://zju-sys.pages.zjusct.io/sys2/sys2-fa25/)，如果文档不存在可以访问[仓库](https://git.zju.edu.cn/zju-sys/sys2/sys2-fa25)查看源码或按照指引本地渲染文档。
+
+系统二是计算机系统三门课中最好拿分的一门，实验不拖 ddl 全部认真完成，期末复习一下，成绩完全不用担心。
 
 ## 参考书目
 
