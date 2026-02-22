@@ -17,7 +17,7 @@
 |[普通物理学 Ⅰ（H）](physics1/index.md)|4.0|★★★★☆|一（春夏）|较完善✅||
 |[普通物理学实验 Ⅰ](physics_experiment1/index.md)|1.5|☆☆☆☆☆|一（春夏）|较完善✅||
 |[普通物理学 Ⅱ（H）](physics2/index.md)|4.0|★★★★★|二（秋冬）|仅老师介绍||
-|[概率论与数理统计](probability/index.md)|2.5|★★☆☆☆|二（秋冬）|概率论（H）|有|
+|[概率论和数理统计](probability/index.md)|2.5|★★☆☆☆|二（秋冬）|较完善✅|有|
 
 </div>
 
