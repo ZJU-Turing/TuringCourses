@@ -74,7 +74,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_basic/theory_of_com
 
 ## 课程教材
 
-23 级的教材是 Boaz Barak 的 [_Introduction to Theoretical Computer Science_](https://introtcs.org/) 
+23 级的教材是 Boaz Barak 的 [_Introduction to Theoretical Computer Science_](https://introtcs.org/)
 
 20 级曾用教材如下：
 
