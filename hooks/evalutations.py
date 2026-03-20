@@ -55,7 +55,7 @@ def _get_page_markdown(class_name: str) -> str:
                 markdown += f"### {course} {lab_tag}\n\n"
             else:
                 markdown += f"### {course}\n\n"
-            for grade in list(grades_set)[::-1]:
+            for grade in sorted(list(grades_set), reverse=True):
                 markdown += f'=== "{grade} 级"\n'
                 grade_items = list(
                     filter(lambda x: int(x["年级"]) == grade, course_items)
