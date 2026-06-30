@@ -1,0 +1,274 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ctex}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, mathrsfs}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{bm}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% 常用数学符号重定义
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Img}{Im}
+
+\begin{document}
+
+\section*{一、判断题 (20分)}
+
+\textbf{1. $T$ 是 3 维实线性空间上的算子，且只有特征值 1，则 $(T-I)^2 = O$。}
+\begin{itemize}
+    \item \textbf{判断}：假。
+    \item \textbf{反例}：考虑 $3 \times 3$ 的 Jordan 矩阵 $A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{pmatrix}$，它对应的线性算子只有特征值 1。计算 
+    $$ (A-I)^2 = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}^2 = \begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix} \neq O。$$
+\end{itemize}
+
+\textbf{2. 设 $T$ 是实内积空间上的算子，$W$ 是 $T$ 的一个不变子空间，则 $W^\perp$ 还是 $T$ 的不变子空间。}
+\begin{itemize}
+    \item \textbf{判断}：假。
+    \item \textbf{反例}：在 $\mathbb{R}^2$ 及其标准内积下，令 $T$ 对应的矩阵为 $\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$。设 $W = \Span\{(1,0)^T\}$，显然 $W$ 是 $T$ 的不变子空间。其正交补 $W^\perp = \Span\{(0,1)^T\}$。由于 $T(0,1)^T = (1,1)^T \notin W^\perp$，因此 $W^\perp$ 不是 $T$ 的不变子空间。
+    \item \textbf{解析}：实际上，若命题成立，则算子对不变子空间 $W^\perp$ 也不变。于是为了找到反例，可以尝试构造非对称的算子（矩阵）。
+\end{itemize}
+
+\begin{tcolorbox}[colback=gray!10, colframe=gray!30, sharp corners]
+    \textbf{7.28 自伴算子与不变子空间}\\
+    设 $T \in \mathcal{L}(V)$ 是自伴的，并设 $U$ 是 $V$ 的在 $T$ 下不变的子空间. 则
+    \begin{enumerate}
+        \item[(a)] $U^\perp$ 在 $T$ 下不变;
+        \item[(b)] $T|_U \in \mathcal{L}(U)$ 是自伴的;
+        \item[(c)] $T|_{U^\perp} \in \mathcal{L}(U^\perp)$ 是自伴的.
+    \end{enumerate}
+\end{tcolorbox}
+
+\textbf{3. 实内积空间上的算子 $T$，在某组基下的矩阵是正交阵，则 $T$ 是正交算子。}
+\begin{itemize}
+    \item \textbf{判断}：假。
+    \item \textbf{反例}：该命题只有当基为规范正交基时才成立。考虑 $\mathbb{R}^2$ 与标准内积，取非正交基 $e_1 = (1,0)^T, e_2 = (1,1)^T$。设 $T$ 在此基下的矩阵为 $A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ （这是一个正交矩阵）。则有 $Te_1 = e_2$。计算长度发现 $\|e_1\| = 1$，而 $\|Te_1\| = \|e_2\| = \sqrt{2} \neq 1$。因为不保范数，所以 $T$ 不是正交算子。
+\end{itemize}
+
+\begin{tcolorbox}[colback=gray!10, colframe=gray!30, sharp corners]
+    \textbf{7.42 等距同构的刻画}\\
+    设 $S \in \mathcal{L}(V)$. 则以下条件等价:
+    \begin{enumerate}
+        \item[(a)] $S$ 是等距同构;
+        \item[(b)] 对所有 $u,v \in V$ 均有 $\langle Su, Sv \rangle = \langle u, v \rangle$;
+        \item[(c)] 对 $V$ 中的任意规范正交向量组 $e_1,\dots,e_n$ 均有 $Se_1,\dots,Se_n$ 是规范正交的;
+        \item[(d)] $V$ 有规范正交基 $e_1,\dots,e_n$ 使得 $Se_1,\dots,Se_n$ 是规范正交的;
+        \item[(e)] $S^*S = I$;
+        \item[(f)] $SS^* = I$;
+        \item[(g)] $S^*$ 是等距同构;
+        \item[(h)] $S$ 是可逆的且 $S^{-1} = S^*$.
+    \end{enumerate}
+\end{tcolorbox}
+
+\textbf{4. 有限维实内积空间上的算子 $T$ 的奇异值均为 1，则 $T$ 是等距变换。}
+\begin{itemize}
+    \item \textbf{判断}：真。
+    \item \textbf{证明}：$T^*T$ 的特征值都是 1。由于 $T^*T$ 是自伴随算子（实对称），它可以被正交对角化。由于特征值全为 1，故 $T^*T = I$。故 $T$ 是等距变换。
+\end{itemize}
+
+\begin{tcolorbox}[colback=gray!10, colframe=gray!30, sharp corners]
+    \textbf{7.49 定义 奇异值 (singular values)}\\
+    设 $T \in \mathcal{L}(V)$. 则 $T$ 的奇异值就是 $\sqrt{T^*T}$ 的本征值，而且每个本征值 $\lambda$ 都要重复 $\dim E(\lambda, \sqrt{T^*T})$ 次.
+\end{tcolorbox}
+
+
+\section*{二、解析几何 (15分)}
+
+\begin{itemize}
+    \item \textbf{题目}：求直线 
+    $\begin{cases} 
+    2x + 3y + 1 = 0, \\ 
+    4x + 3y + z - 1 = 0. 
+    \end{cases}$ 
+    在 $Oxz$ 平面上的投影。
+
+    \item \textbf{解答}：
+    
+    \textbf{(法一)}，令 $x=t$，则
+    $$ y = -\frac{2t+1}{3}, \quad z = 2 - 2t. $$
+    直线在 $Oxz$ 平面 ($y=0$) 上的投影是保持 $x,z$ 坐标不变、令 $y=0$ 得到的点集：
+    $$ \begin{cases} 
+    x = t, \\ 
+    y = 0, \\ 
+    z = 2 - 2t 
+    \end{cases} \quad , t \in \mathbb{R} $$
+    消去 $t$ 得投影直线方程(或者直接用上面的参数形式作为答案)：
+    $$ 2x + z - 2 = 0, \quad y = 0. $$
+
+    \textbf{(法二)}，已知直线方程为：
+    $$ \begin{cases} 
+    2x + 3y + 1 = 0 \\ 
+    4x + 3y + z - 1 = 0 
+    \end{cases} $$
+    两个平面的法向量分别为：
+    $$ \vec{n}_1 = (2, 3, 0) $$
+    $$ \vec{n}_2 = (4, 3, 1) $$
+    $\Rightarrow$ 直线方向向量 $\vec{v} = \vec{n}_1 \times \vec{n}_2 = \begin{vmatrix} i & j & k \\ 2 & 3 & 0 \\ 4 & 3 & 1 \end{vmatrix} = (3, -2, -6)$
+
+    $Oxz$ 平面的法向量为 $\vec{n} = (0, 1, 0)$
+
+    投影向量设为 $\vec{u}$
+    $$ \cos\theta = \frac{\langle \vec{n}, \vec{v} \rangle}{|\vec{n}| \cdot |\vec{v}|} $$
+    $$ \Rightarrow \vec{v} = \vec{u} + \frac{\vec{n}}{|\vec{n}|} \cdot |\vec{v}| \cdot \cos\theta = \vec{u} + \vec{n} \cdot \langle \vec{n}, \vec{v} \rangle $$
+    $$ \Rightarrow \vec{u} = \vec{v} - \vec{n} \cdot \langle \vec{n}, \vec{v} \rangle = \begin{pmatrix} 3 \\ -2 \\ -6 \end{pmatrix} - \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \cdot (-2) = \begin{pmatrix} 3 \\ 0 \\ -6 \end{pmatrix} $$
+    最后求直线与 $Oxz$ 的一个交点：\\
+    直接令 $y=0$，得
+    $$ \begin{cases} 2x + 1 = 0 \\ 4x + z - 1 = 0 \end{cases} \Rightarrow \begin{cases} x = -\frac{1}{2} \\ z = 3 \end{cases} $$
+    $\Rightarrow$ 直线与 $Oxz$ 的交点为 $(-\frac{1}{2}, 0, 3)$ \\
+    $\Rightarrow$ 直线在 $Oxz$ 上的投影为 
+    $$ \frac{x + \frac{1}{2}}{3} = \frac{z - 3}{-6}, \quad y = 0 $$
+    化简：$2x + z - 2 = 0, y = 0$
+\end{itemize}
+
+
+\section*{三、向量空间与基 (15分)}
+
+\textbf{1. 证明 $\{\alpha_1, \alpha_2, \dots, \alpha_n\}$ 也是 $V$ 的一组基。}
+\begin{itemize}
+    \item \textbf{证明}：已知 $\alpha_i = e_1 + a_i e_2 + \dots + a_i^{n-1} e_n$。由基 $\{e_1, \dots, e_n\}$ 到 $\{\alpha_1, \dots, \alpha_n\}$ 的过渡矩阵为：
+    $$ P = \begin{pmatrix} 
+    1 & 1 & \dots & 1 \\ 
+    a_1 & a_2 & \dots & a_n \\ 
+    \vdots & \vdots & \ddots & \vdots \\ 
+    a_1^{n-1} & a_2^{n-1} & \dots & a_n^{n-1} 
+    \end{pmatrix} $$
+    该矩阵是范德蒙德 (Vandermonde) 矩阵，其行列式为 $\det(P) = \prod_{1 \le j < i \le n} (a_i - a_j)$。因为给定的数 $a_1, a_2, \dots, a_n$ 各不相同，所以 $\det(P) \neq 0$。过渡矩阵满秩，因此 $\{\alpha_1, \alpha_2, \dots, \alpha_n\}$ 线性无关，构成 $V$ 的一组基。
+\end{itemize}
+
+\textbf{2. 证明: $V$ 中必有一组基，使得每个基向量都不在诸 $V_i$ 的并中。}
+\begin{itemize}
+    \item \textbf{证明}：取 $V$ 的一组基 $\{e_1, e_2, \dots, e_n\}$。对任意的正整数 $k$，构造 $V$ 中向量
+    $$ \alpha_k = e_1 + k e_2 + \dots + k^{n-1} e_n, $$
+    得到向量族
+    $$ S = \{\alpha_k \mid k = 1, 2, \dots\} $$
+    由题 1 可知，$S$ 中任意 $n$ 个不同的向量都构成 $V$ 的一组基。因为 $V_i$ 都是 $V$ 的真子空间，所以每个 $V_i$ 至多包含 $S$ 中 $n-1$ 个向量。由于 $S$ 是无限集合，故存在某个向量 $\alpha_k$，使得 $\alpha_k$ 不属于任何一个 $V_i$。
+
+    进一步，在 $S$ 中还存在 $n$ 个不同的向量 $\alpha_{k_1}, \alpha_{k_2}, \dots, \alpha_{k_n}$，使得每个 $\alpha_{k_j}$ 都不属于任何一个 $V_i$，此时 $\{\alpha_{k_1}, \alpha_{k_2}, \dots, \alpha_{k_n}\}$ 就构成了 $V$ 的一组基。
+\end{itemize}
+
+
+\section*{四、商空间 (10分)}
+
+\textbf{1. 给出商空间 $V/V_1$ 的一个基。}
+\begin{itemize}
+    \item \textbf{解答}：空间 $V = M_n(F)$ 的维数为 $n^2$。子空间 $V_1$ 由全体对角矩阵张成，维数为 $n$。商空间 $V/V_1$ 的维数为 $n^2 - n$。设 $E_{ij}$ 为第 $i$ 行第 $j$ 列为 1，其余位置全为 0 的矩阵，商空间 $V/V_1$ 的一个基可由所有非对角位置的基础矩阵的等价类构成：
+    $$ \{E_{ij} + V_1 \mid 1 \le i, j \le n, i \neq j\} $$
+\end{itemize}
+
+\textbf{2. 求商空间 $V/C(A)$ 的一个基。}
+\begin{itemize}
+    \item \textbf{解答}：设 $X = (x_{ij})_{3 \times 3} \in C(A)$。由条件 $XA = AX$，其中 $A = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 1 \end{pmatrix}$，通过矩阵乘法对应元素相等，可以解出 $X$ 的形式必须满足：$x_{13} = 0, x_{23} = 0, x_{21} = 0, x_{33} = x_{22}$。因此 $C(A)$ 中的矩阵形如：
+    $$ \begin{pmatrix} x_{11} & x_{12} & 0 \\ 0 & x_{22} & 0 \\ x_{31} & x_{32} & x_{22} \end{pmatrix} $$
+    换句话说
+    $$ C(A) = \left\{ \begin{pmatrix} k_1 & k_2 & 0 \\ 0 & k_3 & 0 \\ k_4 & k_5 & k_3 \end{pmatrix} \;\middle|\; k_i \in \mathbb{R}, i=1 \dots 5 \right\} = \Span\{E_{11}, E_{12}, E_{22}+E_{33}, E_{31}, E_{32}\} $$
+    显然 $\dim(C(A)) = 5$。因此 $\dim(V/C(A)) = 9 - 5 = 4$，在 $V$ 中找出 4 个不在 $C(A)$ 中且线性无关的基向量：
+    $$ E_{13}, E_{21}, E_{23}, E_{33} $$
+    故商空间 $V/C(A)$ 的一个基为：
+    $$ \{E_{13} + C(A), E_{21} + C(A), E_{23} + C(A), E_{33} + C(A)\} $$
+\end{itemize}
+
+
+\section*{五、最小多项式 (10分)}
+
+\begin{itemize}
+    \item \textbf{题目}：证明 $T - \lambda I$ 的最小多项式是 $q(z) = p(z + \lambda)$。
+    \item \textbf{证明}：首先将 $T - \lambda I$ 代入 $q(z)$，得到：
+    $$ q(T - \lambda I) = p((T - \lambda I) + \lambda I) = p(T) = O $$
+    这说明多项式 $q$ 适合 $T - \lambda I$，而且显然是首一的多项式，（因此接下来只需要证明 $q$ 是次数最低的）。假设存在 $r(z)$ 使得 $\deg r < \deg q$，且 $r(T - \lambda I) = O$ 则可以考虑多项式：$r(z - \lambda)$ 直接带入 $T$ 得：
+    $$ r(T - \lambda I) = O $$
+    因此，由定义 $\deg p \le \deg r(z - \lambda) = \deg r$。最后，由 $\deg q = \deg p$，可以推出矛盾：$\deg q \le \deg r$。
+\end{itemize}
+
+
+\section*{六、线性算子与投影 (10分)}
+
+\textbf{1. 证明: $V = \ker\varphi \oplus \ker(I - \varphi)$。}
+\begin{itemize}
+    \item \textbf{证明}：已知算子定义为 $\varphi(f(x)) = \frac{f(x)+f(-x)}{2}$。（注意到 $\varphi$ 作用偶函数保持不变，可以考虑 $\varphi^2$）注意到：
+    $$ \varphi(\varphi(f(x))) = \varphi\left(\frac{f(x)+f(-x)}{2}\right) = \frac{\frac{f(x)+f(-x)}{2} + \frac{f(-x)+f(x)}{2}}{2} = \frac{f(x)+f(-x)}{2} = \varphi(f(x)) $$
+    这说明 $\varphi^2 = \varphi$，即 $\varphi$ 的极小多项式无重根可对角化，从而空间可以直和分解为它的核与它的像：$V = \ker\varphi \oplus \Img\varphi$。由于 $g \in \Img\varphi \iff \varphi(g)=g \iff (I-\varphi)(g)=0 \iff g \in \ker(I-\varphi)$。故 $\Img\varphi = \ker(I-\varphi)$，从而 $V = \ker\varphi \oplus \ker(I-\varphi)$。
+\end{itemize}
+
+\textbf{2. 求算子 $E$ 的代数表达式。}
+\begin{itemize}
+    \item \textbf{解答}：由题意 $E|_{\ker\varphi} = -I$ 和 $E|_{\ker(I-\varphi)} = I$。对于任意向量 $v \in V$，根据 1，存在唯一的 $v_1 \in \ker\varphi$ 与 $v_2 \in \ker(I-\varphi)$ 使得 $v = v_1 + v_2$。根据定义，$\varphi(v_1) = 0, \varphi(v_2) = v_2$。所以 $\varphi(v) = \varphi(v_1 + v_2) = v_2$。因此 $v_1 = v - v_2 = v - \varphi(v) = (I - \varphi)v$。现在对 $v$ 作用 $E$：
+    $$ E(v) = E(v_1 + v_2) = E(v_1) + E(v_2) $$
+    利用限制条件：
+    $$ E(v) = -v_1 + v_2 = -(I - \varphi)v + \varphi v = (-I + 2\varphi)v $$
+    因此，$E$ 的代数表达式为：
+    $$ E = 2\varphi - I $$
+\end{itemize}
+
+
+\section*{七、内积空间与正交补 (10分)}
+
+\textbf{1. 证明: $f$ 是 $W$ 上的内积。}
+\begin{itemize}
+    \item \textbf{证明}：需要验证内积的四个性质（$W$ 中元素均为实对称矩阵，$A = A^T$）：\\
+    (1) \textbf{对称性}: $f(A,B) = \Tr(AB) = \Tr(BA) = f(B,A)$。\\
+    (2) \textbf{线性性}: $f(c_1A_1 + c_2A_2, B) = \Tr((c_1A_1 + c_2A_2)B) = c_1\Tr(A_1B) + c_2\Tr(A_2B) = c_1f(A_1, B) + c_2f(A_2, B)$。\\
+    (3) \textbf{非负性}: $f(A,A) = \Tr(A^2) = \Tr(A^T A)$。设 $A = (a_{ij})$，则 $\Tr(A^T A) = \sum_{i=1}^n \sum_{j=1}^n a_{ij}^2 \ge 0$。\\
+    (4) \textbf{正定性}: 如果 $f(A,A) = 0$，即 $\sum_{i,j} a_{ij}^2 = 0$，这必然要求所有的 $a_{ij} = 0$，即 $A = O$。综上，$f$ 是内积。
+\end{itemize}
+
+\textbf{2. 求 $S$ 的维数以及 $S$ 在 $W$ 中的正交补 $S^\perp$。}
+\begin{itemize}
+    \item \textbf{解答}：$n$ 阶实对称矩阵空间 $W$ 的维数是 $\frac{n(n+1)}{2}$。子空间 $S$ 定义为 $S = \{A \in W \mid \Tr(A) = 0\}$，（只考虑对角矩阵 $D$ 时，$\Tr(D) = 0$，相当于一个 $n$ 元线性方程，利用线性方程组的解法）：
+    $$ U = \{ D \text{为} n \text{阶对角矩阵} \mid \Tr(D) = 0 \} \text{的维数为} n-1 $$
+    因此 $S$ 的维数为：
+    $$ \dim(S) = \frac{n(n+1)}{2} - 1 $$
+    对于正交补 $S^\perp$，其维数必为 $\dim(W) - \dim(S) = 1$。考虑单位矩阵 $I \in W$。对任意 $A \in S$，有：
+    $$ f(I,A) = \Tr(IA) = \Tr(A) = 0 $$
+    这意味着 $I$ 与 $S$ 中的所有矩阵都正交，故 $I \in S^\perp$。因为 $\dim(S^\perp) = 1$，所以：
+    $$ S^\perp = \Span\{I\} $$
+    
+    \textbf{(法二)}：可以将矩阵的迹 $\Tr$ 看作是一个 $W$ 上的线性泛函 $\varphi(A) = \Tr(A)$。显然 $\varphi$ 是线性泛函，且 $\varphi \neq 0$（例如取 $A=I$，$\varphi(I)=n \neq 0$）。于是 $S = \ker\varphi$，故
+    $$ \dim S = \dim W - \dim\Img\varphi = \dim W - 1 = \frac{n(n+1)}{2} - 1. $$
+\end{itemize}
+
+
+\section*{八、正算子乘积证明 (10分)}
+
+\textbf{1. 证明 $T_1$ 和 $T_2$ 可被同时正交对角化。}
+\begin{itemize}
+    \item \textbf{证明}：已知 $T_1, T_2$ 是正算子，故它们必定是自伴随算子 ($T_1=T_1^*, T_2=T_2^*$)。因为自伴随算子 $T_1$ 可以在 $V$ 上正交对角化，所以 $V$ 可以分解为 $T_1$ 特征子空间的直和：$V = \bigoplus V_{\lambda_i}$，这些特征子空间相互正交。由于 $T_1$ 和 $T_2$ 可交换 ($T_1T_2 = T_2T_1$)，对于任意 $x \in V_{\lambda_i}$，有：
+    $$ T_1(T_2x) = T_2(T_1x) = T_2(\lambda_i x) = \lambda_i (T_2x) $$
+    这说明 $T_2x \in V_{\lambda_i}$，即每个 $V_{\lambda_i}$ 都是 $T_2$ 的不变子空间。算子 $T_2$ 限制在每个 $V_{\lambda_i}$ 上依然是自伴随的，因此在每个 $V_{\lambda_i}$ 内，可以找到一组由 $T_2$ 的特征向量构成的规范正交基。因为这些向量本来就处在 $V_{\lambda_i}$ 中，它们必然也是 $T_1$ 的特征向量。汇总各子空间中的基底，便得到了全空间 $V$ 的一组使得 $T_1, T_2$ 同时正交对角化的规范正交基。
+\end{itemize}
+
+\textbf{2. 证明算子乘积 $T_1T_2$ 也是一个正算子。}
+\begin{itemize}
+    \item \textbf{证明}：利用第 1 问的结论，存在一组由公共特征向量组成的规范正交基 $e_1, e_2, \dots, e_n$。设 $T_1 e_i = \lambda_i e_i$，且 $T_2 e_i = \mu_i e_i$。因为 $T_1, T_2$ 是正算子，其特征值非负，即对于所有的 $i$，有 $\lambda_i \ge 0, \mu_i \ge 0$。考察乘积算子：
+    $$ (T_1T_2)e_i = T_1(\mu_i e_i) = \mu_i T_1 e_i = \lambda_i \mu_i e_i $$
+    这说明 $e_i$ 也是 $T_1T_2$ 的特征向量，对应的特征值为 $\lambda_i \mu_i$。显然 $\lambda_i \mu_i \ge 0$。另外，由于 $(T_1T_2)^* = T_2^* T_1^* = T_2 T_1 = T_1 T_2$，说明 $T_1T_2$ 是自伴随算子。一个特征值全部非负的自伴随算子就是正算子。
+\end{itemize}
+
+
+\section*{九、幂零算子与多项式表示 (10分)}
+
+\textbf{1. 证明存在非零向量 $v \in V$ 使得 $\beta = \{v, Nv, \dots, N^{n-1}v\}$ 是一组基。}
+\begin{itemize}
+    \item \textbf{证明}：已知 $N^{n-1} \neq O$，因此必定存在一个向量 $v \in V$ 满足 $N^{n-1}v \neq 0$。我们要证明这 $n$ 个向量线性无关。假设存在一组复数使得：
+    $$ c_0v + c_1Nv + c_2N^2v + \dots + c_{n-1}N^{n-1}v = 0 $$
+    方程两边同乘 $N^{n-1}$。由于 $N^n = O$，所有包含 $N^k (k \ge 1)$ 的项都会在乘上 $N^{n-1}$ 后变为 $0$。因此得到：
+    $$ c_0 N^{n-1}v = 0 $$
+    因为 $N^{n-1}v \neq 0$，所以必定有 $c_0 = 0$。将 $c_0=0$ 代回原方程，接着同乘 $N^{n-2}$，同理可得 $c_1 N^{n-1}v = 0 \Rightarrow c_1 = 0$。以此类推，可推导出 $c_0 = c_1 = \dots = c_{n-1} = 0$。由于这 $n$ 个向量线性无关，并且 $V$ 是 $n$ 维空间，故它们构成了 $V$ 的一组基。
+\end{itemize}
+
+\textbf{2. 证明算子 $T$ 必然可以表示为 $N$ 的多项式。}
+\begin{itemize}
+    \item \textbf{证明}：根据第一问，$\beta = \{v, Nv, \dots, N^{n-1}v\}$ 是 $V$ 的基。因此向量 $Tv$ 可以被这组基线性表出。即存在唯一的一组复数 $c_0, c_1, \dots, c_{n-1}$ 使得：
+    $$ Tv = c_0v + c_1Nv + \dots + c_{n-1}N^{n-1}v $$
+    我们构造多项式算子 $P(N) = c_0I + c_1N + \dots + c_{n-1}N^{n-1}$。由上式知 $Tv = P(N)v$。接着，我们要证明对 $\beta$ 中的所有向量 $N^kv$，$T$ 与 $P(N)$ 的作用结果均相同。由于已知 $T$ 与 $N$ 可交换（$TN = NT$），故 $T$ 与 $N^k$ 亦可交换。于是：
+    $$ T(N^k v) = N^k(Tv) = N^k(P(N)v) = P(N)(N^k v) $$
+    这说明线性算子 $T$ 和 $P(N)$ 在基 $\beta$ 的所有基向量上作用结果完全相等，即两个算子在空间上完全等价：
+    $$ T = c_0I + c_1N + \dots + c_{n-1}N^{n-1} $$
+\end{itemize}
+
+\end{document}
