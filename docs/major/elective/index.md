@@ -47,7 +47,7 @@ PS：另有科研训练系列课程，为发表 CCF A 或 ZJU 100 类论文时�
 
 |课程名称|学分|建议学年学期|资料情况|
 |:--|:--|:--|:--|
-|深度学习导论|3.5|二（春夏）||
+|[深度学习导论](../introduction_to_deep_learning/index.md)|3.5|二（春夏）|较完善✅|
 |[数据可视化导论](../introduction_to_data_visualization/index.md)|2.0|二（春夏）|较完善✅|
 |[数据挖掘导论](../data_mining/index.md)|2.0|三（夏）|较完善✅|
 |[量子计算理论基础与软件系统](../quantum_computing/index.md)|3.0|三（秋冬）|较完善✅|
