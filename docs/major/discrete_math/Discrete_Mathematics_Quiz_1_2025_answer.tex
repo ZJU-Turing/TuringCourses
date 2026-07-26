@@ -1,0 +1,105 @@
+\documentclass{ctexbook}
+\usepackage{amsmath, amsfonts, amssymb, geometry,enumitem}
+\geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm}
+
+\begin{document}
+\centering
+\section*{Discrete Mathematics Quiz 1}
+\centering
+\textbf{2025-4-21 by jayi0908}
+
+\begin{enumerate}
+    \item[1.]
+    \begin{enumerate}
+        \item [a)] The answer is \textbf{T}. \\
+        $\exists x(P(x)\rightarrow A)\equiv\exists x(\lnot P(x)\lor A)$ \\
+        由于 $x$ 不在 $A$ 中，所以上式可以使用分配律，且结果为 $(\exists x\lnot P(x))\lor A$， \\
+        而 $\exists x\lnot P(x)\equiv\lnot\forall xP(x)$，故 $\exists x(P(x)\rightarrow A)\equiv\lnot\forall xP(x)\lor A\equiv\forall xP(x)\rightarrow A$. 
+        \item [b)] The answer is \textbf{T}.
+        \begin{align*} 
+        \text{注意到}\quad x\in(A-(B\cap C)) &\Leftrightarrow (x\in A)\land (x\notin (B\cap C)) \\
+        & \Leftrightarrow (x\in A)\land ((x\notin B) \lor (x\notin C)) \\
+        & \Leftrightarrow ((x\in A)\land(x\notin B))\lor ((x\in A)\land(x\notin C)) \\
+        & \Leftrightarrow (x\in (A-B))\lor (x\in (A-C)) \\
+        & \Leftrightarrow x\in (A-B)\cup(A-C) 
+        \end{align*}
+        由 $x$ 的任意性知 $(A-(B\cap C))=(A-B)\cup(A-C)$.
+        \item [c)] The answer is \textbf{T}. \\
+        对任意 $k\in\mathbb{Z}$，如果 $n=2k-1$，则 $\lceil\frac{n}{2}\rceil+\lfloor\frac{n}{2}\rfloor=\lceil\frac{2k-1}{2}\rceil+\lfloor\frac{2k-1}{2}\rfloor=k+k-1=2k-1=n$，\\
+        如果 $n=2k$，则 $\lceil\frac{n}{2}\rceil+\lfloor\frac{n}{2}\rfloor=\lceil\frac{2k}{2}\rceil+\lfloor\frac{2k}{2}\rfloor=k+k=2k=n$.
+        \item [d)] The answer is \textbf{T}. \\
+        $x=1$ 时，取 $y=3$，则 $(1\leq 3)\land P(1,3)\equiv T$。\\
+        $x=2$ 时，取 $y=4$，则 $(2\leq 4)\land P(2,4)\equiv T$。\\
+        $x=3$ 时，取 $y=4$，则 $(3\leq 4)\land P(3,4)\equiv T$。\\
+        $x=4$ 时，取 $y=4$，则 $(4\leq 4)\land P(4,4)\equiv T$。\\
+        从而 $\forall x\exists y((x\leq y)\land P(x,y))$ 成立。
+        \item [e)] The answer is \textbf{F}. \\
+        显然 $n^a=\Omega(\log n)^b$，其中 $a, b$ 为常数。
+        \item [f)] The answer is \textbf{F}. \\
+        利用康托尔对角化 (Cantor diagonalization argument)，我们假设 $(0,1)$ 中所有十进制表示中数码为 $0$ 或 $1$ 的数组成的集合 $S$ 可数，列出其为 $r_1,r_2,\cdots$.\\
+        设 $r_i$ 的十进制表示为 $0.a_{i1}a_{i2}\cdots$，则我们可以构造一个新的数 $r$，其十进制表示为 $0.b_1b_2\cdots$，
+        其中 $b_i=1-a_{ii}=\begin{cases}
+            1 & \text{if } a_{ii}=0 \\
+            0 & \text{if } a_{ii}=1
+        \end{cases}$.\\
+        则显然 $r$ 不在 $r_1,r_2,\cdots$ 中，但 $r\in S$，矛盾。
+        \item [g)] The answer is \textbf{T}. \\
+        注意到 $2027$ 是素数，且 $2025<2027$，所以 $2025$ 与 $2027$ 互素，\\
+        故由费马小定理，$2025^{2027-1}\equiv 1\pmod{2027}$。
+    \end{enumerate}
+    \item[2.] \begin{enumerate}
+        \item[a)] $p\oplus q\equiv(p\land\lnot q)\lor(\lnot p\land q)\equiv\lnot(\lnot(p\land\lnot q)\land\lnot(\lnot p\land q))$.
+        \item[b)] 由与非的性质，$p|q=\lnot(p\land q)$，$p|p=\lnot p$，\\
+        故上式即可翻译为 $(\lnot(p\land\lnot q))|(\lnot(\lnot p\land q))\equiv (p|(\lnot q))|((\lnot p)|q)\equiv (p|(q|q))|((p|p)|q)$.
+    \end{enumerate}
+    \item[3.] 列真值表即可，最后得到结果为 $(p\lor q\lor r)\land(\lnot p\lor\lnot q\lor r)$.
+    \item[4.] $f_1(1,2)=(a,a)$，$f_2(1,2)=(a,b)$，$f_3(1,2)=(b,a)$，$f_4(1,2)=(b,b)$，为全部的映射。\\
+    由于题目中并未说明 $a=b$ 是否允许成立，因此这里给出两种答案：\\
+    若集合不为可重集（即 $a\neq b$），则 $f_2,f_3$ 为双射（自然也为满射）； \\
+    若集合为可重集，则 $f_1,f_2,f_3,f_4$ 均为满射，但无双射。
+    \item[5.] 本题考察的实际上为简化剩余系/缩系的概念，即与某个正整数 $n$ 互质的整数集合 $S$ 实际上是模 $n$ 的剩余系的子集，
+    $S$ 中剩余类的个数即为 $1,2,\cdots,n-1$ 中与 $n$ 互质的整数的个数，为 $\varphi(n)$. \\
+    $\varphi(77)=\varphi(7\times 11)=(7-1)\times(11-1)=60$，因此与 $77$ 互质的正整数若排成严格递增的序列 $\{a_n\}$，则其以 $60$ 为一个周期，
+    每增加 $60$ 个整数，那么原序列就增加 $77$，即 $a_{n+60}=a_n+77$，\\
+    从而 $a_{600}=a_{60}+77\times (\frac{600}{60}-1)=769$.
+    \item[6.] 本题最大的问题可能是鉴于历年卷没有考察很多同余相关的题目放弃了复习中国剩余定理这个较偏的知识点导致不会写过程（ \\
+    列出同余方程组：$\begin{cases}
+        x\equiv 1\pmod{3} \\
+        x\equiv 2\pmod{5} \\
+        x\equiv 3\pmod{8}
+    \end{cases}$，\\
+    令 $m_1=3,m_2=5,m_3=8$，$m=m_1\times m_2\times m_3=120$，\\
+    $M_1=\frac{m}{m_1}=40$，$M_2=\frac{m}{m_2}=24$，$M_3=\frac{m}{m_3}=15$，\\
+    $M_ky_k\equiv 1\pmod{m_k}$，解得 $y_1=1,y_2=4,y_3=7$，\\
+    因此 $x\equiv 1\times M_1y_1+2\times M_2y_2+3\times M_3y_3\equiv 67\pmod{120}$.
+    \item[7.] 还是用元素在两个集合中同时存在或同时不存在来说明集合相等。
+    \begin{align*} x\in A_1\cup\cap_{i=2}^n A_i &\equiv (x\in A_1) \lor (\land_{i=2}^n (x\in A_i)) \\
+        &\equiv \land_{i=2}^n (x\in A_1 \lor x\in A_i) \\
+        &\equiv \land_{i=2}^n (x\in A_1\cup A_i) \\
+        &\equiv x\in \cap_{i=2}^n (A_1\cup A_i)
+    \end{align*}故由 $x$ 的任意性知 $A_1\cup(A_2\cap\cdots\cap A_n)=(A_1\cup A_2)\cap\cdots\cap(A_1\cup A_n)$。
+    \item[8.] 本题考察的是对 Fibonacci 数的感觉（ \\
+    设互异的 Fibonacci 数为 $f_1=1,f_2=2,f_3=3,f_4=5,\cdots$ \\
+    用归纳法：归纳奠基（Basic Step）：$n=3$ 时 $3=f_1+f_2$ ，成立。\\
+    归纳过渡（Induction Step）设 $n$ 可以表示为 $f_{i_1}+f_{i_2}+\cdots+f_{i_k}$，其中 $i_1<i_2<\cdots<i_k$，则 $n$ 已经被表示为了不同的 Fibonacci 数之和，\\
+    对于 $n+1$，即 $1+f_{i_1}+f_{i_2}+\cdots+f_{i_k}$，\\
+    如果 $i_1>1$，那么 $f_{i_1},\cdots,f_{i_k}$ 均与 $f_1$ 不同，故 $n+1=f_1+f_{i_1}+f_{i_2}+\cdots+f_{i_k}$ 也是不同的 Fibonacci 数之和，即 $n+1$ 也可被表示。 \\
+    如果 $i_1=1$，那么 $f_{i_1}=f_1=1$，此时不能直接将 $1$ 加在这个和式的末尾，需要进行处理。\\
+    利用 Fibonacci 数的性质（相邻两项的和等于更大一项），我们希望这个和式中的下标 $i_1,i_2,\cdots,i_k$ 中有连续的若干项，这样相邻两项就可以作和变成更大的 Fibonacci 数，\\
+    从而设 $m$ 是满足 $i_j=j$ 的最大下标，则 $i_1=1,i_2=2,\cdots,i_m=m,i_{m+1}\geq m+2$，\\
+    若 $m$ 是偶数，则 $f_1+f_2=f_3$，$f_3+f_4=f_5$，$\cdots$，$f_{m-1}+f_m=f_{m+1}<f_{m+2}\leq f_{i_{m+1}}$（这个不等关系很关键，保证了前面的项进行合并之后彼此互不干扰，且不会影响到后面的项），\\
+    故 $n+1=1+(f_1+f_2)+(f_3+f_4)+\cdots+(f_{m-1}+f_m)+\displaystyle\sum_{j=m+1}^k f_{i_j}=f_1+f_3+f_5+\cdots+f_{m+1}+\displaystyle\sum_{j=m+1}^k f_{i_j}$，为不同的 Fibonacci 数之和，\\
+    同理，若 $m$ 是奇数，则 $f_2+f_3=f_4$，$f_4+f_5=f_6$，$\cdots$，$f_{m-1}+f_m=f_{m+1}<f_{m+2}\leq f_{i_{m+1}}$，\\
+    故 $n+1=1+f_1+(f_2+f_3)+\cdots+(f_{m-1}+f_m)+\displaystyle\sum_{j=m+1}^k f_{i_j}=f_2+f_4+f_6+\cdots+f_{m+1}+\displaystyle\sum_{j=m+1}^k f_{i_j}$，为不同的 Fibonacci 数之和，\\
+    不论哪种情况，都可以得到 $n+1$ 可被不同的 Fibonacci 数之和表示，\\
+    故由归纳法，知任意的正整数 $n>2$ 都可以被不同的 Fibonacci 数之和表示。得证。\\
+    \vspace{1em}
+    另证：用强归纳法，归纳奠基已做，对于归纳过渡，假设所有小于 $n$ 且大于 $2$ 的正整数均可以被不同的 Fibonacci 数之和表示，\\
+    设 $f$ 为小于 $n$ 的最大的 Fibonacci 数（则 $f\geq 3$，因为归纳奠基是 $n=3$，故这里 $n\geq 4$），则考虑 $n-f$： \\
+    若 $n-f=1$ 或 $2$，则 $n=f+1$ 或 $n=f+2$，为两个不同的 Fibonacci 数之和，成立。\\
+    若 $n-f\geq 3$，由归纳假设，$n-f$ 可被不同的 Fibonacci 数之和表示，为 $f_1,f_2,\cdots,f_k$，\\
+    由于 $f$ 是小于 $n$ 的最大的 Fibonacci 数，故 $f_1,f_2,\cdots,f_k$ 均小于 $f$，从而 $n=f_1+f_2+\cdots+f_k+f$ 也是不同的 Fibonacci 数之和，\\
+    不论哪种情况都可以得到 $n$ 可被不同的 Fibonacci 数之和表示，故由强归纳法知任意的正整数 $n>2$ 都可以被不同的 Fibonacci 数之和表示。得证。
+\end{enumerate}
+
+\end{document}

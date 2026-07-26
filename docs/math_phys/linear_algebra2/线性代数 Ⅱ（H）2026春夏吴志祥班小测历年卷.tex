@@ -1,0 +1,94 @@
+\documentclass[a4paper,12pt]{ctexart}
+
+% 引入数学宏包
+\usepackage{amsmath, amssymb, amsthm}
+% 设置页面边距
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+% 设置列表格式
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=\arabic*., leftmargin=2em}
+
+\begin{document}
+
+\noindent\textbf{一、（20分）} 给出下列命题的真伪，若命题为真，给出简要证明；若命题为假，请举出反例。
+\begin{enumerate}
+    \item $T$ 是 3 维实线性空间上的算子，且只有特征值 1，则 $(T-I)^2 = O$。
+    \item 设 $T$ 是实内积空间上的算子，$W$ 是 $T$ 的一个不变子空间，则 $W$ 的正交补 $W^\perp$ 还是 $T$ 的不变子空间。
+    \item 实内积空间上的算子 $T$，在某组基下的矩阵是正交阵，则 $T$ 是正交算子。
+    \item 有限维实内积空间上的算子 $T$ 的奇异值均为 1，则 $T$ 是等距变换。
+\end{enumerate}
+
+\vspace{1.5em}
+\noindent\textbf{二、（10分）} 求下列直线在 $Oxz$ 平面上的投影：
+\[
+\begin{cases}
+2x + 3y + 1 = 0, \\
+4x + 3y + z - 1 = 0.
+\end{cases}
+\]
+
+\vspace{1.5em}
+\noindent\textbf{三、（10分）}
+\begin{enumerate}
+    \item 设 $a_1, a_2, \cdots, a_n$ 是几个不同的数，$\{e_1, e_2, \cdots, e_n\}$ 是线性空间 $V$ 的一组基，已知：
+    \[
+    \begin{cases}
+    \alpha_1 = e_1 + a_1 e_2 + \cdots + a_1^{n-1} e_n, \\
+    \alpha_2 = e_1 + a_2 e_2 + \cdots + a_2^{n-1} e_n, \\
+    \qquad \vdots \\
+    \alpha_n = e_1 + a_n e_2 + \cdots + a_n^{n-1} e_n.
+    \end{cases}
+    \]
+    求证：$\{\alpha_1, \alpha_2, \cdots, \alpha_n\}$ 也是 $V$ 的一组基。
+    
+    \item 设 $V_1, V_2, \cdots, V_m$ 是数域 $\mathbb{F}$ 上向量空间 $V$ 的 $m$ 个真子空间。证明：$V$ 中必有一组基，使得每个基向量都不在诸 $V_i$ 的并中。
+\end{enumerate}
+
+\vspace{1.5em}
+\noindent\textbf{四、（10分）}
+\begin{enumerate}
+    \item 设 $V = M_n(F)$，$V_1$ 是由 $V$ 中全体对角矩阵张成的子空间，给出商空间 $V/V_1$ 的一个基。
+    
+    \item 设 $V = M_3(F)$，已知矩阵：
+    \[
+    A = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 1 \end{pmatrix}
+    \]
+    求商空间 $V/C(A)$ 的一个基，其中 $C(A) = \{X \in M_3(\mathbb{F}) \mid XA = AX\}$。
+\end{enumerate}
+
+\vspace{1.5em}
+\noindent\textbf{五、（10分）} 设 $V$ 是有限维的，$T \in \mathcal{L}(V)$，且 $p$ 是 $T$ 的最小多项式。设 $\lambda \in F$，证明：$T - \lambda I$ 的最小多项式是定义为 $q(x) = p(x + \lambda)$ 的多项式 $q$。
+
+\vspace{1.5em}
+\noindent\textbf{六、（10分）} 设 $V = P_3(\mathbb{R})$，定义算子 $\varphi: V \to V, f(x) \mapsto \frac{f(x)+f(-x)}{2}$。
+\begin{enumerate}
+    \item 证明：$V = \ker \varphi \oplus \ker(I - \varphi)$；
+    \item 若有一算子 $E \in \mathcal{L}(V)$，满足 $E|_{\ker \varphi} = -I$ 且 $E|_{\ker(I-\varphi)} = I$，请用算子 $\varphi$ 和 $I$ 写出 $E$ 的代数表达式。
+\end{enumerate}
+
+\vspace{1.5em}
+\noindent\textbf{七、（10分）} 设 $W = \{A \in M_n(\mathbb{R}) \mid A = A^T\}$，定义映射 $f: W \times W \to \mathbb{R}$ 使得 $f(A, B) = \mathrm{Tr}(AB)$。
+\begin{enumerate}
+    \item 证明：$f$ 是 $W$ 上的内积；
+    \item 设 $S = \{A \in W \mid \mathrm{Tr}(A) = 0\}$，试求 $S$ 的维数以及 $S$ 在 $W$ 中的正交补 $S^\perp$。
+\end{enumerate}
+
+\vspace{1.5em}
+\noindent\textbf{八、（10分）} 设 $V$ 是有限维内积空间。已知 $T_1, T_2 \in \mathcal{L}(V)$ 是两个正规算子。假设 $T_1$ 与 $T_2$ 乘法可交换（即 $T_1 T_2 = T_2 T_1$）。请完成下列证明：
+\begin{enumerate}
+    \item 证明：$T_1$ 和 $T_2$ 可被同时正交对角化（即证明存在 $V$ 的一组规范正交基，使得该基中的每个向量既是 $T_1$ 的特征向量，也是 $T_2$ 的特征向量）。
+    \item 证明：算子乘积 $T_1 T_2$ 也是一个正规算子。
+\end{enumerate}
+
+\vspace{1.5em}
+\noindent\textbf{九、（10分）} 设 $V$ 是一个 $n$ 维复内积空间，$N \in \mathcal{L}(V)$ 是一个幂零算子，且满足 $N^{n-1} \neq 0$（即 $N$ 的幂零指数恰好为 $n$）。已知线性算子 $T \in \mathcal{L}(V)$ 与 $N$ 乘法可交换（即 $TN = NT$）。请完成下列证明：
+\begin{enumerate}
+    \item 证明：必然存在一个非零向量 $v \in V$，使得向量组 $\beta = \{v, Nv, N^2v, \cdots, N^{n-1}v\}$ 线性无关，从而构成 $V$ 的一组基。
+    \item 证明：算子 $T$ 必然可以表示为 $N$ 的多项式，即：存在一组复数 $c_0, c_1, \cdots, c_{n-1}$，使得
+    \[
+    T = c_0 I + c_1 N + \cdots + c_{n-1} N^{n-1}
+    \]
+\end{enumerate}
+
+\end{document}

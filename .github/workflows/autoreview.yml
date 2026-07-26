@@ -1,0 +1,82 @@
+name: Format Auto Review
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+    paths:
+      - '**/*.md'
+
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
+
+concurrency: ci-${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  auto-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Setup reviewdog
+        uses: reviewdog/action-setup@v1.3.2
+        with:
+          reviewdog_version: latest
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v46
+        with:
+          files: '**/*.md'
+
+      - name: Running autocorrect
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sSL https://git.io/JcGER | sh
+          autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | \
+            reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=error
+      - name: Running markdownlint
+        uses: reviewdog/action-markdownlint@v0.26.2
+        if: ${{ !cancelled() && steps.changed-files.outputs.any_changed == 'true' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
+          fail_level: error
+      - name: Running custom punctuation checker
+        if: ${{ !cancelled() && steps.changed-files.outputs.any_changed == 'true' }}
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python tools/punctuation_checker.py \
+            "${{ steps.changed-files.outputs.all_changed_files }}" | \
+            reviewdog -efm="%f:%l:%t %m" -name="punctuation-check" -reporter=github-pr-review -fail-level=error -level=warning
+
+      - name: Post comment if failure
+        uses: thollander/actions-comment-pull-request@v3
+        if: failure()
+        with:
+          comment-tag: autoreview-comment
+          message: |
+            源码格式/语法检查未通过，请根据 GitHub Action 给出的 Code Review 审查建议进行修改（未给出修改建议的需根据提示手动修改），修改完成后请点击 "Resolve conversation"。
+
+            对于有争议的修改建议，可暂时不进行修改并在 PR 中进行讨论。
+
+            > 注：可通过 "Files changed" 页面中的 "Add suggestion to batch" 功能来批量采纳修改建议。
+      - name: Post comment if success
+        uses: thollander/actions-comment-pull-request@v3
+        if: success()
+        with:
+          comment-tag: autoreview-comment
+          message: |
+            源码格式/语法检查已通过。

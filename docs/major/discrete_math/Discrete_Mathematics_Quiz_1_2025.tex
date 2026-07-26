@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{amsfonts,amssymb}
+\geometry{a4paper,left=2cm,right=2cm,top=4cm}
+\title{Discrete Mathematics Quiz 1\\\small{2024 - 2025 春夏学期}}
+\author{5dbwat4}
+% By 5dbwat4<me@5dbwat4.top>
+\date{\today}
+\setlength{\parskip}{1em}
+\setlength{\baselineskip}{20pt}
+\setlength{\parindent}{0em}
+\begin{document}
+
+\maketitle
+
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \emph{(35\%)} Determine whether the following statements are true or
+  false. (\textbf{5 points} for a correct answer, \textbf{0 points} for
+  a blank answer, \textbf{-2 points for an incorrect answer})
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  If \(x\) is not occurring in \(A\), then
+  \(\exists x(P(x)\to A)\equiv \forall x P(x) \to A\).
+\item
+  If \(A\), \(B\), and \(C\) are sets, then
+  \(A-(B\cap C)=(A - B)\cup(A - C)\).
+\item
+  If \(n\) is integer, then
+  \(n=\left\lceil\frac{n}{2}\right\rceil+\left\lfloor\frac{n}{2}\right\rfloor\).
+\item
+  Suppose \(P(x,y)\) is a predicate and the universe for the variables
+  \(x\) and \(y\) is \(\{1,2,3,4\}\). Suppose \(P(1,3)\), \(P(2,1)\), \(P(2,4)\),
+  \(P(3,2)\), \(P(3,4)\), \(P(4,1)\), \(P(4,4)\) are true, and
+  \(P(x,y)\) is false otherwise. Then the statement
+  \(\forall x\exists y((x\leq y)\land P(x,y))\) is true.
+\item
+  \(n^{0.01}\) is \(O(\log_{1.01}{n})^{99999}\).
+\item
+  The set of positive real numbers less than 1 with decimal
+  representations consisting only of 0s and 1s is countable.
+\item
+  \(2025^{2026}\equiv1\pmod{2027}\).
+\end{enumerate}
+
+\item
+  \emph{(12\%)} Write a proposition equivalent to \(p\oplus q\),
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  using only \(p\), \(q\), \(\neg\), and the connective \(\land\).
+\item
+  using only \(p\), \(q\), and the connective \(|\) (``\(|\)''
+  represents NAND 与非).
+\end{enumerate}
+
+\item
+  \emph{(9\%)} Find the full conjunctive normal form of
+  \((p\oplus q)\lor r\).
+\item
+  \emph{(8\%)} Build all the functions from \(A = \{1,2\}\) to
+  \(B=\{a,b\}\) and point out which is bijection, and which is
+  surjection.
+\item
+  \emph{(9\%)} If all the positive integers that are relatively prime
+  with 77 are arranged into a strictly increasing sequence, find the
+  600\emph{th} term of this sequence.
+\item
+  \emph{(9\%)} Use the construction in the proof of the Chinese
+  remainder theorem to find all solutions to the system of congruences
+  \(x\equiv1\pmod{3}\), \(x\equiv2\pmod{5}\), and \(x\equiv3\pmod{8}\).
+\item
+  \emph{(9\%)} Prove that the distributive law
+  \(A_1\cup(A_2\cap\cdots\cap A_n)=(A_1\cup A_2)\cap\cdots\cap(A_1\cup A_n)\)
+  is true for all \(n > 2\).
+\item
+  \emph{(9\%)} Prove that every positive integer (\(n>2\)) can be
+  expressed as the sum of different Fibonacci numbers.
+\end{enumerate}
+
+
+\end{document}  

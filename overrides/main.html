@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+    {% if page.meta and page.meta.home %}
+        <title>{{ config.site_name }}</title>
+    {% else %}
+        {{ super() }}
+    {% endif %}
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    {% if not page.meta or not page.meta.nocounter %}
+        <link rel="stylesheet" href="{{ 'css/counter.css' | url }}">
+    {% endif %}
+{% endblock %}
+
+{% block site_nav %}
+    {{ super() }}
+    {% if "toc.integrate" not in features %}
+        {% if page and page.meta and page.meta.fold_toc %}
+            <script src="{{ 'js/toc.js' | url }}" defer></script>
+            <link rel="stylesheet" href="{{ 'css/fold_toc.css' | url }}">
+        {% endif %}
+    {% endif %}
+{% endblock %}

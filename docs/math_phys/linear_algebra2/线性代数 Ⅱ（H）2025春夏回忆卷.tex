@@ -1,0 +1,48 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.66,top=0.8in,bottom=1.5in,left=1in,right=1in}
+
+\title{\textbf{线性代数 II（H）2024-2025 春夏期末}}
+\author{图灵回忆卷\quad\quad by jayi0908}
+\date{2025 年 6 月 18 日}
+
+\linespread{1.2}
+\addtolength{\parskip}{.8em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、(16 分)}} $P_0(1,0,1)$ 到平面 $x+y+z=D\space(D>0)$ 的距离为 $\sqrt{3}$，求 $P_0$ 到直线 $\begin{cases}x+y+z=D \\ x-y+z=1\end{cases}$ 的距离.
+
+\noindent{\heiti\textbf{二、(16 分)}} $V$ 为次数不超过 $2$ 的实数多项式空间，定义在 $V$ 上的内积为 $\langle p,q \rangle = \int_0^1 p(x)q(x)\mathrm{d}x$，记 $W=\{p(0)=0\vert p\in V\}$，(1) 求 $W$ 的正交补；(2) 求 $f\in V$ 使得 $\langle p,f \rangle = p(0)$ 对 $\forall p\in V$ 都成立.
+
+\noindent{\heiti\textbf{三、(12 分)}} $A\in\mathbb{C}^{7\times 7}$，且存在 $B\in\mathbb{C}^{7\times 7}$，$X\in\mathbb{C}^{7\times 1}$ 使得 $A=B^2$，$A^3 X\neq O$，$A^4 X=O$，证明 $r(A)=5$.
+
+\noindent{\heiti\textbf{四、(12 分)}} 设 $T$ 为维数为 $n\space(n\ge 3)$ 的线性空间 $V$ 上的幂零算子，且 $r(T)=1$，求 $T$ 的 Jordan 标准形，并证明 $V$ 有无穷多个二维的 $T$-不变子空间. 
+
+\noindent{\heiti\textbf{五、(20 分)}} 试给出下列命题的真伪. 若命题为真，请给出简要证明；若命题为假，请举出反例.
+
+\textbf{1.} $T$ 为实算子，且只有特征值 $1$ 和 $2$，则 $T^2-3T+2I=O$.
+
+\textbf{2.} 实算子 $T$ 有非平凡子空间，则有特征值.
+
+\textbf{3.} $U$ 为 $V$ 的一个子空间，则可取 $U$ 的补空间的一组基 $\varepsilon_1,\cdots,\varepsilon_s$，使得 $\varepsilon_1+U,\cdots,\varepsilon_s+U$ 为商空间 $V/U$ 的一组基.
+
+\textbf{4.} $T$ 为实内积空间上的算子，且 $T$ 在某组基下有对称矩阵，则 $T$ 是自伴算子.
+
+\textbf{5.} 设 $s$ 为 $T$ 的奇异值，则存在单位向量 $\alpha$ 使得 $\|T\alpha\|=s$.
+
+\noindent{\heiti\textbf{六、(12 分)}} 设 $\varepsilon_1,\cdots,\varepsilon_5$ 为 $\mathbb{R}^5$ 的一组基，$T$ 为 $\mathbb{R}^5$ 上的算子且 $T(\varepsilon_i)=\varepsilon_1+\varepsilon_2+\varepsilon_3\space(i=1,2,3)$，$T(\varepsilon_j)=\varepsilon_4+\varepsilon_5\space(j=4,5)$，求 $T$ 的极小多项式与 $T^{2025618}$.
+
+\noindent{\heiti\textbf{七、(12 分)}} 对于算子 $T$，记 $G=T^*T$，证明以下等价：
+
+\textbf{(1)} $T$ 是正规算子；
+
+\textbf{(2)} 存在等距同构 $S$ 使得对任意向量 $v$，$Tv=\displaystyle\sum_{i=1}^m\displaystyle\sum_{j=1}^{d_i}\sqrt{\lambda_i}\langle v,\varepsilon_{ij}\rangle S\varepsilon_{ij}$，其中 $\{\varepsilon_{ij}\}_{j=1}^{d_i}$ 是 $E(\lambda_i,G)$ 的一组基，且 $E(\lambda_i,G)$ 是 $S$ 不变的.
+
+\textbf{(3)} 存在等距同构 $S'$ 使得 $T^2=S'G$，且 $\operatorname{Im} T = (\operatorname{Ker} T)^\perp$.
+
+\end{document}

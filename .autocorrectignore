@@ -1,0 +1,14 @@
+# 目录
+docs/political/index.md
+docs/math_phys/index.md
+docs/major/mandatory/index.md
+docs/major/elective/index.md
+docs/short_term/index.md
+docs/others/index.md
+
+# 历年卷
+*.tex
+docs/major/introduction_to_data_visualization/数据可视化导论小测.md
+
+# 其他
+*.py

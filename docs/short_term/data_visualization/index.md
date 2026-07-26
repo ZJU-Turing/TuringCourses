@@ -1,4 +1,5 @@
 # 大数据可视化
+
 <div class="badges">
 <span class="badge cs-badge">大一短学期</span>
 <span class="badge cs-badge">课程综合实践 Ⅰ</span>
@@ -34,7 +35,7 @@
     - 每组三人，自行组队，自由选题，需要提交报告和代码
 - 课程项目 2 展示 (20%)
     - 在最后一节课（最后一天下午）展示，每个小组需要全员到场，没来视为缺考
-    - 有 3 分钟的展示时间，展示内容至少需要包括分工、数据背景、可视系统设计+分析，重点是**基于数据和可视化，描述数据故事**
+    - 有 3 分钟的展示时间，展示内容至少需要包括分工、数据背景、可视系统设计 + 分析，重点是**基于数据和可视化，描述数据故事**
     - 助教和老师会坐在前排，在展示完毕后进行提问，问的问题基本不难，只要对自己的项目了如指掌就不会有问题
 - 出勤 (10%)
 - Bonus (+5%) 设计并开发一个可视分析系统
@@ -65,4 +66,3 @@
 - 前端开发框架：[Vue](https://cn.vuejs.org/guide/introduction.html)、[React](https://react.docschina.org/learn) 等
 - 前端数据可视化工具库：[Echarts](https://echarts.apache.org/handbook/zh/get-started/)、[D3.js](https://d3js.org/getting-started)、[Chart.js](https://www.chartjs.org/docs/latest/getting-started/)、[AntV](https://antv.antgroup.com/zh)、[Highcharts](https://www.highcharts.com.cn) 等
 - 前端组件库：[Element UI](https://element-plus.org/zh-CN/#/zh-CN)、[Material UI](https://mui.com/material-ui)、[Ant Design](https://ant.design/docs/react/introduce-cn)、[Tailwind CSS](https://www.tailwindcss.cn)、[Daisy UI](https://daisyui.com/) 等
-

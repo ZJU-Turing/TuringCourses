@@ -1,0 +1,53 @@
+\documentclass[UTF8,14pt,normal]{ctexart}
+\usepackage{amsmath}
+\usepackage{physics} % \dd, \dv
+\usepackage{mismath} % \ds
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.66,top=1in,bottom=1in,left=1in,right=1in}
+
+\title{\vspace{-4em}\textbf{数学分析（甲）II（H）2024-2025 春夏期末}}
+\author{图灵回忆卷}
+
+\linespread{1.5}
+\addtolength{\parskip}{.2em}
+
+\begin{document}
+
+\maketitle
+
+\noindent{\heiti\textbf{一、(10 分)}} 叙述二元函数 $f(x, y)$ 在 $(x_0, y_0)$ 可微的定义，并且证明以下函数在 $(0, 0)$ 处可微. \[f(x, y) = \begin{cases}
+    \dfrac{x^2y}{\sqrt{x^2 + y^2}}  & (x, y) \neq (0, 0)\\
+    0                                    & (x, y) = (0, 0)
+\end{cases}\]
+
+\noindent{\heiti\textbf{二、(40 分)}} 计算：
+
+\textbf{1.} 求由 $\begin{cases}
+    x^2+y^2+ze^z=2 \\
+    x^2+xy+y^2=1 
+\end{cases}$ 确定的空间曲线在 $(1,-1,0)$ 处的切线;
+
+\textbf{2.} 求 $I_1=\ds\iint_D |y-x^2|\dd{x}\dd{y}$，其中 $D=\left[-1, 1\right]\times\left[0,2\right]$;
+
+\textbf{3.} 对于曲线 $L \colon y = \sqrt{1-x^2}$，方向为从 $(1, 0)$ 到 $(-1, 0)$，求 \[I_2=\ds\int_L(-2xe^{-x^2}\sin y-y)\dd{x} + e^{-x^2}\cos{y} \dd{y};\]
+
+\textbf{4.} 对于曲面 $S \colon x^2+y^2+z^2=1, z\ge 0$，取上侧，求 \[I_3=\ds\iint\limits_{S}(x^2 - x)\dd{y}\dd{z} + (y^2 - y)\dd{z}\dd{x} + (z^2 + 1)\dd{x}\dd{y};\]
+
+\textbf{5.} 求 \[I_4 = \ds\int_{-1}^1 \dd{x} \ds\int_0^{\sqrt{1-x^2}} \dd{y} \ds\int_1^{1+\sqrt{1-x^2-y^2}} \dfrac{\dd{z}}{\sqrt{x^2+y^2+z^2}}.\]
+
+\noindent{\heiti\textbf{三、(10 分)}} 设二元函数 $f(x, y)$ 定义在 $D=(0,1)\times(0,1)$ 上，$f_y'(x,y)$ 有界，且对于固定的 $y$，$f(x,y)$ 对于 $x$ 连续，证明：$f$ 在 $D$ 上连续.
+
+\noindent{\heiti\textbf{四、(10 分)}} 对于 $f(x,y,z)=2x^2+2xy+2y^2-3z^2$，$\vec{l}=(1,-1,0)$，$P$ 在 $S\colon x^2+2y^2+3z^2=1$ 上，求 $\dfrac{\partial f}{\partial\vec{l}}(P)$ 的最大值.
+
+\noindent{\heiti\textbf{五、(10 分)}} 对于函数 $f(x)=1+x$，$x\in\left[0,\pi\right]$，有 $f(x)=\dfrac{a_0}{2}+\ds\sum_{n=1}^\infty a_n\cos nx$，求 $\ds\lim_{n\to\infty}n^2\sin{a_{2n-1}}.$
+
+\noindent{\heiti\textbf{六、(10 分)}} 函数列 $\{f_n\}$ 满足：$f_1(x)=f(x)$ 为 $\left[0,1\right]$ 上的连续函数，且对于 $\forall n\in\mathbb{N}_+$，$\forall x\in[0,1]$，有 \[f_{n+1}(x)=\ds\int_x^1f_n(t)\dd{t}.\] 证明：函数项级数 $\ds\sum_{n=1}^{\infty}f_n(x)$ 在 $[0,1]$ 上一致收敛.
+
+\noindent{\heiti\textbf{七、(10 分)}} $\{a_n\}$ 满足 $a_n>0,\forall n\in\mathbb{N}_+$，且 $\ds\sum_{n=1}^\infty a_n$ 收敛，记 $R_n=\ds\sum_{k=n+1}^\infty a_k$ 为余项和，证明：
+
+\textbf{(1)} $\ds\sum_{n=1}^\infty \dfrac{a_n}{R_{n-1}}$ 发散;
+
+\textbf{(2)} 对于 $\forall p>0$，$\ds\sum_{n=1}^\infty \dfrac{a_n}{R_{n-1}^{1-p}}$ 收敛.
+
+\end{document}
