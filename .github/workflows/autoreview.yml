@@ -1,69 +1,114 @@
 name: Format Auto Review
 
 on:
+  # pull_request_target is intentionally retained because this workflow writes
+  # review comments.  It must therefore never check out or execute the PR head.
   pull_request_target:
     types: [opened, reopened, synchronize]
     paths:
       - '**/*.md'
 
 permissions:
-  checks: write
   contents: read
   pull-requests: write
 
-concurrency: ci-${{ github.workflow }}-${{ github.ref }}
+concurrency:
+  group: autoreview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
 
 jobs:
   auto-review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      # Check out the trusted default branch, not github.event.pull_request.head.
+      # persist-credentials is disabled so the write-capable token is not kept
+      # in .git/config for later commands.
+      - name: Checkout trusted default branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          fetch-depth: 0
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.event.pull_request.head.ref }}
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      - name: Setup reviewdog
-        uses: reviewdog/action-setup@v1.3.2
-        with:
-          reviewdog_version: latest
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v46
-        with:
-          files: '**/*.md'
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 1
+          persist-credentials: false
 
-      - name: Running autocorrect
-        if: steps.changed-files.outputs.any_changed == 'true'
+      # This script obtains only changed Markdown file *contents* through the
+      # GitHub API. It rejects unsafe paths and never fetches a PR checkout, so
+      # every executable file and configuration below comes from the default branch.
+      - name: Stage changed Markdown files
+        id: stage-markdown
         env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          curl -sSL https://git.io/JcGER | sh
-          autocorrect --lint --format rdjson ${{ steps.changed-files.outputs.all_changed_files }} | \
-            reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=error
-      - name: Running markdownlint
-        uses: reviewdog/action-markdownlint@v0.26.2
-        if: ${{ !cancelled() && steps.changed-files.outputs.any_changed == 'true' }}
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python tools/stage_pr_markdown.py
+
+      - name: Setup reviewdog
+        if: steps.stage-markdown.outputs.has_markdown == 'true'
+        uses: reviewdog/action-setup@e04ffabe3898a0af8d0fb1af00c188831c4b5893 # v1.3.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
-          markdownlint_flags: ${{ steps.changed-files.outputs.all_changed_files }}
-          fail_level: error
-      - name: Running custom punctuation checker
-        if: ${{ !cancelled() && steps.changed-files.outputs.any_changed == 'true' }}
+          reviewdog_version: v0.21.0
+
+      # Install a fixed, checksum-verified release instead of executing a
+      # mutable remote install script (previously: curl ... | sh).
+      - name: Install autocorrect
+        if: steps.stage-markdown.outputs.has_markdown == 'true'
         env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTOCORRECT_VERSION: 2.16.3
+          AUTOCORRECT_SHA256: 9bef6fef5f30d6cfa2e5399ffc990672621ee8ea699d4feea75830264ed7a32e
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/autocorrect.tar.gz"
+          install_dir="$RUNNER_TOOL_CACHE/autocorrect-$AUTOCORRECT_VERSION"
+          curl --fail --location --silent --show-error \
+            "https://github.com/huacnlee/autocorrect/releases/download/v$AUTOCORRECT_VERSION/autocorrect-linux-amd64.tar.gz" \
+            --output "$archive"
+          printf '%s  %s\n' "$AUTOCORRECT_SHA256" "$archive" | sha256sum --check --status
+          mkdir -p "$install_dir"
+          tar -xzf "$archive" -C "$install_dir"
+          chmod 0755 "$install_dir/autocorrect"
+          printf '%s\n' "$install_dir" >> "$GITHUB_PATH"
+
+      - name: Run autocorrect
+        if: steps.stage-markdown.outputs.has_markdown == 'true'
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ github.token }}
+        run: |
+          autocorrect --lint --format rdjson ${{ steps.stage-markdown.outputs.markdownlint_files }} | \
+            reviewdog -f=rdjson -level=warning -reporter=github-pr-review -fail-level=error
+
+      - name: Run custom punctuation checker
+        if: ${{ !cancelled() && steps.stage-markdown.outputs.has_markdown == 'true' }}
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ github.token }}
         run: |
           python tools/punctuation_checker.py \
-            "${{ steps.changed-files.outputs.all_changed_files }}" | \
+            "${{ steps.stage-markdown.outputs.markdownlint_files }}" | \
             reviewdog -efm="%f:%l:%t %m" -name="punctuation-check" -reporter=github-pr-review -fail-level=error -level=warning
 
+      # action-markdownlint generates fix suggestions from `git diff`. Record
+      # the API-staged PR contents in a runner-local commit first, otherwise the
+      # original PR diff would be reported as a no-op markdownlint suggestion.
+      - name: Snapshot PR Markdown for markdownlint fixes
+        if: ${{ !cancelled() && steps.stage-markdown.outputs.has_markdown == 'true' }}
+        run: |
+          set -euo pipefail
+          git add -A -- '*.md'
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            -c commit.gpgsign=false \
+            commit --allow-empty --no-verify -m 'Snapshot PR Markdown for markdownlint'
+
+      # This Docker action stashes the working tree after it reports fixes, so
+      # it must run last among linters that consume the staged PR contents.
+      - name: Run markdownlint
+        if: ${{ !cancelled() && steps.stage-markdown.outputs.has_markdown == 'true' }}
+        uses: reviewdog/action-markdownlint@3667398db9118d7e78f7a63d10e26ce454ba5f58 # v0.26.2
+        with:
+          github_token: ${{ github.token }}
+          reporter: github-pr-review
+          markdownlint_flags: ${{ steps.stage-markdown.outputs.markdownlint_files }}
+          fail_level: error
+
       - name: Post comment if failure
-        uses: thollander/actions-comment-pull-request@v3
+        uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b # v3
         if: failure()
         with:
           comment-tag: autoreview-comment
@@ -74,7 +119,7 @@ jobs:
 
             > 注：可通过 "Files changed" 页面中的 "Add suggestion to batch" 功能来批量采纳修改建议。
       - name: Post comment if success
-        uses: thollander/actions-comment-pull-request@v3
+        uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b # v3
         if: success()
         with:
           comment-tag: autoreview-comment
