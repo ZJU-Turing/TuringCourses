@@ -26,14 +26,15 @@ jobs:
           fetch-depth: 0
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v6
         with:
-          python-version: '3.x'
+          version: '0.9.9'
+          enable-cache: true
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: uv sync --locked --no-dev
       - name: Build site
-        run: FULL=1 mkdocs build
+        run: FULL=1 uv run --no-sync mkdocs build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

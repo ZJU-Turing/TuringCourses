@@ -151,6 +151,8 @@ if __name__ == "__main__":
         logger.export_result_ci()
     else:
         for root, dirs, files in os.walk("."):
+            if ".venv" in root:
+                continue
             for file in files:
                 if file.endswith(".md"):
                     file_path = os.path.join(root, file)

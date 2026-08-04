@@ -14,16 +14,16 @@
     $ cd TuringCourses
     ```
 
-2. 安装 python 依赖
+2. 安装 [uv](https://docs.astral.sh/uv/getting-started/installation/) 并同步项目环境
 
     ```shell
-    $ pip install -r requirements.txt
+    $ uv sync
     ```
 
 3. 启动 mkdocs 本地服务
 
     ```shell
-    $ mkdocs serve
+    $ uv run mkdocs serve
     ```
 
     - 之后即可通过浏览器访问 localhost:8000 预览网站
@@ -38,6 +38,7 @@
 
 ```text
 .
+├── .python-version     # uv 使用的 Python 版本
 ├── docs
 │   ├── contributing.md     # 本页
 │   ├── template.md         # 课程页面模板
@@ -55,7 +56,8 @@
 ├── hooks/              # 本文档专用扩展功能（默认仅开启 evaluations）
 ├── mkdocs.yml          # mkdocs 站点设置
 ├── overrides/          # mkdocs-material 个性主题设置
-└── requirements.txt    # 本站构建所需全部 python 依赖
+├── pyproject.toml      # Python 项目及依赖配置
+└── uv.lock             # Python 依赖锁文件
 ```
 
 ### 贡献守则
@@ -121,8 +123,8 @@
 - 利用仓库中的 `tools/punctuation_checker.py` 进行额外的标点用法检查
 
     ```shell
-    $ python tools/punctuation_checker.py # 对所有文件进行标点用法检查（需 pip install rich）
-    $ python tools/punctuation_checker.py docs/index.md # 只对某一/某几个文件进行检查
+    $ uv run python tools/punctuation_checker.py # 对所有文件进行标点用法检查
+    $ uv run python tools/punctuation_checker.py docs/index.md # 只对某一/某几个文件进行检查
     ```
 
 ## 问题反馈

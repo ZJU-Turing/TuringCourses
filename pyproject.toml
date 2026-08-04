@@ -1,0 +1,22 @@
+[project]
+name = "turingcourses"
+version = "0.1.0"
+description = "浙江大学图灵班课程学习指南"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gitpython~=3.1.45",
+    "mkdocs~=1.6.1",
+    "mkdocs-heti-plugin==0.1.5",
+    "mkdocs-material~=9.6.15",
+    "mkdocs-material-extensions~=1.3.1",
+    "requests>=2.32.4,<3",
+]
+
+[dependency-groups]
+dev = [
+    "rich>=14.1.0,<15",
+]
+
+[tool.uv]
+package = false
