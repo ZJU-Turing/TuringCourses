@@ -1,0 +1,111 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+
+
+\begin{document}
+\section*{浙江大学2025--2026学年春夏学期\\线性代数II课程期末考试卷}
+
+\begin{enumerate}
+\item 已知两个平面 $\pi_1$ 为
+\[
+-2x+y-z-2=0,
+\]
+$\pi_2$ 为
+\[
+x+y+2z-8=0,
+\]
+求到 $\pi_1$ 和 $\pi_2$ 距离相等的几何平面。
+
+\item 设 $U$ 是 $V$ 的子空间，$\pi$ 是 $V$ 到 $V/U$ 的商映射，假如 $T$ 是 $V$ 到 $W$ 的线性映射，证明存在线性映射 $S$ 从 $V/U$ 到 $W$ 满足
+\[
+T=S\pi
+\]
+充分必要条件是 $\operatorname{null}T$ 包含了 $U$。
+
+\item 设
+\[
+T:\mathbb F^3\to\mathbb F^2,\qquad
+T(x,y,z)=(4x+5y-6z,\;2x-3y+7z)
+\]
+是 $\mathbb F^3$ 到 $\mathbb F^2$ 的线性映射，
+\[
+\rho_i(x_1,x_2,x_3)=x_i,\qquad 1\leq i\leq 3,
+\]
+\[
+\varphi_j(y_1,y_2)=y_j,\qquad j=1,2.
+\]
+求
+\[
+T'(\varphi_1-2\varphi_2)
+\]
+在 $\rho_1,\rho_2,\rho_3$ 下的坐标。
+
+\item 设
+\[
+T(x,y,z)=(x+y+z,\;x+y+z,\;x+y+z)
+\]
+是 $\mathbb F^3$ 上的线性变换，求 $T$ 的一个二维不变子空间和 $T$ 的极小多项式。
+
+\item 设 $V$ 是 $3$ 维实内积空间，证明
+\[
+\langle u+iv,\;w+ix\rangle
+=
+\langle u,w\rangle+\langle v,x\rangle
++i\bigl(\langle v,w\rangle-\langle u,x\rangle\bigr)
+\]
+是复化空间 $V_{\mathbb C}$ 上的内积。假如 $e_1,e_2,e_3$ 是 $V$ 的规范正交基，求向量组
+\[
+ie_1-e_2,\qquad e_1-ie_3,\qquad e_1+e_2+e_3
+\]
+经 Gram--Schmidt 正交化后得到的规范正交基。
+
+\item 已知
+\[
+T(x,y,z)=(2y,\;3z,\;-x),
+\]
+求 $T$ 的奇异值和极分解。
+
+\item $T$ 是复数域上有限维线性空间上的算子，$k$ 是正整数，证明
+\[
+\dim\operatorname{null}(T^k)
+\leq
+k\dim\operatorname{null}(T).
+\]
+
+\item 设
+\[
+T(x,y,z)=(3x+y-z,\;-2x-2z,\;x+y+z),
+\]
+在复数域中求其 Jordan 标准型，在实数域中求一组基使得在该基下对应的矩阵为
+\[
+\operatorname{diag}(A,A),
+\qquad
+A=
+\begin{pmatrix}
+b&-c\\
+c&b
+\end{pmatrix}.
+\]
+
+\item 下列论断是否正确，正确给予简单证明，不正确请举反例。
+
+\begin{enumerate}
+\item $T$ 是实线性空间 $V$ 上线性算子，$T_{\mathbb C}$、$V_{\mathbb C}$ 分别是它们的复化，那么 $V$ 是 $T_{\mathbb C}$ 不变子空间。
+\item 任何复线性空间上的线性变换都存在平方根。
+\item $T$ 是实内积空间 $V$ 上的线性变换，$b^2<c$，那么
+\[
+T^2+bT+cI
+\]
+是可逆的。
+\item $S,T$ 是两个正算子，那么
+\[
+\operatorname{null}(S+T)
+=
+\operatorname{null}S\cap\operatorname{null}T.
+\]
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
