@@ -54,7 +54,7 @@ nav:
     - 编译原理: major/compilers_principles/index.md
   - 专业选修课:
     - major/elective/index.md
-    - 汇编语言: major/assemble/index.md
+    - 汇编语言程序设计与调试: major/assemble/index.md
     - 网络空间安全导论: major/cyberspace_security/index.md
     - 数值分析: major/numerical_analysis/index.md
     - 图像信息处理: major/digital_image_processing/index.md

@@ -18,7 +18,7 @@ grave: https://zju-turing.github.io/TuringCoursesGrave/major_elective/
 
 |课程名称|学分|建议学年学期|资料情况|
 |:--|:--|:--|:--|
-|[汇编语言](../assemble/index.md)|2.0|一（春夏）|较完善✅|
+|[汇编语言程序设计与调试](../assemble/index.md)|2.0|一（春夏）|较完善✅|
 |[网络空间安全导论](../cyberspace_security/index.md)|1.5|一（春夏）|较完善✅|
 |[数值分析](../numerical_analysis/index.md)|2.5|二（秋冬）|较完善✅|
 |[图像信息处理](../digital_image_processing/index.md)|2.5|二（秋冬）|较完善✅|
