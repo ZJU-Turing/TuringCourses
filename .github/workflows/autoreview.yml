@@ -100,7 +100,7 @@ jobs:
       # it must run last among linters that consume the staged PR contents.
       - name: Run markdownlint
         if: ${{ !cancelled() && steps.stage-markdown.outputs.has_markdown == 'true' }}
-        uses: reviewdog/action-markdownlint@3667398db9118d7e78f7a63d10e26ce454ba5f58 # v0.26.2
+        uses: reviewdog/action-markdownlint@a223028b797326efe9d3c9b55e24d740480c3352 # v0.31.2
         with:
           github_token: ${{ github.token }}
           reporter: github-pr-review
